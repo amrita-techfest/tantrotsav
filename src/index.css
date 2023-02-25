@@ -1,7 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #1b0047,
+    #1a024d,
+    #170553,
+    #140759,
+    #0f0a5f,
+    #0c0b68,
+    #070d71,
+    #000e7b,
+    #000d89,
+    #000a98,
+    #0306a6,
+    #0b00b5
+  );
 }
 
 @tailwind base;
