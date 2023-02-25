@@ -1,10 +1,12 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Events from "./components/Events";
+import NavBar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="App h-screen">
+      <NavBar />
+      <Events />
     </div>
   );
 }
