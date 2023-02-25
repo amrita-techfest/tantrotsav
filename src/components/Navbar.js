@@ -25,15 +25,25 @@ function Navbar() {
         </div>
         <div className=" hidden md:block">
           <ul className="flex items-center justify-between space-x-10 text-white text-[16px]">
-            <li className=" cursor-pointer">Home</li>
-            <li className=" cursor-pointer">Events</li>
-            <li className=" cursor-pointer">Blog</li>
-            <li className=" cursor-pointer">Gallery</li>
-            <li className=" cursor-pointer">Contact</li>
+            <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+              Home
+            </li>
+            <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+              Events
+            </li>
+            <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+              Blog
+            </li>
+            <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+              Gallery
+            </li>
+            <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+              Contact
+            </li>
           </ul>
         </div>
         <div className="hidden md:block">
-          <button className="bg-[#03C988] text-white px-5 py-2 rounded-md">
+          <button className=" border-2 border-[#f51bbb] transition duration-500 hover:bg-[#f51bbb]  text-white px-5 py-2 rounded-md">
             Login
           </button>
         </div>
