@@ -9,6 +9,7 @@ function App() {
       <NavBar />
       {/* <Events /> */}
       <TopContent />
+      <Events />
     </div>
   );
 }
