@@ -1,5 +1,5 @@
 import Hamburger from "hamburger-react";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
