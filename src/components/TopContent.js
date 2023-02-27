@@ -3,7 +3,7 @@ import React from 'react'
 const TopContent = () => {
   return (
     <div className='flex flex-col justify-center items-center h-full w-full'>
-        <div className='w-[50%] text-white text-center md:w-[100%]'>
+        <div className='w-[50%] text-white text-center'>
             <h1 className='text-[#f51bbb] text-[38px] p-3 font-bold'>Tantrotsav'23</h1>
             <p className='tracking-[2px] leading-[28px]'>
                 Tantrotsav is the annual symposium of 
