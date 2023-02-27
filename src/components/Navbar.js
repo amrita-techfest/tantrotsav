@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
-      <div className=" flex items-center justify-between p-5">
+      <div className="sticky top-0 z-50 flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200">
         <h1 className=" text-white text-[35px]">Logo</h1>
         <div className="md:hidden">
           <Hamburger
@@ -24,28 +24,29 @@ function Navbar() {
           />
         </div>
         <div className=" hidden md:block">
-          <ul className="flex items-center justify-between space-x-10 text-white text-[16px]">
+          <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
               Home
+            </li>
+            <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+              About
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
               Events
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-              Blog
+              Prizes & Opportunities
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-              Gallery
+              Sponsors
+            </li>
+            <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+              FAQ
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
               Contact
             </li>
           </ul>
-        </div>
-        <div className="hidden md:block">
-          <button className=" border-2 border-[#f51bbb] transition duration-500 hover:bg-[#f51bbb]  text-white px-5 py-2 rounded-md">
-            Login
-          </button>
         </div>
       </div>
     </>
