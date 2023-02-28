@@ -1,4 +1,43 @@
 import React from "react";
+<<<<<<< HEAD
+
+function Events() {
+  return (
+    <>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+      <h1>ifeieiohi</h1>
+    </>
+=======
 import { events } from "../data/data";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -40,6 +79,7 @@ function Events() {
         })}
       </div>
     </div>
+>>>>>>> 3fa96b203ab924735b48a22ada5e6fc6e3c6ef16
   );
 }
 
