@@ -6,24 +6,45 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-image: linear-gradient(
-    to bottom,
-    #1b0047,
-    #1a024d,
-    #170553,
-    #140759,
-    #0f0a5f,
-    #0c0b68,
-    #070d71,
-    #000e7b,
-    #000d89,
-    #000a98,
-    #0306a6,
-    #0b00b5
-  );
+.scrollbar {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow: auto;
+  background-color: #000;
 }
+#scrollbar5::-webkit-scrollbar {
+  background-color: #000;
+  width: 12px;
+  border-radius: 10px;
+}
+
+#scrollbar5::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+#scrollbar5::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, #a520ca),
+    color-stop(1, #2681cc)
+  );
+  border-radius: 10px;
+}
+/*       ScrollBar 6        */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+  /* background-image: url("../public/assets/bg.jpg");
+  background-size: cover;
+  margin-left: 0;
+  background-position: center;
+  background-repeat: no-repeat; */
+  height: 100vh;
+  width: 100%;
+}
