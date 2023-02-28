@@ -1,5 +1,5 @@
 import React from "react";
-import Events from "./components/Events";
+import Example from "./components/Events";
 import NavBar from "./components/Navbar";
 import TopContent from "./components/TopContent";
 
@@ -9,7 +9,9 @@ function App() {
       <NavBar />
       {/* <Events /> */}
       <TopContent />
-      <Events />
+      {/* <Events /> */}
+      <Example />
+      
     </div>
   );
 }

@@ -32,7 +32,7 @@ function Navbar() {
               About
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-              Events
+             <a href="/Workshop">Events</a>
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
               Prizes & Opportunities
