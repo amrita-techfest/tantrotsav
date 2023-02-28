@@ -18,8 +18,12 @@
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-particles": "^2.9.3",
     "react-router-dom": "^6.8.2",
+=======
+    "react-router-dom": "^6.8.1",
+>>>>>>> 3fa96b203ab924735b48a22ada5e6fc6e3c6ef16
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.9.3",
     "tsparticles": "^2.6.0",
