@@ -3,7 +3,6 @@ import "../index.css";
 
 const TopContent = () => {
   return (
-<<<<<<< HEAD
     <div className="hero">
       <div className=" z-50 flex justify-between items-center mt-[-70px] h-full w-full p-[50px]">
         <div className="flex-1">
@@ -29,36 +28,8 @@ const TopContent = () => {
             src="https://tri-nit.com/landing_page_vector.svg"
           />
         </div>
-=======
-    <div className='flex flex-col justify-center items-center h-full w-full'>
-        <div className='w-[50%] text-white text-center'>
-            <h1 className='text-[#f51bbb] text-[38px] p-3 font-bold'>Tantrotsav'23</h1>
-            <p className='tracking-[2px] leading-[28px]'>
-                Tantrotsav is the annual symposium of 
-                Amrita Vishwa Vidyapeetham,Chennai campus 
-                consisting of social initiatives and outreach programs 
-                throughout the year.
-            </p>
-            <button className='bg-black text-white transition duration-500 hover:bg-[#2c2c2c] text-[14px] p-2 m-3 rounded-[10px] w-[130px]'>
-                Explore
-            </button>
-        </div>
-        {/* <div className="flex justify-around items-center h-full w-full p-[30px]">
-      <div className="">
-        <h1 className="text-[#f51bbb] text-[50px] p-3 font-bold">
-          Tantrotsav'23
-        </h1>
-
-        <button className="bg-black text-white transition duration-500 hover:bg-[#2c2c2c] text-[14px] p-2 m-3 rounded-[10px] w-[130px]">
-          Explore
-        </button>
       </div>
-      <div className="">
-        <img src="https://tri-nit.com/landing_page_vector.svg" />
->>>>>>> 3fa96b203ab924735b48a22ada5e6fc6e3c6ef16
-      </div>
-    </div> */}
-    </div>
+    </div> 
   )
 }
     
