@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import { events } from "../data/data";
 // import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -44,46 +43,44 @@ function Events() {
         })}
       </div>
     </div>
-=======
 
-function Events() {
-  return (
-    <>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-      <h1>ifeieiohi</h1>
-    </>
->>>>>>> 0853cb5088c1d253cf97f401628cd3cf984dc7d9
-  );
+// function Events() {
+//   return (
+//     <>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//       <h1>ifeieiohi</h1>
+//     </>
+ );
 }
 
 export default Events;
