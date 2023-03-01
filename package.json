@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@animated-burgers/burger-squeeze": "^1.1.2",
+    "@coreui/react": "^4.6.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@material-tailwind/react": "^1.4.2",
