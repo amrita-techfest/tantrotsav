@@ -1,17 +1,18 @@
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
 import "../index.css";
+import { BrowserRouter as Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    "Home",
-    "About",
-    "Events",
-    "Prizes & Opportunities",
-    "Sponsors",
-    "FAQ",
-    "Contact",
+    {name:"Home",link:'/'},
+    {name:"About",link:'/'},
+    {name:"Events",link:'/events'},
+    {name:"Prizes",link:'/prizes'},
+    {name:"Sponsors",link:'/sponsors'},
+    {name:"FAQ",link:'/'},
+    {name:"Contact",link:'/'},
   ];
   return (
     <>
@@ -39,21 +40,25 @@ function Navbar() {
         {isOpen && (
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
-              {links.map((link) => (
-                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-                  {link}
-                </li>
+              {links.map((linkItems) => (
+                <a href={linkItems.link}>
+                  <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+                    {linkItems.name}
+                  </li>
+                </a>
               ))}
             </ul>
           </div>
         )}
         <div className="hidden  md:block">
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
-            {links.map((link) => (
-              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] hover:font-bold">
-                {link}
-              </li>
-            ))}
+          {links.map((linkItems) => (
+                <a href={linkItems.link}>
+                  <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+                    {linkItems.name}
+                  </li>
+                </a>
+              ))}
           </ul>
         </div>
       </div>
