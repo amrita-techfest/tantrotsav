@@ -22,7 +22,13 @@ function Navbar() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2 }}
           >
-            <h1 className=" text-white font-bold text-[35px]">TechFest</h1>
+            <div className="flex">
+              <img
+                className="h-20 logo"
+                src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
+                alt="logo"
+              />
+            </div>
           </motion.div>
         )}
         <div className="md:hidden hum">
@@ -46,7 +52,7 @@ function Navbar() {
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
               {links.map((link) => (
-                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] ">
                   {link}
                 </li>
               ))}
@@ -61,7 +67,7 @@ function Navbar() {
         >
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             {links.map((link) => (
-              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] hover:font-bold">
+              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] hover:font-bold">
                 {link}
               </li>
             ))}
