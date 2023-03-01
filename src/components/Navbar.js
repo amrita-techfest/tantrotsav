@@ -1,17 +1,19 @@
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
 import "../index.css";
+import { BrowserRouter as Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    "Home",
-    "About",
-    "Events",
-    "Prizes & Opportunities",
-    "FAQ",
-    "Contact",
+    { name: "Home", link: "/" },
+    { name: "About", link: "/" },
+    { name: "Events", link: "/events" },
+    { name: "Prizes", link: "/prizes" },
+    { name: "Sponsors", link: "/sponsors" },
+    { name: "FAQ", link: "/" },
+    { name: "Contact", link: "/" },
   ];
   return (
     <>
@@ -52,7 +54,7 @@ function Navbar() {
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
               {links.map((link) => (
-                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] ">
+                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
                   {link}
                 </li>
               ))}
@@ -67,7 +69,7 @@ function Navbar() {
         >
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             {links.map((link) => (
-              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] hover:font-bold">
+              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] hover:font-bold">
                 {link}
               </li>
             ))}
