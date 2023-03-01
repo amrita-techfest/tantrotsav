@@ -3,15 +3,15 @@ import React, { useState } from "react";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
-  const links = [
-    "Home",
-    "About",
-    "Events",
-    "Prizes & Opportunities",
-    "Sponsors",
-    "FAQ",
-    "Contact",
-  ];
+  // const links = [
+  //   "Home",
+  //   "About",
+  //   "Events",
+  //   "Prizes & Opportunities",
+  //   "Sponsors",
+  //   "FAQ",
+  //   "Contact",
+  // ];
   return (
     <>
       <div className="sticky top-0 z-50 flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200">
@@ -41,7 +41,8 @@ function Navbar() {
               About
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-              Events
+           <a href="/events">
+           Events</a>
             </li>
             <li className=" cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
               Prizes & Opportunities

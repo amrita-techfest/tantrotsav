@@ -2,7 +2,10 @@ import React from 'react'
 
 function workshop() {
   return (
-    <div>workshop</div>
+    console.log("wel"),
+  <>
+  <h1>
+    hello</h1></>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Workshop from "./workshop.js"
 
-function main() {
+function Main() {
     return (
       <div className="App h-screen">
         <Workshop />        
@@ -9,4 +9,4 @@ function main() {
     );
   }
 
-export default main;
+export default Main;
