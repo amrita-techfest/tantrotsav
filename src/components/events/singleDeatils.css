@@ -16,14 +16,14 @@
 } */
 
 .content-1{
-    color: #ffffff;
+    color: black;
     /* width: 60%; */
     text-align: start;
 }
 h2{
     margin-top: 2px;
     text-decoration-line :underline;
-    color: #ffffff;
+    color: black;
 }
 .image{
     /* width: 40%; */

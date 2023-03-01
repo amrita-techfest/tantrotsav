@@ -1,10 +1,12 @@
 import React from 'react';
-import Workshop from "./workshop.js"
+import SingleDeatils from "./singleDeatils.js"
+// import Cardinfo from "./cardinfo.js"
 
 function Main() {
     return (
       <div className="App h-screen">
-        <Workshop />        
+        <SingleDeatils />   
+        {/* <Cardinfo />      */}
       </div>
     );
   }

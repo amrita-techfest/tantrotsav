@@ -8,7 +8,7 @@ const RouteLinks = () => {
   return (
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Main />} />
+        <Route path="/singleDeatils" element={<Main />} />
     </Routes>
   )
 }
