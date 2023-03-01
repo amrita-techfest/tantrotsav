@@ -1,14 +1,13 @@
 import React from "react";
 import TopContent from "./TopContent";
-import Footer from "./Footer";
 import "../index.css";
+import About from "./About";
 
 function Home() {
   return (
     <div className="home">
       <TopContent />
-      <Footer />
-
+      <About />
     </div>
   );
 }

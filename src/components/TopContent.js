@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import { motion } from "framer-motion";
+import { HashLink as Link } from "react-router-hash-link";
 
 const TopContent = () => {
   return (
@@ -12,7 +13,7 @@ const TopContent = () => {
           transition={{ duration: 1.2 }}
           className="flex-1"
         >
-          <h1 className="title-text text-[#ff00bb] tracking-[3px] text-[50px] p-3 font-bold">
+          <h1 className="title-text text-[#0dff00] tracking-[3px] text-[60px] p-3 font-bold">
             Tantrotsav'23
           </h1>
           <h1 className="hero-head text-white text-[20px] p-3">
@@ -24,9 +25,11 @@ const TopContent = () => {
             will be held from 26th to 27th March 2023. We invite you to be a
             part of this event and make it a grand success.
           </p>
-          <button className="border-2 border-[#ff00b3] text-white transition duration-500 hover:bg-[#ff00b3] text-[16px] p-2 m-3 rounded-[5px] w-[130px]">
-            Explore
-          </button>
+          <Link smooth to="#about">
+            <button className="border-2 border-[#0dff00] text-white transition duration-500 hover:bg-[#0dff00] text-[16px] hover:text-black hover:font-bold p-2 m-3 rounded-[5px] w-[130px]">
+              Explore
+            </button>
+          </Link>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}

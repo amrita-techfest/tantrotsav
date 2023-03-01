@@ -117,6 +117,10 @@ img {
     height: 100%;
     width: 100%;
   }
+  .logo {
+    width: 85%;
+    object-fit: contain;
+  }
 }
 
 @media (min-width: 767px) {
@@ -187,4 +191,49 @@ img {
   to {
     filter: hue-rotate(360deg);
   }
+}
+
+.title-text {
+  font-size: 3.5em;
+}
+
+.hero-head {
+  font-size: 1.3em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about {
+  background: hsla(104, 100%, 65%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(104, 100%, 65%, 1) 0%,
+    hsla(104, 38%, 27%, 1) 43%,
+    hsla(0, 0%, 0%, 1) 74%,
+    hsla(0, 0%, 0%, 1) 89%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(104, 100%, 65%, 1) 0%,
+    hsla(104, 38%, 27%, 1) 43%,
+    hsla(0, 0%, 0%, 1) 74%,
+    hsla(0, 0%, 0%, 1) 89%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(104, 100%, 65%, 1) 0%,
+    hsla(104, 38%, 27%, 1) 43%,
+    hsla(0, 0%, 0%, 1) 74%,
+    hsla(0, 0%, 0%, 1) 89%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7CFF4D", endColorstr="#385E2A", GradientType=1 );
 }
