@@ -15,7 +15,7 @@ function App() {
         {/* <Events /> */}
         <RouteLinks />
       </Router>
-    </div>
+</div>
   );
 }
 
