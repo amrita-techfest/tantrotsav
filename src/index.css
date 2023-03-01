@@ -157,6 +157,39 @@ img {
 
 @media (min-width: 767px) {
   .img-h {
-    width: 100px;
+    width: 430px;
+    margin-left: 50px;
   }
+  .title-text {
+    font-size: 2.5em;
+  }
+  .intro {
+    padding: 120px;
+  }
+  .hero-head {
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .img-h {
+    width: 450px;
+  }
+  .title-text {
+    font-size: 2.2em;
+  }
+  .hero-head {
+    text-align: center;
+  }
+  .intro {
+    padding: 80px;
+  }
+}
+
+@media (min-width: 1169px) {
+  .hero {
+    height: 100vh;
+  }
+}
+.hero-p {
+  text-align: justify;
 }
