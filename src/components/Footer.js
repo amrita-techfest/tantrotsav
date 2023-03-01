@@ -19,7 +19,7 @@ const Footer =() =>{
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h3>Follow Us</h3>
+                    <h3 class ="he">Follow Us</h3>
                     <ul class="social-icons">
                         <li><div class ="hel"><a href="#"><span class="fa fa-facebook"></span></a></div></li>
                         <li><div class ="hel"><a href="#"><span class="fa fa-twitter"></span></a></div></li>
