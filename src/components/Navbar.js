@@ -3,16 +3,17 @@ import React, { useState } from "react";
 import "../index.css";
 import { BrowserRouter as Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    "Home",
-    "About",
-    "Event",
-    "Prizes & Opportunity",
-    "FAQ",
-    "Contact",
+    ["Home", "/"],
+    ["About", "#about"],
+    ["Events", "#events"],
+    ["Prizes & Opportunity", "#prizes"],
+    ["FAQ", "#faq"],
+    ["Contact", "#contact"],
   ];
   return (
     <>
@@ -54,7 +55,9 @@ function Navbar() {
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
               {links.map((link) => (
                 <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-                  {link}
+                  <Link smooth to={link[1]}>
+                    {link[0]}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -69,7 +72,9 @@ function Navbar() {
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             {links.map((link) => (
               <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] hover:font-bold">
-                {link}
+                <Link smooth to={link[1]}>
+                  {link[0]}
+                </Link>
               </li>
             ))}
           </ul>
