@@ -7,13 +7,12 @@ import { motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Events", link: "/events" },
-    { name: "Prizes", link: "/prizes" },
-    { name: "Sponsors", link: "/sponsors" },
-    { name: "FAQ", link: "/" },
-    { name: "Contact", link: "/" },
+    "Home",
+    "About",
+    "Event",
+    "Prizes & Opportunity",
+    "FAQ",
+    "Contact",
   ];
   return (
     <>

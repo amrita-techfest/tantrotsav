@@ -206,34 +206,8 @@ html {
 }
 
 .about {
-  background: hsla(104, 100%, 65%, 1);
-
-  background: radial-gradient(
-    circle,
-    hsla(104, 100%, 65%, 1) 0%,
-    hsla(104, 38%, 27%, 1) 43%,
-    hsla(0, 0%, 0%, 1) 74%,
-    hsla(0, 0%, 0%, 1) 89%,
-    hsla(0, 0%, 0%, 1) 100%
-  );
-
-  background: -moz-radial-gradient(
-    circle,
-    hsla(104, 100%, 65%, 1) 0%,
-    hsla(104, 38%, 27%, 1) 43%,
-    hsla(0, 0%, 0%, 1) 74%,
-    hsla(0, 0%, 0%, 1) 89%,
-    hsla(0, 0%, 0%, 1) 100%
-  );
-
-  background: -webkit-radial-gradient(
-    circle,
-    hsla(104, 100%, 65%, 1) 0%,
-    hsla(104, 38%, 27%, 1) 43%,
-    hsla(0, 0%, 0%, 1) 74%,
-    hsla(0, 0%, 0%, 1) 89%,
-    hsla(0, 0%, 0%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7CFF4D", endColorstr="#385E2A", GradientType=1 );
+  background-image: url("../public/assets/mesh-241.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
