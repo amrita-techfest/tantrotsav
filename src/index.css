@@ -14,7 +14,7 @@
 }
 #scrollbar5::-webkit-scrollbar {
   background-color: #000;
-  width: 12px;
+  width: 8px;
   border-radius: 10px;
 }
 
@@ -39,12 +39,124 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+  height: 100%;
+  max-width: 100%;
+}
 .hero {
+  background: hsla(172, 100%, 16%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(172, 100%, 16%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(172, 100%, 16%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(172, 100%, 16%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#005348", endColorstr="#000000", GradientType=1 );
   /* background-image: url("../public/assets/bg.jpg");
   background-size: cover;
   margin-left: 0;
   background-position: center;
   background-repeat: no-repeat; */
+
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+}
+
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+}
+
+.bubbles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+.custom {
+  background: #000;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 3em;
+  }
+  .intro {
+    flex-direction: column-reverse;
+  }
+  .svg-sec {
+    width: 300px;
+    z-index: 10;
+    position: relative;
+    margin-top: 0.1em;
+  }
+  .hum {
+    z-index: 100000000000;
+  }
+  .mob-nav {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    padding: 40px;
+    backdrop-filter: blur(30px);
+    background: rgba(0, 0, 0, 0.7);
+
+    z-index: 100;
+  }
+  .img-h {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) {
+  .img-h {
+    width: 100px;
+  }
 }

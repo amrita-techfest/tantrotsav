@@ -4,9 +4,9 @@ import "../index.css";
 const TopContent = () => {
   return (
     <div className="hero">
-      <div className=" z-50 flex justify-between items-center mt-[-70px] h-full w-full p-[50px]">
+      <div className="intro z-50 flex justify-between items-center mt-[-70px] h-full w-full p-[140px]">
         <div className="flex-1">
-          <h1 className="text-[#ff00bb] tracking-[3px] text-[50px] p-3 font-bold">
+          <h1 className="title-text text-[#ff00bb] tracking-[3px] text-[50px] p-3 font-bold">
             Tantrotsav'23
           </h1>
           <h1 className="text-white text-[20px] p-3">
@@ -22,17 +22,15 @@ const TopContent = () => {
             Explore
           </button>
         </div>
-        <div className="">
+        <div className="svg-sec">
           <img
-            className=" h-[470px]"
+            className="img-h"
             src="https://tri-nit.com/landing_page_vector.svg"
           />
         </div>
       </div>
-    </div> 
-  )
-}
-    
-
+    </div>
+  );
+};
 
 export default TopContent;
