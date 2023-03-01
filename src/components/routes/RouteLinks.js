@@ -10,7 +10,7 @@ const RouteLinks = () => {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsIndex />} />
-        <Route path="/singleDeatils" element={<Main />} />
+        {/* <Route path="/singleDeatils" element={<Main />} /> */}
     </Routes>
   )
 }
