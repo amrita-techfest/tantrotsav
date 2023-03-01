@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import Main from "../events/main.js";
 import EventsIndex from "../events/index/index.js";
 import Home from "../Home";
 

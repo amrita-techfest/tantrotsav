@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../index.css";
 import { BrowserRouter as Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink as HLink } from "react-router-hash-link";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -55,9 +55,9 @@ function Navbar() {
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
               {links.map((link) => (
                 <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-                  <Link smooth to={link[1]}>
+                  <HLink smooth to={link[1]}>
                     {link[0]}
-                  </Link>
+                  </HLink>
                 </li>
               ))}
             </ul>
@@ -72,9 +72,9 @@ function Navbar() {
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             {links.map((link) => (
               <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] hover:font-bold">
-                <Link smooth to={link[1]}>
+                <HLink smooth to={link[1]}>
                   {link[0]}
-                </Link>
+                </HLink>
               </li>
             ))}
           </ul>
