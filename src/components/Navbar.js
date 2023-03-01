@@ -10,13 +10,12 @@ function Navbar() {
     "About",
     "Events",
     "Prizes & Opportunities",
-    "Sponsors",
     "FAQ",
     "Contact",
   ];
   return (
     <>
-      <div className="sticky top-0 z-50 flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200">
+      <div className="sticky top-0 z-50 flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent">
         {!isOpen && (
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: -400 }}

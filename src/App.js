@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App scrollbar" id="scrollbar5">
+    <div className="App  scrollbar" id="scrollbar5">
       <Router>
         <NavBar />
         {/* <Events /> */}

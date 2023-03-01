@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const TopContent = () => {
   return (
-    <div className="hero">
+    <div className="hero ">
       <div className="intro z-50 flex justify-between items-center mt-[-70px] h-full w-full p-[140px]">
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
@@ -21,7 +21,7 @@ const TopContent = () => {
           <p className="hero-p p-3 text-[16px] mt-[-10px] text-white tracking-wide">
             Welcome to Tantrotsav'23, the National Techfest of Amrita Vishwa
             Vidyapeetham, Chennai. We are glad to announce that Tantrotsav'23
-            will be held from 26rd to 27th March 2023. We invite you to be a
+            will be held from 26th to 27th March 2023. We invite you to be a
             part of this event and make it a grand success.
           </p>
           <button className="border-2 border-[#ff00b3] text-white transition duration-500 hover:bg-[#ff00b3] text-[16px] p-2 m-3 rounded-[5px] w-[130px]">
