@@ -17,16 +17,7 @@ function App() {
         <RouteLinks />
 
       </Router>
-import Footer from "./components/Footer";
-function App() {
-  return (
-    <div className="App h-screen">
-      <NavBar />
-      {/* <Events /> */}
-      <TopContent />
-      <Events />
-      <Footer />
-    </div>
+</div>
   );
 }
 
