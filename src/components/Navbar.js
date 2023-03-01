@@ -1,17 +1,19 @@
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
 import "../index.css";
+import { BrowserRouter as Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    "Home",
-    "About",
-    "Events",
-    "Prizes & Opportunities",
-    "FAQ",
-    "Contact",
+    { name: "Home", link: "/" },
+    { name: "About", link: "/" },
+    { name: "Events", link: "/events" },
+    { name: "Prizes", link: "/prizes" },
+    { name: "Sponsors", link: "/sponsors" },
+    { name: "FAQ", link: "/" },
+    { name: "Contact", link: "/" },
   ];
   return (
     <>
@@ -22,7 +24,13 @@ function Navbar() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2 }}
           >
-            <h1 className=" text-white font-bold text-[35px]">TechFest</h1>
+            <div className="flex">
+              <img
+                className="h-20 logo"
+                src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
+                alt="logo"
+              />
+            </div>
           </motion.div>
         )}
         <div className="md:hidden hum">
