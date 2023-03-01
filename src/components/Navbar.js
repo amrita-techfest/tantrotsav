@@ -3,17 +3,17 @@ import React, { useState } from "react";
 import "../index.css";
 import { BrowserRouter as Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { HashLink as HLink } from "react-router-hash-link";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Events", link: "/events" },
-    { name: "Prizes", link: "/prizes" },
-    { name: "Sponsors", link: "/sponsors" },
-    { name: "FAQ", link: "/" },
-    { name: "Contact", link: "/" },
+    ["Home", "/"],
+    ["About", "#about"],
+    ["Events", "#events"],
+    ["Prizes & Opportunity", "#prizes"],
+    ["FAQ", "#faq"],
+    ["Contact", "#contact"],
   ];
   return (
     <>
@@ -55,7 +55,9 @@ function Navbar() {
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
               {links.map((link) => (
                 <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
-                  {link}
+                  <HLink smooth to={link[1]}>
+                    {link[0]}
+                  </HLink>
                 </li>
               ))}
             </ul>
@@ -70,7 +72,9 @@ function Navbar() {
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             {links.map((link) => (
               <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] hover:font-bold">
-                {link}
+                <HLink smooth to={link[1]}>
+                  {link[0]}
+                </HLink>
               </li>
             ))}
           </ul>
