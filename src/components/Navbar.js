@@ -1,14 +1,13 @@
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
 import "../index.css";
-import { BrowserRouter as Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HashLink as HLink } from "react-router-hash-link";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    ["Home", "/"],
+    ["Home", "#hero"],
     ["About", "#about"],
     ["Events", "#events"],
     ["Prizes & Opportunity", "#prizes"],
@@ -54,7 +53,7 @@ function Navbar() {
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
               {links.map((link) => (
-                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] ">
+                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] ">
                   <HLink smooth to={link[1]}>
                     {link[0]}
                   </HLink>
@@ -71,7 +70,7 @@ function Navbar() {
         >
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             {links.map((link) => (
-              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#f51bbb] hover:font-bold">
+              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] hover:font-bold">
                 <HLink smooth to={link[1]}>
                   {link[0]}
                 </HLink>
