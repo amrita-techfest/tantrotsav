@@ -2,8 +2,18 @@ import React from 'react';
 // import Workshop from "./workshop.js"
 import './main.css';
 import { event } from '../../../data/data';
+import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+
 
 function EventsIndex() {
+
+    const navigate = useNavigate();
+    const viewDetails = (name) => {
+
+    }
+
+
     return (
       <div className="main1">
           
@@ -14,7 +24,7 @@ function EventsIndex() {
                             <div className='container12'>
                                 {det.gameDetails.map(
                                     (details) => {
-                                        console.log(details.length)
+                                        
                                         return (
                                             <div className='card'>
                                             {/* <div className='lines'></div> */}
@@ -26,11 +36,11 @@ function EventsIndex() {
                                                         <h2>{details.name}</h2>
                                                         <h3>{details.about}</h3>
                                                         <p>Mode - {details.mode}</p>
-                                                        <a href='/'>
+                                                        <Link to={`/event-details${details.link}`}>
                                                             <button className='bg-[blue] text-white p-3 rounded-[5px] m-3'>
                                                                 Read More
                                                             </button>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div> 

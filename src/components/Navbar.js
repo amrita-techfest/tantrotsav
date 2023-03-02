@@ -10,7 +10,7 @@ function Navbar() {
   const links = [
     ["Home", "/"],
     ["About", "#about"],
-    ["Events", "#events"],
+    ["Events", "/events"],
     ["Prizes & Opportunity", "#prizes"],
     ["FAQ", "#faq"],
     ["Contact", "#contact"],

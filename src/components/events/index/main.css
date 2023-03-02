@@ -26,9 +26,9 @@
     gap: 150px;
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     
-}
+} */
 
 .card {
     position: relative;
