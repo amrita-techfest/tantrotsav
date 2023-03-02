@@ -1,29 +1,31 @@
 import { width } from '@mui/system';
 import React from 'react';
-import './singleDeatils.css';
+import './eventDetails.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import { useParams } from 'react-router-dom';
 
 
-
-function singleDeatils() {
+function EventDetails() {
+  let params = useParams();
   return (
     <div className='deatails'>
-      <div className='image'>
+      <h1>Name - {params.link}</h1>
+      {/* <div className='image'>
         <img src='../assets/google.jpg'/>
         <button className="border-2 border-[#ff00b3] text-white transition duration-500 hover:bg-[#ff00b3] text-[16px] p-2 m-3 rounded-[5px] w-[130px]">
             Register
           </button>
-      </div>
-      <Card sx={{maxWidth:600}}>
+      </div> */}
+      {/* <Card sx={{maxWidth:600}}>
       <CardActionArea>
         <CardContent>
        
       <div className='content-1'>
-        <h1>Google cloud</h1>
+        <h1>Google cloud</h1> */}
         {/* <p>Team size: 1-2
           Event type: Offline 
           Event 1: Map creation
@@ -35,7 +37,7 @@ Event 2: Character Creation
 Timing: 23/03/23: 1.00 pm to 5.00pm
 •	This event will be about creating a 3D character on the platform called blender.
 •	Blender is a beginner tool for creations of characters, game assets, etc.."</p> */}
-        <p>Grow in-demand skills in emerging cloud technologies with experts from Google Cloud</p>
+        {/* <p>Grow in-demand skills in emerging cloud technologies with experts from Google Cloud</p>
         <br></br>
         <p>INR 500</p>
 
@@ -74,9 +76,9 @@ Timing: 23/03/23: 1.00 pm to 5.00pm
 
         </CardContent>
       </CardActionArea>
-    </Card>
+    </Card> */}
     </div>
   );
 }
 
-export default singleDeatils;
+export default EventDetails;
