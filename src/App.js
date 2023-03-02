@@ -1,5 +1,4 @@
 import React from "react";
-
 import NavBar from "./components/Navbar";
 import RouteLinks from "./components/routes/RouteLinks";
 
@@ -12,7 +11,6 @@ function App() {
     <div className="App  scrollbar" id="scrollbar5">
       <Router>
         <NavBar />
-        {/* <Events /> */}
         <RouteLinks />
       </Router>
 </div>
