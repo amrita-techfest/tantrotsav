@@ -87,7 +87,7 @@ img {
 
 @media (max-width: 768px) {
   .title-text {
-    font-size: 3em;
+    font-size: 1em;
   }
   .intro {
     flex-direction: column-reverse;
@@ -109,7 +109,7 @@ img {
     right: 0;
     padding: 40px;
     backdrop-filter: blur(30px);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
 
     z-index: 100;
   }
@@ -121,6 +121,10 @@ img {
     width: 85%;
     object-fit: contain;
   }
+  .btns {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 767px) {
@@ -129,7 +133,10 @@ img {
     margin-left: 50px;
   }
   .title-text {
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+  .hero-p {
+    font-size: 1.2em;
   }
   .intro {
     padding: 120px;
@@ -137,7 +144,55 @@ img {
   .hero-head {
     font-size: 18px;
   }
+  .about-h {
+    display: flex;
+    flex-direction: column;
+  }
 }
+@media (min-width: 1340px) {
+  #title {
+    font-size: 3.2em;
+  }
+  .logo {
+    width: 80%;
+  }
+  #about-h {
+    display: flex;
+    padding: 200px;
+    margin-top: -100px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #clg {
+    height: 400px;
+    width: 3000px;
+  }
+  .about-p {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 376px) {
+  .title-text {
+    font-size: 2.5em;
+  }
+  .about-h {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about {
+    padding: 20px;
+  }
+  .about-p {
+    text-align: justify;
+    margin-top: 30px;
+  }
+  .clg {
+    height: 150px;
+  }
+}
+
 @media (max-width: 375px) {
   .img-h {
     width: 450px;
@@ -151,6 +206,43 @@ img {
   .intro {
     padding: 80px;
   }
+  .about-h {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about {
+    padding: 20px;
+  }
+  .about-p {
+    text-align: start;
+    margin-top: 30px;
+  }
+  .clg {
+    height: 150px;
+  }
+  #hero-p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1301px) {
+  #hero-p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 706px) {
+  .clg {
+    height: 300px;
+  }
+}
+
+@media (min-width: 575px) {
+  .intro {
+    padding: 90px;
+  }
+  .hero {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 1169px) {
@@ -158,7 +250,7 @@ img {
     height: 100vh;
   }
 }
-.hero-p {
+#hero-p {
   text-align: justify;
 }
 
@@ -193,12 +285,11 @@ img {
   }
 }
 
-.title-text {
-  font-size: 3.5em;
-}
-
 .hero-head {
-  font-size: 1.3em;
+  font-size: 1.5em;
+}
+.hero-p {
+  font-size: 1em;
 }
 
 html {
