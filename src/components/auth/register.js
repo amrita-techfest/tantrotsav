@@ -2,14 +2,28 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import './design.css'
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
+
 export default function TextFieldSizes() {
+    const [events, setEvents] = React.useState('');
+  const handleChange = (event) => {
+    setEvents(event.target.value);
+  };
+  const [gender, setGender] = React.useState('');
+  const handleChanges = (gen) => {
+    setGender(gen.target.value);
+  };
   return (
     <div className='forms h-screen'>
     <div className='cardRegister'>
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 2, width: '25ch' },
+        '& .MuiTextField-root': { m: 2, width: '30ch' },
       }}
       
      
@@ -30,6 +44,33 @@ export default function TextFieldSizes() {
         
       </div>
       <div>
+      <FormControl sx={{ m: 2, minWidth: 120 }} size="small">
+      <InputLabel id="demo-select-small">Events</InputLabel>
+      <Select
+        labelId="demo-select-small"
+        id="demo-select-small"
+        value={events}
+        label="Events"
+        onChange={handleChange}
+      >
+        <MenuItem value="">
+          <em>None</em>
+        </MenuItem>
+        <MenuItem value={10}>Strigrays League - Gaming Jam</MenuItem>
+        <MenuItem value={20}>Battle Of The Ice - Gaming Tournment</MenuItem>
+        <MenuItem value={30}>Zh3r0-Capture the Flag</MenuItem>
+        <MenuItem value={40}>Platonic</MenuItem>
+        <MenuItem value={50}>Bidders Coding Camp</MenuItem>
+        <MenuItem value={60}>BotBattleBash B3</MenuItem>
+        <MenuItem value={80}>ML-XLR8</MenuItem>
+        <MenuItem value={90}>AI Escape Room</MenuItem>
+        <MenuItem value={100}>Colay</MenuItem>
+        <MenuItem value={110}>Dare To be Different (Ideathon)</MenuItem>
+        <MenuItem value={110}>Forensics Investigation Challenges</MenuItem>
+      </Select>
+    </FormControl>
+      </div>
+            <div>
       <TextField
           label="Phone Number"
           id="outlined-size-small"
@@ -47,15 +88,25 @@ export default function TextFieldSizes() {
           id="outlined-size-small"
           size="small"
         /> 
-        <TextField
+        <FormControl sx={{ m: 2, minWidth:150 }} size="small">
+      <InputLabel id="demo-select-small">Gender</InputLabel>
+      <Select
+        labelId="demo-select-small"
+        id="demo-select-small"
+        value={gender}
         label="Gender"
-        id="outlined-size-small"
-
-        size="small"
-      />
+        onChange={handleChanges}
+      >
+        <MenuItem value="">
+          <em>None</em>
+        </MenuItem>
+        <MenuItem value={10}>Male</MenuItem>
+        <MenuItem value={20}>Female</MenuItem>
+      </Select>
+    </FormControl>
       </div>
-      <div>
-      <button className="border-2 border-[#ff00b3] text-black transition duration-500 hover:bg-[#ff00b3] text-[16px] p-2 m-3 rounded-[5px] w-[130px]">
+      <div className='flex flex-col items-center justify-center'>
+      <button className="border-2 border-[#ff00b3] text-black transition  duration-500 hover:bg-[#ff00b3] text-[16px] p-2 m-3 rounded-[5px] w-[130px]">
             Register
           </button>
 
