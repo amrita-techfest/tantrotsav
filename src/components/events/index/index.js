@@ -2,19 +2,23 @@ import React from "react";
 // import Workshop from "./workshop.js"
 import "./main.css";
 import { event } from "../../../data/data";
+import { Link } from "react-router-dom";
 
 function EventsIndex() {
   return (
-    <div className="main1">
+    <>
       {event.map((det) => {
         return (
           <>
+          <div className="m-4">
+            <h1 className="text-white text-center p-3 text-[35px]">{det.category}</h1>
+          </div>
+          <div className="main1">
             <div className="container12">
               {det.gameDetails.map((details) => {
                 console.log(details.length);
                 return (
                   <div className="card">
-                    {/* <div className='lines'></div> */}
                     <div className="imgBox">
                       {/* <img src='images/technical.jpg' alt='tech photo' /> */}
                     </div>
@@ -23,21 +27,23 @@ function EventsIndex() {
                         <h2>{details.name}</h2>
                         <h3>{details.about}</h3>
                         <p>Mode - {details.mode}</p>
-                        <a href="/">
+                        <Link to="/events/details" state={{data : details}}>
                           <button className="bg-[blue] text-white p-3 rounded-[5px] m-3">
                             Read More
                           </button>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 );
               })}
             </div>
+          </div>
           </>
         );
       })}
-    </div>
+      </>
+    
   );
 }
 

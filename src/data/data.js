@@ -71,18 +71,18 @@ export const event = [
                 }
             ]
         },
-        // {
-        //     category:'Workshops',
-        //     gameDetails: [
+        {
+            category:'Workshops',
+            gameDetails: [
 
-        //     ]
-        // },
-        // {
-        //     category:'Exhibitions',
-        //     gameDetails : [
+            ]
+        },
+        {
+            category:'Exhibitions',
+            gameDetails : [
 
-        //     ]
-        // }
+            ]
+        }
 ];
 
 export const cardContents = [
