@@ -7,9 +7,9 @@ import { HashLink as HLink } from "react-router-hash-link";
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    ["Home", "#hero"],
+    ["Home", "/"],
     ["About", "#about"],
-    ["Events", "#events"],
+    ["Events", "/events"],
     ["Prizes & Opportunity", "#prizes"],
     ["FAQ", "#faq"],
     ["Contact", "#contact"],
