@@ -3,7 +3,8 @@ import NavBar from "./components/Navbar";
 import RouteLinks from "./components/routes/RouteLinks";
 
 import "./index.css";
-import { BrowserRouter as Router,  } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+
 // import Home from "./components/Home";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <NavBar />
         <RouteLinks />
       </Router>
-</div>
+    </div>
   );
 }
 
