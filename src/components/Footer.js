@@ -3,22 +3,22 @@ import React from 'react';
 const Footer =() =>{
     return(
         <footer>
-        <div class="container">
+        <div class="container-fluid">
         <div className='box'><a href='#'><img src ="./images/logo1.png " class="img-fluid"></img></a></div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <a href='#'><h3>About Us</h3></a>
                     <a href="#"><h3> Official website</h3></a>
                     <a href='#'><h3>Queries</h3></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h3>Contact</h3>
                     <ul>
                         <li>Phone: 555-555-5555</li>
                         <li>Email: info@example.com</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h3 class ="he">Follow Us</h3>
                     <ul class="social-icons">
                         <li><div class ="hel"><a href="#"><span class="fa fa-facebook"></span></a></div></li>
