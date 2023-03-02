@@ -20,6 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';import Avatar from '@mui
 import Stack from '@mui/material/Stack';
 import EventIcon from '@mui/icons-material/Event';
 import LogoutIcon from '@mui/icons-material/Logout';
+// import './dash.css'
 
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MailIcon from '@mui/icons-material/Mail';
@@ -87,6 +88,8 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
+    <div className='userboard h-screen'>
+
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
@@ -160,5 +163,7 @@ export default function PersistentDrawerLeft() {
         <DrawerHeader />    
       </Main>
     </Box>
+    </div>
+
   );
 }
