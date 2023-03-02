@@ -15,9 +15,9 @@ function About() {
       </motion.h1>
       <div id="about-h" className="about-h flex items-center justify-around">
         <motion.div
-          initial={{ opacity: 0, scale: 0.5, y: -400 }}
+          initial={{ opacity: 0, scale: 0.5, x: -600 }}
           transition={{ duration: 1.2 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
           className=""
         >
           <img
@@ -28,9 +28,9 @@ function About() {
           />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.5, y: -400 }}
+          initial={{ opacity: 0, scale: 0.5, x: 100 }}
           transition={{ duration: 1.2 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
           className="about-p text-white text-justify"
         >
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
