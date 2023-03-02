@@ -29,16 +29,18 @@ const TopContent = () => {
             will be held from 26th to 27th March 2023. We invite you to be a
             part of this event and make it a grand success.
           </h1>
-          <HLink smooth to="#about">
-            <button className="border-2 border-[#0dff00] text-white transition duration-500 hover:bg-[#0dff00] text-[16px] hover:text-black hover:font-bold p-2 m-3 rounded-[5px] w-[130px]">
-              Explore
-            </button>
-          </HLink>
-          <Link to="/register">
-            <button className="border-2 border-[#0dff00] transition duration-500 hover:bg-transparent bg-[#0dff00] text-[16px] hover:text-white text-black font-bold hover:font-normal p-2 m-3 rounded-[5px] w-[130px]">
-              Register Now
-            </button>
-          </Link>
+          <div className="btns">
+            <HLink smooth to="#about">
+              <button className="border-2 border-[#0dff00] text-white transition duration-500 hover:bg-[#0dff00] text-[16px] hover:text-black hover:font-bold p-2 m-3 rounded-[5px] w-[130px]">
+                Explore
+              </button>
+            </HLink>
+            <Link to="/register">
+              <button className="border-2 border-[#0dff00] transition duration-500 hover:bg-transparent bg-[#0dff00] text-[16px] hover:text-white text-black font-bold hover:font-normal p-2 m-3 rounded-[5px] w-[130px]">
+                Register Now
+              </button>
+            </Link>
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}

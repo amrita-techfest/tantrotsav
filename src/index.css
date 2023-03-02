@@ -121,6 +121,10 @@ img {
     width: 85%;
     object-fit: contain;
   }
+  .btns {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 767px) {
