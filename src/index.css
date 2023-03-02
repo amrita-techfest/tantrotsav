@@ -67,7 +67,24 @@ img {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#005348", endColorstr="#000000", GradientType=1 );
   width: 100%;
 }
-
+#btn1 {
+  color: white;
+}
+#btn1:hover {
+  color: black;
+}
+#btn2 {
+  color: black;
+}
+#btn2:hover {
+  color: white;
+}
+#lin {
+  color: white;
+}
+#lin:hover {
+  color: #0dff00;
+}
 .container {
   position: relative;
   width: 100%;
@@ -301,4 +318,8 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+a {
+  text-decoration: none !important;
 }

@@ -31,12 +31,18 @@ const TopContent = () => {
           </h1>
           <div className="btns">
             <HLink smooth to="#about">
-              <button className="border-2 border-[#0dff00] text-white transition duration-500 hover:bg-[#0dff00] text-[16px] hover:text-black hover:font-bold p-2 m-3 rounded-[5px] w-[130px]">
+              <button
+                id="btn1"
+                className="border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 m-3 rounded-[5px] w-[130px]"
+              >
                 Explore
               </button>
             </HLink>
             <Link to="/register">
-              <button className="border-2 border-[#0dff00] transition duration-500 hover:bg-transparent bg-[#0dff00] text-[16px] hover:text-white text-black font-bold hover:font-normal p-2 m-3 rounded-[5px] w-[130px]">
+              <button
+                id="btn2"
+                className="border-2 border-[#0dff00] transition duration-500 hover:bg-transparent bg-[#0dff00] text-[16px]  hover:text-white font-bold hover:font-normal p-2 m-3 rounded-[5px] w-[130px]"
+              >
                 Register Now
               </button>
             </Link>

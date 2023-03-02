@@ -7,8 +7,8 @@ import { HashLink as HLink } from "react-router-hash-link";
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const links = [
-    ["Home", "/"],
-    ["About", "#about"],
+    ["Home", "/#hero"],
+    ["About", "/#about"],
     ["Events", "/events"],
     ["Prizes & Opportunity", "#prizes"],
     ["FAQ", "#faq"],
@@ -16,7 +16,7 @@ function Navbar() {
   ];
   return (
     <>
-      <div className="sticky top-0 z-50 flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent">
+      <div className="sticky top-0 z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent">
         {!isOpen && (
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: -400 }}
@@ -53,7 +53,10 @@ function Navbar() {
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
               {links.map((link) => (
-                <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] ">
+                <li
+                  id="lin"
+                  className="font-bold cursor-pointer transition duration-500 "
+                >
                   <HLink smooth to={link[1]}>
                     {link[0]}
                   </HLink>
@@ -70,7 +73,10 @@ function Navbar() {
         >
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
             {links.map((link) => (
-              <li className="font-bold cursor-pointer transition duration-500 hover:text-[#0dff00] hover:font-bold">
+              <li
+                id="lin"
+                className="font-bold cursor-pointer transition duration-500 hover:font-bold"
+              >
                 <HLink smooth to={link[1]}>
                   {link[0]}
                 </HLink>
