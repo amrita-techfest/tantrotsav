@@ -11,63 +11,12 @@ import Select from '@mui/material/Select';
 export default function TextFieldSizes() {
   const [events, setEvents] = React.useState("");
   const handleChange = (event) => {
-    var x = flags
-            delete x.events
-            setFlags(x)
     setEvents(event.target.value);
   };
   const [gender, setGender] = React.useState('');
   const handleChanges = (gen) => {
-    var x = flags
-            delete x.gender
-            setFlags(x)
     setGender(gen.target.value);
   };
-  const [flags,setFlags] = React.useState({})
-
-
-
-  const ClearForms = () => {
-    setEmail("")
-    setPhone("")
-    setGender('')
-    setName("")
-    setCity("")
-    setEvents('')
-    setCollegeName("")
-    setFlags({})
-  }
-
-  const submit = async () => {
-     await setDoc(doc(db,"userinfo",email),{
-      email,name,gender,phone,city,collegeName,
-      events: arrayUnion(events)
-     },
-     { merge: true }
-     )
-     console.log("submit")
-     ClearForms()
-  }
-
-  const register = (evt,params) => {
-    var value = validator(params)
-    
-    console.log(Object.keys(value))
-    if (Object.keys(value).length == 0){
-      console.log("ok")
-      submit()
-      
-    }
-    else{
-      evt.preventDefault();
-      console.log(value)
-      setFlags(value)
-    }
-  }
-
-  React.useEffect(() => {},[flags])
-
-
   return (
     <div className='forms h-screen'>
     <div className='cardRegister'>
