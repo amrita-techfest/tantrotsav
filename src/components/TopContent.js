@@ -5,7 +5,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const TopContent = () => {
   return (
-    <div className="hero ">
+    <div className="hero " id="hero">
       <div className="intro z-50 flex justify-between items-center mt-[-70px] h-full w-full p-[140px]">
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}

@@ -87,7 +87,7 @@ img {
 
 @media (max-width: 768px) {
   .title-text {
-    font-size: 3em;
+    font-size: 1em;
   }
   .intro {
     flex-direction: column-reverse;
@@ -129,7 +129,7 @@ img {
     margin-left: 50px;
   }
   .title-text {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .intro {
     padding: 120px;
@@ -137,19 +137,43 @@ img {
   .hero-head {
     font-size: 18px;
   }
+  .about-h {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 375px) {
   .img-h {
     width: 450px;
   }
   .title-text {
-    font-size: 2.2em;
+    font-size: 1em;
   }
   .hero-head {
     text-align: center;
   }
   .intro {
     padding: 80px;
+  }
+  .about-h {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about {
+    padding: 20px;
+  }
+  .about-p {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 575px) {
+  .intro {
+    padding: 90px;
+  }
+  .hero {
+    height: 100vh;
   }
 }
 
@@ -194,11 +218,14 @@ img {
 }
 
 .title-text {
-  font-size: 3.5em;
+  font-size: 2.7em;
 }
 
 .hero-head {
-  font-size: 1.3em;
+  font-size: 1.5em;
+}
+.hero-p {
+  font-size: 1em;
 }
 
 html {
