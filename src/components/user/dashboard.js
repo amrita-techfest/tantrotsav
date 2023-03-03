@@ -21,12 +21,12 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import EventIcon from '@mui/icons-material/Event';
 import LogoutIcon from '@mui/icons-material/Logout';
-// import './dash.css'
+import './dash.css'
 
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MailIcon from '@mui/icons-material/Mail';
 import { red } from '@mui/material/colors';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 
 const drawerWidth = 240;
@@ -79,6 +79,8 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 export default function PersistentDrawerLeft() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
+
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -134,16 +136,28 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Registed events', 'Profile'].map((text, index) => (
-            <ListItem key={text} disablePadding>
+        <ListItem  disablePadding sx={{display:"block"}} onClick={()=>{navigate("/registedEvents")}}>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 3 === 0 ? <PersonOutlineIcon /> : <EventIcon/>}
+                  {<PersonOutlineIcon />}
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText primary="Registed Events" />
               </ListItemButton>
             </ListItem>
-          ))}
+        </List>
+        <List>
+          
+            <ListItem  disablePadding onClick={()=>{navigate("/profile")}}> 
+              <ListItemButton>
+                <ListItemIcon>
+              
+                  {<EventIcon/> }
+
+                </ListItemIcon>
+                <ListItemText primary="Profile"/>
+              </ListItemButton>
+            </ListItem>
+
         </List>
         <List>
           {['Logout'].map((text, index) => (

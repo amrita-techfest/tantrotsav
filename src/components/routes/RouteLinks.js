@@ -7,9 +7,12 @@ import Register from "../auth/register.js"
 
 
 import Dashboard from "../user/dashboard.js";
+import RegistedEvents from "../user/eventcard.js"
+import Profile from "../user/profile.js"
 
 import React from "react";
 import EventDetails from "../events/eventDetails/eventDetails.js";
+
 
 
 const RouteLinks = () => {
@@ -23,6 +26,8 @@ const RouteLinks = () => {
 
       <Route path="/Footer" element={<Footer />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/registedEvents" element={<RegistedEvents />} />
+      <Route path="/profile" element={<Profile />} />
     </Routes>
   );
 };
