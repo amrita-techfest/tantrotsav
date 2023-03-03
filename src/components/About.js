@@ -41,7 +41,7 @@ function About() {
           optio perspiciatis totam voluptate veniam doloremque, repellat
           numquam, obcaecati recusandae nihil consequuntur odio commodi esse cum
           nobis possimus fugit! Eveniet doloribus doloremque nostrum rem quae
-          placeat harum maiores optio ratione officia!
+          placeat harum maiores optio ratione official!
         </motion.div>
       </div>
       <h1>FAQ</h1>
