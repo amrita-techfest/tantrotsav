@@ -5,7 +5,7 @@ import Register from "../auth/register.js";
 import Footer from "../Footer";
 // import Register from "../auth/register.js"
 // import EventsIndex from "../events/index/index.js";
-import Register from "../auth/register.js"
+
 
 
 import Dashboard from "../user/dashboard.js";
