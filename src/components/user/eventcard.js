@@ -4,6 +4,9 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
+import Dashboard from "./dashboard.js"
+import './dash.css'
+
 
 const Img = styled('img')({
   margin: 'auto',
@@ -14,48 +17,52 @@ const Img = styled('img')({
 
 export default function ComplexGrid() {
   return (
+    <div className='history'>
+    <div>
+      <h1>Hello</h1>
+    </div>
     <Paper
       sx={{
         p: 2,
         margin: 'auto',
         maxWidth: 500,
         flexGrow: 1,
-        backgroundColor: (theme) =>
-          theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        
+        // backgroundColor: (theme) =>
+        //   theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
       }}
     >
-      <Grid container spacing={2}>
+      <Grid container spacing={2} >
         <Grid item>
           <ButtonBase sx={{ width: 128, height: 128 }}>
-            <Img alt="complex" src="/static/images/grid/complex.jpg" />
+            <Img alt="complex" src="../assets/google.jpg" />
           </ButtonBase>
         </Grid>
         <Grid item xs={12} sm container>
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
               <Typography gutterBottom variant="subtitle1" component="div">
-                Standard license
+                Event Name: Google cloud
               </Typography>
               <Typography variant="body2" gutterBottom>
-                Full resolution 1920x1080 • JPEG
+                
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                ID: 1030114
+                Registered day 
               </Typography>
-            </Grid>
-            <Grid item>
-              <Typography sx={{ cursor: 'pointer' }} variant="body2">
-                Remove
-              </Typography>
+            <Typography variant="subtitle1" component="div">
+              paid:  200
+            </Typography>
             </Grid>
           </Grid>
           <Grid item>
-            <Typography variant="subtitle1" component="div">
-              $19.00
-            </Typography>
-          </Grid>
+          </Grid> 
         </Grid>
       </Grid>
-    </Paper>
+    </Paper> 
+    <Dashboard />
+
+     </div>
+
   );
 }
