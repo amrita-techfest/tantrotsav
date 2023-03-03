@@ -77,7 +77,7 @@ function Navbar() {
                 id="lin"
                 className="font-bold cursor-pointer transition duration-500 hover:font-bold"
               >
-                <HLink smooth to={link[1]}>
+                <HLink className="hlink" smooth to={link[1]}>
                   {link[0]}
                 </HLink>
               </li>

@@ -44,6 +44,7 @@ function About() {
           placeat harum maiores optio ratione officia!
         </motion.div>
       </div>
+      <h1>FAQ</h1>
     </div>
   );
 }
