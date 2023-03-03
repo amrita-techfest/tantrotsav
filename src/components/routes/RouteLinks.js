@@ -7,7 +7,6 @@ import Footer from "../Footer";
 // import EventsIndex from "../events/index/index.js";
 
 
-
 import Dashboard from "../user/dashboard.js";
 import RegistedEvents from "../user/eventcard.js"
 import Profile from "../user/profile.js"
