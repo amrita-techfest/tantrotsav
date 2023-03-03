@@ -2,10 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import EventsIndex from "../events/index/index.js";
 import Home from "../Home";
 import Register from "../auth/register.js";
-import Footer from "../Footer";
-// import Register from "../auth/register.js"
-// import EventsIndex from "../events/index/index.js";
-import Register from "../auth/register.js"
 
 
 import Footer from "../Footer";
@@ -22,9 +18,9 @@ const RouteLinks = () => {
         <Route path="/events" element={<EventsIndex />} />
         <Route path="/register" element={<Register />} />
         <Route path="/Footer" element={<Footer />} />
-        <Route path="/events/details" element={<EventDetails />} />
+        <Route path="/events/:name" element={<EventDetails />} />
 
-      <Route path="/Footer" element={<Footer />} />
+      {/* <Route path="/Footer" element={<Footer />} /> */}
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   );

@@ -14,26 +14,20 @@ function EventDetails() {
   const location = useLocation();
   const data = location.state?.data;
 
+  console.log(data.team_size)
+
   return (
     <div className='details'>
       <div className='image'>
-        <img src='../assets/google.jpg'/>
+        <img src='../assets/google.jpg' className='event-image'/>
         <button className="border-2 border-[#ff00b3] text-white transition duration-500 hover:bg-[#ff00b3] text-[16px] p-2 m-3 rounded-[5px] w-[130px]">
             Register
         </button>
       </div>
-      <Card sx={{maxWidth:600}}>
-        <CardActionArea>
-          <CardContent>
-              <div className='content-1'>
-                <h1 className='text-[20px] font-bold text-center p-4'>{data.name}</h1>
-                  <div className='data'>
-                    
-                  </div>
-              </div>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+      <div className='p-3'>
+          <h1 className='p-2 text-[30px] tracking-[1px] text-center text-[#0dff00]'>{data.name}</h1>
+          <p className='p-2 text-[20px] text-white'>Team Size - {data.team_size}</p>
+      </div>
     </div>
   );
 }

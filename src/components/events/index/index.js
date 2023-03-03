@@ -27,7 +27,7 @@ function EventsIndex() {
                         <h2>{details.name}</h2>
                         <h3>{details.about}</h3>
                         <p>Mode - {details.mode}</p>
-                        <Link to="/events/details" state={{data : details}}>
+                        <Link to={`/events${details.link}`} state={{data : details}}>
                           <button className="bg-[blue] text-white p-3 rounded-[5px] m-3">
                             Read More
                           </button>
