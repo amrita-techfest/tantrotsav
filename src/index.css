@@ -166,6 +166,9 @@ img {
     flex-direction: column;
   }
 }
+.hlink:hover {
+  color: #0dff00;
+}
 @media (min-width: 1340px) {
   #title {
     font-size: 3.2em;
@@ -183,7 +186,8 @@ img {
   }
   #clg {
     height: 400px;
-    width: 3000px;
+    width: 4800px;
+    margin-left: -100px;
   }
   .about-p {
     margin-left: 30px;
