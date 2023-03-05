@@ -11,10 +11,8 @@ function About() {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         className=" text-center font-bold text-white text-[40px]"
       >
-        <br />
         ABOUT US
       </motion.h1>
-      <br />
       <div id="about-h" className="about-h flex items-center justify-around">
         <motion.div
           initial={{ opacity: 0, scale: 0.5, x: -600 }}
@@ -22,14 +20,12 @@ function About() {
           animate={{ opacity: 1, scale: 1, x: 0 }}
           className=""
         >
-          <div className="abt-1 w-500px h-500px float:left padding:20px background:black">
-            <img
-              id="clg"
-              className=" clg rounded-lg w-100 h-80 float:left display:flex"
-              src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2019/06/amrita-vishwa-vidyapeetham-chennaicampus-banner.jpg"
-              alt="image"
-            />
-          </div>
+          <img
+            id="clg"
+            className=" clg rounded-lg"
+            src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2019/06/amrita-vishwa-vidyapeetham-chennaicampus-banner.jpg"
+            alt="image"
+          />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5, x: 100 }}
@@ -41,7 +37,7 @@ function About() {
           optio perspiciatis totam voluptate veniam doloremque, repellat
           numquam, obcaecati recusandae nihil consequuntur odio commodi esse cum
           nobis possimus fugit! Eveniet doloribus doloremque nostrum rem quae
-          placeat harum maiores optio ratione officia!
+          placeat harum maiores optio ratione official!
         </motion.div>
       </div>
     </div>

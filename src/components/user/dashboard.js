@@ -26,7 +26,8 @@ import './dash.css'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MailIcon from '@mui/icons-material/Mail';
 import { red } from '@mui/material/colors';
-import { Link,useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const drawerWidth = 240;
