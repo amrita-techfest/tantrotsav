@@ -5,7 +5,24 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* .slick-slide {
+  background: #ffffff ;
+  margin: 1rem auto;
+  display: flex;
+  margin-right: 0;
+  height: fit-content;
+  width: fit-content;
+} */
 
+/* .slick-track{
+  background: #ffffff;
+
+} */
+/* .slick-list {
+  height: 570px;
+  margin-top: 0;
+  margin-right: 0;
+} */
 .scrollbar {
   height: 100vh;
   overflow-y: scroll;
@@ -28,8 +45,8 @@
     linear,
     left bottom,
     left top,
-    color-stop(0.5, #a520ca),
-    color-stop(1, #2681cc)
+    color-stop(0.5, #00ff00),
+    color-stop(1, #fbff00)
   );
   border-radius: 10px;
 }

@@ -7,7 +7,7 @@ import Home from "../Home";
 import Register from "../auth/register.js";
 
 import Footer from "../Footer";
-
+import Game from "../Game";
 import React from "react";
 
 const RouteLinks = ({ isOpen }) => {
@@ -17,6 +17,7 @@ const RouteLinks = ({ isOpen }) => {
       <Route path="/events" element={<EventsIndex />} />
       <Route path="/register" element={<Register />} />
       <Route path="/Footer" element={<Footer />} />
+      <Route path="/Game" element={<Game />} />
     </Routes>
   );
 };
