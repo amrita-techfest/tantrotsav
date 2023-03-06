@@ -22,10 +22,10 @@ const RouteLinks = () => {
         <Route path="/Footer" element={<Footer />} />
         <Route path="/events/:details" element={<EventDetails />} />
 
-      <Route path="/Footer" element={<Footer />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/registedEvents" element={<RegistedEvents />} />
-      <Route path="/profile" element={<Profile />} />
+      <Route path='/Footer' element={<Footer />} />
+      <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/registedEvents' element={<RegistedEvents />} />
+      <Route path='/profile' element={<Profile />} />
     </Routes>
   );
 };
