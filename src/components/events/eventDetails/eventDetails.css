@@ -1,22 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
-
-.details{
+.eventDetails{
     display: flex;
     flex-direction:row;
     justify-content:center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background: black;
+
+    /* background: hsla(172, 100%, 16%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(172, 100%, 16%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(172, 100%, 16%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(172, 100%, 16%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#005348", endColorstr="#000000", GradientType=1 ); */
+  width: 100%;
 }
 
-
-
-.image{
-    /* width: 40%; */
-    /* width: 300px; */
-    text-align: center;
-}
-.event-image{
-    width:25vw;
-    height:50vh;
-    align-items: center;
-}
+.event_name {
+    font-weight: bold;
+    text-shadow: 0 0 10px #09f905, 0 0 20px #31e340;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .event_name  {
+    transition: 0.5s ease-out;
+  }
+  
+  .event_name:hover  {
+    color: #fff;
+  }
