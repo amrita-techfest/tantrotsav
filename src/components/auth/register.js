@@ -60,7 +60,7 @@ export default function TextFieldSizes() {
 
   const register = (evt,params) => {
     var value = validator(params)
-    
+    evt.preventDefault();
     console.log(Object.keys(value))
     if (Object.keys(value).length == 0){
       console.log("ok")
@@ -68,7 +68,7 @@ export default function TextFieldSizes() {
       
     }
     else{
-      evt.preventDefault();
+      
       console.log(value)
       setFlags(value)
     }
@@ -131,18 +131,18 @@ export default function TextFieldSizes() {
         <MenuItem value="">
           <em>None</em>
         </MenuItem>
-        <MenuItem value={10}>Strigrays League - Gaming Jam</MenuItem>
-        <MenuItem value={20}>Battle Of The Ice - Gaming Tournment</MenuItem>
-        <MenuItem value={30}>Zh3r0-Capture the Flag</MenuItem>
-        <MenuItem value={40}>Platonic</MenuItem>
-        <MenuItem value={50}>Bidders Coding Camp</MenuItem>
-        <MenuItem value={60}>BotBattleBash B3</MenuItem>
-        <MenuItem value={80}>ML-XLR8</MenuItem>
-        <MenuItem value={90}>AI Escape Room</MenuItem>
-        <MenuItem value={100}>Colay</MenuItem>
-        <MenuItem value={110}>Dare To be Different (Ideathon)</MenuItem>
-        <MenuItem value={110}>Forensics Investigation Challenges</MenuItem>
-        <MenuItem value={120}>Forensics Investigation Challenges</MenuItem>
+        <MenuItem value={"Strigrays League - Gaming Jam"}>Strigrays League - Gaming Jam</MenuItem>
+        <MenuItem value={"Battle Of The Ice - Gaming Tournment"}>Battle Of The Ice - Gaming Tournment</MenuItem>
+        <MenuItem value={"Zh3r0-Capture the Flag"}>Zh3r0-Capture the Flag</MenuItem>
+        <MenuItem value={"Platonic"}>Platonic</MenuItem>
+        <MenuItem value={"Bidders Coding Camp"}>Bidders Coding Camp</MenuItem>
+        <MenuItem value={"BotBattleBash B3"}>BotBattleBash B3</MenuItem>
+        <MenuItem value={"ML-XLR8"}>ML-XLR8</MenuItem>
+        <MenuItem value={"AI Escape Room"}>AI Escape Room</MenuItem>
+        <MenuItem value={"Colay"}>Colay</MenuItem>
+        <MenuItem value={"Dare To be Different (Ideathon)"}>Dare To be Different (Ideathon)</MenuItem>
+        <MenuItem value={"Forensics Investigation Challenges"}>Forensics Investigation Challenges</MenuItem>
+        <MenuItem value={"120"}>Forensics Investigation Challenges</MenuItem>
       </Select>
     </FormControl>
     {flags?.events && <div style ={{margin:"0px 20px"}}><Box severity="error" sx = {{fontSize:10,color:"red",margin:0}} >{flags.events}</Box></div>}
@@ -198,8 +198,8 @@ export default function TextFieldSizes() {
         <MenuItem value="">
           <em>None</em>
         </MenuItem>
-        <MenuItem value={10}>Male</MenuItem>
-        <MenuItem value={20}>Female</MenuItem>
+        <MenuItem value={"M"}>Male</MenuItem>
+        <MenuItem value={"F"}>Female</MenuItem>
       </Select>
     </FormControl>
     {flags?.gender && <div style ={{margin:"0px 20px"}}><Box severity="error" sx = {{fontSize:10,color:"red",margin:0}} >{flags.gender}</Box></div>}

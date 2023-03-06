@@ -3,8 +3,6 @@ import EventsIndex from "../events/index/index.js";
 import Home from "../Home";
 import Register from "../auth/register.js";
 import Footer from "../Footer";
-import Register from "../auth/register.js"
-import EventsIndex from "../events/index/index.js";
 
 import Dashboard from "../user/dashboard.js";
 import RegistedEvents from "../user/eventcard.js";
