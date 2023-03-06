@@ -81,12 +81,12 @@ export const MyDocument = ({data=defaultData}) => (
             
         </View>
         <View style={{width:"100%",padding:10}}>
-            <Text style={{marginBottom:10}}>Events participated</Text>
+            <Text style={{marginBottom:10}}>Events participating</Text>
             {data.events.map((event,i) => (<View style={{padding:10, backgroundColor:i%2==0?"#B2D6F9":"#D7EAFC"}}><Text style={{fontSize:13}}>{i+1}. {event}</Text></View>))}
         </View>
         <View style={{position:"absolute",bottom:0,display:"flex",flexDirection:"row",justifyContent:"space-evenly",alignItems:"center",width:"100%",padding:10}}>
             <Text style={{fontSize:10}}>{"Amrita Vishwa Vidyapeetham\nChennai Campus,\n337/1A, Vengal Village,\nThiruvallur Taluk & District – 601 103.\nTamil Nadu, India\nPhone: 1 800 425 90009\nEmail: btech@amrita.edu"}</Text>
-            <Image style={{height:100,width:240}} src={Logo}/>
+            <Image style={{height:70,width:360}} src={Logo}/>
         </View>
     </Page>
   </Document>
