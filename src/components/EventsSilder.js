@@ -1,6 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
-import { HashLink, HashLink as HLink } from "react-router-hash-link";
+import { HashLink as HLink } from "react-router-hash-link";
 
 const Card = ({ title }) => {
   return (
