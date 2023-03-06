@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { Alert } from '@mui/material';
+import { Alert, IconButton } from '@mui/material';
 import './design.css'
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -11,9 +11,11 @@ import Select from '@mui/material/Select';
 import { validator } from './validator';
 import { db } from '../../firebase';
 import { doc, setDoc, arrayUnion } from 'firebase/firestore';
+import Multiselect from 'multiselect-react-dropdown';
+import { Add, RemoveCircleOutline } from '@mui/icons-material';
 
 export default function TextFieldSizes() {
-    const [events, setEvents] = React.useState('');
+  const [events, setEvents] = React.useState('');
   const handleChange = (event) => {
     var x = flags
             delete x.events
@@ -26,6 +28,11 @@ export default function TextFieldSizes() {
   const [collegeName, setCollegeName] = React.useState("")
   const [name, setName] = React.useState("")
   const [gender, setGender] = React.useState('');
+  const [selectedOptions , setSelections] = React.useState('');
+  const [totalFee , setTotalFee] = React.useState(0);
+  const [inputList, setInputList] = React.useState([{ name:'' }]);
+
+
   const handleChanges = (gen) => {
     var x = flags
             delete x.gender
@@ -33,6 +40,22 @@ export default function TextFieldSizes() {
     setGender(gen.target.value);
   };
   const [flags,setFlags] = React.useState({})
+
+  const eventLists = [
+    {value: 'Strigrays League - Gaming Jam' , regFee : 200},
+    {value : 'Battle Of The Ice - Gaming Tournment' , regFee : 200},
+    {value : 'Zh3r0-Capture the Flag' , regFee : 150},
+    {value : 'Code Wars - Coding Tournment' , regFee : 250},
+    {value : 'Platonic' , regFee : 180},
+    {value : 'Bidders Coding Camp' , regFee : 220},
+    {value : 'BotBattleBash B3' ,regFee : 130},
+    {value : 'ML-XLR8' , regFee : 100},
+    {value : 'AI Escape Room' , regFee : 160},
+    {value :'Colay' , regFee : 180},
+    {value : 'Dare to be Different (Ideathon)' , regFee : 280},
+    {value : 'Forensics Investigation Challenges' , regFee : 220},
+    
+  ];
 
 
 
@@ -45,12 +68,14 @@ export default function TextFieldSizes() {
     setEvents('')
     setCollegeName("")
     setFlags({})
+    setSelections('')
+    setTotalFee(0)
   }
 
   const submit = async () => {
      await setDoc(doc(db,"userinfo",email),{
-      email,name,gender,phone,city,collegeName,
-      events: arrayUnion(events)
+      email,name,gender,phone,city,collegeName,totalFee ,
+      events: arrayUnion(selectedOptions)
      },
      { merge: true }
      )
@@ -74,6 +99,53 @@ export default function TextFieldSizes() {
     }
   }
 
+  const handleOnchangeService = (val) => {
+    var array = [];
+    for (let i = 0; i < val.length; i++) {
+      array = array.concat(val[i].regFee);
+
+    }
+    setSelections(array);
+    var sum = array.reduce(function (x, y) {
+      return x + y;
+    }, 0);
+    setTotalFee(sum);
+  };
+
+  const handleRemoveService = (val) => {
+    var array = [...selectedOptions]; // make a separate copy of the array
+    var removearray = [];
+    for (let i = 0; i < val.length; i++) {
+      removearray = removearray.concat(val[i].regFee);
+    }
+    var removeddata = array.filter((service) => !removearray.includes(service));
+    delete removearray[removeddata];
+    setSelections(removeddata);
+    var sum = removearray.reduce(function (x, y) {
+      return x + y;
+    }, 0);
+    setTotalFee(sum);
+  };
+
+
+  const handleInputChange = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...inputList];
+    list[index][name] = value;
+    setInputList(list);
+  };
+   
+  const handleRemoveClick = index => {
+    const list = [...inputList];
+    list.splice(index, 1);
+    setInputList(list);
+  };
+   
+  // handle click event of the Add button
+  const handleAddClick = () => {
+    setInputList([...inputList, { name : ''}]);
+  };
+
   React.useEffect(() => {},[flags])
 
 
@@ -89,7 +161,7 @@ export default function TextFieldSizes() {
      
     >
       <div>
-        <TextField
+        {/* <TextField
           label="Name"
           id="outlined-size-small"
         //   defaultValue="Name"
@@ -101,7 +173,45 @@ export default function TextFieldSizes() {
             setFlags(x)
             setName(evt.target.value)
           }}
-        />
+        /> */}
+
+            {
+              inputList.map((x, i) => {
+                <div className='flex'>
+                  <TextField 
+                  label="Name" 
+                  id="outlined-size-small" 
+                  size="small" 
+                  value={x.name} 
+                  onChange = {e => handleInputChange(e, i)}
+
+                  // onChange={evt => {
+                  //   var x = flags
+                  //   delete x.name
+                  //   setFlags(x)
+                  //   setName(evt.target.value)
+                  // }} 
+                  />
+                  <div>
+                    {inputList.length !== 1 && 
+                      <IconButton className='' color='error' onClick={() => handleRemoveClick(i)}>
+                          <RemoveCircleOutline />
+                      </IconButton>
+                    }
+                    {
+                      inputList.length - 1 === i && 
+                      <IconButton color='success' onClick={handleAddClick}>
+                          <Add />
+                      </IconButton>
+                    }
+                  </div>
+                </div>
+
+                
+              })
+            }
+          
+
         {flags?.name && <div style ={{margin:"0px 20px"}}><Box severity="error" sx = {{fontSize:10,color:"red",margin:0}} >{flags.name}</Box></div>}
         <TextField
           label="Email"
@@ -115,13 +225,18 @@ export default function TextFieldSizes() {
             setFlags(x)
             setEmail(evt.target.value)}}
         />
+
+        
+
         
         {flags?.email && <div style ={{margin:"0px 20px"}}><Box severity="error" sx = {{fontSize:10,color:"red",margin:0}} >{flags.email}</Box></div>}
       </div>
       <div>
       <FormControl sx={{ m: 2, minWidth: 120 }} size="small">
-      <InputLabel id="demo-select-small">Events</InputLabel>
-      <Select
+      <h2 className='py-4'>Total Amount to be paid: {totalFee}</h2>
+
+      {/* <InputLabel id="demo-select-small">Events</InputLabel> */}
+      {/* <Select
         labelId="demo-select-small"
         id="demo-select-small"
         value={events}
@@ -143,7 +258,18 @@ export default function TextFieldSizes() {
         <MenuItem value={"Dare To be Different (Ideathon)"}>Dare To be Different (Ideathon)</MenuItem>
         <MenuItem value={"Forensics Investigation Challenges"}>Forensics Investigation Challenges</MenuItem>
         <MenuItem value={"120"}>Forensics Investigation Challenges</MenuItem>
-      </Select>
+      </Select> */}
+      <Multiselect 
+          options={eventLists}
+          displayValue="value"
+          selectionLimit={eventLists.length}
+          name="eventListsSelection"
+          showArrow={true}
+          placeholder="Select Events"
+          required
+          onSelect={handleOnchangeService}
+          onRemove={handleRemoveService}
+      />
     </FormControl>
     {flags?.events && <div style ={{margin:"0px 20px"}}><Box severity="error" sx = {{fontSize:10,color:"red",margin:0}} >{flags.events}</Box></div>}
       </div>

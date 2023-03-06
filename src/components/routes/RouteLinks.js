@@ -7,7 +7,8 @@ import Footer from "../Footer";
 import Dashboard from "../user/dashboard.js";
 import RegistedEvents from "../user/eventcard.js";
 import Profile from "../user/profile.js";
-import ParticleBackground from "../ParticleBackground";
+// import ParticleBackground from "../ParticleBackground";
+import RegisterEvent from "../auth/registerEvent.js";
 
 import React from "react";
 import EventDetails from "../events/eventDetails/eventDetails.js";
@@ -17,9 +18,9 @@ const RouteLinks = () => {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsIndex />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<RegisterEvent />} />
         <Route path="/Footer" element={<Footer />} />
-        <Route path="/events/details" element={<EventDetails />} />
+        <Route path="/events/:details" element={<EventDetails />} />
 
       <Route path="/Footer" element={<Footer />} />
       <Route path="/dashboard" element={<Dashboard />} />
