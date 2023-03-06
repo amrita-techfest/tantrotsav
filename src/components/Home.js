@@ -3,11 +3,13 @@ import TopContent from "./TopContent";
 import "../index.css";
 import About from "./About";
 import Footer from "./Footer";
+import EventsSilder from "./EventsSilder";
 
-function Home() {
+function Home({ isOpen }) {
   return (
     <div className="home">
-      <TopContent />
+      <TopContent isOpen={isOpen} />
+      <EventsSilder />
       <About />
       <Footer />
     </div>

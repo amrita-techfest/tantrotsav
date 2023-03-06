@@ -4,19 +4,17 @@ import "../index.css";
 import { motion } from "framer-motion";
 import { HashLink as HLink } from "react-router-hash-link";
 
-function Navbar() {
-  const [isOpen, setOpen] = useState(false);
+function Navbar({ isOpen, setOpen }) {
   const links = [
     ["Home", "/#hero"],
     ["About", "/#about"],
     ["Events", "/events"],
-    ["Prizes & Opportunity", "#prizes"],
     ["FAQ", "#faq"],
     ["Contact", "#contact"],
   ];
   return (
     <>
-      <div className="sticky top-0 z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent">
+      <div className="mob z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent">
         {!isOpen && (
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: -400 }}

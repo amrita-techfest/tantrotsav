@@ -2,12 +2,61 @@ import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { HashLink as HLink } from "react-router-hash-link";
+import { HashLink, HashLink as HLink } from "react-router-hash-link";
+import { SocialIcon } from "react-social-icons";
 
-const TopContent = () => {
+const TopContent = ({ isOpen }) => {
   return (
-    <div className="hero " id="hero">
-      <div className="intro z-50 flex justify-between items-center mt-[-70px] h-full w-full p-[140px]">
+    <div className="hero" id="hero">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5, y: -400 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        className="to relative xs:bottom-10 bottom-32 top-[560px] w-full flex justify-center items-center"
+      >
+        <HashLink to="/#about" smooth>
+          <div className="border-white w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{ y: [0, 15, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-2 h-2 mb-1 bg-white rounded-full bg-secondary"
+            />
+          </div>
+        </HashLink>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5, y: -400 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        className="social "
+      >
+        <SocialIcon
+          style={{ borderRadius: 50, height: 36, width: 36 }}
+          id="ic"
+          fgColor="#0dff00"
+          bgColor="transparent"
+          url="https://www.instagram.com/tantrotsav_avv/"
+        />
+        <SocialIcon
+          style={{ borderRadius: 50, height: 36, width: 36 }}
+          id="ic"
+          fgColor="#0dff00"
+          bgColor="transparent"
+          url="https://twitter.com/"
+        />
+        <SocialIcon
+          style={{ borderRadius: 50, height: 36, width: 36 }}
+          id="ic"
+          fgColor="#0dff00"
+          bgColor="transparent"
+          url="https://www.amrita.edu/"
+        />
+      </motion.div>
+      <div className="max-w-7xl mx-auto intro z-50 flex justify-between items-center mt-[-180px] h-full w-full p-[140px]">
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -54,11 +103,13 @@ const TopContent = () => {
           transition={{ duration: 1.2 }}
           className="svg-sec"
         >
-          <img
-            className="img-h"
-            src="https://tri-nit.com/landing_page_vector.svg"
-            alt="pic"
-          />
+          {!isOpen && (
+            <img
+              className="img-h"
+              src="https://tri-nit.com/landing_page_vector.svg"
+              alt="pic"
+            />
+          )}
         </motion.div>
       </div>
     </div>
