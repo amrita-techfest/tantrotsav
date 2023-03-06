@@ -11,7 +11,8 @@ function Home({ isOpen }) {
       <TopContent isOpen={isOpen} />
       <EventsSilder />
       <About />
-      <Footer />
+      {/* <About />
+      <Footer /> */}
     </div>
   );
 }

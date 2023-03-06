@@ -1,5 +1,5 @@
 import Hamburger from "hamburger-react";
-import React, { useState } from "react";
+import React from "react";
 import "../index.css";
 import { motion } from "framer-motion";
 import { HashLink as HLink } from "react-router-hash-link";
@@ -50,8 +50,9 @@ function Navbar({ isOpen, setOpen }) {
         {isOpen && (
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
-              {links.map((link) => (
+              {links.map((link, key) => (
                 <li
+                  key={key}
                   id="lin"
                   className="font-bold cursor-pointer transition duration-500 "
                 >
@@ -70,8 +71,9 @@ function Navbar({ isOpen, setOpen }) {
           className="hidden  md:block"
         >
           <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
-            {links.map((link) => (
+            {links.map((link, key) => (
               <li
+                key={key}
                 id="lin"
                 className="font-bold cursor-pointer transition duration-500 hover:font-bold"
               >
