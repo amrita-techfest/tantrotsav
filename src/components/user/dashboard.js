@@ -16,7 +16,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import EventIcon from '@mui/icons-material/Event';
@@ -24,8 +23,6 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import './dash.css'
 
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import MailIcon from '@mui/icons-material/Mail';
-import { red } from '@mui/material/colors';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -92,11 +89,10 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    <div className='userboard h-screen'>
 
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar position="fixed" open={open} >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -179,7 +175,6 @@ export default function PersistentDrawerLeft() {
         <DrawerHeader />    
       </Main>
     </Box>
-    </div>
 
   );
 }
