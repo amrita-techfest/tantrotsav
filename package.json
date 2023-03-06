@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@animated-burgers/burger-squeeze": "^1.1.2",
+    "@cloudinary/react": "^1.11.0",
+    "@cloudinary/url-gen": "^1.9.1",
     "@coreui/react": "^4.6.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",

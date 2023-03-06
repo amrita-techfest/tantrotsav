@@ -5,6 +5,7 @@ import { event } from "../../../data/data";
 import { Link } from "react-router-dom";
 
 function EventsIndex() {
+  
   return (
     <>
       {event.map((det) => {
