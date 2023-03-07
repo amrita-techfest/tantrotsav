@@ -4,8 +4,9 @@ import "../index.css";
 import About from "./About";
 import Footer from "./Footer";
 import EventsSilder from "./EventsSilder";
+import Contact from  "./Contact"
 
-function Home({ isOpen }) {
+function Home({isOpen}) {
   return (
     <div className="home">
       <TopContent isOpen={isOpen} />
@@ -13,6 +14,8 @@ function Home({ isOpen }) {
       <About />
       {/* <About />
       <Footer /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

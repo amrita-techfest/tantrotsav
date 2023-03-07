@@ -36,7 +36,7 @@ function EventsSilder() {
         <h1 className="text-white font-bold sm:text-[50px] text-[40px] text-center">
           EVENTS
         </h1>
-        <div className=" flex gap-5 flex-wrap justify-center mt-24">
+        <div className=" flex  gap-5 flex-wrap justify-center mt-24">
           <Card title="C20" />
           <Card title="ASE" />
           <Card title="ASC" />

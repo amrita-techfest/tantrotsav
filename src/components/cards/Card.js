@@ -1,12 +1,7 @@
-import React from 'react';
-
+import React from "react";
 
 const Card = () => {
-  return (
-    <div className='w-[320px] h-[280px]'>
+  return <div className="w-[300px] h-[280px]"></div>;
+};
 
-    </div>
-  )
-}
-
-export default Card
+export default Card;

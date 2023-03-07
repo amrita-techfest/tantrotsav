@@ -14,6 +14,9 @@ module.exports = {
       md: "1024px",
       ssm: "360px",
     },
+    fontFamily:{
+      'space':['Space Grotesk', 'sans-serif']
+    }
   },
   plugins: [],
 };
