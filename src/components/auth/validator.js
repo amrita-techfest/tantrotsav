@@ -13,39 +13,6 @@ var validatePhone = (pass) => {
   return regEx.test(pass);
 };
 
-<<<<<<< Updated upstream
-export var validator = (params) => {
-  var flags = {};
-  if (params.name?.trim() == "" || !params.name) {
-    flags.name = "empty name";
-  }
-  if (params.email?.trim() == "" || !params.email) {
-    flags.email = "empty email";
-  } else {
-    if (!validateEmail(params.email)) {
-      flags.email = "invalid email";
-    }
-  }
-  if (params.phone?.trim() == "" || !params.phone) {
-    flags.phone = "empty phone no";
-  } else {
-    if (!validatePhone(params.phone)) {
-      flags.phone = "invalid phone";
-    }
-  }
-  if (params.city?.trim() == "" || !params.city) {
-    flags.city = "empty city";
-  }
-  if (!params.gender) {
-    flags.gender = "Select valid gender";
-  }
-  if (!params.events) {
-    flags.events = "Select valid event";
-  }
-  if (params.collegeName?.trim() == "" || !params.collegeName) {
-    flags.collegeName = "empty collegeName";
-  }
-=======
 var validatePassword = (pass) => {
     var regEx = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,}$/)
     return regEx.test(pass)
@@ -128,7 +95,6 @@ export var validatorSet1 = (params) => {
         }
     }
     
->>>>>>> Stashed changes
 
   return flags;
 };

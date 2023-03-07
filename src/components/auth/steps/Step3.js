@@ -100,7 +100,7 @@ const Step3 = ({nextStep,prevStep,handleChanges}) => {
                 setFlags(flags)
               }
               else{
-                setDisabled(!disabled)
+                setDisabled(false)
               }
               
 
