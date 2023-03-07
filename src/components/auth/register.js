@@ -8,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-import { validator } from './validator';
+import { validatorSet1 } from './validator';
 import { db } from '../../firebase';
 import { doc, setDoc, arrayUnion } from 'firebase/firestore';
 import Multiselect from 'multiselect-react-dropdown';
@@ -84,7 +84,7 @@ export default function TextFieldSizes() {
   }
 
   const register = (evt,params) => {
-    var value = validator(params)
+    var value = validatorSet1(params)
     evt.preventDefault();
     console.log(Object.keys(value))
     if (Object.keys(value).length == 0){
