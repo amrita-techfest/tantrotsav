@@ -1,10 +1,8 @@
-import React, { useCallback, useEffect, useState } from 'react' 
+import React, { useEffect, useState } from 'react' 
 import Step1 from './steps/Step1';
 import Step2 from './steps/Step2';
 import Step3 from './steps/Step3';
-import {auth,db} from "../../firebase.js"
-import { doc, setDoc, arrayUnion } from 'firebase/firestore';
-import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from 'firebase/auth';
+import registerUser from '../../services/registerUser';
 
 const RegisterEvent = () => {
 
@@ -19,33 +17,12 @@ const RegisterEvent = () => {
     }
 
 
-    const submit = async (data1) => {
-      createUserWithEmailAndPassword(auth,data1.email,data1.password)
-          .then(user => {
-                          setDoc(doc(db,"userinfo",data1.email),
-                              {
-                                email:data1.email,
-                                name:data1.name,
-                                phone:data1.phone,
-                                phoneWh:data1.phoneWh,
-                                collegeName:data1.collegeName,
-                                memberName:data1.memberName,
-                                teamLeader:data1.teamLeader,
-                                events:arrayUnion(...data1.selectedOptions),
-                                txnId:arrayUnion(data1.txnId)
-                              },
-                              { merge: true }
-                            ).then(doc =>{ 
-                                            console.log("submit")
-                                          })
-        })
-    }
 
 
     const callbackSubmit = (params)=>{
       var x = {...data,...params}
       setData({...data,...params})
-      submit(x)
+      registerUser(x)
 
   }
 
