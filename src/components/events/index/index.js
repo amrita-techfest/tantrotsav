@@ -1,30 +1,37 @@
 import React from "react";
+import { connect } from "react-redux";
 // import Workshop from "./workshop.js"
+import { setEventId } from "./actions";
 import "./main.css";
 import { event } from "../../../data/data";
 import { Link } from "react-router-dom";
 
-function EventsIndex() {
+function EventsIndex({ setEvent }) {
+  function onClick(eventId) {
+    setEvent(eventId);
+  }
+
   return (
     <>
-      {event.map((det, key) => {
+      {event.map(det => {
         return (
-          <div key={key}>
-            <div className="m-4">
-              <h1 className="text-white text-center p-3 text-[35px]">
+          <>
+            <div className='m-4'>
+              <h1 className='text-white text-center p-3 text-[35px]'>
                 {det.category}
               </h1>
             </div>
-            <div className="main1">
-              <div className="container12">
-                {det.gameDetails.map((details) => {
+            <div className='main1'>
+              <div className='container12'>
+                {det.gameDetails.map(details => {
+                  console.log(details.length);
                   return (
-                    <div className="card">
-                      <div className="imgBox">
+                    <div className='card'>
+                      <div className='imgBox'>
                         {/* <img src='images/technical.jpg' alt='tech photo' /> */}
                       </div>
-                      <div className="content">
-                        <div className="details">
+                      <div className='content'>
+                        <div className='details'>
                           <h2>{details.name}</h2>
                           <h3>{details.about}</h3>
                           <p>Mode - {details.mode}</p>
@@ -32,7 +39,10 @@ function EventsIndex() {
                             to={`/events${details.link}`}
                             state={{ data: details }}
                           >
-                            <button className="bg-[blue] text-white p-3 rounded-[5px] m-3">
+                            <button
+                              className='bg-[blue] text-white p-3 rounded-[5px] m-3'
+                              onClick={() => onClick()}
+                            >
                               Read More
                             </button>
                           </Link>
@@ -43,11 +53,17 @@ function EventsIndex() {
                 })}
               </div>
             </div>
-          </div>
+          </>
         );
       })}
     </>
   );
 }
 
-export default EventsIndex;
+const mapDispatchToProps = dispatch => {
+  return {
+    setEvent: eventId => dispatch(setEventId(eventId)),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(EventsIndex);

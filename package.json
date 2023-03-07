@@ -9,6 +9,7 @@
     "@coreui/react": "^4.6.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@lottiefiles/react-lottie-player": "^3.5.2",
     "@material-tailwind/react": "^1.4.2",
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.10",
