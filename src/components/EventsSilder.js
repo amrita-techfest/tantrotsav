@@ -34,7 +34,7 @@ function EventsSilder() {
     // responsive: [1, 2, 3],
     className: "center",
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     mobileFirst: true,
     dots: true,
     showIndicator: true,
@@ -54,6 +54,45 @@ function EventsSilder() {
     arrows: false,
     fade: false,
 
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          mobileFirst: true,
+        },
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          mobileFirst: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          mobileFirst: true,
+          dots: true,
+          fade: true,
+        },
+      },
+    ],
     beforeChange: (current, next) => setImageIndex(next),
   };
   return (

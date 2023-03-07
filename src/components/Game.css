@@ -48,7 +48,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-    color: rgb(255, 0, 0) !important;
+    color: rgb(34, 255, 0) !important;
     font-size: 12px !important;
 }
 .game {

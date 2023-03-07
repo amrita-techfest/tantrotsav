@@ -37,19 +37,19 @@ h3 {
 }
 
 .workButton {
-    background-color: #06d6a0;
+    background-color: #0dff00;
 }
 
 .workButton:hover {
-    background-color: #0ac593;
+    background-color: #0dff00;
 }
 
 .schoolButton {
-    background-color: #f9c74f;
+    background-color: #f2ff00;
 }
 
 .schoolButton:hover {
-    background-color: #f3bc3c;
+    background-color: #f2ff00;
 }
 
 @media only screen and (max-width: 1700px) {

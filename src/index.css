@@ -316,3 +316,33 @@ a {
   padding: 60px;
   left: 0;
 }
+.aboutbox{
+  background-color: #f2ff00;
+  margin: auto ;
+  padding: 2rem;
+  height: fit-content;
+  display: flex;
+  margin-top: 10rem;
+  border-radius: 15px;
+  width: 80%;
+
+
+}
+.about{
+  background-color: rgb(255, 255, 255);
+  padding:20px;
+  margin: 20px;
+  display: flex;
+  justify-self: right;
+  text-align: justify;
+  color: #000000;
+  border-radius: 15px;
+  width:400px;
+  margin-right: 0;
+}
+
+img-abt{
+  width: 15rem;
+  padding: 5rem;
+  
+}
