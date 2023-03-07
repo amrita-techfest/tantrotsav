@@ -1,35 +1,65 @@
-import React from 'react' 
+import React, { useCallback, useEffect, useState } from 'react' 
 import Step1 from './steps/Step1';
 import Step2 from './steps/Step2';
 import Step3 from './steps/Step3';
+import {auth,db} from "../../firebase.js"
+import { doc, setDoc, arrayUnion } from 'firebase/firestore';
+import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from 'firebase/auth';
 
-export default class RegisterEvent extends React.Component {
+const RegisterEvent = () => {
 
-    state = {
-        step:1,
-        team_name: "",
-        email : '',
-        team_members_count : '',
-        phone_no : '',
-        whatsapp_no : '',
+    const [step,setStep] = useState(1)
+    const [data,setData] = useState({})
+    const prevStep = () => {
+        setStep(step-1)
     }
 
-    prevStep = () => {
-        const { step } = this.state;
-        this.setState({ step: step - 1 });
+    const callback = (params)=>{
+        setData({...data,...params})
     }
 
-    nextStep = () => {
-        const { step } = this.state;
-        this.setState({ step: step + 1 });
+
+    const submit = async (data1) => {
+      createUserWithEmailAndPassword(auth,data1.email,data1.password)
+          .then(user => {
+                          setDoc(doc(db,"userinfo",data1.email),
+                              {
+                                email:data1.email,
+                                name:data1.name,
+                                phone:data1.phone,
+                                phoneWh:data1.phoneWh,
+                                collegeName:data1.collegeName,
+                                memberName:data1.memberName,
+                                teamLeader:data1.teamLeader,
+                                events:arrayUnion(...data1.selectedOptions),
+                                txnId:arrayUnion(data1.txnId)
+                              },
+                              { merge: true }
+                            ).then(doc =>{ 
+                                            console.log("submit")
+                                          })
+        })
     }
 
-    handleChange = input => e => {
-        this.setState({ [input]: e.target.value });
-      }
+
+    const callbackSubmit = (params)=>{
+      var x = {...data,...params}
+      setData({...data,...params})
+      submit(x)
+
+  }
+
+    const nextStep = () => {
+      console.log("executed")
+      setStep(step+1)
+    }
+
+    useEffect(()=>{
+      console.log(data)
+    },[data])
 
 
-      eventLists = [
+    const eventLists = [
         {value: 'Strigrays League - Gaming Jam' , regFee : 200},
         {value : 'Battle Of The Ice - Gaming Tournment' , regFee : 200},
         {value : 'Zh3r0-Capture the Flag' , regFee : 150},
@@ -47,37 +77,32 @@ export default class RegisterEvent extends React.Component {
 
 
 
-    render(){
-        const { step } = this.state;
-        const { team_name , team_leader , team_members_count , phone_no , whatsapp_no , email , college_name  } = this.state;
-        const values = { team_name , team_leader , email, team_members_count , phone_no , whatsapp_no  }
+    const show = () => {
 
         switch (step) {
             case 1: 
               return (
                 <Step1 
-                    nextStep = {this.nextStep}
-                    handleChange = {this.handleChange}
-                    values = {values}
-                
+                nextStep = {nextStep}
+                handleChange={callback}
+                values={data}
                 />
               )
             case 2: 
               return (
                 <Step2 
-                    nextStep = {this.nextStep}
-                    handleChange = {this.handleChange}
-                    values = {values}
-                    prevStep = {this.prevStep}
+                nextStep = {nextStep}
+                prevStep = {prevStep}
+                handleChange={callback}
+                values={data}
                 />
               )
             case 3: 
               return (
                 <Step3 
-                    nextStep = {this.nextStep}
-                    handleChange = {this.handleChange}
-                    values = {values}
-                    prevStep = {this.prevStep}
+                    nextStep = {nextStep}
+                    prevStep = {prevStep}
+                    handleChanges={callbackSubmit}
                 />
               )
             case 4:
@@ -91,11 +116,13 @@ export default class RegisterEvent extends React.Component {
                // do nothing
           }
 
-
+        }
         return (
             <div>
-                <h1>Register Event</h1>
+                {show()}
             </div>
         );
-    }
+    
 }
+
+export default RegisterEvent
