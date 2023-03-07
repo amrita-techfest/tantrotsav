@@ -5,6 +5,7 @@ import About from "./About";
 import Footer from "./Footer";
 import EventsSilder from "./EventsSilder";
 import Faq from "../Faq";
+import Timeline from "./timeline";
 
 function Home({ isOpen }) {
   return (
@@ -12,6 +13,7 @@ function Home({ isOpen }) {
       <TopContent isOpen={isOpen} />
       <EventsSilder />
       <About />
+      <Timeline />
       <Faq />
       <Footer />
     </div>
