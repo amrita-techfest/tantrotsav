@@ -97,4 +97,4 @@ export var validatorSet1 = (params) => {
     
 
   return flags;
-};
+}
