@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -6,6 +6,9 @@ import { HashLink, HashLink as HLink } from "react-router-hash-link";
 import { SocialIcon } from "react-social-icons";
 
 const TopContent = ({ isOpen }) => {
+  useEffect(() => {
+    console.log(isOpen);
+  }, [isOpen]);
   return (
     <div className="hero" id="hero">
       <motion.div
@@ -53,7 +56,7 @@ const TopContent = ({ isOpen }) => {
           id="ic"
           fgColor="#0dff00"
           bgColor="transparent"
-          url="https://www.amrita.edu/"
+          url="https://www.amrita.edu/events/tantrotsav-2023"
         />
       </motion.div>
       <div className="max-w-7xl mx-auto intro z-50 flex justify-between items-center mt-[-180px] h-full w-full p-[140px]">
@@ -62,6 +65,7 @@ const TopContent = ({ isOpen }) => {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.2 }}
           className="flex-1"
+          id="hero-section"
         >
           <h1
             id="title"
@@ -103,12 +107,14 @@ const TopContent = ({ isOpen }) => {
           transition={{ duration: 1.2 }}
           className="svg-sec"
         >
-          {!isOpen && (
+          {!isOpen ? (
             <img
               className="img-h"
               src="https://tri-nit.com/landing_page_vector.svg"
               alt="pic"
             />
+          ) : (
+            ""
           )}
         </motion.div>
       </div>

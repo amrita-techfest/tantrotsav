@@ -13,7 +13,7 @@ import EventDetails from "../events/eventDetails/eventDetails.js";
 const RouteLinks = ({ isOpen }) => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home isOpen={isOpen} />} />
       <Route path="/events" element={<EventsIndex />} />
       <Route path="/register" element={<RegisterEvent />} />
       <Route path="/Footer" element={<Footer />} />

@@ -7,11 +7,12 @@ import { HashLink as HLink } from "react-router-hash-link";
 function Navbar({ isOpen, setOpen }) {
   const links = [
     ["Home", "/#hero"],
-    ["About", "/#about"],
+    ["About", "/#aboutR"],
     ["Events", "/events"],
     ["FAQ", "#faq"],
     ["Contact", "#contact"],
   ];
+
   return (
     <>
       <div className="mob z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent">
@@ -23,7 +24,8 @@ function Navbar({ isOpen, setOpen }) {
           >
             <div className="flex">
               <img
-                className="h-20 logo"
+                className="logo h-20"
+                id="logo"
                 src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
                 alt="logo"
               />
@@ -56,7 +58,13 @@ function Navbar({ isOpen, setOpen }) {
                   id="lin"
                   className="font-bold cursor-pointer transition duration-500 "
                 >
-                  <HLink smooth to={link[1]}>
+                  <HLink
+                    smooth
+                    to={link[1]}
+                    onClick={() => {
+                      setOpen(false);
+                    }}
+                  >
                     {link[0]}
                   </HLink>
                 </li>

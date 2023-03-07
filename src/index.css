@@ -180,7 +180,11 @@ img {
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
-
+@media (max-width: 376px) {
+  #logo {
+    height: 50px !important;
+  }
+}
 @media (max-width: 375px) {
   .hero {
     padding: 80px;
@@ -414,4 +418,10 @@ a {
     height: 100vh;
     /* margin-top: 20px; */
   }
-} ;
+}
+
+@media (max-width: 1465px) {
+  .social {
+    visibility: hidden !important;
+  }
+}
