@@ -89,7 +89,7 @@ export var validatorSet1 = params => {
       flags.password =
         "Password must contain Minimum eight characters, at least one letter, one number and one special character";
     }
-  }
 
-  return flags;
+    return flags;
+  }
 };
