@@ -4,6 +4,9 @@ import TextField from '@mui/material/TextField';
 import {validatorSet1} from '../validator';
 import {FormControl,InputLabel,OutlinedInput,InputAdornment,IconButton,Button, FormHelperText} from '@mui/material'
 import {Visibility,VisibilityOff} from '@mui/icons-material'
+import { registerWithGoogle } from '../../../services/registerWithGoogle';
+
+
 const Step1 = ({nextStep , handleChange , values}) => {
 
     const [name, setName] = useState(values.name)
@@ -32,6 +35,8 @@ const Step1 = ({nextStep , handleChange , values}) => {
 
   return (
     <div className='bg-white my-5 w-[70%] mx-auto rounded-[20px] p-3 flex flex-col'>
+
+        <Button onClick={()=> registerWithGoogle()}>Google</Button>
         <TextField
             placeholder="Name"
             label="Name"
