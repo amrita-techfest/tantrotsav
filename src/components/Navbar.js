@@ -6,7 +6,7 @@ import { HashLink as HLink } from "react-router-hash-link";
 
 function Navbar({ isOpen, setOpen }) {
   const links = [
-    ["Home", "/#hero"],
+    ["Home", "/#naving"],
     ["About", "/#aboutR"],
     ["Events", "/events"],
     ["FAQ", "/#faq"],
@@ -15,7 +15,10 @@ function Navbar({ isOpen, setOpen }) {
 
   return (
     <>
-      <div className="mob z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent">
+      <div
+        id="naving"
+        className="mob z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent"
+      >
         {!isOpen && (
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: -400 }}
