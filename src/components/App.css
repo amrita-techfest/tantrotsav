@@ -19,7 +19,8 @@ h3 {
   height: max-content;
   border-radius: 0.5em;
   /* background: linear-gradient(to right,#0c4401,#348a0c,#8f960e); */
-  background-color: #05b164;
+  /* background-color: #05b164; */
+  background-color: rgba(61, 232, 121, 0.662);
 }
 
 .vertical-timeline-element-content {

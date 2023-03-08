@@ -28,12 +28,12 @@ function EventsIndex({ setEvent, isOpen }) {
                   return (
                     <div className="card">
                       <div className="imgBox">
-                        <img src={details.image} alt='tech photo' />
+                        <img src="images/technical.jpg" alt="tech" />
                       </div>
                       <div className="content">
                         <div className="details">
-                          <h2 className="p-2">{details.name}</h2>
-                          <h3 className="p-4">{details.about}</h3>
+                          <h2>{details.name}</h2>
+                          <h3>{details.about}</h3>
                           <p>Mode - {details.mode}</p>
                           <Link
                             to={`/events${details.link}`}

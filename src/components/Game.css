@@ -28,7 +28,7 @@
     color: rgb(255, 242, 0) ;
     font-size: 10px !important;
     margin-top: 10px;
-    transform: scale(1.5);
+    transform: scale(1);
     transition: transform 300ms;
 }
 .slick-dots li button:Hover{
@@ -37,8 +37,8 @@
 }
 
 .slick-dots li.slick-active button:before {
-  color: rgb(255, 0, 0) !important;
-  font-size: 12px !important;
+    color: #0dff00 !important;
+    font-size: 10px !important;
 }
 .game {
   width: 70rem;
@@ -68,13 +68,13 @@
         text-align: left;
         margin:10rem auto;   
     }
-    .gametxt{
+    /* .gametxt{
         background-color: rgb(243, 149, 149);
         margin: 2rem;
         padding: 30px;
         border-radius: 15px;
         justify-content: center;
-    }
+    } */
     
     .slide img {
         width: 50%;

@@ -68,7 +68,7 @@ export default function Sponsors() {
         },
       },
       {
-        breakpoint: 720,
+        breakpoint: 780,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
