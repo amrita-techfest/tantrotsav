@@ -26,7 +26,7 @@ function EventDetails({
   console.log(eventDetails);
   console.log(eventId);
 
-  console.log(data.team_size);
+  // console.log(data.team_size);
 
   return loading ? (
     <div
@@ -59,7 +59,6 @@ function EventDetails({
       <div className='p-3'>
         <h1 className='event_name p-2 text-[35px] tracking-[1px] text-white'>
           {eventDetails.name}
-          {/* hello */}
         </h1>
         <p className='p-2 text-[20px] text-white'>Team Size : 1-2</p>
         <div>

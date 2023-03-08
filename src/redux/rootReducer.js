@@ -7,7 +7,7 @@ import eventReducer from "../components/events/index/reducers";
 const persistConfig = {
   key: "root",
   storage: storage,
-  whitelist: ["formReducer"],
+  // whitelist: ["eventDetailsReducer", "eventReducer"],
 };
 
 const rootReducer = combineReducers({

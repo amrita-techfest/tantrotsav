@@ -9,14 +9,25 @@ module.exports = {
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
+      animation: {
+        blob: "blob 7s infinite",
+      },
+      keyframes: {
+        blob: {
+          "0%": { transform: "translate(0px,0px) scale(1)" },
+          "33%": { transform: "translate(30px,-50px) scale(1.1)" },
+          "66%": { transform: "translate(-20px,20px) scale(0.9)" },
+          "100%": { transform: "translate(0px,0px) scale(1)" },
+        },
+      },
     },
     screens: {
       md: "1024px",
-      ssm: "360px",
+      sm: "360px",
     },
-    fontFamily:{
-      'space':['Space Grotesk', 'sans-serif']
-    }
+    fontFamily: {
+      "space": ["Space Grotesk", "sans-serif"],
+    },
   },
   plugins: [],
 };

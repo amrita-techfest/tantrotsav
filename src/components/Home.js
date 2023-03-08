@@ -4,18 +4,18 @@ import "../index.css";
 import About from "./About";
 import Footer from "./Footer";
 import EventsSilder from "./EventsSilder";
-import Contact from  "./Contact"
+import Faq from "../Faq";
+import Timeline from "./timeline";
 
-function Home({isOpen}) {
+function Home({ isOpen }) {
   return (
-    <div className="home">
+    <div className="home h-auto sm:h-screen">
       <TopContent isOpen={isOpen} />
       <EventsSilder />
       <About />
-      {/* <About />
-      <Footer /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Timeline />
+      <Faq />
+      <Footer />
     </div>
   );
 }

@@ -9,10 +9,10 @@ function App() {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className="App  scrollbar" id="scrollbar5">
-      <ParticleBackground />
+      {/* <ParticleBackground /> */}
       <Router>
         <NavBar isOpen={isOpen} setOpen={setOpen} />
-        <RouteLinks isOpen={isOpen} />
+        {!isOpen && <RouteLinks isOpen={isOpen} />}
       </Router>
     </div>
   );

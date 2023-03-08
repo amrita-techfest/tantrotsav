@@ -28,8 +28,8 @@
     linear,
     left bottom,
     left top,
-    color-stop(0.5, #a520ca),
-    color-stop(1, #2681cc)
+    color-stop(0.5, #0dff00),
+    color-stop(1, #f2ff00)
   );
   border-radius: 10px;
 }
@@ -38,6 +38,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
 
 img {
   height: 100%;
@@ -123,6 +132,11 @@ img {
   }
 }
 
+@media (min-width: 551px) {
+  .intro {
+    margin-top: -160px;
+  }
+}
 @media (min-width: 767px) {
   .img-h {
     width: 430px;
@@ -180,7 +194,14 @@ img {
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
-
+@media (max-width: 376px) {
+  #logo {
+    height: 50px !important;
+  }
+  #intro {
+    margin-top: -182px !important;
+  }
+}
 @media (max-width: 375px) {
   .hero {
     padding: 80px;
@@ -213,6 +234,7 @@ img {
     visibility: hidden;
   }
 }
+
 @media (min-width: 1301px) {
   #hero-p {
     font-size: 1.2em;
@@ -408,10 +430,24 @@ a {
     width: 150px;
     height: 70px;
   }
+  .ani {
+    visibility: visible;
+  }
 }
 @media (max-width: 1157px) {
   #events {
     height: 100vh;
     /* margin-top: 20px; */
   }
-} ;
+}
+
+@media (max-width: 1465px) {
+  .social {
+    visibility: hidden !important;
+  }
+}
+@media (max-width: 1218px) {
+  .ani {
+    display: none;
+  }
+}
