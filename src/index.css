@@ -28,8 +28,8 @@
     linear,
     left bottom,
     left top,
-    color-stop(0.5, #a520ca),
-    color-stop(1, #2681cc)
+    color-stop(0.5, #0dff00),
+    color-stop(1, #f2ff00)
   );
   border-radius: 10px;
 }
