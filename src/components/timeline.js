@@ -10,10 +10,6 @@ import {
 } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
-import { none } from "@cloudinary/transformation-builder-sdk/qualifiers/progressive";
-import { LinearGradient } from "@react-pdf/renderer";
-import { right } from "@popperjs/core";
-import { green, lightGreen } from "@mui/material/colors";
 
 function Timeline() {
   let eventIconStyles = { background: "rgb(26, 247, 158)" };
