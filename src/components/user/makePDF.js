@@ -2,6 +2,7 @@ import React from 'react';
 import { Document, Page, Text, View, StyleSheet,Image} from '@react-pdf/renderer';
 import Logo1 from "./logo1.png"
 import Logo from './logo.png'
+
 // Create styles
 const styles = StyleSheet.create({
   page: {
@@ -52,8 +53,9 @@ const defaultData = {
 
 
 // Create Document Component
-export const MyDocument = ({data=defaultData}) => (
-  <Document>
+const MyDocument = ({data=defaultData,events}) => {
+  // console.log(eventDetails);
+  return (<Document>
     <Page size="A4" style={styles.page}>
         <View >
             
@@ -89,5 +91,12 @@ export const MyDocument = ({data=defaultData}) => (
             <Image style={{height:70,width:360}} src={Logo}/>
         </View>
     </Page>
-  </Document>
-);
+  </Document>)
+};
+
+
+
+
+
+export default MyDocument;
+
