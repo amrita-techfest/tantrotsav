@@ -66,7 +66,7 @@ const Step1 = ({ nextStep, handleChange, values }) => {
           setFlags(x);
           setName(evt.target.value);
         }}
-        error={flags?.name && true}
+        // error={flags?.name && true}
         helperText={flags?.name}
       />
       <TextField
@@ -107,56 +107,42 @@ const Step1 = ({ nextStep, handleChange, values }) => {
         defaultValue={values.phoneWh || ""}
         onChange={(evt) => {
           var x = flags;
-          delete x.phoneWh;
+          delete x.password;
           setFlags(x);
-          setPhoneWh(evt.target.value);
+          setPassword(evt.target.value);
         }}
-        className="m-2"
-        error={flags?.phoneWh && true}
-        helperText={flags?.phoneWh}
       />
-      <FormControl
-        variant="outlined"
-        margin="normal"
-        className="m-2"
-        helperText={flags?.password}
-      >
-        <InputLabel
-          htmlFor="outlined-adornment-password"
-          error={flags?.password && true}
-        >
-          Password
-        </InputLabel>
-        <OutlinedInput
-          id="outlined-adornment-password"
-          type={showPassword ? "text" : "password"}
-          value={password}
-          endAdornment={
-            <InputAdornment position="end">
-              <IconButton
-                aria-label="toggle password visibility"
-                onClick={() => setShow(!showPassword)}
-                onMouseDown={(evt) => evt.preventDefault()}
-                edge="end"
-              >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
-              </IconButton>
-            </InputAdornment>
-          }
-          error={flags?.password && true}
-          helperText={flags?.password}
-          onChange={(evt) => {
-            var x = flags;
-            delete x.password;
-            setFlags(x);
-            setPassword(evt.target.value);
-          }}
-          label="Password"
-        />
-        <FormHelperText error={flags?.password && true}>
-          {flags?.password}
-        </FormHelperText>
-      </FormControl>
+      {/* <FormControl variant="outlined" margin='normal' className='m-2'  helperText={flags?.password}> */}
+      {/* <InputLabel htmlFor="outlined-adornment-password" error={flags?.password && true}>Password</InputLabel> */}
+      {/* <OutlinedInput
+                id="outlined-adornment-password"
+                type={showPassword ? 'text' : 'password'}
+                value={password}
+                endAdornment={
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={() => setShow(!showPassword)}
+                      onMouseDown={(evt)=> evt.preventDefault()}
+                      edge="end"
+                    >
+                      {showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                }
+                error={flags?.password && true}
+            
+                helperText={flags?.password}
+                onChange={(evt)=> {
+                  var x = flags
+              delete x.password
+              setFlags(x)
+                  setPassword(evt.target.value)}}
+
+                label="Password"
+              /> */}
+      {/* <FormHelperText error={flags?.password && true}>{flags?.password}</FormHelperText> */}
+      {/* </FormControl> */}
       <Button
         color="primary"
         variant="contained"
