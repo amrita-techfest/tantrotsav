@@ -30,9 +30,9 @@ function Timeline() {
           return (
             <VerticalTimelineElement
               contentStyle={{
-                background: "#000",
+                background: "transparent",
                 color: "azure",
-                opacity: 1,
+  
               }}
               contentArrowStyle={{
                 borderRight: "7px solid white",
