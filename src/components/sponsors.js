@@ -76,7 +76,7 @@ export default function Sponsors() {
           autoplay: true,
           autoplaySpeed: 3000,
           mobileFirst: true,
-          dots: false   ,
+          dots: false,
         },
       },
       {
@@ -98,7 +98,7 @@ export default function Sponsors() {
   return (
     <div className="bg-black h-screen">
       <div className="max-w-7xl mx-auto sm:p-[50px] p-[30px]" id="about">
-        <h1 className="text-white pt-[150px] pb-[150px] font-bold sm:text-[50px] text-[40px] text-center">
+        <h1 className="text-white pt-[80px] pb-[150px] font-bold sm:text-[50px] text-[40px] text-center">
           Sponsors
         </h1>
         <Slider className="slider" {...settings}>
