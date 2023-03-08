@@ -4,7 +4,7 @@ import "../about.css";
 
 function About() {
   return (
-    <div className="bg-black sm:h-auto md:h-screen" id="aboutR">
+    <div className="bg-black md:mt-14" id="aboutR">
       <div className="max-w-7xl mx-auto sm:p-[50px] p-[30px]" id="about">
         <h1 className="text-[#1aff00] text-center font-bold sm:text-[50px] text-[40px] ">
           ABOUT US

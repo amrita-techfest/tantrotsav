@@ -39,6 +39,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
 img {
   height: 100%;
   max-width: 100%;
@@ -123,6 +132,11 @@ img {
   }
 }
 
+@media (min-width: 551px) {
+  .intro {
+    margin-top: -160px;
+  }
+}
 @media (min-width: 767px) {
   .img-h {
     width: 430px;
@@ -184,6 +198,9 @@ img {
   #logo {
     height: 50px !important;
   }
+  #intro {
+    margin-top: -182px !important;
+  }
 }
 @media (max-width: 375px) {
   .hero {
@@ -217,6 +234,7 @@ img {
     visibility: hidden;
   }
 }
+
 @media (min-width: 1301px) {
   #hero-p {
     font-size: 1.2em;
@@ -412,6 +430,9 @@ a {
     width: 150px;
     height: 70px;
   }
+  .ani {
+    visibility: visible;
+  }
 }
 @media (max-width: 1157px) {
   #events {
@@ -423,5 +444,10 @@ a {
 @media (max-width: 1465px) {
   .social {
     visibility: hidden !important;
+  }
+}
+@media (max-width: 1218px) {
+  .ani {
+    display: none;
   }
 }

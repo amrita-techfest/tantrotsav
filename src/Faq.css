@@ -1,19 +1,9 @@
-@media (max-width: 621px) {
-  .faq {
-    height: 100px;
-  }
-}
-
-.faq {
-  height: 500px;
-}
-
 .accordion-wrapper {
   margin: 0;
 }
 
 .accordion {
-  color: #444;
+  color: #000000;
   cursor: pointer;
   width: 100%;
   border: none;
@@ -33,28 +23,37 @@
   padding: 28px;
 }
 
-.main-acc.one {
-  background: #fe9687;
-}
-
 .main-acc.two {
-  background: #ffe587;
+  /* background: #40ff00; */
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
 .main-acc.three {
-  background: #82b4fe;
+  /* background: #00ffee; */
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
 
 .main-acc.four {
-  background: #a1db73;
+  /* background: #ff00ff; */
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 .main-acc.five {
-  background: #f0afe9;
+  /* background: #ff7300; */
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 .main-acc.six {
-  background: #a0acea;
+  /* background: #a0acea; */
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
 }
 
 .main-acc.active {

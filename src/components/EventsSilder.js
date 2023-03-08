@@ -33,12 +33,12 @@ const Card = ({ title, logo, para }) => {
 
 function EventsSilder() {
   return (
-    <div id="event" className="w-full bg-black sm:h-auto md:h-screen">
+    <div id="event" className="w-full bg-black ">
       <div className="max-w-7xl mx-auto sm:p-[50px] p-[30px]" id="about">
         <h1 className="text-[#5f0] font-bold sm:text-[50px] text-[40px] text-center">
           EVENTS
         </h1>
-        <div className="relative flex gap-5 flex-wrap justify-center mt-24">
+        <div className="relative flex gap-5 flex-wrap justify-center mt-14">
           <Card
             title="C20"
             logo={c20}

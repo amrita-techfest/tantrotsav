@@ -8,7 +8,7 @@ import Faq from "../Faq";
 
 function Home({ isOpen }) {
   return (
-    <div className="home">
+    <div className="home h-auto sm:h-screen">
       <TopContent isOpen={isOpen} />
       <EventsSilder />
       <About />

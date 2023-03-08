@@ -10,12 +10,12 @@ const TopContent = ({ isOpen }) => {
     console.log(isOpen);
   }, [isOpen]);
   return (
-    <div className="hero" id="hero">
+    <div className="hero " id="hero">
       <motion.div
         initial={{ opacity: 0, scale: 0.5, y: -400 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className="to relative xs:bottom-10 bottom-32 top-[560px] w-full flex justify-center items-center"
+        className="to relative z-[1000000000] xs:bottom-10 bottom-32 top-[560px] w-full flex justify-center items-center"
       >
         <HashLink to="/#about" smooth>
           <div className="border-white w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
@@ -59,12 +59,18 @@ const TopContent = ({ isOpen }) => {
           url="https://www.amrita.edu/events/tantrotsav-2023"
         />
       </motion.div>
-      <div className="max-w-7xl mx-auto intro z-50 flex justify-between items-center mt-[-180px] h-full w-full p-[140px]">
+      <div
+        id="intro"
+        className=" max-w-7xl mt-[-236px] mx-auto intro z-50 flex justify-between items-center h-full w-full p-[140px]"
+      >
+        <div className="absolute ani  w-72 h-72 left-[600px] bg-blue-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute ani left-[700px] w-72 h-72 bg-pink-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute ani left-[500px] w-72 h-72 bg-green-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="flex-1"
+          className="flex-1 "
           id="hero-section"
         >
           <h1
@@ -86,7 +92,7 @@ const TopContent = ({ isOpen }) => {
             <HLink smooth to="#about">
               <button
                 id="btn1"
-                className="border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 m-3 rounded-[5px] w-[130px]"
+                className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 m-3 rounded-[5px] w-[130px]"
               >
                 Explore
               </button>
@@ -105,7 +111,7 @@ const TopContent = ({ isOpen }) => {
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="svg-sec"
+          className="svg-sec "
         >
           {!isOpen ? (
             <img

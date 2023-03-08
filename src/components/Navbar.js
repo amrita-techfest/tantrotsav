@@ -9,7 +9,7 @@ function Navbar({ isOpen, setOpen }) {
     ["Home", "/#hero"],
     ["About", "/#aboutR"],
     ["Events", "/events"],
-    ["FAQ", "#faq"],
+    ["FAQ", "/#faq"],
     ["Contact", "#contact"],
   ];
 
@@ -90,6 +90,12 @@ function Navbar({ isOpen, setOpen }) {
                 </HLink>
               </li>
             ))}
+            <button
+              id="btn1"
+              className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]"
+            >
+              Login
+            </button>
           </ul>
         </motion.div>
       </div>
