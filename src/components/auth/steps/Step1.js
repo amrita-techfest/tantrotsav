@@ -48,7 +48,7 @@ const Step1 = ({nextStep , handleChange , values}) => {
             delete x.name
             setFlags(x)
             setName(evt.target.value)}}
-            error={flags?.name && true}
+            // error={flags?.name && true}
             helperText={flags?.name}
             
         />
@@ -95,9 +95,9 @@ const Step1 = ({nextStep , handleChange , values}) => {
             error={flags?.phoneWh && true}
             helperText={flags?.phoneWh}
         />
-        <FormControl variant="outlined" margin='normal' className='m-2'  helperText={flags?.password}>
-              <InputLabel htmlFor="outlined-adornment-password" error={flags?.password && true}>Password</InputLabel>
-              <OutlinedInput
+        {/* <FormControl variant="outlined" margin='normal' className='m-2'  helperText={flags?.password}> */}
+              {/* <InputLabel htmlFor="outlined-adornment-password" error={flags?.password && true}>Password</InputLabel> */}
+              {/* <OutlinedInput
                 id="outlined-adornment-password"
                 type={showPassword ? 'text' : 'password'}
                 value={password}
@@ -123,9 +123,9 @@ const Step1 = ({nextStep , handleChange , values}) => {
                   setPassword(evt.target.value)}}
 
                 label="Password"
-              />
-              <FormHelperText error={flags?.password && true}>{flags?.password}</FormHelperText>
-          </FormControl>
+              /> */}
+              {/* <FormHelperText error={flags?.password && true}>{flags?.password}</FormHelperText> */}
+          {/* </FormControl> */}
         <Button
               color="primary"
               variant="contained"
