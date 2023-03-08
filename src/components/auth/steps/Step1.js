@@ -2,9 +2,9 @@ import React, { useState,useEffect } from 'react'
 // import TextField from '@mui/material';
 import TextField from '@mui/material/TextField';
 import {validatorSet1} from '../validator';
-import {FormControl,InputLabel,OutlinedInput,InputAdornment,IconButton,Button, FormHelperText} from '@mui/material'
 import {Visibility,VisibilityOff} from '@mui/icons-material'
 import { registerWithGoogle } from '../../../services/registerWithGoogle';
+import {FormControl,InputLabel,OutlinedInput,InputAdornment,IconButton,Button, FormHelperText, createTheme, ThemeProvider} from '@mui/material'
 
 
 const Step1 = ({nextStep , handleChange , values}) => {
@@ -31,12 +31,13 @@ const Step1 = ({nextStep , handleChange , values}) => {
         
     }
 
+    
+
     useEffect(()=>{console.log(values)},[])
 
   return (
     <div className='bg-white my-5 w-[70%] mx-auto rounded-[20px] p-3 flex flex-col'>
-
-        <Button onClick={()=> registerWithGoogle()}>Google</Button>
+       
         <TextField
             placeholder="Name"
             label="Name"
@@ -50,6 +51,7 @@ const Step1 = ({nextStep , handleChange , values}) => {
             setName(evt.target.value)}}
             error={flags?.name && true}
             helperText={flags?.name}
+            
         />
         <TextField
             placeholder="Email Address"
