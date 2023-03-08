@@ -3,6 +3,7 @@ import React, { Component, useEffect, useState } from 'react'
 import {Button,Slider} from '@mui/material';
 import TextField from '@mui/material/TextField';
 import { validatorSet2 } from '../validator';
+import RadioGroup from '@mui/material/RadioGroup';
 
 const Step2 = ({nextStep,prevStep,handleChange,values})=> {
   
@@ -40,6 +41,14 @@ const Step2 = ({nextStep,prevStep,handleChange,values})=> {
 
     return (
       <div className='bg-white my-5 w-[70%] mx-auto rounded-[20px] p-3 flex flex-col'>
+           <div className='m-2 flex'>
+                <div>
+                    <input type="radio" value="Single Event" name="event_type" /> Single Event
+                </div>
+                <div>
+                    <input type="radio" value="Multiple Event" name="event_type" /> Multiple Event
+                </div>
+           </div>
            <TextField 
                 placeholder='College Name'
                 label='College Name'
