@@ -2,8 +2,9 @@ import React, { useState,useEffect } from 'react'
 // import TextField from '@mui/material';
 import TextField from '@mui/material/TextField';
 import {validatorSet1} from '../validator';
+import {Visibility,VisibilityOff} from '@mui/icons-material'
+import { registerWithGoogle } from '../../../services/registerWithGoogle';
 import {FormControl,InputLabel,OutlinedInput,InputAdornment,IconButton,Button, FormHelperText, createTheme, ThemeProvider} from '@mui/material'
-import {Visibility,VisibilityOff} from '@mui/icons-material';
 
 
 const Step1 = ({nextStep , handleChange , values}) => {
