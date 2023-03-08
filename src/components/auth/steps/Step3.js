@@ -1,20 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import Multiselect from 'multiselect-react-dropdown';
-import { Button } from '@mui/material';
+import { Button,TextField } from '@mui/material';
+import { validatorSet3 } from '../validator';
 
 
-export default class Step3 extends Component {
+const Step3 = ({nextStep,prevStep,handleChanges}) => {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            selectedOptions : '',
-            totalFee : 0,
+    const [selectedOptions,setSelection] = useState("")
+    const [totalFee,setFee] = useState(0)
+    const [txnId,setId] = useState("")
+    const [disabled,setDisabled] = useState(false)
+    const [flags,setFlags] = useState({})
 
-        }
-    }
-
-    eventLists = [
+    const eventLists = [
       {value: 'Strigrays League - Gaming Jam' , regFee : 200},
       {value : 'Battle Of The Ice - Gaming Tournment' , regFee : 200},
       {value : 'Zh3r0-Capture the Flag' , regFee : 150},
@@ -30,80 +28,122 @@ export default class Step3 extends Component {
       
     ]
 
-      continue = e => {
+     const cont = e => {
         e.preventDefault();
-        // PROCESS FORM //
-        this.props.nextStep();
+        handleChanges({selectedOptions,totalFee,txnId})
+        nextStep();
       };
     
-      back = e => {
+     const back = e => {
         e.preventDefault();
-        this.props.prevStep();
+        prevStep();
       };
 
-      handleOnchangeService = (val) => {
+     const handleOnchangeService = (val) => {
         var array = [];
         for (let i = 0; i < val.length; i++) {
           array = array.concat(val[i].regFee);
     
         }
-        // setSelections(array);
-        this.setState({selectedOptions : array});
+        setSelection(array);
         var sum = array.reduce(function (x, y) {
           return x + y;
         }, 0);
-        // setTotalFee(sum);
-        this.setState({totalFee : sum});
+        setFee(sum);
+        console.log(sum);
       };
     
-      handleRemoveService = (val) => {
-        var array = [...this.state.selectedOptions]; // make a separate copy of the array
+     const handleRemoveService = (val) => {
+        var array = [...selectedOptions]; // make a separate copy of the array
         var removearray = [];
         for (let i = 0; i < val.length; i++) {
           removearray = removearray.concat(val[i].regFee);
         }
         var removeddata = array.filter((service) => !removearray.includes(service));
         delete removearray[removeddata];
-        this.setState({selectedOptions : removeddata});
+        setSelection(removearray);
+        console.log(removearray);
         var sum = removearray.reduce(function (x, y) {
           return x + y;
         }, 0);
-        // setTotalFee(sum);
-        this.setState({totalFee : sum});
+        setFee(sum);
       };
-
-  render() {
     
     return (
       <div className='flex flex-col my-5 w-[70%] mx-auto bg-white p-3'>
         <Multiselect 
-            options={this.eventLists}
+            options={eventLists}
             displayValue="value"
-            selectionLimit={this.eventLists.length}
+            selectionLimit={eventLists.length}
             name="eventListsSelection"
             showArrow={true}
             placeholder="Select Events"
             required
-            onSelect={this.handleOnchangeService}
-            onRemove={this.handleRemoveService}
+            onSelect={(e)=>{
+              var x = {...flags}
+              delete x.events
+              setFlags(x)
+              handleOnchangeService(e)}}
+            onRemove={(e)=>handleRemoveService(e)}
+            disable={disabled}
+            
         />
+        {flags.events && <p className='mx-5 text-xs text-rose-700'>invalid events * </p>}
         
-      <h2 className='py-4'>Total Amount to be paid: {this.state.totalFee}</h2>
+      <h2 className='py-4'>Total Amount to be paid: {totalFee}</h2> 
+      <Button 
+            color="primary"
+            variant="contained"
+            onClick={(e)=>{
+              var flags = validatorSet3({selectedOptions})
+              if (flags.events){
+                setFlags(flags)
+              }
+              else{
+                setDisabled(false)
+              }
+              
+
+            }}
+            className='w-[170px] mx-auto my-3'         
+        >{disabled?"Edit choices":"Make Payment"}</Button>
+        {disabled &&
+      <TextField 
+                                className='m-2 w-full' 
+                                placeholder='Transaction Id'
+                                value={txnId}
+                                onChange={(evt) => {
+                                    var x = {...flags}
+                                    delete x.txn
+                                    setFlags(x)
+                                    setId(evt.target.value)}}
+                                error={flags.txn && true}
+                                helperText={flags.txn && flags.txn}
+                            />}
       <div className='flex'>
         <Button
             color="primary"
             variant="contained"
-            onClick={this.back}
+            onClick={(e)=>back(e)}
+            disabled={disabled}
             className='w-[170px] mx-auto my-3'        
         >Previous</Button>
         <Button 
             color="primary"
             variant="contained"
-            onClick={this.continue}
+            onClick={(e)=>{
+              if(txnId.trim()=="") {
+                setFlags({txn:"empty Transaction Id"})
+              }
+              else{
+                cont(e)
+              }
+              }}
+            disabled={!disabled}
             className='w-[170px] mx-auto my-3'         
-        >Make Payment</Button>
+        >Done</Button>
       </div>
       </div>
     )
-  }
 }
+export default Step3
