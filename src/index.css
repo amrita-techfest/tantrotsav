@@ -446,7 +446,7 @@ a {
     visibility: hidden !important;
   }
 }
-@media (max-width: 1218px) {
+@media (max-width: 1072px) {
   .ani {
     display: none;
   }
