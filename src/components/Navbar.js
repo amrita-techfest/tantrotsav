@@ -1,7 +1,10 @@
 import Hamburger from "hamburger-react";
 import React from "react";
 import "../index.css";
+import { Link } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router";
 import { motion } from "framer-motion";
+import { name } from "@cloudinary/transformation-builder-sdk/actions/namedTransformation";
 import { HashLink as HLink } from "react-router-hash-link";
 
 function Navbar({ isOpen, setOpen }) {
@@ -26,12 +29,14 @@ function Navbar({ isOpen, setOpen }) {
             transition={{ duration: 1.2 }}
           >
             <div className="flex">
-              <img
-                className="logo h-20"
-                id="logo"
-                src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
-                alt="logo"
-              />
+              <Link to="/#hero">
+                <img
+                  className="logo h-20"
+                  id="logo"
+                  src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
+                  alt="logo"
+                />
+              </Link>
             </div>
           </motion.div>
         )}
