@@ -3,6 +3,7 @@ import Step1 from './steps/Step1';
 import Step2 from './steps/Step2';
 import Step3 from './steps/Step3';
 import registerUser from '../../services/registerUser';
+import { createTheme , ThemeProvider } from '@mui/material';
 
 const RegisterEvent = () => {
 
@@ -36,6 +37,7 @@ const RegisterEvent = () => {
     },[data])
 
 
+
     const eventLists = [
         {value: 'Strigrays League - Gaming Jam' , regFee : 200},
         {value : 'Battle Of The Ice - Gaming Tournment' , regFee : 200},
@@ -51,6 +53,12 @@ const RegisterEvent = () => {
         {value : 'Forensics Investigation Challenges' , regFee : 220},
         
       ];
+
+      const theme = createTheme({
+        typography:{
+          fontFamily: 'Poppins',
+        }
+      });
 
 
 
@@ -95,9 +103,11 @@ const RegisterEvent = () => {
 
         }
         return (
+          <ThemeProvider theme={theme}>
             <div>
                 {show()}
             </div>
+          </ThemeProvider>
         );
     
 }
