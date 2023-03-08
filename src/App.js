@@ -12,7 +12,7 @@ function App() {
       <ParticleBackground />
       <Router>
         <NavBar isOpen={isOpen} setOpen={setOpen} />
-        <RouteLinks isOpen={isOpen} />
+        {!isOpen && <RouteLinks isOpen={isOpen} />}
       </Router>
     </div>
   );
