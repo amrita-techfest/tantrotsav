@@ -41,7 +41,7 @@ function EventsIndex({ setEvent }) {
                           >
                             <button
                               className='bg-[blue] text-white p-3 rounded-[5px] m-3'
-                              onClick={() => onClick()}
+                              onClick={() => onClick(details.documentId)}
                             >
                               Read More
                             </button>

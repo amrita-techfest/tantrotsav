@@ -9,20 +9,22 @@ import Profile from "../user/profile.js";
 import RegisterEvent from "../auth/registerEvent.js";
 import React from "react";
 import EventDetails from "../events/eventDetails/eventDetails.js";
+import SignIn from "../auth/signin.js";
 
 const RouteLinks = ({ isOpen }) => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/events" element={<EventsIndex />} />
-      <Route path="/register" element={<RegisterEvent />} />
-      <Route path="/Footer" element={<Footer />} />
-      <Route path="/events/:details" element={<EventDetails />} />
+      <Route path='/' element={<Home />} />
+      <Route path='/events' element={<EventsIndex />} />
+      <Route path='/register' element={<RegisterEvent />} />
+      <Route path='/Footer' element={<Footer />} />
+      <Route path='/events/:details' element={<EventDetails />} />
 
-      <Route path="/Footer" element={<Footer />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/registedEvents" element={<RegistedEvents />} />
-      <Route path="/profile" element={<Profile />} />
+      <Route path='/Footer' element={<Footer />} />
+      <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/registedEvents' element={<RegistedEvents />} />
+      <Route path='/profile' element={<Profile />} />
+      <Route path='/signin' element={<SignIn />} />
     </Routes>
   );
 };
