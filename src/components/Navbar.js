@@ -1,7 +1,10 @@
 import Hamburger from "hamburger-react";
 import React from "react";
 import "../index.css";
+import { Link } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router";
 import { motion } from "framer-motion";
+import { name } from "@cloudinary/transformation-builder-sdk/actions/namedTransformation";
 import { HashLink as HLink } from "react-router-hash-link";
 import { registerWithGoogle } from "../../src/services/registerWithGoogle";
 import { auth } from "../firebase";
@@ -27,7 +30,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     <>
       <div
         id="naving"
-        className="mob relative z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent"
+        className="mob z-[5000000000000] sticky top-[0] flex items-center justify-between p-5 pb-1 pt-1 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent "
       >
         {!isOpen && (
           <motion.div
@@ -36,12 +39,14 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
             transition={{ duration: 1.2 }}
           >
             <div className="flex">
-              <img
-                className="logo h-20"
-                id="logo"
-                src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
-                alt="logo"
-              />
+              <Link to="/#hero">
+                <img
+                  className="logo h-20"
+                  id="logo"
+                  src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
+                  alt="logo"
+                />
+              </Link>
             </div>
           </motion.div>
         )}

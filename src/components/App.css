@@ -19,13 +19,14 @@ h3 {
   height: max-content;
   border-radius: 0.5em;
   /* background: linear-gradient(to right,#0c4401,#348a0c,#8f960e); */
-  background-color: #05b164;
+  /* background-color: #05b164; */
+  background-color: rgba(61, 232, 121, 0.662);
 }
 
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 transparent,
     0 0.4em 1.25em 0 transparent !important;
-  padding: 2em 3em !important;
+  padding: 0em 3em 0em 2em !important;
 }
 
 .date {

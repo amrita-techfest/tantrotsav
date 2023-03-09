@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import EventsSilder from "./EventsSilder";
 import Faq from "../Faq";
 import Timeline from "./timeline";
+import Sponsors from "./sponsors";
 
 function Home({ isOpen }) {
   return (
@@ -13,6 +14,7 @@ function Home({ isOpen }) {
       <TopContent isOpen={isOpen} />
       <EventsSilder />
       <About />
+      <Sponsors />
       <Timeline />
       <Faq />
       <Footer />

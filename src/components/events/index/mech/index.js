@@ -1,19 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 // import Workshop from "./workshop.js"
-import { setEventId } from "./actions";
-import "./main.css";
-import { event } from "../../../data/data";
+import { setEventId } from "../actions";
+import "../main.css";
+import { MechEvent } from "../../../../data/data";
 import { Link } from "react-router-dom";
 
-function EventsIndex({ setEvent, isOpen }) {
+function MechIndex({ setEvent, isOpen }) {
   function onClick(eventId) {
     setEvent(eventId);
   }
 
   return (
     <>
-      {event.map((det) => {
+      {MechEvent.map((det) => {
         return (
           <>
             <div className="m-4">
@@ -28,12 +28,12 @@ function EventsIndex({ setEvent, isOpen }) {
                   return (
                     <div className="card">
                       <div className="imgBox">
-                        <img src="images/technical.jpg" alt="tech" />
+                        <img src={details.image} alt='tech photo' />
                       </div>
                       <div className="content">
                         <div className="details">
-                          <h2>{details.name}</h2>
-                          <h3>{details.about}</h3>
+                          <h2 className="p-2">{details.name}</h2>
+                          <h3 className="p-4">{details.about}</h3>
                           <p>Mode - {details.mode}</p>
                           <Link
                             to={`/events${details.link}`}
@@ -66,4 +66,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(EventsIndex);
+export default connect(null, mapDispatchToProps)(MechIndex);
