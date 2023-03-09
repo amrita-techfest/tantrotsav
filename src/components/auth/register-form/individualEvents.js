@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import "./styles.css";
 import { fetchEventsListStart } from "./redux/actions";
 
-const IndividualEvents = ({ eventsList, getEventsList, loading }) => {
+const IndividualEvents = ({ eventsList, getEventsList, loading , nextStep , prevStep}) => {
   const [selectedEvents, setSelectedEvents] = React.useState([]);
 
   React.useEffect(() => {
@@ -47,8 +47,15 @@ const IndividualEvents = ({ eventsList, getEventsList, loading }) => {
             </select>
           </div>
         </form>
-        <div className='buttons mt-4'>
-          <button className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]'>
+        <div className='buttons mt-4 flex'>
+          <button 
+            onClick={prevStep}
+            className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px] mx-3'>
+            Previous
+          </button>
+          <button 
+            onClick={nextStep}
+            className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px] mx-3'>
             Go Next
           </button>
         </div>

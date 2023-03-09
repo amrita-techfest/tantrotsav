@@ -18,9 +18,11 @@ import UserAuth from "./register-form/userAuth";
 import PersonalInfo from "./register-form/personalInfo";
 import IndividualEvents from "./register-form/individualEvents";
 import GroupEvents from "./register-form/groupEvents";
+import { useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 
 const RegisterEvent = () => {
+  // const diaState = window.sessionStorage.getItem("dialogState");
   const [open, setOpen] = React.useState(true);
   const [tc, setTC] = useState(false);
   const theme1 = useTheme();
@@ -29,6 +31,7 @@ const RegisterEvent = () => {
       fontFamily: "Poppins",
     },
   });
+  const navigate = useNavigate();
   const fullScreen = useMediaQuery(theme1.breakpoints.down("md"));
   const handleClickOpen = () => {
     setOpen(true);
@@ -37,6 +40,7 @@ const RegisterEvent = () => {
   const handleClose = (val) => {
     setOpen(false);
     setTC(val);
+    // navigate(0);
   };
   const [step, setStep] = useState(0);
   const [data, setData] = useState({});
@@ -129,9 +133,6 @@ const RegisterEvent = () => {
       <div>
         {!open && !tc && <Navigate to="/" />}
         {show()}
-        <Button variant="outlined" onClick={handleClickOpen}>
-          Open responsive dialog
-        </Button>
         <Dialog
           fullScreen={fullScreen}
           open={open}
@@ -143,24 +144,46 @@ const RegisterEvent = () => {
           </DialogTitle>
           <DialogContent>
             <DialogContentText>
-              1. All attendees must respect the code of conduct and behave
-              appropriately. 2. Attendees must carefully select the events and
-              activities they participate in, taking into consideration the
-              timings as the TechFest will not be liable for any clash of events
-              and refunds. 3. TechFest reserves the right to refuse entry or
-              remove anyone from the event for any reason, including but not
-              limited to inappropriate behavior or violation of the code of
-              conduct. 4. All attendees are responsible for their own
-              belongings. 5. By attending TechFest, all attendees agree to grant
-              TechFest and its partners the right to use any photographs,
-              videos, or other recordings taken during the event for promotional
-              purposes. 6. All attendees must follow instructions from TechFest
-              staff and security personnel. 7. TechFest is not liable for any
-              injury, illness, or damage to personal property that may occur
-              during the event. 8. All attendees are responsible for their own
-              safety and well-being during the event. 9. TechFest reserves the
-              right to update these terms and conditions at any time without
-              notice.
+              <ol style={{ listStyle: "initial", fontSize: "14px" }}>
+                <li>
+                  All attendees must respect the code of conduct and behave
+                  appropriately.
+                </li>
+                <li>
+                  Attendees must carefully select the events and activities they
+                  participate in, taking into consideration the timings as the
+                  TechFest will not be liable for any clash of events and
+                  refunds.
+                </li>
+                <li>
+                  TechFest reserves the right to refuse entry or remove anyone
+                  from the event for any reason, including but not limited to
+                  inappropriate behavior or violation of the code of conduct.
+                </li>
+                <li>All attendees are responsible for their own belongings.</li>
+                <li>
+                  By attending TechFest, all attendees agree to grant TechFest
+                  and its partners the right to use any photographs, videos, or
+                  other recordings taken during the event for promotional
+                  purposes.
+                </li>
+                <li>
+                  All attendees must follow instructions from TechFest staff and
+                  security personnel.
+                </li>
+                <li>
+                  TechFest is not liable for any injury, illness, or damage to
+                  personal property that may occur during the event.
+                </li>
+                <li>
+                  All attendees are responsible for their own safety and
+                  well-being during the event.
+                </li>
+                <li>
+                  TechFest reserves the right to update these terms and
+                  conditions at any time without notice.
+                </li>
+              </ol>
             </DialogContentText>
           </DialogContent>
           <DialogActions>
