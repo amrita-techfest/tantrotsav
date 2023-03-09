@@ -3,6 +3,9 @@ import React from "react";
 import "../index.css";
 import { motion } from "framer-motion";
 import { HashLink as HLink } from "react-router-hash-link";
+import { registerWithGoogle } from "../../src/services/registerWithGoogle";
+import { auth } from "../firebase";
+import Avatar from "@mui/material/Avatar";
 
 function Navbar({ isOpen, setOpen }) {
   const links = [
@@ -12,8 +15,22 @@ function Navbar({ isOpen, setOpen }) {
     ["FAQ", "/#faq"],
     ["Contact", "#contact"],
   ];
+  const [userStatus, setUserStatus] = React.useState(false);
+  const user = auth.currentUser;
 
-  const [openDropDown , setOpenDropDown] = React.useState(false);
+  React.useEffect(() => {
+    if (user) {
+      setUserStatus(true);
+    } else {
+      setUserStatus(false);
+    }
+  }, [user]);
+
+  const handleLogin = () => {
+    registerWithGoogle();
+  };
+
+  const [openDropDown, setOpenDropDown] = React.useState(false);
 
   return (
     <>
@@ -79,26 +96,34 @@ function Navbar({ isOpen, setOpen }) {
                 </li>
               ))} */}
               <li className="font-bold cursor-pointer transition duration-500 ">
-                <HLink smooth to='/'>Home</HLink>
+                <HLink smooth to="/">
+                  Home
+                </HLink>
               </li>
               <li className="font-bold cursor-pointer transition duration-500 ">
-                <HLink smooth to='/#about'>About</HLink>
+                <HLink smooth to="/#about">
+                  About
+                </HLink>
               </li>
-              <li 
-                onClick = {() => setOpenDropDown(!openDropDown)}
-                className="font-bold cursor-pointer transition duration-500">
+              <li
+                onClick={() => setOpenDropDown(!openDropDown)}
+                className="font-bold cursor-pointer transition duration-500"
+              >
                 Events
               </li>
               <li>
-                <HLink smooth to='/#faq'>FAQ</HLink>
+                <HLink smooth to="/#faq">
+                  FAQ
+                </HLink>
               </li>
               <li>
-                <HLink smooth to='/#contact'>Contact</HLink>
+                <HLink smooth to="/#contact">
+                  Contact
+                </HLink>
               </li>
             </ul>
-            
-            {
-            openDropDown && (
+
+            {openDropDown && (
               <div class="dropdown">
                 <ul>
                   <li>Option 1</li>
@@ -107,10 +132,8 @@ function Navbar({ isOpen, setOpen }) {
                   <li>Option 4</li>
                 </ul>
               </div>
-            )
-          }
+            )}
           </div>
-          
         )}
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
@@ -130,12 +153,19 @@ function Navbar({ isOpen, setOpen }) {
                 </HLink>
               </li>
             ))}
-            <button
-              id="btn1"
-              className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]"
-            >
-              Login
-            </button>
+            {!userStatus ? (
+              <button
+                id="btn1"
+                onClick={() => {
+                  handleLogin();
+                }}
+                className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]"
+              >
+                Login
+              </button>
+            ) : (
+              <Avatar alt="dp" src={user.photoURL} />
+            )}
           </ul>
         </motion.div>
       </div>

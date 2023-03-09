@@ -34,6 +34,7 @@ const Step1 = ({ nextStep, handleChange, values }) => {
   
 
   useEffect(() => {
+    // setPhoneWh(localStorage.getItem("waNumber"));
     if (user) {
       console.log(user.displayName);
       setName(user.displayName);
@@ -102,6 +103,10 @@ const Step1 = ({ nextStep, handleChange, values }) => {
         error={flags?.email && true}
         helperText={flags?.email}
       />
+      <p className="font-[14px] p-3 text-black">
+          We'll never spam you and share your email 
+          with anyone else.
+      </p>
 
       <TextField
         placeholder="Phone number"
@@ -121,7 +126,9 @@ const Step1 = ({ nextStep, handleChange, values }) => {
       <TextField
         placeholder="Whatsapp number"
         label="Whatsapp number"
-        value={phoneWh}
+        value={
+          phoneWh
+        }
         className='m-2'
         defaultValue={values.phoneWh || ""}
         onChange={(evt) => {
