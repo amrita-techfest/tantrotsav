@@ -17,7 +17,7 @@ function Navbar({ isOpen, setOpen }) {
     <>
       <div
         id="naving"
-        className="mob z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent"
+        className="mob relative z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent"
       >
         {!isOpen && (
           <motion.div

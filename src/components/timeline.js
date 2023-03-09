@@ -1,6 +1,8 @@
 import "./App.css";
 import { ReactComponent as EventIcon } from "./event.svg";
 import { ReactComponent as WorkshopIcon } from "./workshop.svg";
+import { Link } from "react-router-dom";
+
 
 import timelineElements from "./timelineElements";
 
@@ -52,14 +54,18 @@ function Timeline() {
                 </h5>
                 <p id="description">{element.description}</p>
                 {showButton && (
-                  <a
+                  <Link
+                  to={`/events${element.link}`}
+                  state={{ data: element }}
+                ><a
                     className={`button ${
                       isEventIcon ? "eventButton" : "workshopButton"
                     }`}
-                    href="/events"
+                    href=""
                   >
                     {element.buttonText}
                   </a>
+                  </Link>
                 )}
               </div>
             </VerticalTimelineElement>

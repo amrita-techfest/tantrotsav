@@ -4,6 +4,7 @@ import "./eventDetails.css";
 import { useLocation } from "react-router-dom";
 // import getEventDetails from "../../../services/getEventDetails";
 import { clearEventDetails, getEventDetailsStart } from "./actions";
+import { HashLink } from "react-router-hash-link";
 
 function EventDetails({
   getEventDetailsStart,
@@ -43,87 +44,100 @@ function EventDetails({
           fontSize: 32,
         }}
       >
-        Loading...
+        <div class="wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+        </div>
       </h1>
     </div>
   ) : (
-    <div className='eventDetails h-[85vh]'>
-      <div className='image'>
-        <div className='p-4 flex-col flex justify-center items-center'>
-          <img src='../assets/google.jpg' className='h-[350px] w-[350px]' />
-          <button className='border-2 border-[#0dff00] text-white transition duration-500 bg-transparent hover:bg-[#0dff00] text-[16px] p-2 m-3 rounded-[5px] w-[130px]'>
-            Register
-          </button>
+    <div className="max-w-7xl mx-auto h-screen">
+      <div className=" p-[120px] pt-[50px] flex items-center justify-between">
+        <div className="flex self-start flex-col gap-4">
+          <img
+            src={eventDetails.img}
+            alt="ima"
+            className="h-[250px] w-[250px]"
+          />
+          <HashLink to="/register">
+            <button className="reg">Register Now</button>
+          </HashLink>
         </div>
-      </div>
-      <div className='p-3'>
-        <h1 className='event_name p-2 text-[35px] tracking-[1px] text-white'>
-          {eventDetails.name}
-        </h1>
-        <p className='p-2 text-[20px] text-white'>Team Size : 1-2</p>
-        <div>
-          <h1 className='text-[30px] font-space text-white p-2 '>
-            Mode:{eventDetails.mode}
+        <div className="h-auto ml-10 w-[800px]">
+          <h1 className="event_name pt-0 pb-0 p-10 text-[35px] tracking-[1px] font-bold text-white">
+            {eventDetails.name}
           </h1>
-          <h2>Registration Fee :{eventDetails.registrationFees}</h2>
-        </div>
-        <div>
-          <h1 className='text-[30px] font-space text-white p-2 '>
-            Event Description
+          <h1 className="text-[30px] pt-0 mt-4 pb-0 font-space p-10">
+            Mode: {eventDetails.mode}
           </h1>
-          <p>
-            <div className='p-2'>
-              <h2 className='text-white text-[20px] underline py-2'>
-                Event-1 : Map Creation
+          <div className="flex flex-col gap-3 p-10 pt-0 mt-4 text-[18px] font-medium pb-0">
+            <p>Venue : {eventDetails.Venue}</p>
+            <p>Timeing : {eventDetails.Time}</p>
+            <p>Date : {eventDetails.Date}</p>
+            <p>Duration : {eventDetails.Duration}</p>
+            <h2>Registration Fee : {eventDetails.registrationFees}</h2>
+            <div className="">
+              <h2 className="text-[#09ff00] text-[20px] underline py-2">
+                FacultyCoordinator
               </h2>
-              <p className='text-white text-[16px] py-2'>
-                Timing : 23/03/23: 8.00 am to 12.00pm
+              <p className="p-3">
+                {eventDetails?.facultyCoordinator?.map((x) => (
+                  <div>
+                    <div>
+                      <li>Name : {x.Name}</li>
+                    </div>
+                  </div>
+                ))}
               </p>
-              <ul className='list-disc text-white px-5'>
-                <li>
-                  The event will be about creating a map for 3rd-first/third
-                  person game.
-                </li>
-                <li>Assets will be given to the respected teams.</li>
-                <li>
-                  It is just a drag & drop concept on the game development
-                  platform called Unity.
-                </li>
-              </ul>
             </div>
-            <div className='p-2'>
-              <h2 className='text-white text-[20px] underline py-2'>
-                Event-2 : Character Creation
-              </h2>
-              <h4 className='text-white text-[16px] py-2'>
-                23/03/23: 1.00 pm to 5.00pm
-              </h4>
-              <ul className='list-disc text-white px-5'>
-                <li>
-                  This event will be about creating a 3D character on the
-                  platform called blender.
-                </li>
-                <li>
-                  Blender is a beginner tool for creations of characters, game
-                  assets, etc..
-                </li>
-              </ul>
+            <h2 className="text-[#09ff00] text-[20px] underline py-2">
+              StudentCoordinator
+            </h2>
+            <div className="p-3">
+              <div className="flex gap-5">
+                {eventDetails?.studentCoordinator?.map((x) => (
+                  <div className="">
+                    <div className="">
+                      <p>Name : {x.Name}</p>
+                      <p>Department: {x.Dept}</p>
+                      <p>Year: {x.Year}</p>
+                      <p>Contact: {x.contact}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </p>
+            <div className="">
+              <h1 className="text-[30px] mb-3 text-[#09ff00] underline font-space">
+                Description
+              </h1>
+              <p className=" text-[16px] py-2 w-full text-justify">
+                {eventDetails.description}
+              </p>
+              <h1 className="text-[30px] mb-3 mt-3 underline font-space text-[#09ff00] ">
+                Rules
+              </h1>
+              <p className="w-full">{eventDetails.rules}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   eventDetails: state.eventDetails.eventDetails,
   loading: state.eventDetails.isFetching,
   eventId: state.eventSetter.eventId,
 });
 
-const mapDispatchToProps = dispatch => ({
-  getEventDetailsStart: eventId => dispatch(getEventDetailsStart(eventId)),
+const mapDispatchToProps = (dispatch) => ({
+  getEventDetailsStart: (eventId) => dispatch(getEventDetailsStart(eventId)),
   clearEventDetails: () => dispatch(clearEventDetails()),
 });
 
