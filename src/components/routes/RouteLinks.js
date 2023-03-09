@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import EventsIndex from "../events/index/index.js";
 import EceIndex from "../events/index/ece/index.js";
+import MechIndex from "../events/index/mech/index.js";
+
 import Home from "../Home";
 import Footer from "../Footer";
 import Dashboard from "../user/dashboard.js";
@@ -19,6 +21,8 @@ const RouteLinks = ({ isOpen }) => {
       <Route path="/" element={<Home />} />
       <Route path="/events" element={<EventsIndex />} />
       <Route path="/ece" element={<EceIndex />} />
+      <Route path="/mech" element={<MechIndex />} />
+
 {/* 
       <Route path='/' element={<Home isOpen={isOpen} />} />
       <Route path='/events' element={<EventsIndex isOpen={isOpen} />} /> */}

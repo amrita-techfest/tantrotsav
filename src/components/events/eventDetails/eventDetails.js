@@ -122,6 +122,7 @@ function EventDetails({
                 Rules
               </h1>
               <p className="w-full">{eventDetails.rules}</p>
+              {/* {eventId.subString(ece)} */}
             </div>
           </div>
         </div>

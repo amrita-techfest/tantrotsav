@@ -217,6 +217,58 @@ export const EceEvent = [
     ],
   },
 ];
+export const MechEvent = [
+  {
+    category: "Competitions",
+    gameDetails: [
+      {
+        name: "SRUJAN",
+        about: "CAD Competition ",
+        mode: "Offline",
+        link: "/srujan",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
+        documentId: "mech1",
+      },
+      {
+        name: "ROBORACE",
+        about: "Competition",
+        mode: "Offline",
+        link: "/roborace",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
+        documentId: "mech2",
+      },
+      {
+        name: "Prastavam",
+        about: "Competition ",
+        mode: "Offline",
+        link: "/Prastavam",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
+        documentId: "mech5",
+      },
+    ],
+  },
+  {
+    category: "Workshop",
+    gameDetails: [
+      {
+        name: "SPARK",
+        about: "Workshop",
+        mode: "Offline",
+        link: "/spark",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
+        documentId: "mech3",
+      },
+      {
+        name: "Maze Solver Challenge ",
+        about: "Workshop",
+        mode: "Offline",
+        link: "/Maze-Solver-Challenge",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
+        documentId: "mech4",
+      },
+    ],
+  },
+];
 
 export const cardContents = [
   {
