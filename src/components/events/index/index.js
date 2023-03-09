@@ -28,7 +28,7 @@ function EventsIndex({ setEvent, isOpen }) {
                   return (
                     <div className="card">
                       <div className="imgBox">
-                        {/* <img src='images/technical.jpg' alt='tech photo' /> */}
+                        <img src={details.image} alt='tech photo' />
                       </div>
                       <div className="content">
                         <div className="details">

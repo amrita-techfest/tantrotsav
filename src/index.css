@@ -23,6 +23,11 @@
   box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
+.home{
+  position: relative;
+  z-index: 1;
+}
+
 #scrollbar5::-webkit-scrollbar-thumb {
   background-image: -webkit-gradient(
     linear,
@@ -432,6 +437,7 @@ a {
   }
   .ani {
     visibility: visible;
+    z-index: -1;
   }
 }
 @media (max-width: 1157px) {
@@ -446,7 +452,7 @@ a {
     visibility: hidden !important;
   }
 }
-@media (max-width: 1218px) {
+@media (max-width: 1072px) {
   .ani {
     display: none;
   }

@@ -10,13 +10,15 @@ import RegisterEvent from "../auth/registerEvent.js";
 import React from "react";
 import EventDetails from "../events/eventDetails/eventDetails.js";
 import SignIn from "../auth/signin.js";
+import StepGoogle from "../auth/steps/StepGoogle.js";
 
 const RouteLinks = ({ isOpen }) => {
   return (
     <Routes>
       <Route path="/" element={<Home isOpen={isOpen} />} />
       <Route path="/events" element={<EventsIndex isOpen={isOpen} />} />
-      <Route path="/register" element={<RegisterEvent />} />
+      {/* <Route path="/register" element={<RegisterEvent />} /> */}
+      <Route path="/register" element={<StepGoogle />} />
       <Route path="/events/:details" element={<EventDetails />} />
       <Route path="/Footer" element={<Footer />} />
       <Route path="/dashboard" element={<Dashboard />} />

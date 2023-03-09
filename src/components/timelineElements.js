@@ -5,8 +5,9 @@ let timelineElements = [
     location: "Game Development, Offline",
     description: "",
     buttonText: "Read More",
-    date: "March 23",
+    date: "March 24",
     icon: "event",
+    link: "/strigrays-league",
   },
   {
     id: 2,
@@ -14,7 +15,7 @@ let timelineElements = [
     location: "Online Gaming",
     description: "",
     buttonText: "Read More",
-    date: "March 23",
+    date: "March 24",
     icon: "event",
   },
   {
@@ -23,7 +24,7 @@ let timelineElements = [
     location: "Capture the Flag",
     description: "",
     buttonText: "Read More",
-    date: "March 23",
+    date: "March 24",
     icon: "event",
   },
   {
@@ -32,7 +33,7 @@ let timelineElements = [
     location: "Innovative idea proposal competition, Offline",
     description: "",
     buttonText: "Read More",
-    date: "March 23",
+    date: "March 24",
     icon: "event",
   },
   {
@@ -50,7 +51,7 @@ let timelineElements = [
     location: "Building a ChatBot",
     description: "",
     buttonText: "Read More",
-    date: "March 23",
+    date: "March 24",
     icon: "workshop",
   },
   {
@@ -59,7 +60,7 @@ let timelineElements = [
     location: "Building a ChatBot",
     description: "",
     buttonText: "Read More",
-    date: "March 23",
+    date: "March 24",
     icon: "workshop",
   },
 ];
