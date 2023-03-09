@@ -4,10 +4,11 @@ import Step2 from './steps/Step2';
 import Step3 from './steps/Step3';
 import registerUser from '../../services/registerUser';
 import { createTheme , ThemeProvider } from '@mui/material';
+import StepGoogle from './steps/StepGoogle';
 
 const RegisterEvent = () => {
 
-    const [step,setStep] = useState(1)
+    const [step,setStep] = useState(0)
     const [data,setData] = useState({})
     const prevStep = () => {
         setStep(step-1)
@@ -65,6 +66,10 @@ const RegisterEvent = () => {
     const show = () => {
 
         switch (step) {
+            case 0:
+              return (
+                <StepGoogle nextStep={nextStep}/>
+              )
             case 1: 
               return (
                 <Step1 
