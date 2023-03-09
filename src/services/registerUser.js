@@ -14,6 +14,7 @@ export default async function registerUser(data1) {
       memberName: data1.memberName,
       city:data1.city,
       events: arrayUnion(...data1.selectedOptions),
+      
       txnId: arrayUnion(data1.txnId),
     },
     { merge: true }

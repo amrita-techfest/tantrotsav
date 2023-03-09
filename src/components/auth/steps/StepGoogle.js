@@ -31,12 +31,7 @@ function StepGoogle({ nextStep, handleChange, values }) {
               registerWithGoogle();
             }}
           />
-          {/* <h1 className="text-black text-center text-[24px] font-bold mt-4">
-            OR
-          </h1>
-          <div className="mt-4">
-            <SignIn />
-          </div> */}
+          
         </div>
       </div>
     </div>
