@@ -86,7 +86,7 @@ const TopContent = ({ isOpen }) => {
           >
             Welcome to Tantrotsav'23, the National Techfest of Amrita Vishwa
             Vidyapeetham, Chennai. We are glad to announce that Tantrotsav'23
-            will be held from 26th to 27th March 2023. We invite you to be a
+            will be held from 24th to 25th March 2023. We invite you to be a
             part of this event and make it a grand success.
           </h1>
           <div className="btns">

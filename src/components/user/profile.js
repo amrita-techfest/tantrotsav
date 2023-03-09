@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 import { getUserDetails } from "../../services/registerUser";
 
 import getEvents from "../../services/getEvents.js";
-
+import { signout } from "../../services/SignOut";
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
@@ -39,9 +39,9 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-const Profile = ({ eventDetails }) => {
+const Profile = ({ eventDetails, setUserL }) => {
   const [events, setEvents] = useState([]);
-  
+
   const [userDetials, setUser] = useState({});
   const [value, setValue] = useState(0);
 
@@ -49,18 +49,20 @@ const Profile = ({ eventDetails }) => {
     setValue(newValue);
   };
 
-
+  const handleSignOut = () => {
+    signout({ setUserL });
+  };
 
   const getData = async (user) => {
     const data = await getUserDetails(user);
     var evtList = data.events.map((evt) => evt.eventName);
-    
-    var groupEvents = data.groupEvents.map((evt) => evt.eventName)
-    evtList = [...evtList, ...groupEvents]
+
+    var groupEvents = data.groupEvents.map((evt) => evt.eventName);
+    evtList = [...evtList, ...groupEvents];
     setUser(data);
     console.log(data);
     const evt = await getEvents(evtList);
-    setEvents(evt)
+    setEvents(evt);
   };
 
   useEffect(() => {
@@ -76,30 +78,33 @@ const Profile = ({ eventDetails }) => {
         </div>
         <div className="p-10 border-[#0dff00] border-2 rounded-[10px]  shadow-[5px_10px_30px_-1px_#0dff00] mb-4">
           <div className="grid pf grid-cols-1">
-              <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-                Name
-              </div>
-              <div className="mb-[10px]">{userDetials.name}</div>
-              <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-                Email
-              </div>
-              <div className="mb-[10px]">{userDetials.email}</div>
-              <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-                Phone
-              </div>
-              <div className="mb-[10px]">{userDetials.phone}</div>
-              <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-                Phone (Whatsapp)
-              </div>
-              <div className="mb-[10px]">{userDetials.phoneWh}</div>
-              <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-                College Name
-              </div>
-              <div className="mb-[10px]">{userDetials.collegeName}</div>
-              <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-                City
-              </div>
-              <div className="mb-[10px]">{userDetials.city}</div>
+            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
+              Name
+            </div>
+            <div className="mb-[10px]">{userDetials.name}</div>
+            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
+              Email
+            </div>
+            <div className="mb-[10px]">{userDetials.email}</div>
+            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
+              Phone
+            </div>
+            <div className="mb-[10px]">{userDetials.phone}</div>
+            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
+              Phone (Whatsapp)
+            </div>
+            <div className="mb-[10px]">{userDetials.phoneWh}</div>
+            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
+              College Name
+            </div>
+            <div className="mb-[10px]">{userDetials.collegeName}</div>
+            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
+              City
+            </div>
+            <div className="mb-[10px]">{userDetials.city}</div>
+            <button onClick={handleSignOut} className="text-white">
+              Sign Out
+            </button>
           </div>
         </div>
       </div>
@@ -109,24 +114,25 @@ const Profile = ({ eventDetails }) => {
             Event Details
           </div>
           <div>
-            { userDetials && events.length>0 &&
-            <Button className="p-2">
-              <PDFDownloadLink
-                document={<MyDocument events={events} data={userDetials} />}
-                fileName="Acknowledgement.pdf"
-                className="hover:bg-[#0dff00] hover:text-[#000] bg-[#000] text-[#0dff00] font-bold p-1 rounded-[5px] transition-all text-[15px]"
-              >
-                {({ blob, url, loading, error }) =>
-                  loading ? (
-                    "Loading document..."
-                  ) : (
-                    <div className="border-[#0dff00] border-2 rounded-[5px] p-[10px]">
-                      <FileDownloadIcon /> Download
-                    </div>
-                  )
-                }
-              </PDFDownloadLink>
-            </Button>}
+            {userDetials && events.length > 0 && (
+              <Button className="p-2">
+                <PDFDownloadLink
+                  document={<MyDocument events={events} data={userDetials} />}
+                  fileName="Acknowledgement.pdf"
+                  className="hover:bg-[#0dff00] hover:text-[#000] bg-[#000] text-[#0dff00] font-bold p-1 rounded-[5px] transition-all text-[15px]"
+                >
+                  {({ blob, url, loading, error }) =>
+                    loading ? (
+                      "Loading document..."
+                    ) : (
+                      <div className="border-[#0dff00] border-2 rounded-[5px] p-[10px]">
+                        <FileDownloadIcon /> Download
+                      </div>
+                    )
+                  }
+                </PDFDownloadLink>
+              </Button>
+            )}
           </div>
         </div>
         <div className="md:pl-[20px] mb-4">
@@ -161,33 +167,29 @@ const Profile = ({ eventDetails }) => {
           </Box>
           <TabPanel value={value} index={0}>
             <div className="grid grid-cols-[5fr_1fr]">
-                <div className=" text-[#fff] font-bold text-[15px]">
-                  Event Name
-                </div>
-                <div className="text-[#fff] font-bold text-[15px]">Fee</div>
+              <div className=" text-[#fff] font-bold text-[15px]">
+                Event Name
+              </div>
+              <div className="text-[#fff] font-bold text-[15px]">Fee</div>
               {userDetials.events &&
                 userDetials.events.map((event) => (
                   <>
-                    <div>
-                      {event.eventName}
-                    </div>
+                    <div>{event.eventName}</div>
                     <div>{event.fee}</div>
                   </>
                 ))}
             </div>
           </TabPanel>
           <TabPanel value={value} index={1}>
-          <div className="grid grid-cols-[5fr_1fr]">
-                <div className=" text-[#fff] font-bold text-[15px]">
-                  Event Name
-                </div>
-                <div className="text-[#fff] font-bold text-[15px]">Fee</div>
+            <div className="grid grid-cols-[5fr_1fr]">
+              <div className=" text-[#fff] font-bold text-[15px]">
+                Event Name
+              </div>
+              <div className="text-[#fff] font-bold text-[15px]">Fee</div>
               {userDetials.groupEvents &&
                 userDetials.groupEvents.map((event) => (
                   <>
-                    <div>
-                      {event.eventName}
-                    </div>
+                    <div>{event.eventName}</div>
                     <div>{event.fee}</div>
                   </>
                 ))}
