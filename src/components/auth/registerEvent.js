@@ -18,6 +18,7 @@ import UserAuth from "./register-form/userAuth";
 import PersonalInfo from "./register-form/personalInfo";
 import IndividualEvents from "./register-form/individualEvents";
 import GroupEvents from "./register-form/groupEvents";
+import RegistrationFeePayment from './register-form/registrationFeePayment';
 
 
 const RegisterEvent = () => {
@@ -36,7 +37,7 @@ const RegisterEvent = () => {
   const handleClose = () => {
     setOpen(false);
   };
-    const [step,setStep] = useState(0)
+    const [step,setStep] = useState(1)
     const [data,setData] = useState({})
     const prevStep = () => {
         setStep(step-1)
@@ -88,12 +89,11 @@ const RegisterEvent = () => {
 
 
     const show = () => {
-
         switch (step) {
             case 0:
               return (
                 // <StepGoogle nextStep={nextStep}/>
-                <UserAuth />
+                <UserAuth/>
               )
             case 1: 
               return (
@@ -102,7 +102,10 @@ const RegisterEvent = () => {
                 // handleChange={callback}
                 // values={data}
                 // />
-                <PersonalInfo />
+                <PersonalInfo 
+                  nextStep = {nextStep}
+                  handleChange={callback}
+                  values={data} />
               )
             case 2: 
               return (
@@ -112,7 +115,12 @@ const RegisterEvent = () => {
                 // handleChange={callback}
                 // values={data}
                 // />
-                <IndividualEvents />
+                <IndividualEvents 
+                  nextStep = {nextStep}
+                  prevStep = {prevStep}
+                  handleChange={callback}
+                  values={data}
+                />
               )
             case 3: 
               return (
@@ -121,12 +129,15 @@ const RegisterEvent = () => {
                 //     prevStep = {prevStep}
                 //     handleChanges={callbackSubmit}
                 // />
-                <GroupEvents />
+                <GroupEvents 
+                  nextStep = {nextStep}
+                  prevStep = {prevStep}
+                  handleChanges={callbackSubmit}
+                />
               )
             case 4:
               return (
-                // <Success />
-                <div></div>
+                <RegistrationFeePayment />
             )
             // never forget the default case, otherwise VS code would be mad!
             default: 
