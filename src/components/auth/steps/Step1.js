@@ -82,7 +82,7 @@ const Step1 = ({nextStep , handleChange , values}) => {
             error={flags?.phone && true}
             helperText={flags?.phone}
         />
-        <TextField 
+        {/* <TextField 
             placeholder="Whatsapp number"
             label='Whatsapp number'
             value={phoneWh}
@@ -95,7 +95,7 @@ const Step1 = ({nextStep , handleChange , values}) => {
             className='m-2'
             error={flags?.phoneWh && true}
             helperText={flags?.phoneWh}
-        />
+        /> */}
         {/* <FormControl variant="outlined" margin='normal' className='m-2'  helperText={flags?.password}> */}
               {/* <InputLabel htmlFor="outlined-adornment-password" error={flags?.password && true}>Password</InputLabel> */}
               {/* <OutlinedInput
@@ -127,6 +127,12 @@ const Step1 = ({nextStep , handleChange , values}) => {
               /> */}
               {/* <FormHelperText error={flags?.password && true}>{flags?.password}</FormHelperText> */}
           {/* </FormControl> */}
+        {/* <Button 
+            variant="contained"
+            color="primary"
+            onClick={registerWithGoogle}
+
+        > */}
         <Button
               color="primary"
               variant="contained"
