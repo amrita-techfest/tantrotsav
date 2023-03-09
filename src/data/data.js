@@ -169,6 +169,55 @@ export const event = [
   },
 ];
 
+export const EceEvent = [
+  {
+    category: "Competitions",
+    gameDetails: [
+      {
+        name: "Bhittipatra Prastavana",
+        about: "POSTER PRESENTATION",
+        mode: "Offline",
+        link: "/poster-presentation",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
+        documentId: "ece1",
+      },
+      {
+        name: "Paripatha Paristi",
+        about: "Circuital Dilemma",
+        mode: "Offline",
+        link: "/circuit-dilemma",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343637/events/ece/circuital_nppvoz.png",
+        documentId: "ece2",
+      },
+      {
+        name: "IOT- Banda Dhavaja",
+        about: "IOT-CTF",
+        mode: "Offline",
+        link: "/IoT-CTF",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
+        documentId: "ece3",
+      },
+      {
+        name: "Vaidyutaka UtpATayati ",
+        about: "Passive Hack",
+        mode: "Offline",
+        link: "/PASSIVE-HACK",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
+        documentId: "ece4",
+      },
+      {
+        name: "Ingenium2K23",
+        about: "Hackathon",
+        mode: "Offline",
+        link: "/INGENIUM",
+        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
+        documentId: "ece5",
+      },
+      
+    ],
+  },
+];
+
 export const cardContents = [
   {
     dept: "Technical",

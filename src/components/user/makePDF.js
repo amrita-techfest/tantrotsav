@@ -128,6 +128,7 @@ const MyDocument = ({ data = defaultData, events }) => {
             </Text>
           </View>
           {events.map((event, i) => (
+            i < 13 &&
             <View
               style={{
                 padding: 10,
@@ -169,6 +170,7 @@ const MyDocument = ({ data = defaultData, events }) => {
               </Text>
             </View>
           ))}
+          
         </View>
         <View
           style={{
@@ -188,6 +190,88 @@ const MyDocument = ({ data = defaultData, events }) => {
             }
           </Text>
           <Image style={{ height: 70, width: 360 }} src={Logo} />
+        </View>
+      </Page>
+      <Page size="A4" style={styles.page}>
+      <View style={{ width: "100%", padding: 10 }}>
+          <Text style={{ marginBottom: 10 }}>Events participating</Text>
+          {console.log(events)}
+          <View style={{ padding: 10, position: "relative", height: "30px" }}>
+            <Text
+              style={{
+                fontSize: 13,
+                position: "absolute",
+                top: "5px",
+                left: "10px",
+              }}
+            >
+              Event Name
+            </Text>
+            <Text
+              style={{
+                fontSize: 13,
+                position: "absolute",
+                top: "5px",
+                left: "250px",
+              }}
+            >
+              Contacts
+            </Text>
+            <Text
+              style={{
+                fontSize: 13,
+                position: "absolute",
+                top: "5px",
+                left: "500px",
+              }}
+            >
+              Fees
+            </Text>
+          </View>
+          {events.map((event, i) => (
+            i >= 13 &&
+            <View
+              style={{
+                padding: 10,
+                backgroundColor: i % 2 === 0 ? "#B2D6F9" : "#D7EAFC",
+                position: "relative",
+                height: "30px",
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 13,
+                  position: "absolute",
+                  top: "5px",
+                  left: "10px",
+                }}
+              >
+                {i + 1}. {event.data.name}
+              </Text>
+              <Text
+                style={{
+                  fontSize: 13,
+                  position: "absolute",
+                  top: "5px",
+                  left: "250px",
+                }}
+              >
+                {event.data.studentCoordinator[0].Name}-{event.data.studentCoordinator[0].contact}
+              </Text>
+              <Text
+                style={{
+                  fontSize: 13,
+                  position: "absolute",
+                  top: "5px",
+                  left: "500px",
+                }}
+              >
+                {viewData(event)}
+                
+              </Text>
+            </View>
+          ))}
+          
         </View>
       </Page>
     </Document>
