@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import EventsIndex from "../events/index/index.js";
+import EceIndex from "../events/index/ece/index.js";
 import Home from "../Home";
 import Footer from "../Footer";
 import Dashboard from "../user/dashboard.js";
@@ -15,8 +16,10 @@ import StepGoogle from "../auth/steps/StepGoogle.js";
 const RouteLinks = ({ isOpen }) => {
   return (
     <Routes>
-      <Route path="/" element={<Home isOpen={isOpen} />} />
-      <Route path="/events" element={<EventsIndex isOpen={isOpen} />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/events" element={<EventsIndex />} />
+      <Route path="/ece" element={<EceIndex />} />
+
       {/* <Route path="/register" element={<RegisterEvent />} /> */}
       <Route path="/register" element={<StepGoogle />} />
       <Route path="/events/:details" element={<EventDetails />} />
