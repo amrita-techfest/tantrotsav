@@ -15,16 +15,16 @@ import StepGoogle from "../auth/steps/StepGoogle.js";
 const RouteLinks = ({ isOpen }) => {
   return (
     <Routes>
-      <Route path="/" element={<Home isOpen={isOpen} />} />
-      <Route path="/events" element={<EventsIndex isOpen={isOpen} />} />
+      <Route path='/' element={<Home isOpen={isOpen} />} />
+      <Route path='/events' element={<EventsIndex isOpen={isOpen} />} />
       {/* <Route path="/register" element={<RegisterEvent />} /> */}
-      <Route path="/register" element={<StepGoogle />} />
-      <Route path="/events/:details" element={<EventDetails />} />
-      <Route path="/Footer" element={<Footer />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/registedEvents" element={<RegistedEvents />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/signin" element={<SignIn />} />
+      <Route path='/register' element={<SignIn />} />
+      <Route path='/events/:details' element={<EventDetails />} />
+      <Route path='/Footer' element={<Footer />} />
+      <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/registedEvents' element={<RegistedEvents />} />
+      <Route path='/profile' element={<Profile />} />
+      <Route path='/signin' element={<SignIn />} />
     </Routes>
   );
 };
