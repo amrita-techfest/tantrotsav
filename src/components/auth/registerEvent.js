@@ -36,7 +36,7 @@ const RegisterEvent = () => {
   const handleClose = () => {
     setOpen(false);
   };
-    const [step,setStep] = useState(1)
+    const [step,setStep] = useState(0)
     const [data,setData] = useState({})
     const prevStep = () => {
         setStep(step-1)
