@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 // import Workshop from "./workshop.js"
-import { setEventId } from "./actions";
-import "./main.css";
-import { event } from "../../../data/data";
+import { setEventId } from "../actions";
+import "../main.css";
+import { event } from "../../../../data/data";
 import { Link } from "react-router-dom";
 
 function EceIndex({ setEvent, isOpen }) {
