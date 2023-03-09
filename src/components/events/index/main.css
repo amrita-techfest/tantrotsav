@@ -33,7 +33,7 @@
 .card {
   position: relative;
   width: 350px;
-  height: 180px;
+  height: 190px;
   background-color: #333;
   transition: 0.5s;
   margin-top: 45px;
@@ -137,20 +137,20 @@
   content: "";
   position: absolute;
   inset: 3px;
-  background: #292929;
+  /* background: #292929; */
 }
 
 .card .imgBox img {
   position: absolute;
   z-index: 1;
   /* filter: invert(1); */
-  opacity: 0.5;
+  /* opacity: 0.5; */
   transition: 0.5s;
 }
 
-.card:hover .imgBox img {
+/* .card:hover .imgBox img {
   opacity: 1;
-}
+} */
 
 .card .content {
   position: absolute;
