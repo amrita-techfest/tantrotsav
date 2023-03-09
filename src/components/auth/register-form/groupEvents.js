@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import "./styles.css";
 import { fetchEventsListStart } from "./redux/actions";
+import Multiselect from "multiselect-react-dropdown";
 
 const GroupEvents = ({ eventsList, getEventsList, loading }) => {
   const [selectedEvents, setSelectedEvents] = React.useState([]);
@@ -45,10 +46,26 @@ const GroupEvents = ({ eventsList, getEventsList, loading }) => {
                   )
               )}
             </select>
+            {/* <Multiselect 
+                  options={
+                    eventsList.map(
+                      (event, index) =>
+                        event.maxTeamSize > 1 && (
+                          <option key={index} value={event.eventName}>
+                            {event.eventName} - Rs. {event.registrationFees}
+                          </option>
+                        )
+                    )}
+                  displayValue="events"
+                  selectionLimit={eventsList.length}
+                  showArrow={true}
+               /> */}
           </div>
         </form>
         <div className='buttons mt-4'>
-          <button className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]'>
+          <button 
+            
+            className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]'>
             Go Next
           </button>
         </div>

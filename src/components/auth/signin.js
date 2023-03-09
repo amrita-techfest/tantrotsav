@@ -20,10 +20,9 @@ const SignIn = () => {
   }, []);
   return (
     <>
-      {/* <div id='otpless'></div> */}
-      {/* <UserAuth /> */}
-      {/* <PersonalInfo /> */}
-      {/* <IndividualEvents /> */}
+      <UserAuth />
+      <PersonalInfo />
+      <IndividualEvents />
       <GroupEvents />
     </>
   );

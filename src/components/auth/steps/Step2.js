@@ -13,6 +13,10 @@ const Step2 = ({nextStep,prevStep,handleChange,values})=> {
     const [teamLeader,setTeamLeader] = useState(values.teamLeader)
     const [flags,setFlags] = useState({})
     const [memberName,setMemberName] = useState(values.memberName || [""])
+    const [eventType , setEventType] = useState('single');
+
+
+
     const cont = e => {
         e.preventDefault();
         var flg = validatorSet2({collegeName,teamName,teamLeader,memberName})
@@ -40,13 +44,18 @@ const Step2 = ({nextStep,prevStep,handleChange,values})=> {
 
 
     return (
-      <div className='bg-white my-5 w-[70%] mx-auto rounded-[20px] p-3 flex flex-col'>
-           <div className='m-2 flex'>
-                <div>
-                    <input type="radio" value="Single Event" name="event_type" /> Single Event
+      <div className='bg-white my-5 w-[70%] text-black mx-auto rounded-[20px] p-3 flex flex-col'>
+            <div>
+                <p>
+                    Enter the type of event you want to participate in
+                </p>
+            </div>
+           <div className='m-2 flex flex-col'>
+                <div className='p-2'>
+                    <input type="checkbox" onChange={(e) => setEventType(e.target.value)} value="single" /> Single Event
                 </div>
-                <div>
-                    <input type="radio" value="Multiple Event" name="event_type" /> Multiple Event
+                <div className='p-2'>
+                    <input type="checkbox" onChange={(e) => setEventType(e.target.value)} value="multiple" /> Multiple Event
                 </div>
            </div>
            <TextField 
