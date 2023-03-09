@@ -16,7 +16,7 @@ const TopContent = ({ isOpen }) => {
         initial={{ opacity: 0, scale: 0.5, y: -400 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className="to relative z-[1000000000] xs:bottom-10 bottom-32 top-[460px] w-full flex justify-center items-center"
+        className="to relative z-[1000000000] xs:bottom-10 bottom-32 top-[460px] left-[50%] translate-x-[-50%] w-fit flex justify-center items-center"
       >
         <HashLink to="/#about" smooth>
           <div className="border-white w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
@@ -86,7 +86,7 @@ const TopContent = ({ isOpen }) => {
           >
             Welcome to Tantrotsav'23, the National Techfest of Amrita Vishwa
             Vidyapeetham, Chennai. We are glad to announce that Tantrotsav'23
-            will be held from 26th to 27th March 2023. We invite you to be a
+            will be held from 24th to 25th March 2023. We invite you to be a
             part of this event and make it a grand success.
           </h1>
           <div className="btns">

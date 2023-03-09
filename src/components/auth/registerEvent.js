@@ -13,12 +13,23 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import UserAuth from "./register-form/userAuth";
+//import "./register-form/styles.css";
+import PersonalInfo from "./register-form/personalInfo";
+import IndividualEvents from "./register-form/individualEvents";
+import GroupEvents from "./register-form/groupEvents";
+import RegistrationFeePayment from './register-form/registrationFeePayment';
 
 
 const RegisterEvent = () => {
   const [open, setOpen] = React.useState(false);
   const theme1 = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+  const theme = createTheme({
+    typography:{
+      fontFamily: 'Poppins',
+    }
+  });
+  const fullScreen = useMediaQuery(theme1.breakpoints.down('md'));
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -73,50 +84,60 @@ const RegisterEvent = () => {
         
       ];
 
-      const theme = createTheme({
-        typography:{
-          fontFamily: 'Poppins',
-        }
-      });
+      
 
 
 
     const show = () => {
-
         switch (step) {
             case 0:
               return (
-                <StepGoogle nextStep={nextStep}/>
+                // <StepGoogle nextStep={nextStep}/>
+                <UserAuth/>
               )
             case 1: 
               return (
-                <Step1 
-                nextStep = {nextStep}
-                handleChange={callback}
-                values={data}
-                />
+                // <Step1 
+                // nextStep = {nextStep}
+                // handleChange={callback}
+                // values={data}
+                // />
+                <PersonalInfo 
+                  nextStep = {nextStep}
+                  handleChange={callback}
+                  values={data} />
               )
             case 2: 
               return (
-                <Step2 
-                nextStep = {nextStep}
-                prevStep = {prevStep}
-                handleChange={callback}
-                values={data}
+                // <Step2 
+                // nextStep = {nextStep}
+                // prevStep = {prevStep}
+                // handleChange={callback}
+                // values={data}
+                // />
+                <IndividualEvents 
+                  nextStep = {nextStep}
+                  prevStep = {prevStep}
+                  handleChange={callback}
+                  values={data}
                 />
               )
             case 3: 
               return (
-                <Step3 
-                    nextStep = {nextStep}
-                    prevStep = {prevStep}
-                    handleChanges={callbackSubmit}
+                // <Step3 
+                //     nextStep = {nextStep}
+                //     prevStep = {prevStep}
+                //     handleChanges={callbackSubmit}
+                // />
+                <GroupEvents 
+                  nextStep = {nextStep}
+                  prevStep = {prevStep}
+                  handleChanges={callbackSubmit}
                 />
               )
             case 4:
               return (
-                // <Success />
-                <div></div>
+                <RegistrationFeePayment />
             )
             // never forget the default case, otherwise VS code would be mad!
             default: 

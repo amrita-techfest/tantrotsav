@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-const PersonalInfo = () => {
+const PersonalInfo = ({nextStep , handleChange , values}) => {
   return (
     <div className='parent-content'>
       <div className='personalInfo-banner'>
@@ -23,7 +23,7 @@ const PersonalInfo = () => {
               id='emailInput'
               disabled
               aria-describedby='emailInfo'
-            />
+              />
             <div id='emailInfo' className='form-text'>
               We'll never spam you and share your email with anyone else.
             </div>
@@ -39,7 +39,7 @@ const PersonalInfo = () => {
               pattern='[0-9]{3} [0-9]{3} [0-9]{4}'
               maxlength='10'
               disabled
-            />
+          />
           </div>
           <div className='mb-1'>
             <label for='collegeInput' className='form-label'>
@@ -49,7 +49,9 @@ const PersonalInfo = () => {
           </div>
         </form>
         <div className='buttons mt-4'>
-          <button className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]'>
+          <button 
+            onClick={nextStep}
+            className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]'>
             Go Next
           </button>
         </div>
