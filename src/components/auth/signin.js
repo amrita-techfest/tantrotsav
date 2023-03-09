@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
-
+import UserAuth from "./register-form/userAuth";
+import "./register-form/styles.css";
+import PersonalInfo from "./register-form/personalInfo";
+import IndividualEvents from "./register-form/individualEvents";
+import GroupEvents from "./register-form/groupEvents";
 const SignIn = () => {
   useEffect(() => {
     // Define the 'otpless' function
@@ -14,7 +18,15 @@ const SignIn = () => {
       console.log(`Logged in as ${waName} (${waNumber})`);
     };
   }, []);
-  return <div id='otpless'></div>;
+  return (
+    <>
+      {/* <div id='otpless'></div> */}
+      {/* <UserAuth /> */}
+      {/* <PersonalInfo /> */}
+      {/* <IndividualEvents /> */}
+      <GroupEvents />
+    </>
+  );
 };
 
 export default SignIn;
