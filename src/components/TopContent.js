@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HashLink, HashLink as HLink } from "react-router-hash-link";
 import { SocialIcon } from "react-social-icons";
+import space from "../../src/components/assets/space-bg.png";
 
 const TopContent = ({ isOpen }) => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const TopContent = ({ isOpen }) => {
         initial={{ opacity: 0, scale: 0.5, y: -400 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className="to relative z-[1000000000] xs:bottom-10 bottom-32 top-[560px] w-full flex justify-center items-center"
+        className="to relative z-[1000000000] xs:bottom-10 bottom-32 top-[460px] w-full flex justify-center items-center"
       >
         <HashLink to="/#about" smooth>
           <div className="border-white w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
@@ -89,21 +90,8 @@ const TopContent = ({ isOpen }) => {
             part of this event and make it a grand success.
           </h1>
           <div className="btns">
-            <HLink smooth to="#about">
-              <button
-                id="btn1"
-                className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 m-3 rounded-[5px] w-[130px]"
-              >
-                Explore
-              </button>
-            </HLink>
             <Link to="/register">
-              <button
-                id="btn2"
-                className="border-2 border-[#0dff00] transition duration-500 hover:bg-transparent bg-[#0dff00] text-[16px]  hover:text-white font-bold hover:font-normal p-2 m-3 rounded-[5px] w-[130px]"
-              >
-                Register Now
-              </button>
+              <button className="reg ml-4">Register Now</button>
             </Link>
           </div>
         </motion.div>
@@ -114,11 +102,12 @@ const TopContent = ({ isOpen }) => {
           className="svg-sec "
         >
           {!isOpen ? (
-            <img
-              className="img-h"
-              src="https://tri-nit.com/landing_page_vector.svg"
-              alt="pic"
-            />
+            // <img
+            //   className="img-h"
+            //   src="https://tri-nit.com/landing_page_vector.svg"
+            //   alt="pic"
+            // />
+            <img className="space" src={space} alt="pic" />
           ) : (
             ""
           )}

@@ -13,12 +13,12 @@ var validatePhone = pass => {
   return regEx.test(pass);
 };
 
-var validatePassword = pass => {
-  var regEx = new RegExp(
-    /^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,}$/
-  );
-  return regEx.test(pass);
-};
+// var validatePassword = pass => {
+//   var regEx = new RegExp(
+//     /^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,}$/
+//   );
+//   return regEx.test(pass);
+// };
 
 export var validatorSet3 = params => {
   console.log(params);
@@ -82,14 +82,13 @@ export var validatorSet1 = params => {
     }
   }
 
-  if (params.password?.trim() == "" || !params.password) {
-    flags.password = "empty password";
-  } else {
-    if (!validatePassword(params.password)) {
-      flags.password =
-        "Password must contain Minimum eight characters, at least one letter, one number and one special character";
-    }
+  // if (params.password?.trim() == "" || !params.password) {
+  //   flags.password = "empty password";
+  // } else {
+  //   if (!validatePassword(params.password)) {
+  //     flags.password =
+  //       "Password must contain Minimum eight characters, at least one letter, one number and one special character";
+  //   }
 
     return flags;
-  }
-};
+  };

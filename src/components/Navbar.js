@@ -6,18 +6,20 @@ import { HashLink as HLink } from "react-router-hash-link";
 
 function Navbar({ isOpen, setOpen }) {
   const links = [
-    ["Home", "/#naving"],
-    ["About", "/#aboutR"],
+    ["Home", "/"],
+    ["About", "/#about"],
     ["Events", "/events"],
     ["FAQ", "/#faq"],
     ["Contact", "#contact"],
   ];
 
+  const [openDropDown , setOpenDropDown] = React.useState(false);
+
   return (
     <>
       <div
         id="naving"
-        className="mob z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent"
+        className="mob relative z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent"
       >
         {!isOpen && (
           <motion.div
@@ -55,7 +57,7 @@ function Navbar({ isOpen, setOpen }) {
         {isOpen && (
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
-              {links.map((link, key) => (
+              {/* {links.map((link, key) => (
                 <li
                   key={key}
                   id="lin"
@@ -64,16 +66,51 @@ function Navbar({ isOpen, setOpen }) {
                   <HLink
                     smooth
                     to={link[1]}
-                    onClick={() => {
+                    onClick={
+                      
+                        link[1] == '/events'
+                      ? setOpenDropDown(!openDropDown)
+                      : () => {
                       setOpen(false);
                     }}
                   >
                     {link[0]}
                   </HLink>
                 </li>
-              ))}
+              ))} */}
+              <li className="font-bold cursor-pointer transition duration-500 ">
+                <HLink smooth to='/'>Home</HLink>
+              </li>
+              <li className="font-bold cursor-pointer transition duration-500 ">
+                <HLink smooth to='/#about'>About</HLink>
+              </li>
+              <li 
+                onClick = {() => setOpenDropDown(!openDropDown)}
+                className="font-bold cursor-pointer transition duration-500">
+                Events
+              </li>
+              <li>
+                <HLink smooth to='/#faq'>FAQ</HLink>
+              </li>
+              <li>
+                <HLink smooth to='/#contact'>Contact</HLink>
+              </li>
             </ul>
+            
+            {
+            openDropDown && (
+              <div class="dropdown">
+                <ul>
+                  <li>Option 1</li>
+                  <li>Option 2</li>
+                  <li>Option 3</li>
+                  <li>Option 4</li>
+                </ul>
+              </div>
+            )
+          }
           </div>
+          
         )}
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}

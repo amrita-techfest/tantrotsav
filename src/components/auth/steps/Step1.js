@@ -15,7 +15,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
-import { getAuth } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const Step1 = ({ nextStep, handleChange, values }) => {
   const [name, setName] = useState(values.name);
@@ -25,41 +25,53 @@ const Step1 = ({ nextStep, handleChange, values }) => {
   const [phoneWh, setPhoneWh] = useState(values.phoneWh);
   const [flags, setFlags] = useState({});
 
-  const [showPassword, setShow] = React.useState(false);
-  const [password, setPassword] = React.useState("");
+  // const [showPassword, setShow] = React.useState(false);
+  // const [password, setPassword] = React.useState("");
 
   const auth = getAuth();
   const user = auth.currentUser;
 
-  if (user) {
-    console.log(user.displayName);
-  } else {
-    console.log("no user");
-  }
+  
+
+  useEffect(() => {
+    if (user) {
+      console.log(user.displayName);
+      setName(user.displayName);
+      setEmail(user.email);
+      
+    } else {
+      console.log("no user");
+    }
+  })
 
   const continueSection = (e) => {
     e.preventDefault();
-    var flag = validatorSet1({ name, email, phone, phoneWh, password });
+    var flag = validatorSet1({ name, email, phone, phoneWh });
     console.log(flag, Object.keys(flag).length);
     if (Object.keys(flag).length == 0) {
-      handleChange({ name, email, phone, phoneWh, password });
+      handleChange({ name, email, phone, phoneWh });
       nextStep();
     }
     setFlags(flag);
+
   };
 
-  useEffect(() => {
-    console.log(values);
-  }, []);
+  
 
   return (
     <div className="bg-white my-5 w-[70%] mx-auto rounded-[20px] p-3 flex flex-col">
       <TextField
-        placeholder="Name"
         label="Name"
         className="m-2"
         defaultValue={values.name || ""}
-        value={name}
+        value={
+          user && name
+        }
+        InputProps = {
+          {
+            readOnly: user ? true : false
+          }
+        }
         onChange={(evt) => {
           var x = flags;
           delete x.name;
@@ -70,9 +82,15 @@ const Step1 = ({ nextStep, handleChange, values }) => {
         helperText={flags?.name}
       />
       <TextField
-        placeholder="Email Address"
         label="Email Address"
-        value={email}
+        value={
+          user && email
+        }
+        InputProps = {
+          {
+            readOnly: user ? true : false
+          }
+        }
         defaultValue={values.email || ""}
         onChange={(evt) => {
           var x = flags;
@@ -104,12 +122,13 @@ const Step1 = ({ nextStep, handleChange, values }) => {
         placeholder="Whatsapp number"
         label="Whatsapp number"
         value={phoneWh}
+        className='m-2'
         defaultValue={values.phoneWh || ""}
         onChange={(evt) => {
           var x = flags;
-          delete x.password;
+          delete x.phoneWh;
           setFlags(x);
-          setPassword(evt.target.value);
+          setPhoneWh(evt.target.value);
         }}
       />
       {/* <FormControl variant="outlined" margin='normal' className='m-2'  helperText={flags?.password}> */}
