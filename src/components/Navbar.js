@@ -6,8 +6,9 @@ import { HashLink as HLink } from "react-router-hash-link";
 import { registerWithGoogle } from "../../src/services/registerWithGoogle";
 import { auth } from "../firebase";
 import Avatar from "@mui/material/Avatar";
+import { Link } from "react-router-dom";
 
-function Navbar({ isOpen, setOpen }) {
+function Navbar({ isOpen, setOpen, user, setUser }) {
   const links = [
     ["Home", "/"],
     ["About", "/#about"],
@@ -15,19 +16,9 @@ function Navbar({ isOpen, setOpen }) {
     ["FAQ", "/#faq"],
     ["Contact", "#contact"],
   ];
-  const [userStatus, setUserStatus] = React.useState(false);
-  const user = auth.currentUser;
-
-  React.useEffect(() => {
-    if (user) {
-      setUserStatus(true);
-    } else {
-      setUserStatus(false);
-    }
-  }, [user]);
 
   const handleLogin = () => {
-    registerWithGoogle();
+    registerWithGoogle({ setUser });
   };
 
   const [openDropDown, setOpenDropDown] = React.useState(false);
@@ -121,6 +112,25 @@ function Navbar({ isOpen, setOpen }) {
                   Contact
                 </HLink>
               </li>
+              {!user ? (
+                <button
+                  id="btn1"
+                  onClick={() => {
+                    handleLogin();
+                  }}
+                  className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]"
+                >
+                  Login
+                </button>
+              ) : (
+                <Link to="/profile">
+                  <Avatar
+                    alt="dp"
+                    referrerpolicy="no-referrer"
+                    src={user.photoURL}
+                  />
+                </Link>
+              )}
             </ul>
 
             {openDropDown && (
@@ -153,7 +163,7 @@ function Navbar({ isOpen, setOpen }) {
                 </HLink>
               </li>
             ))}
-            {!userStatus ? (
+            {!user ? (
               <button
                 id="btn1"
                 onClick={() => {
@@ -164,7 +174,9 @@ function Navbar({ isOpen, setOpen }) {
                 Login
               </button>
             ) : (
-              <Avatar alt="dp" src={user.photoURL} />
+              <Link to="/profile">
+                <Avatar alt="dp" src={user.photoURL} />
+              </Link>
             )}
           </ul>
         </motion.div>

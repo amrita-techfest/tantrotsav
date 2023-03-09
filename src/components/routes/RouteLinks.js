@@ -12,24 +12,34 @@ import React from "react";
 import EventDetails from "../events/eventDetails/eventDetails.js";
 import SignIn from "../auth/signin.js";
 import StepGoogle from "../auth/steps/StepGoogle.js";
+import { Navigate } from "react-router-dom";
 
-const RouteLinks = ({ isOpen }) => {
+const RouteLinks = ({ isOpen, setUser, user }) => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/events" element={<EventsIndex />} />
       <Route path="/ece" element={<EceIndex />} />
-{/* 
+      {/* 
       <Route path='/' element={<Home isOpen={isOpen} />} />
       <Route path='/events' element={<EventsIndex isOpen={isOpen} />} /> */}
       {/* <Route path="/register" element={<RegisterEvent />} /> */}
-      <Route path='/register' element={<RegisterEvent />} />
-      <Route path='/events/:details' element={<EventDetails />} />
-      <Route path='/Footer' element={<Footer />} />
-      <Route path='/dashboard' element={<Dashboard />} />
-      <Route path='/registedEvents' element={<RegistedEvents />} />
-      <Route path='/profile' element={<Profile />} />
-      <Route path='/signin' element={<SignIn />} />
+      <Route path="/register" element={<RegisterEvent />} />
+      <Route path="/events/:details" element={<EventDetails />} />
+      <Route path="/Footer" element={<Footer />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/registedEvents" element={<RegistedEvents />} />
+      <Route
+        path="/profile"
+        element={
+          user ? (
+            <Profile setUserL={setUser} />
+          ) : (
+            <Navigate to="/" replace="true" />
+          )
+        }
+      />
+      <Route path="/signin" element={<SignIn />} />
     </Routes>
   );
 };
