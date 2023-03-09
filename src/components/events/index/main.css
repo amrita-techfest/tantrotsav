@@ -1,4 +1,4 @@
-.main1 {
+z.main1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,8 +47,8 @@
 /* .card .lines {
     position: absolute;
     inset: 0;
-    /* background-color: #000; */
-/* overflow: hidden; */
+    background-color: #000;
+overflow: hidden; } */
 
 /* .card .lines::before {
     content: '';
@@ -131,6 +131,7 @@
 
 .card:hover .imgBox::before {
   animation-play-state: running;
+  transition: transform 300ms;
 }
 
 .card .imgBox::after {
@@ -150,7 +151,9 @@
 
 /* .card:hover .imgBox img {
   opacity: 1;
-} */
+  position: sticky;
+  transition: transform 300ms;
+}
 
 .card .content {
   position: absolute;
