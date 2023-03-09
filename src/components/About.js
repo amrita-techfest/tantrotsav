@@ -13,8 +13,8 @@ function About() {
           <Tilt className="shadow-card w-fit block mx-auto">
             <img
               id="tan-logo"
-              className=" block mx-auto mt-10 h-[350px] w-[550px] rounded-lg"
-              src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/bfi_thumb/tantrotsav-2023-thumbnail-yv8xznb4ul2vfpolkq5atc.jpg"
+              className=" block mx-auto mt-10 h-[250px] w-[400px] rounded-lg"
+              src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/bfi_thumb/tantrotsav-2023-featured-yvh6jw3vlp1qk837ap44cg.jpg"
               alt="tantrotsav"
             />
           </Tilt>

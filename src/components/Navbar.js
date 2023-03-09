@@ -9,7 +9,6 @@ import { HashLink as HLink } from "react-router-hash-link";
 import { registerWithGoogle } from "../../src/services/registerWithGoogle";
 import { auth } from "../firebase";
 import Avatar from "@mui/material/Avatar";
-import { Link } from "react-router-dom";
 
 function Navbar({ isOpen, setOpen, user, setUser }) {
   const links = [
