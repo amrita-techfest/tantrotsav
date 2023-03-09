@@ -10,3 +10,10 @@
     /* margin-top:80px; */
     overflow: auto;
 }
+
+@media (min-width: 600px) {
+    .pf{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+    
