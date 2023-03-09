@@ -19,9 +19,6 @@ function StepGoogle({ nextStep, handleChange, values }) {
     onAuthStateChanged(auth, (user) => {
       if(user && waName && waNumber){
         nextStep();
-        // localStorage.setItem(
-        //   "waNumber" ,waNumber,
-        // );
       }
       else {
         console.log("no user");

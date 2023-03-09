@@ -76,7 +76,7 @@ function EventDetails({
           </h1>
           <div className="flex flex-col gap-3 p-10 pt-0 mt-4 text-[18px] font-medium pb-0">
             <p>Venue : {eventDetails.Venue}</p>
-            <p>Timeing : {eventDetails.Time}</p>
+            <p>Time : {eventDetails.Time}</p>
             <p>Date : {eventDetails.Date}</p>
             <p>Duration : {eventDetails.Duration}</p>
             <h2>Registration Fee : {eventDetails.registrationFees}</h2>
