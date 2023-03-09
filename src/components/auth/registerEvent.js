@@ -18,6 +18,11 @@ import { useTheme } from '@mui/material/styles';
 const RegisterEvent = () => {
   const [open, setOpen] = React.useState(false);
   const theme1 = useTheme();
+  const theme = createTheme({
+    typography:{
+      fontFamily: 'Poppins',
+    }
+  });
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
   const handleClickOpen = () => {
     setOpen(true);
@@ -26,7 +31,7 @@ const RegisterEvent = () => {
   const handleClose = () => {
     setOpen(false);
   };
-    const [step,setStep] = useState(1)
+    const [step,setStep] = useState(0)
     const [data,setData] = useState({})
     const prevStep = () => {
         setStep(step-1)
@@ -73,11 +78,7 @@ const RegisterEvent = () => {
         
       ];
 
-      const theme = createTheme({
-        typography:{
-          fontFamily: 'Poppins',
-        }
-      });
+      
 
 
 
