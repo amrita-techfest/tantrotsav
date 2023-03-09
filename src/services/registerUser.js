@@ -1,28 +1,18 @@
-import { auth, db } from "../firebase.js";
-import { doc, setDoc, getDoc, arrayUnion } from "firebase/firestore";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { db } from "../firebase.js";
+import { doc, setDoc, getDoc, collection } from "firebase/firestore";
 
-export default async function registerUser(data1) {
-  setDoc(
-    doc(db, "userinfo", data1.email),
-    {
-      email: data1.email,
-      name: data1.name,
-      phone: data1.phone,
-      phoneWh: data1.phoneWh,
-      collegeName: data1.collegeName,
-      memberName: data1.memberName,
-      city:data1.city,
-      events: arrayUnion(...data1.selectedOptions),
-      groupEvents: arrayUnion(...data1.selectedOptions),
-      txnId: arrayUnion(data1.txnId),
-    },
-    { merge: true }
-  )
-    .then((doc) => {
-      console.log("submit");
-    })
-    .catch((err) => console.log(err));
+export default async function registerUser(registrationDetails) {
+  const user = {
+    name: registrationDetails.personalInfo.fullName,
+    email: registrationDetails.authData.userEmail,
+    phone: registrationDetails.authData.userWhatsAppNumber,
+    university: registrationDetails.personalInfo.universityName,
+    individualEvents: registrationDetails.individualEvents,
+    teamEvents: registrationDetails.teamEvents,
+    transactionId: registrationDetails.paymentData,
+  };
+  const collectionRef = collection(db, "registrations");
+  await setDoc(collectionRef, user);
 }
 
 export async function getUserDetails(email) {

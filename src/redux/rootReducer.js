@@ -8,7 +8,7 @@ import eventsListReducer from "../components/auth/register-form/redux/reducer";
 const persistConfig = {
   key: "root",
   storage: storage,
-  whitelist: ["eventDetailsReducer", "eventReducer", "eventsListReducer"],
+  whitelist: ["eventDetails", "eventSetter", "eventLists"],
 };
 
 const rootReducer = combineReducers({

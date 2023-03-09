@@ -7,7 +7,7 @@ import GroupEvents from "./register-form/groupEvents";
 const SignIn = () => {
   useEffect(() => {
     // Define the 'otpless' function
-    window.otpless = (otplessUser) => {
+    window.otpless = otplessUser => {
       // Retrieve the user's details after successful login
       const waName = otplessUser.waName;
       const waNumber = otplessUser.waNumber;
@@ -20,10 +20,11 @@ const SignIn = () => {
   }, []);
   return (
     <>
+      {/* <div id='otpless'></div> */}
       <UserAuth />
-      <PersonalInfo />
-      <IndividualEvents />
-      <GroupEvents />
+      {/* <PersonalInfo /> */}
+      {/* <IndividualEvents /> */}
+      {/* <GroupEvents /> */}
     </>
   );
 };
