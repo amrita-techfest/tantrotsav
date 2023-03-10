@@ -17,7 +17,7 @@ const Card = ({ title, logo, para }) => {
             alt="asc"
             className="rounded-full h-[150px] w-[150px] block mx-auto"
           />
-          <p className=" text-white text-justify mt-10">{para}</p>
+          <p className=" text-white text-[16px] text-justify mt-10">{para}</p>
           <div className="flex justify-center items-center mt-4">
             <HLink smooth to="/events">
               <button className="button-49" role="button">
