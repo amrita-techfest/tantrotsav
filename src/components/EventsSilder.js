@@ -34,7 +34,7 @@ const Card = ({ title, logo, para }) => {
 function EventsSilder() {
   return (
     <div id="event" className="w-full bg-black ">
-      <div className="max-w-7xl mx-auto sm:p-[50px] p-[30px]" id="about">
+      <div className="max-w-7xl mx-auto sm:p-[80px] p-[30px]" id="about">
         <h1 className="text-[#5f0] font-bold sm:text-[50px] text-[40px] text-center">
           EVENTS
         </h1>

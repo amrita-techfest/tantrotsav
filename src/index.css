@@ -501,7 +501,7 @@ a {
 
 .reg::after {
   animation: 1s glitch;
-  animation-iteration-count: infinitE;
+  animation-iteration-count: infinite;
   animation-timing-function: steps(2, end);
 }
 
