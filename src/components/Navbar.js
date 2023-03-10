@@ -69,7 +69,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
         {isOpen && (
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
-              {/* {links.map((link, key) => (
+              {links.map((link, key) => (
                 <li
                   key={key}
                   id="lin"
@@ -78,19 +78,15 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                   <HLink
                     smooth
                     to={link[1]}
-                    onClick={
-                      
-                        link[1] == '/events'
-                      ? setOpenDropDown(!openDropDown)
-                      : () => {
+                    onClick={() => {
                       setOpen(false);
                     }}
                   >
                     {link[0]}
                   </HLink>
                 </li>
-              ))} */}
-              <li className="font-bold cursor-pointer transition duration-500 ">
+              ))}
+              {/* <li className="font-bold cursor-pointer transition duration-500 ">
                 <HLink smooth to="/">
                   Home
                 </HLink>
@@ -104,7 +100,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                 onClick={() => setOpenDropDown(!openDropDown)}
                 className="font-bold cursor-pointer transition duration-500"
               >
-                Events
+                <Link to="/events">Events</Link>
               </li>
               <li>
                 <HLink smooth to="/#faq">
@@ -135,8 +131,8 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                   />
                 </Link>
               )}
-            </ul>
-
+            </ul> */}
+              {/* 
             {openDropDown && (
               <div class="dropdown">
                 <ul>
@@ -146,7 +142,8 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                   <li>Option 4</li>
                 </ul>
               </div>
-            )}
+            )} */}
+            </ul>
           </div>
         )}
         <motion.div

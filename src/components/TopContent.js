@@ -109,7 +109,7 @@ const TopContent = ({ isOpen }) => {
             //   src="https://tri-nit.com/landing_page_vector.svg"
             //   alt="pic"
             // />
-            <img className="space" src={space} alt="pic" />
+            <img className="space " src={space} alt="pic" />
           ) : (
             ""
           )}
