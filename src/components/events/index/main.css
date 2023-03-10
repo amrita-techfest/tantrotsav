@@ -1,4 +1,4 @@
-.main1 {
+z.main1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,8 +47,8 @@
 /* .card .lines {
     position: absolute;
     inset: 0;
-    /* background-color: #000; */
-/* overflow: hidden; */
+    background-color: #000;
+overflow: hidden; } */
 
 /* .card .lines::before {
     content: '';
@@ -131,6 +131,7 @@
 
 .card:hover .imgBox::before {
   animation-play-state: running;
+  transition: transform 300ms;
 }
 
 .card .imgBox::after {
@@ -148,9 +149,11 @@
   transition: 0.5s;
 }
 
-/* .card:hover .imgBox img {
+.card:hover .imgBox img {
   opacity: 1;
-} */
+  position: sticky;
+  transition: transform 300ms;
+}
 
 .card .content {
   position: absolute;
@@ -194,14 +197,14 @@
   opacity: 1;
 }
 
-/* .card .content .details a{
-    display: inline-block;
-    padding: 8px 15px;
-    background: #45f3ff;
-    color:#292929;
-    margin-top: 10px;
-    font-weight: 500;
-    text-decoration: none;
-    opacity: 0;
-    transition: .5s;
-} */
+.card .content .details a {
+  display: inline-block;
+  padding: 8px 15px;
+  /* background: #45f3ff; */
+  color: #292929;
+  margin-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.5s;
+}

@@ -2,17 +2,11 @@ import { db } from "../firebase.js";
 import { doc, setDoc, getDoc, collection } from "firebase/firestore";
 
 export default async function registerUser(registrationDetails) {
-  const user = {
-    name: registrationDetails.personalInfo.fullName,
-    email: registrationDetails.authData.userEmail,
-    phone: registrationDetails.authData.userWhatsAppNumber,
-    university: registrationDetails.personalInfo.universityName,
-    individualEvents: registrationDetails.individualEvents,
-    teamEvents: registrationDetails.teamEvents,
-    transactionId: registrationDetails.paymentData,
-  };
-  const collectionRef = collection(db, "registrations");
-  await setDoc(collectionRef, user);
+  console.log(registrationDetails);
+  const docRef = doc(db, "registrations", registrationDetails.email);
+  const res = await setDoc(docRef, registrationDetails);
+  console.log(res);
+  console.log("done");
 }
 
 export async function getUserDetails(email) {

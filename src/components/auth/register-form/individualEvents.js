@@ -26,10 +26,23 @@ const IndividualEvents = ({
 
   const goNext = () => {
     if (selectedEvents.length > 0) {
-      addEvents(selectedEvents);
+      let events = [];
+      selectedEvents.forEach(event => {
+        const eventFee = eventsList.find(
+          eventItem => eventItem.eventName === event
+        ).registrationFees;
+        const eventObj = {
+          eventName: event,
+          eventFee,
+        };
+        events.push(eventObj);
+      });
+      addEvents(events);
       nextStep();
     }
   };
+
+  console.log(selectedEvents);
 
   return (
     <div className='parent-content'>

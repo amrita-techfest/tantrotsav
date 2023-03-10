@@ -17,7 +17,7 @@ const Card = ({ title, logo, para }) => {
             alt="asc"
             className="rounded-full h-[150px] w-[150px] block mx-auto"
           />
-          <p className=" text-white text-justify mt-10">{para}</p>
+          <p className=" text-white text-[16px] text-justify mt-10">{para}</p>
           <div className="flex justify-center items-center mt-4">
             <HLink smooth to="/events">
               <button className="button-49" role="button">
@@ -34,7 +34,7 @@ const Card = ({ title, logo, para }) => {
 function EventsSilder() {
   return (
     <div id="event" className="w-full bg-black ">
-      <div className="max-w-7xl mx-auto sm:p-[50px] p-[30px]" id="about">
+      <div className="max-w-7xl mx-auto sm:p-[80px] p-[30px]" id="about">
         <h1 className="text-[#5f0] font-bold sm:text-[50px] text-[40px] text-center">
           EVENTS
         </h1>

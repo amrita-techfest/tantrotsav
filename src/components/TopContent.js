@@ -67,6 +67,8 @@ const TopContent = ({ isOpen }) => {
         <div className="absolute ani  w-72 h-72 left-[600px] bg-blue-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob"></div>
         <div className="absolute ani left-[700px] w-72 h-72 bg-pink-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
         <div className="absolute ani left-[500px] w-72 h-72 bg-green-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="absolute ani left-[800px] w-72 h-72 bg-orange-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -107,7 +109,7 @@ const TopContent = ({ isOpen }) => {
             //   src="https://tri-nit.com/landing_page_vector.svg"
             //   alt="pic"
             // />
-            <img className="space" src={space} alt="pic" />
+            <img className="space " src={space} alt="pic" />
           ) : (
             ""
           )}

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
-import registerUser from "../../services/registerUser";
 import { createTheme, ThemeProvider } from "@mui/material";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
@@ -11,96 +10,116 @@ import DialogTitle from "@mui/material/DialogTitle";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import UserAuth from "./register-form/userAuth";
-//import "./register-form/styles.css";
 import PersonalInfo from "./register-form/personalInfo";
 import IndividualEvents from "./register-form/individualEvents";
 import GroupEvents from "./register-form/groupEvents";
 import RegistrationFeePayment from "./register-form/registrationFeePayment";
+import { Navigate } from "react-router-dom";
 
-const RegisterEvent = ({ eventDetails }) => {
-  const [open, setOpen] = React.useState(false);
+const RegisterEvent = () => {
+  const [open, setOpen] = React.useState(true);
+  const [tc, setTC] = useState(false);
   const theme1 = useTheme();
   const theme = createTheme({
     typography: {
       fontFamily: "Poppins",
     },
   });
-  const fullScreen = useMediaQuery(theme1.breakpoints.down("md"));
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
 
-  const handleClose = () => {
+  const fullScreen = useMediaQuery(theme1.breakpoints.down("md"));
+
+  const handleClose = val => {
     setOpen(false);
+    setTC(val);
   };
   const [step, setStep] = useState(0);
-  const [data, setData] = useState({});
   const prevStep = () => {
     setStep(step - 1);
-  };
-
-  const callback = params => {
-    setData({ ...data, ...params });
-  };
-
-  const callbackSubmit = params => {
-    var x = { ...data, ...params };
-    setData({ ...data, ...params });
-    registerUser(x);
   };
 
   const nextStep = () => {
     console.log("executed");
     setStep(step + 1);
   };
-
-  console.log("step ", step);
-
   const show = () => {
     switch (step) {
       case 0:
         return <UserAuth nextStep={nextStep} />;
       case 1:
-        return <PersonalInfo nextStep={nextStep} handleChange={callback} />;
+        return <PersonalInfo nextStep={nextStep} />;
       case 2:
         return <IndividualEvents nextStep={nextStep} prevStep={prevStep} />;
       case 3:
         return <GroupEvents nextStep={nextStep} prevStep={prevStep} />;
       case 4:
         return <RegistrationFeePayment />;
-      // never forget the default case, otherwise VS code would be mad!
       default:
-
-      // do nothing
+        break;
     }
   };
   return (
     <ThemeProvider theme={theme}>
       <div>
+        {!open && !tc && <Navigate to='/' />}
         {show()}
-        <Button variant='outlined' onClick={handleClickOpen}>
-          Open responsive dialog
-        </Button>
         <Dialog
           fullScreen={fullScreen}
           open={open}
-          onClose={handleClose}
+          onClose={() => handleClose(false)}
           aria-labelledby='responsive-dialog-title'
         >
           <DialogTitle id='responsive-dialog-title'>
-            {"Use Google's location service?"}
+            {"Terms and Conditions for TechFest"}
           </DialogTitle>
           <DialogContent>
             <DialogContentText>
-              Let Google help apps determine location. This means sending
-              anonymous location data to Google, even when no apps are running.
+              <ol style={{ listStyle: "initial", fontSize: "14px" }}>
+                <li>
+                  All attendees must respect the code of conduct and behave
+                  appropriately.
+                </li>
+                <li>
+                  Attendees must carefully select the events and activities they
+                  participate in, taking into consideration the timings as the
+                  TechFest will not be liable for any clash of events and
+                  refunds.
+                </li>
+                <li>
+                  TechFest reserves the right to refuse entry or remove anyone
+                  from the event for any reason, including but not limited to
+                  inappropriate behavior or violation of the code of conduct.
+                </li>
+                <li>All attendees are responsible for their own belongings.</li>
+                <li>
+                  By attending TechFest, all attendees agree to grant TechFest
+                  and its partners the right to use any photographs, videos, or
+                  other recordings taken during the event for promotional
+                  purposes.
+                </li>
+                <li>
+                  All attendees must follow instructions from TechFest staff and
+                  security personnel.
+                </li>
+                <li>
+                  TechFest is not liable for any injury, illness, or damage to
+                  personal property that may occur during the event.
+                </li>
+                <li>
+                  All attendees are responsible for their own safety and
+                  well-being during the event.
+                </li>
+                <li>
+                  TechFest reserves the right to update these terms and
+                  conditions at any time without notice.
+                </li>
+              </ol>
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button autoFocus onClick={handleClose}>
+            <Button autoFocus onClick={() => handleClose(false)}>
               Disagree
             </Button>
-            <Button onClick={handleClose} autoFocus>
+            <Button onClick={() => handleClose(true)} autoFocus>
               Agree
             </Button>
           </DialogActions>

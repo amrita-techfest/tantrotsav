@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { connect } from "react-redux";
 import { registerWithGoogle } from "../../../services/registerWithGoogle";
 import { addAuthData } from "./redux/actions";
@@ -8,6 +8,8 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
   const [userEmail, setUserEmail] = React.useState("");
   const [userProfilePhoto, setUserProfilePhoto] = React.useState("");
   const [userWhatsAppNumber, setUserWhatsAppNumber] = React.useState("");
+
+  const divRef = useRef(null);
 
   React.useEffect(() => {
     window.otpless = otplessUser => {
@@ -28,6 +30,7 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
         nextStep();
       }
     }
+    // nextStep();
   }, [authData, nextStep]);
 
   const GoogleSignIn = () => {
@@ -55,7 +58,7 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
           better.
         </p>
         <div className='auth-buttons'>
-          <div id='otpless'></div>
+          <div ref={divRef} id='otpless'></div>
           <p className='helper-content'>And</p>
           <GoogleSignIn />
         </div>

@@ -326,7 +326,7 @@ a {
 
 .social {
   display: flex;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   bottom: 0;
   padding: 60px;
@@ -501,7 +501,7 @@ a {
 
 .reg::after {
   animation: 1s glitch;
-  animation-iteration-count: infinitE;
+  animation-iteration-count: infinite;
   animation-timing-function: steps(2, end);
 }
 
@@ -564,7 +564,7 @@ a {
 
 .space {
   animation: moveup 4s;
-  margin-top: 40px;
+  margin-top: 70px;
   animation-iteration-count: infinite;
 }
 

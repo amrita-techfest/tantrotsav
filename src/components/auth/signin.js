@@ -4,6 +4,7 @@ import "./register-form/styles.css";
 import PersonalInfo from "./register-form/personalInfo";
 import IndividualEvents from "./register-form/individualEvents";
 import GroupEvents from "./register-form/groupEvents";
+import RegistrationFeePayment from "./register-form/registrationFeePayment";
 const SignIn = () => {
   useEffect(() => {
     // Define the 'otpless' function
@@ -21,10 +22,12 @@ const SignIn = () => {
   return (
     <>
       {/* <div id='otpless'></div> */}
-      <UserAuth />
+      {/* <UserAuth /> */}
       {/* <PersonalInfo /> */}
-      {/* <IndividualEvents /> */}
+      <IndividualEvents />
       {/* <GroupEvents /> */}
+
+      {/* <RegistrationFeePayment /> */}
     </>
   );
 };

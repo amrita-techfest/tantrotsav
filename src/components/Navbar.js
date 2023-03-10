@@ -1,12 +1,14 @@
 import Hamburger from "hamburger-react";
 import React from "react";
 import "../index.css";
+import { Link } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router";
 import { motion } from "framer-motion";
+import { name } from "@cloudinary/transformation-builder-sdk/actions/namedTransformation";
 import { HashLink as HLink } from "react-router-hash-link";
 import { registerWithGoogle } from "../../src/services/registerWithGoogle";
 import { auth } from "../firebase";
 import Avatar from "@mui/material/Avatar";
-import { Link } from "react-router-dom";
 
 function Navbar({ isOpen, setOpen, user, setUser }) {
   const links = [
@@ -27,7 +29,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     <>
       <div
         id="naving"
-        className="mob relative z-[5000000000000] flex items-center justify-between p-5 pb-3 pt-3 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent"
+        className="mob z-[5000000000000] sticky top-[0] flex items-center justify-between p-5 pb-1 pt-1 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent "
       >
         {!isOpen && (
           <motion.div
@@ -36,12 +38,14 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
             transition={{ duration: 1.2 }}
           >
             <div className="flex">
-              <img
-                className="logo h-20"
-                id="logo"
-                src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
-                alt="logo"
-              />
+              <Link to="/#hero">
+                <img
+                  className="logo h-20"
+                  id="logo"
+                  src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
+                  alt="logo"
+                />
+              </Link>
             </div>
           </motion.div>
         )}
@@ -65,7 +69,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
         {isOpen && (
           <div className="mob-nav">
             <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
-              {/* {links.map((link, key) => (
+              {links.map((link, key) => (
                 <li
                   key={key}
                   id="lin"
@@ -74,19 +78,15 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                   <HLink
                     smooth
                     to={link[1]}
-                    onClick={
-                      
-                        link[1] == '/events'
-                      ? setOpenDropDown(!openDropDown)
-                      : () => {
+                    onClick={() => {
                       setOpen(false);
                     }}
                   >
                     {link[0]}
                   </HLink>
                 </li>
-              ))} */}
-              <li className="font-bold cursor-pointer transition duration-500 ">
+              ))}
+              {/* <li className="font-bold cursor-pointer transition duration-500 ">
                 <HLink smooth to="/">
                   Home
                 </HLink>
@@ -100,7 +100,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                 onClick={() => setOpenDropDown(!openDropDown)}
                 className="font-bold cursor-pointer transition duration-500"
               >
-                Events
+                <Link to="/events">Events</Link>
               </li>
               <li>
                 <HLink smooth to="/#faq">
@@ -131,8 +131,8 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                   />
                 </Link>
               )}
-            </ul>
-
+            </ul> */}
+              {/* 
             {openDropDown && (
               <div class="dropdown">
                 <ul>
@@ -142,7 +142,8 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                   <li>Option 4</li>
                 </ul>
               </div>
-            )}
+            )} */}
+            </ul>
           </div>
         )}
         <motion.div
