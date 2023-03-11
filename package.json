@@ -22,6 +22,7 @@
     "firebase": "^9.17.1",
     "framer-motion": "^10.0.2",
     "hamburger-react": "^2.5.0",
+    "moment": "^2.29.4",
     "multiselect-react-dropdown": "^2.0.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -10,13 +10,12 @@ import Sponsors from "./sponsors";
 
 function Home({ isOpen }) {
   return (
-    <div className="home h-auto sm:h-screen">
+    <div className='home h-auto sm:h-screen'>
       <TopContent isOpen={isOpen} />
       <EventsSilder />
       <About />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <Timeline />
-      <Faq />
       <Footer />
     </div>
   );

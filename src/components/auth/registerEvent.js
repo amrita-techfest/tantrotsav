@@ -69,7 +69,9 @@ const RegisterEvent = () => {
           aria-labelledby='responsive-dialog-title'
         >
           <DialogTitle id='responsive-dialog-title'>
-            {"Terms and Conditions for TechFest"}
+            {
+              "Terms and Conditions for TechFest (Registration starts from 13th March, 2023 - Monday, 5 pm onwards)"
+            }
           </DialogTitle>
           <DialogContent>
             <DialogContentText>
@@ -89,28 +91,12 @@ const RegisterEvent = () => {
                   from the event for any reason, including but not limited to
                   inappropriate behavior or violation of the code of conduct.
                 </li>
-                <li>All attendees are responsible for their own belongings.</li>
+
                 <li>
                   By attending TechFest, all attendees agree to grant TechFest
                   and its partners the right to use any photographs, videos, or
                   other recordings taken during the event for promotional
                   purposes.
-                </li>
-                <li>
-                  All attendees must follow instructions from TechFest staff and
-                  security personnel.
-                </li>
-                <li>
-                  TechFest is not liable for any injury, illness, or damage to
-                  personal property that may occur during the event.
-                </li>
-                <li>
-                  All attendees are responsible for their own safety and
-                  well-being during the event.
-                </li>
-                <li>
-                  TechFest reserves the right to update these terms and
-                  conditions at any time without notice.
                 </li>
               </ol>
             </DialogContentText>

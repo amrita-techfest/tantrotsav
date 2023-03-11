@@ -15,7 +15,8 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     ["Home", "/"],
     ["About", "/#about"],
     ["Events", "/events"],
-    ["FAQ", "/#faq"],
+    // ["FAQ", "/#faq"],
+    ["Know Us", "https://www.amrita.edu/"],
     ["Contact", "#contact"],
   ];
 
@@ -28,8 +29,8 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
   return (
     <>
       <div
-        id="naving"
-        className="mob z-[5000000000000] sticky top-[0] flex items-center justify-between p-5 pb-1 pt-1 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent "
+        id='naving'
+        className='mob z-[5000000000000] sticky top-[0] flex items-center justify-between p-5 pb-1 pt-1 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 bg-transparent '
       >
         {!isOpen && (
           <motion.div
@@ -37,26 +38,26 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2 }}
           >
-            <div className="flex">
-              <Link to="/#hero">
+            <div className='flex'>
+              <Link to='/#hero'>
                 <img
-                  className="logo h-20"
-                  id="logo"
-                  src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg"
-                  alt="logo"
+                  className='logo h-20'
+                  id='logo'
+                  src='https://res.cloudinary.com/thydreams/image/upload/v1678532137/tantrotsav/obhoz1az1rmffy7bqq3y.png'
+                  alt='logo'
                 />
               </Link>
             </div>
           </motion.div>
         )}
-        <div className="md:hidden hum">
+        <div className='md:hidden hum'>
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
             size={30}
-            color="#03C988"
-            label="Show menu"
-            onToggle={(toggled) => {
+            color='#03C988'
+            label='Show menu'
+            onToggle={toggled => {
               if (toggled) {
                 // open a menu
               } else {
@@ -67,13 +68,13 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
         </div>
 
         {isOpen && (
-          <div className="mob-nav">
-            <ul className="flex flex-col items-center justify-center space-y-10 text-white text-[18px]">
+          <div className='mob-nav'>
+            <ul className='flex flex-col items-center justify-center space-y-10 text-white text-[18px]'>
               {links.map((link, key) => (
                 <li
                   key={key}
-                  id="lin"
-                  className="font-bold cursor-pointer transition duration-500 "
+                  id='lin'
+                  className='font-bold cursor-pointer transition duration-500 '
                 >
                   <HLink
                     smooth
@@ -150,33 +151,33 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="hidden  md:block"
+          className='hidden  md:block'
         >
-          <ul className="flex items-center justify-between space-x-10 text-white text-[18px]">
+          <ul className='flex items-center justify-between space-x-10 text-white text-[18px]'>
             {links.map((link, key) => (
               <li
                 key={key}
-                id="lin"
-                className="font-bold cursor-pointer transition duration-500 hover:font-bold"
+                id='lin'
+                className='font-bold cursor-pointer transition duration-500 hover:font-bold'
               >
-                <HLink className="hlink" smooth to={link[1]}>
+                <HLink className='hlink' smooth to={link[1]}>
                   {link[0]}
                 </HLink>
               </li>
             ))}
             {!user ? (
               <button
-                id="btn1"
+                id='btn1'
                 onClick={() => {
                   handleLogin();
                 }}
-                className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]"
+                className=' border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]'
               >
                 Login
               </button>
             ) : (
-              <Link to="/profile">
-                <Avatar alt="dp" src={user.photoURL} />
+              <Link to='/profile'>
+                <Avatar alt='dp' src={user.photoURL} />
               </Link>
             )}
           </ul>
