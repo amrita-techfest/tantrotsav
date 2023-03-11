@@ -24,7 +24,7 @@ function EventsIndex({ setEvent, isOpen }) {
             <div className='main1'>
               <div className='container12'>
                 {det.gameDetails.map(details => {
-                  console.log(details.length);
+                  const id = btoa(details.documentId);
                   return (
                     <div className='card'>
                       <div className='imgBox'>
@@ -35,10 +35,7 @@ function EventsIndex({ setEvent, isOpen }) {
                           <h2>{details.name}</h2>
                           <h3>{details.about}</h3>
                           <p>Mode - {details.mode}</p>
-                          <Link
-                            to={`/events${details.link}`}
-                            state={{ data: details }}
-                          >
+                          <Link to={`/events/${id}`} state={{ data: details }}>
                             <button
                               className='bg-[blue] text-white p-3 rounded-[5px] m-3'
                               onClick={() => onClick(details.documentId)}

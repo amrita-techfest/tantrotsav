@@ -8,6 +8,6 @@ export default async function getEventDetails(eventKey) {
   if (docSnap.exists()) {
     return docSnap.data();
   } else {
-    console.log("No such document!");
+    return false;
   }
 }
