@@ -48,14 +48,6 @@ const MobileView = () => {
 function App() {
   const [isOpen, setOpen] = useState(false);
   const [user, setUser] = useState(null);
-  const [isMobileView, setIsMobileView] = useState(false);
-
-  React.useEffect(() => {
-    const isMobile = detectMob();
-    setIsMobileView(isMobile);
-  }, []);
-
-  console.log(isMobileView);
 
   React.useEffect(() => {
     auth.onAuthStateChanged(user => {
@@ -69,23 +61,19 @@ function App() {
 
   return (
     <>
-      {isMobileView ? (
-        <MobileView />
-      ) : (
-        <div className='App  scrollbar' id='scrollbar5'>
-          <Router>
-            <NavBar
-              isOpen={isOpen}
-              user={user}
-              setUser={setUser}
-              setOpen={setOpen}
-            />
-            {!isOpen && (
-              <RouteLinks isOpen={isOpen} user={user} setUser={setUser} />
-            )}
-          </Router>
-        </div>
-      )}
+      <div className='App  scrollbar' id='scrollbar5'>
+        <Router>
+          <NavBar
+            isOpen={isOpen}
+            user={user}
+            setUser={setUser}
+            setOpen={setOpen}
+          />
+          {!isOpen && (
+            <RouteLinks isOpen={isOpen} user={user} setUser={setUser} />
+          )}
+        </Router>
+      </div>{" "}
     </>
   );
 }
