@@ -5,13 +5,32 @@ import gMap from "../../src/components/assets/google-maps.png";
 
 const Footer = () => {
   return (
-    <footer id='contact'>
-      <div className='h-[270px] w-[100%] bg-gray-800'>
-        <div className='p-10'>
-          <h1 className='text-center'>Made with 💖 by Tech Team</h1>
-          <h1 className='text-center mt-2'>
-            2023@copyright All rights are reserved
+    <footer id="contact">
+      <div className="h-[270px] w-[100%] bg-gray-800">
+        <div className="p-10">
+          <h1 className="text-center">Made with 💖 by Tech Team</h1>
+          <h1 className="text-center mt-5">
+            2023@copyright{" "}
+            <span className=" text-[#3f0]">All rights are reserved</span>
           </h1>
+          <div className="flex gap-4 justify-center mt-5">
+            <h1>
+              Email:{" "}
+              <span className="text-[#48ff00]">tantrotsav@ch.amrita.edu</span>
+            </h1>
+            <h1>
+              Phone: <span className="text-[#48ff00]">+91 9025313327</span>
+            </h1>
+            <h1>
+              Location:{" "}
+              <a
+                href="https://goo.gl/maps/zjZpcok8QE9cNfeH7"
+                className="text-[#0dff00]"
+              >
+                Google Maps
+              </a>
+            </h1>
+          </div>
         </div>
         {/* <div className='flex gap-5 items-center justify-center'>
           <div className='flex flex-col items-center gap-2'>
