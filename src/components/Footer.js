@@ -6,14 +6,14 @@ import gMap from "../../src/components/assets/google-maps.png";
 const Footer = () => {
   return (
     <footer id="contact">
-      <div className="h-[270px] w-[100%] bg-gray-800">
+      <div className="sm:h-[270px] h-auto w-[100%] bg-gray-800">
         <div className="p-10">
           <h1 className="text-center">Made with 💖 by Tech Team</h1>
           <h1 className="text-center mt-5">
             2023@copyright{" "}
             <span className=" text-[#3f0]">All rights are reserved</span>
           </h1>
-          <div className="flex gap-4 justify-center mt-5">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-5">
             <h1>
               Email:{" "}
               <span className="text-[#48ff00]">tantrotsav@ch.amrita.edu</span>
