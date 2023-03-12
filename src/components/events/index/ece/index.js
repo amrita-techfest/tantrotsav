@@ -3,44 +3,41 @@ import { connect } from "react-redux";
 // import Workshop from "./workshop.js"
 import { setEventId } from "../actions";
 import "../main.css";
-import { event,EceEvent } from "../../../../data/data";
+import { eceEvent as event } from "../../../../data/data.js";
 import { Link } from "react-router-dom";
 
-function EceIndex({ setEvent, isOpen }) {
+function EventsIndex({ setEvent, isOpen }) {
   function onClick(eventId) {
     setEvent(eventId);
   }
 
   return (
     <>
-      {EceEvent.map((det) => {
+      {event.map(det => {
         return (
           <>
-            <div className="m-4">
-              <h1 className="text-white text-center p-3 text-[35px]">
+            <div className='m-4'>
+              <h1 className='text-white text-center p-3 text-[35px]'>
                 {det.category}
               </h1>
             </div>
-            <div className="main1">
-              <div className="container12">
-                {det.gameDetails.map((details) => {
-                  console.log(details.length);
+            <div className='main1'>
+              <div className='container12'>
+                {det.gameDetails.map(details => {
+                  const id = btoa(details.documentId);
                   return (
-                    <div className="card">
-                      <div className="imgBox">
-                        <img src={details.image} alt='tech photo' />
+                    <div className='card'>
+                      <div className='imgBox'>
+                        <img src={details.image} alt='tech' />
                       </div>
-                      <div className="content">
-                        <div className="details">
-                          <h2 className="p-2">{details.name}</h2>
-                          <h3 className="p-4">{details.about}</h3>
+                      <div className='content'>
+                        <div className='details'>
+                          <h2>{details.name}</h2>
+                          <h3>{details.about}</h3>
                           <p>Mode - {details.mode}</p>
-                          <Link
-                            to={`/events${details.link}`}
-                            state={{ data: details }}
-                          >
+                          <Link to={`/events/${id}`} state={{ data: details }}>
                             <button
-                              className="bg-[blue] text-white p-3 rounded-[5px] m-3"
+                              className='bg-[blue] text-white p-3 rounded-[5px] m-3'
                               onClick={() => onClick(details.documentId)}
                             >
                               Read More
@@ -60,10 +57,10 @@ function EceIndex({ setEvent, isOpen }) {
   );
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
-    setEvent: (eventId) => dispatch(setEventId(eventId)),
+    setEvent: eventId => dispatch(setEventId(eventId)),
   };
 };
 
-export default connect(null, mapDispatchToProps)(EceIndex);
+export default connect(null, mapDispatchToProps)(EventsIndex);

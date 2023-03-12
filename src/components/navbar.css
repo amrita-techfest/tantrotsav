@@ -103,8 +103,8 @@ a {
   position: absolute;
   width: fit-content;
   padding: 10px;
-  left: 70%;
   display: none;
+  margin-left: -45px;
   z-index: 1;
 }
 

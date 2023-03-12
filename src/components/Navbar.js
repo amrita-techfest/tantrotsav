@@ -14,7 +14,7 @@ import Avatar from "@mui/material/Avatar";
 function Navbar({ isOpen, setOpen, user, setUser }) {
   const links = [
     ["Home", "/"],
-    ["About", "/#about"],
+    ["About", "/#aboutR"],
     ["Events", "/events"],
     // ["FAQ", "/#faq"],
     ["Know Us", "https://www.amrita.edu/"],

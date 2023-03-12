@@ -178,7 +178,7 @@ export const event = [
   },
 ];
 
-export const EceEvent = [
+export const eceEvent = [
   {
     category: "Competitions",
     gameDetails: [
@@ -230,11 +230,12 @@ export const EceEvent = [
     ],
   },
 ];
-export const MechEvent = [
+export const mechEvent = [
   {
     category: "Competitions",
     gameDetails: [
       {
+        id: 1,
         name: "SRUJAN",
         about: "CAD Competition ",
         mode: "Offline",
@@ -244,6 +245,7 @@ export const MechEvent = [
         documentId: "mech1",
       },
       {
+        id: 2,
         name: "ROBORACE",
         about: "Competition",
         mode: "Offline",
@@ -253,6 +255,7 @@ export const MechEvent = [
         documentId: "mech2",
       },
       {
+        id: 3,
         name: "Prastavam",
         about: "Competition ",
         mode: "Offline",
