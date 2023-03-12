@@ -97,7 +97,10 @@ const Profile = ({ eventDetails, setUserL }) => {
             </div>
             <div className="mb-[10px]">{userDetials.universityName}</div>
 
-            <button onClick={handleSignOut} className="text-white">
+            <button
+              onClick={handleSignOut}
+              className="hover:bg-[#0dff00] hover:text-[#000] bg-[#000] text-[#0dff00] font-bold p-3 pt-2 pb-2 rounded-[5px] transition-all text-[15px] w-fit mt-2 border-2 border-[#0dff00]"
+            >
               Sign Out
             </button>
           </div>
