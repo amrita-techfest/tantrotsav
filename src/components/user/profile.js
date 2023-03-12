@@ -68,7 +68,7 @@ const Profile = ({ eventDetails, setUserL }) => {
 
   useEffect(() => {
     const user = auth.currentUser;
-    getData("kavigmail.com");
+    getData(user.email);
   }, []);
 
   return (
