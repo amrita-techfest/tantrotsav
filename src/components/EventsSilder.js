@@ -42,7 +42,7 @@ function EventsSilder() {
           <Card
             title='C20'
             logo={c20}
-            url='/#'
+            url='/c20'
             para=" Join us for a day of fun! It's time to take a break from screens and immerse yourself in non-technical bliss with our exciting events."
           />
           <Card

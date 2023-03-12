@@ -291,6 +291,118 @@ export const mechEvent = [
   },
 ];
 
+export const c20Event = [
+  {
+    category: "Competitions",
+    gameDetails: [
+      {
+        name: "Smart Trivia",
+        about: "Quiz",
+        mode: "Offline",
+        link: "/smart-trivia",
+        image: "",
+        documentId: "c20-1",
+      },
+      {
+        name: "SelfieGram",
+        about: "Selfie Competition - C20 Initiative",
+        mode: "Offline",
+        link: "/selfiegram",
+        image: "",
+        documentId: "c20-2",
+      },
+      {
+        name: "Reels",
+        about: "Reels Competition",
+        mode: "Offline",
+        link: "/reels",
+        image: "",
+        documentId: "c20-3",
+      },
+      {
+        name: "Sail On the Idea",
+        about: "Ideathon",
+        mode: "Offline",
+        link: "/sail-on-the-idea",
+        image: "",
+        documentId: "c20-4",
+      },
+      {
+        name: "SnapArt",
+        about: "Collage Making Competition",
+        mode: "Offline",
+        link: "/snapart",
+        image: "",
+        documentId: "c20-5",
+      },
+      {
+        name: "Picasso's Brush",
+        about: "Painting Competition",
+        mode: "Offline",
+        link: "/picassos-brush",
+        image: "",
+        documentId: "c20-6",
+      },
+      {
+        name: "Essay Writing",
+        about: "Essay Writing Competition",
+        mode: "Offline",
+        link: "/essay-writing",
+        image: "",
+        documentId: "c20-7",
+      },
+      {
+        name: "Thought Talk",
+        about: "Poetry Competition",
+        mode: "Offline",
+        link: "/thought-talk",
+        image: "",
+        documentId: "c20-8",
+      },
+      {
+        name: "NovelNolan",
+        about: "Short Film Making Competition",
+        mode: "Offline",
+        link: "/novelnolan",
+        image: "",
+        documentId: "c20-9",
+      },
+      {
+        name: "Rang De",
+        about: "Rangoli Competition",
+        mode: "Offline",
+        link: "/rang-de",
+        image: "",
+        documentId: "c20-10",
+      },
+      {
+        name: "Pick & Click",
+        about: "Photography Competition",
+        mode: "Offline",
+        link: "/pick-and-click",
+        image: "",
+        documentId: "c20-11",
+      },
+      {
+        name: "Gen-Z Hoffman",
+        about: "Poster Making Competition",
+        mode: "Offline",
+        link: "/gen-z-hoffman",
+        image: "",
+        documentId: "c20-12",
+      },
+      {
+        name: "Sketch Art",
+        about: "Sketching Competition",
+        mode: "Offline",
+        link: "/sketch-art",
+        image: "",
+        documentId: "c20-13",
+      },
+    ],
+  },
+];
+
 export const cardContents = [
   {
     dept: "Technical",
