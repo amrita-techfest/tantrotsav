@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "./dash.css";
-import { PDFDownloadLink } from "@react-pdf/renderer";
+import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
 import MyDocument from "./makePDF.js";
 import { Button, Box, Tab, Tabs } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
@@ -10,6 +10,7 @@ import { getUserDetails } from "../../services/registerUser";
 
 import getEvents from "../../services/getEvents.js";
 import { signout } from "../../services/SignOut";
+import { auth } from "../../firebase";
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
@@ -55,9 +56,9 @@ const Profile = ({ eventDetails, setUserL }) => {
 
   const getData = async (user) => {
     const data = await getUserDetails(user);
-    var evtList = data.events.map((evt) => evt.eventName);
+    var evtList = data.individualEvents.map((evt) => evt.eventName);
 
-    var groupEvents = data.groupEvents.map((evt) => evt.eventName);
+    var groupEvents = data.teamEvents.map((evt) => evt.eventName);
     evtList = [...evtList, ...groupEvents];
     setUser(data);
     console.log(data);
@@ -66,8 +67,8 @@ const Profile = ({ eventDetails, setUserL }) => {
   };
 
   useEffect(() => {
-    const user = "dhruvmillu@gmail.com";
-    getData(user);
+    const user = auth.currentUser;
+    getData("kavigmail.com");
   }, []);
 
   return (
@@ -81,27 +82,21 @@ const Profile = ({ eventDetails, setUserL }) => {
             <div className=" text-[#0dff00] font-bold  md:text-[20px]">
               Name
             </div>
-            <div className="mb-[10px]">{userDetials.name}</div>
+
+            <div className="mb-[10px]">{userDetials.fullName}</div>
             <div className=" text-[#0dff00] font-bold  md:text-[20px]">
               Email
             </div>
             <div className="mb-[10px]">{userDetials.email}</div>
             <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-              Phone
-            </div>
-            <div className="mb-[10px]">{userDetials.phone}</div>
-            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
               Phone (Whatsapp)
             </div>
-            <div className="mb-[10px]">{userDetials.phoneWh}</div>
+            <div className="mb-[10px]">{userDetials.whatsappNumber}</div>
             <div className=" text-[#0dff00] font-bold  md:text-[20px]">
               College Name
             </div>
-            <div className="mb-[10px]">{userDetials.collegeName}</div>
-            <div className=" text-[#0dff00] font-bold  md:text-[20px]">
-              City
-            </div>
-            <div className="mb-[10px]">{userDetials.city}</div>
+            <div className="mb-[10px]">{userDetials.universityName}</div>
+
             <button onClick={handleSignOut} className="text-white">
               Sign Out
             </button>
@@ -171,11 +166,11 @@ const Profile = ({ eventDetails, setUserL }) => {
                 Event Name
               </div>
               <div className="text-[#fff] font-bold text-[15px]">Fee</div>
-              {userDetials.events &&
-                userDetials.events.map((event) => (
+              {userDetials.individualEvents &&
+                userDetials.individualEvents.map((event) => (
                   <>
                     <div>{event.eventName}</div>
-                    <div>{event.fee}</div>
+                    <div>{event.eventFee}</div>
                   </>
                 ))}
             </div>
@@ -186,11 +181,11 @@ const Profile = ({ eventDetails, setUserL }) => {
                 Event Name
               </div>
               <div className="text-[#fff] font-bold text-[15px]">Fee</div>
-              {userDetials.groupEvents &&
-                userDetials.groupEvents.map((event) => (
+              {userDetials.teamEvents &&
+                userDetials.teamEvents.map((event) => (
                   <>
                     <div>{event.eventName}</div>
-                    <div>{event.fee}</div>
+                    <div>{event.eventFee}</div>
                   </>
                 ))}
             </div>

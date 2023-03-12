@@ -12,7 +12,7 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
   const divRef = useRef(null);
 
   React.useEffect(() => {
-    window.otpless = otplessUser => {
+    window.otpless = (otplessUser) => {
       const waNumber = otplessUser.waNumber;
       setUserWhatsAppNumber(waNumber);
     };
@@ -36,7 +36,7 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
   const GoogleSignIn = () => {
     return (
       <button
-        className='google-auth-button'
+        className="google-auth-button"
         onClick={async () => {
           await registerWithGoogle();
 
@@ -45,21 +45,21 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
         }}
         disabled={userEmail !== "" ? true : false}
       >
-        <span className='fa fa-google fa-lg g-logo'></span> Continue with Google
+        <span className="fa fa-google fa-lg g-logo"></span> Continue with Google
       </button>
     );
   };
   return (
-    <div className='parent-content'>
-      <div className='userAuth-banner'>
+    <div className="parent-content">
+      <div className="userAuth-banner">
         <h2>Proceed by authenticating your email and your mobile number.</h2>
         <p>
           This helps us to reduce spam entries and connect with each participant
           better.
         </p>
-        <div className='auth-buttons'>
-          <div ref={divRef} id='otpless'></div>
-          <p className='helper-content'>And</p>
+        <div className="auth-buttons">
+          <div ref={divRef} id="otpless"></div>
+          <p className="helper-content">And</p>
           <GoogleSignIn />
         </div>
       </div>
@@ -67,12 +67,12 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   authData: state.eventLists?.authData,
 });
 
-const mapDispatchToProps = dispatch => ({
-  addAuthData: authData => dispatch(addAuthData(authData)),
+const mapDispatchToProps = (dispatch) => ({
+  addAuthData: (authData) => dispatch(addAuthData(authData)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserAuth);

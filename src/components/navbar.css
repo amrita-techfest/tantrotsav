@@ -1,24 +1,117 @@
 .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 300px;
-    z-index: 2;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
-  }
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
 
-  .dropdown ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown li {
+  padding: 8px 12px;
+}
+
+.dropdown li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+
+.menu ol {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sub-menu .menu-item {
+  padding: 0.75rem 0;
+  background: #2a2a2a;
+  opacity: 0;
+
+  transform-origin: bottom;
+  animation: enter 0.2s ease forwards;
+}
+
+.sub-menu .menu-item:nth-child(1) {
+  animation-duration: 0.2s;
+  animation-delay: 0s;
+}
+.sub-menu .menu-item:nth-child(2) {
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+}
+.sub-menu .menu-item:nth-child(3) {
+  animation-duration: 0.4s;
+  animation-delay: 0.2s;
+}
+.sub-menu .menu-item:hover {
+  background: #48ff00;
+  color: black !important;
+}
+.sub-menu .menu-item a {
+  padding: 0 0.75rem;
+}
+
+@media screen and (max-width: 600px) {
+  .sub-menu .menu-item {
+    background: #2a2a2a;
   }
-  .dropdown li {
-    padding: 8px 12px;
+}
+
+.menu-item:hover > .sub-menu {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  #sub {
+    display: absolute;
+    top: 45%;
+    left: 37%;
+    transform: translateY(-50%);
   }
-  
-  .dropdown li:hover {
-    background-color: rgba(0, 0, 0, 0.14);
-    cursor: pointer;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: scaleY(0.98) translateY(10px);
   }
-  
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.sub-menu {
+  position: absolute;
+  width: fit-content;
+  padding: 10px;
+  left: 70%;
+  display: none;
+  z-index: 1;
+}
+
+.l:hover {
+  color: black;
+}
+
+.l1:hover {
+  color: #48ff00;
+}
