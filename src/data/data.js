@@ -8,7 +8,8 @@ export const event = [
         about: "Game Development",
         mode: "Offline",
         link: "/strigrays-league",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
         documentId: "event1",
       },
       {
@@ -17,7 +18,8 @@ export const event = [
         about: "Online Gaming",
         mode: "Online",
         link: "/battle-of-the-ice",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298458/events/valorant.jpg",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298458/events/valorant.jpg",
         documentId: "event2",
       },
       {
@@ -25,7 +27,8 @@ export const event = [
         about: "Capture the Flag",
         mode: "Online",
         link: "/zh3r0",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097189/events/capture%20the%20flag.jpg",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097189/events/capture%20the%20flag.jpg",
         documentId: "event3",
       },
       {
@@ -33,15 +36,17 @@ export const event = [
         about: "Innovative idea proposal competation",
         mode: "Offline",
         link: "/platonic",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099706/events/Platonic%20%28%20Ideathon%29.jpg",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099706/events/Platonic%20%28%20Ideathon%29.jpg",
         documentId: "event4",
       },
       {
         name: "Bidders Coding Camp",
-        about: "Coding event to earn points",
+        about: "CODE,EARN,BID and WIN",
         mode: "Offline",
         link: "/bidders-coding-camp",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099142/events/Bidders%20Coding%20Camp.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099142/events/Bidders%20Coding%20Camp.png",
         documentId: "event5",
       },
       {
@@ -49,7 +54,8 @@ export const event = [
         about: "Building a ChatBot",
         mode: "Offline",
         link: "/botbattlebash-b3",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097401/events/BotBattleBash%20B3.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097401/events/BotBattleBash%20B3.png",
         documentId: "event6",
       },
       {
@@ -57,7 +63,8 @@ export const event = [
         about: "Hackathon",
         mode: "Offline",
         link: "/ml-xlr8",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099478/events/ml%20and%20deeplearning.jpg",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099478/events/ml%20and%20deeplearning.jpg",
         documentId: "event7",
       },
       // {
@@ -72,7 +79,8 @@ export const event = [
         about: "Coding competition (code relay)",
         mode: "Offline",
         link: "/colay",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097270/events/colay.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097270/events/colay.png",
         documentId: "event8",
       },
       {
@@ -80,7 +88,8 @@ export const event = [
         about: "Ideathon",
         mode: "Offline",
         link: "/dare-to-be-different",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098791/events/Dare%20To%20be%20Different%20%28Ideathon%29.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098791/events/Dare%20To%20be%20Different%20%28Ideathon%29.png",
         documentId: "event9",
       },
       {
@@ -88,7 +97,8 @@ export const event = [
         about: "Investigation Competition",
         mode: "Offline",
         link: "/forensics-investigation-challenge",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097927/events/forensic.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097927/events/forensic.png",
         documentId: "event10",
       },
     ],
@@ -101,7 +111,8 @@ export const event = [
         about: "React JS Workshop",
         mode: "Offline",
         link: "/intro-to-reactjs",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678096848/events/intro%20to%20react.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678096848/events/intro%20to%20react.png",
         documentId: "event11",
       },
       {
@@ -109,7 +120,8 @@ export const event = [
         about: "AR/VR Workshop",
         mode: "Offline",
         link: "/ar-vr",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678096803/events/VR-and-AR-Technologies-1280x720_z3rpl8.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678096803/events/VR-and-AR-Technologies-1280x720_z3rpl8.png",
         documentId: "event12",
       },
       {
@@ -117,7 +129,8 @@ export const event = [
         about: "Quantum Computing Workshop",
         mode: "Offline",
         link: "/quantum-computing",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098007/events/quantum_computing.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098007/events/quantum_computing.png",
         documentId: "event13",
       },
       {
@@ -125,7 +138,8 @@ export const event = [
         about: "Devops Workshop",
         mode: "Offline",
         link: "/devops",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098525/events/devops-icon-software-development-dev-and-it-operations-ops-loop-eight-logo-for-software_gn159a.jpg",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098525/events/devops-icon-software-development-dev-and-it-operations-ops-loop-eight-logo-for-software_gn159a.jpg",
         documentId: "event14",
       },
       {
@@ -133,7 +147,8 @@ export const event = [
         about: "Mobile App Workshop",
         mode: "Offline",
         link: "/mobile-app",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298180/events/mobileapp.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298180/events/mobileapp.png",
         documentId: "event15",
       },
       {
@@ -141,16 +156,9 @@ export const event = [
         about: "X Gen Learning Workshop",
         mode: "Offline",
         link: "/x-gen-learning",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099987/events/X%20Gen%20Learning.jpg",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099987/events/X%20Gen%20Learning.jpg",
         documentId: "event16",
-      },
-      {
-        name: "Machine Learning",
-        about: "Machine Learning Workshop",
-        mode: "Offline",
-        link: "/machine-learning",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
-        documentId: "event17",
       },
     ],
   },
@@ -162,7 +170,8 @@ export const event = [
         about: "Project Expo Workshop",
         mode: "Offline",
         link: "/project-expo",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
         documentId: "event18",
       },
     ],
@@ -178,7 +187,8 @@ export const EceEvent = [
         about: "POSTER PRESENTATION",
         mode: "Offline",
         link: "/poster-presentation",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
         documentId: "ece1",
       },
       {
@@ -186,7 +196,8 @@ export const EceEvent = [
         about: "Circuital Dilemma",
         mode: "Offline",
         link: "/circuit-dilemma",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343637/events/ece/circuital_nppvoz.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343637/events/ece/circuital_nppvoz.png",
         documentId: "ece2",
       },
       {
@@ -194,7 +205,8 @@ export const EceEvent = [
         about: "IOT-CTF",
         mode: "Offline",
         link: "/IoT-CTF",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
         documentId: "ece3",
       },
       {
@@ -202,7 +214,8 @@ export const EceEvent = [
         about: "Passive Hack",
         mode: "Offline",
         link: "/PASSIVE-HACK",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
         documentId: "ece4",
       },
       {
@@ -210,10 +223,10 @@ export const EceEvent = [
         about: "Hackathon",
         mode: "Offline",
         link: "/INGENIUM",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
         documentId: "ece5",
       },
-      
     ],
   },
 ];
@@ -226,7 +239,8 @@ export const MechEvent = [
         about: "CAD Competition ",
         mode: "Offline",
         link: "/srujan",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
         documentId: "mech1",
       },
       {
@@ -234,7 +248,8 @@ export const MechEvent = [
         about: "Competition",
         mode: "Offline",
         link: "/roborace",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
         documentId: "mech2",
       },
       {
@@ -242,7 +257,8 @@ export const MechEvent = [
         about: "Competition ",
         mode: "Offline",
         link: "/Prastavam",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
         documentId: "mech5",
       },
     ],
@@ -255,7 +271,8 @@ export const MechEvent = [
         about: "Workshop",
         mode: "Offline",
         link: "/spark",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
         documentId: "mech3",
       },
       {
@@ -263,7 +280,8 @@ export const MechEvent = [
         about: "Workshop",
         mode: "Offline",
         link: "/Maze-Solver-Challenge",
-        image:"https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
         documentId: "mech4",
       },
     ],
