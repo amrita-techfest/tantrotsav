@@ -308,7 +308,8 @@ export const c20Event = [
         about: "Selfie Competition - C20 Initiative",
         mode: "Offline",
         link: "/selfiegram",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701664/Selfiegram_icon_mjejhi.png",
         documentId: "c20-2",
       },
       {
@@ -316,7 +317,8 @@ export const c20Event = [
         about: "Reels Competition",
         mode: "Offline",
         link: "/reels",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701663/Copy_of_Reels_aqok3b.png",
         documentId: "c20-3",
       },
       {
@@ -336,10 +338,26 @@ export const c20Event = [
         documentId: "c20-5",
       },
       {
-        name: "Picasso's Brush",
+        name: "Brushless Painting",
         about: "Painting Competition",
         mode: "Offline",
-        link: "/picassos-brush",
+        link: "/brushless-painting",
+        image: "",
+        documentId: "c20-14",
+      },
+      {
+        name: "Cloth Painting",
+        about: "Painting Competition",
+        mode: "Offline",
+        link: "/cloth-painting",
+        image: "",
+        documentId: "c20-15",
+      },
+      {
+        name: "Face Painting",
+        about: "Painting Competition",
+        mode: "Offline",
+        link: "/face-painting",
         image: "",
         documentId: "c20-6",
       },
@@ -348,7 +366,8 @@ export const c20Event = [
         about: "Essay Writing Competition",
         mode: "Offline",
         link: "/essay-writing",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
         documentId: "c20-7",
       },
       {
@@ -372,7 +391,8 @@ export const c20Event = [
         about: "Rangoli Competition",
         mode: "Offline",
         link: "/rang-de",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701668/rang_de_icon_ubjs9z.png",
         documentId: "c20-10",
       },
       {
@@ -380,7 +400,8 @@ export const c20Event = [
         about: "Photography Competition",
         mode: "Offline",
         link: "/pick-and-click",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701667/PICK_AND_CLICK_photo_zj2rfj.png  ",
         documentId: "c20-11",
       },
       {
