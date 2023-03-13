@@ -1,31 +1,37 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
 import "./Footer.css";
-import gMap from "../../src/components/assets/google-maps.png";
 
 const Footer = () => {
   return (
-    <footer id="contact">
-      <div className="sm:h-[270px] h-auto w-[100%] bg-gray-800">
-        <div className="p-10">
-          <h1 className="text-center">Made with 💖 by Tech Team</h1>
-          <h1 className="text-center mt-5">
+    <footer id='contact'>
+      <div className='sm:h-[270px] h-auto w-[100%] bg-gray-800'>
+        <div className='p-10'>
+          <h1 className='text-center'>Made with 💖 by Tech Team</h1>
+          <h1 className='text-center mt-5'>
             2023@copyright{" "}
-            <span className=" text-[#3f0]">All rights are reserved</span>
+            <span className=' text-[#3f0]'>All rights are reserved</span>
           </h1>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-5">
+          <div className='flex flex-col sm:flex-row gap-4 justify-center mt-5'>
             <h1>
               Email:{" "}
-              <span className="text-[#48ff00]">tantrotsav@ch.amrita.edu</span>
+              <a
+                href='mailto:tantrotsav@ch.amrita.edu'
+                className='text-[#48ff00]'
+              >
+                tantrotsav@ch.amrita.edu
+              </a>
             </h1>
             <h1>
-              Phone: <span className="text-[#48ff00]">+91 9025313327</span>
+              Phone:{" "}
+              <a href='tel:+919025313327' className='text-[#48ff00]'>
+                +91 9025313327
+              </a>
             </h1>
             <h1>
               Location:{" "}
               <a
-                href="https://goo.gl/maps/zjZpcok8QE9cNfeH7"
-                className="text-[#0dff00]"
+                href='https://goo.gl/maps/zjZpcok8QE9cNfeH7'
+                className='text-[#0dff00]'
               >
                 Google Maps
               </a>
