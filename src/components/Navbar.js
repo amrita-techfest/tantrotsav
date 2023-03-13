@@ -17,7 +17,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     ["About", "/#aboutR"],
     ["Events", "/events"],
     // ["FAQ", "/#faq"],
-    ["Know Us", "https://www.amrita.edu/"],
+    ["Know Us", "https://www.amrita.edu/campus/chennai"],
     ["Contact", "#contact"],
   ];
 
