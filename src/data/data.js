@@ -238,7 +238,7 @@ export const mechEvent = [
         id: 1,
         name: "SRUJAN",
         about: "CAD Competition ",
-        mode: "Offline",
+        mode: "Prelims (Online) & Finals (Offline)",
         link: "/srujan",
         image:
           "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
@@ -247,7 +247,7 @@ export const mechEvent = [
       {
         id: 2,
         name: "ROBORACE",
-        about: "Competition",
+        about: "Mobile Robot Competition",
         mode: "Offline",
         link: "/roborace",
         image:
@@ -257,12 +257,23 @@ export const mechEvent = [
       {
         id: 3,
         name: "Prastavam",
-        about: "Competition ",
+        about: "Paper Presenation",
         mode: "Offline",
         link: "/Prastavam",
         image:
           "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
         documentId: "mech5",
+      },
+
+      {
+        id: 4,
+        name: "Maze Solver Challenge ",
+        about: "Maze Solving Robot",
+        mode: "Offline",
+        link: "/Maze-Solver-Challenge",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
+        documentId: "mech4",
       },
     ],
   },
@@ -271,21 +282,12 @@ export const mechEvent = [
     gameDetails: [
       {
         name: "SPARK",
-        about: "Workshop",
+        about: "Periodical Maintenance of Engines",
         mode: "Offline",
         link: "/spark",
         image:
           "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
         documentId: "mech3",
-      },
-      {
-        name: "Maze Solver Challenge ",
-        about: "Workshop",
-        mode: "Offline",
-        link: "/Maze-Solver-Challenge",
-        image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
-        documentId: "mech4",
       },
     ],
   },
