@@ -5,12 +5,25 @@ const Footer = () => {
   return (
     <footer class='footer-distributed' id='contact'>
       <div class='footer-left'>
-        <h3>
+        {/* <h3>
           Company<span>logo</span>
-        </h3>
+        </h3> */}
+        <img
+          src='https://res.cloudinary.com/thydreams/image/upload/v1678515578/tantrotsav/hmsygeddwaoyc66sqgui.png'
+          alt='logo_footer'
+          className='w-[300px] h-[200px] object-contain'
+        />
       </div>
 
       <div class='footer-center'>
+        <div>
+          <a href='https://goo.gl/maps/zjZpcok8QE9cNfeH7'>
+            <i class='fa fa-map'></i>
+          </a>
+          <p>
+            <a href='https://goo.gl/maps/zjZpcok8QE9cNfeH7'>Google Maps</a>
+          </p>
+        </div>
         <div>
           <a href='tel:+919025313327'>
             <i class='fa fa-phone'></i>
@@ -47,11 +60,11 @@ const Footer = () => {
               );
             }}
           >
-            How To React
+            How To Reach
           </button>
         </div>
       </div>
-      <h1 className='text-center'>Made with 💖 by Tech Team</h1>
+      <h1 className='text-center'>Made with 💖 by Team Tantrotsav</h1>
       <h1 className='text-center mt-5'>
         2023@copyright{" "}
         <span className=' text-[#3f0]'>All rights are reserved</span>{" "}
