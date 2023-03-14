@@ -95,11 +95,11 @@ const TopContent = ({ isOpen }) => {
           </h1>
           <div className='btns'>
             {moment().format("YYYY-MM-DD, h:mm:ss a") <
-            "2023-03-13, 5:00:00 pm" ? (
+            "2023-04-02, 5:00:00 pm" ? (
               <button
                 className='reg ml-4'
                 onClick={() =>
-                  alert("Registration will start from 13th March 2023, 5 pm")
+                  alert("Registration will start soon. Stay tuned!")
                 }
               >
                 Register Now
