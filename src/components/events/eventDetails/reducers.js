@@ -14,6 +14,7 @@ const eventDetailsReducer = (state = INITIAL_STATE, action) => {
         isFetching: true,
       };
     case ActionTypes.GET_EVENT_DETAILS_SUCCESS:
+      console.log("action.payload", action.payload);
       return {
         ...state,
         isFetching: false,

@@ -6,6 +6,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { clearEventDetails, getEventDetailsStart } from "./actions";
 import { HashLink } from "react-router-hash-link";
 import moment from "moment";
+ 
+
 function EventDetails({
   getEventDetailsStart,
   eventDetails,
@@ -28,8 +30,8 @@ function EventDetails({
     };
   }, []);
 
-  console.log(eventDetails);
-  console.log(eventId);
+  console.log("eventDetails" , eventDetails);
+  console.log("eventId", eventId);
 
   // console.log(data.team_size);
 
@@ -91,10 +93,10 @@ function EventDetails({
             Mode: {eventDetails.mode}
           </h1>
           <div className=" ve flex flex-col gap-3 p-10 pt-0 mt-4 text-[18px] font-medium pb-0">
-            <p>Venue : {eventDetails.Venue}</p>
-            <p>Time : {eventDetails.Time}</p>
-            <p>Date : {eventDetails.Date}</p>
-            <p>Duration : {eventDetails.Duration}</p>
+            <p>Venue : {eventDetails.venue}</p>
+            <p>Time : {eventDetails.time}</p>
+            <p>Date : {eventDetails.date}</p>
+            <p>Duration : {eventDetails.duration}</p>
             <h2>Registration Fee : {eventDetails.registrationFees}</h2>
             <div className="">
               <h2 className="text-[#09ff00] text-[20px] underline py-2">
@@ -127,17 +129,43 @@ function EventDetails({
                 ))}
               </div>
             </div>
+
             <div className="">
-              <h1 className="text-[30px] mb-3 text-[#09ff00] underline font-space">
+              <h2 className="text-[#09ff00] text-[20px] underline py-2">
+                Description
+              </h2>
+              <p className="p-3">
+                {eventDetails?.description?.map((x) => (
+                  <div>
+                    <div>
+                      <li>{x.point}</li>
+                    </div>
+                  </div>
+                ))}
+              </p>
+            </div>
+
+            <div className="">
+              {/* <h1 className="text-[30px] mb-3 text-[#09ff00] underline font-space">
                 Description
               </h1>
               <p className="desc text-[16px] py-2 w-full text-justify">
                 {eventDetails.description}
-              </p>
+              </p> */}
               <h1 className="text-[30px] mb-3 mt-3 underline font-space text-[#09ff00] ">
                 Rules
               </h1>
-              <p className="w-full">{eventDetails.rules}</p>
+
+              <p className="p-3">
+                {eventDetails?.rules?.map((x) => (
+                  <div>
+                    <div>
+                      <li>{x.rule}</li>
+                    </div>
+                  </div>
+                ))}
+              </p>
+              {/* <p className="w-full">{eventDetails.rules}</p> */}
               {/* {eventId.subString(ece)} */}
             </div>
           </div>
@@ -145,11 +173,13 @@ function EventDetails({
       </div>
     </div>
   ) : (
-    navigate("/events")
+    // navigate("/events")
+    null
   );
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state) => (
+  {
   eventDetails: state.eventDetails.eventDetails,
   loading: state.eventDetails.isFetching,
   eventId: state.eventSetter.eventId,

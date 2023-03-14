@@ -160,6 +160,16 @@ export const event = [
           "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099987/events/X%20Gen%20Learning.jpg",
         documentId: "event16",
       },
+
+      {
+        name: "Machine Learning/Deep Learning",
+        about: "Workshop",
+        mode: "Offline",
+        link: "/machine-learning",
+        image: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
+        documentId: "event17",
+      },
+
     ],
   },
   {
@@ -241,17 +251,17 @@ export const mechEvent = [
         mode: "Offline",
         link: "/srujan",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343674/events/ece/poster_aytmba.png",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688582/events/mech/Untitled%20design/Srujan_klwcqm.png",
         documentId: "mech1",
       },
       {
         id: 2,
         name: "ROBORACE",
-        about: "Competition",
+        about: "Mobile Robot Competition",
         mode: "Offline",
         link: "/roborace",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688578/events/mech/Untitled%20design/Roborace_zxbeh6.png",
         documentId: "mech2",
       },
       {
@@ -261,8 +271,17 @@ export const mechEvent = [
         mode: "Offline",
         link: "/Prastavam",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688577/events/mech/Untitled%20design/prastavam_nmhazk.png",
         documentId: "mech5",
+      },
+      {
+        name: "Maze Solver Challenge ",
+        about: "Maze Solving Robot",
+        mode: "Offline",
+        link: "/Maze-Solver-Challenge",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Maze_trjqh1.png",
+        documentId: "mech4",
       },
     ],
   },
@@ -275,20 +294,38 @@ export const mechEvent = [
         mode: "Offline",
         link: "/spark",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688577/events/mech/Untitled%20design/Spark_vvug9h.png",
         documentId: "mech3",
-      },
-      {
-        name: "Maze Solver Challenge ",
-        about: "Workshop",
-        mode: "Offline",
-        link: "/Maze-Solver-Challenge",
-        image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
-        documentId: "mech4",
       },
     ],
   },
+
+  {
+    category: "Exhibition",
+    gameDetails: [
+      {
+        name: "Auto Expo",
+        about: "Exhibition",
+        mode: "Offline",
+        link: "/auto-expo",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Auto_expo_e1tukw.png",
+        documentId: "mech6",
+      },
+
+      {
+        name: "Stunt Show",
+        about: "Exhibition",
+        mode: "Offline",
+        link: "/stunt-show",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Stunt_kpnpig.png",
+        documentId: "mech7",
+      },
+
+    ],
+  },
+
 ];
 
 export const c20Event = [
@@ -300,7 +337,8 @@ export const c20Event = [
         about: "Quiz",
         mode: "Offline",
         link: "/smart-trivia",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704253/events/smart_trivia_nibhsc.png",
         documentId: "c20-1",
       },
       {
@@ -308,7 +346,8 @@ export const c20Event = [
         about: "Selfie Competition - C20 Initiative",
         mode: "Offline",
         link: "/selfiegram",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701664/Selfiegram_icon_mjejhi.png",
         documentId: "c20-2",
       },
       {
@@ -316,7 +355,8 @@ export const c20Event = [
         about: "Reels Competition",
         mode: "Offline",
         link: "/reels",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701663/Copy_of_Reels_aqok3b.png",
         documentId: "c20-3",
       },
       {
@@ -324,7 +364,8 @@ export const c20Event = [
         about: "Ideathon",
         mode: "Offline",
         link: "/sail-on-the-idea",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704617/events/sail_on_the_idea_bph6lo.png",
         documentId: "c20-4",
       },
       {
@@ -332,14 +373,31 @@ export const c20Event = [
         about: "Collage Making Competition",
         mode: "Offline",
         link: "/snapart",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704254/events/snap_art_wt2gar.png",
         documentId: "c20-5",
       },
       {
-        name: "Picasso's Brush",
+        name: "Brushless Painting",
         about: "Painting Competition",
         mode: "Offline",
-        link: "/picassos-brush",
+        link: "/brushless-painting",
+        image: "",
+        documentId: "c20-14",
+      },
+      {
+        name: "Cloth Painting",
+        about: "Painting Competition",
+        mode: "Offline",
+        link: "/cloth-painting",
+        image: "",
+        documentId: "c20-15",
+      },
+      {
+        name: "Face Painting",
+        about: "Painting Competition",
+        mode: "Offline",
+        link: "/face-painting",
         image: "",
         documentId: "c20-6",
       },
@@ -348,7 +406,8 @@ export const c20Event = [
         about: "Essay Writing Competition",
         mode: "Offline",
         link: "/essay-writing",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
         documentId: "c20-7",
       },
       {
@@ -364,7 +423,8 @@ export const c20Event = [
         about: "Short Film Making Competition",
         mode: "Offline",
         link: "/novelnolan",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704253/events/novelnolan_q3gfxv.png",
         documentId: "c20-9",
       },
       {
@@ -372,7 +432,8 @@ export const c20Event = [
         about: "Rangoli Competition",
         mode: "Offline",
         link: "/rang-de",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701668/rang_de_icon_ubjs9z.png",
         documentId: "c20-10",
       },
       {
@@ -380,7 +441,8 @@ export const c20Event = [
         about: "Photography Competition",
         mode: "Offline",
         link: "/pick-and-click",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701667/PICK_AND_CLICK_photo_zj2rfj.png  ",
         documentId: "c20-11",
       },
       {
@@ -388,7 +450,8 @@ export const c20Event = [
         about: "Poster Making Competition",
         mode: "Offline",
         link: "/gen-z-hoffman",
-        image: "",
+        image:
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704254/events/gen-_hoffman_i5mnqr.png",
         documentId: "c20-12",
       },
       {
@@ -402,6 +465,7 @@ export const c20Event = [
     ],
   },
 ];
+
 
 export const cardContents = [
   {

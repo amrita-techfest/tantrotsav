@@ -56,12 +56,12 @@ let timelineElements = [
   },
   {
     id: 7,
-    title: "BotBattleBash B3",
-    location: "Building a ChatBot",
+    title: "Forensics Investigation Challenge",
+    location: "FIC",
     description: "",
     buttonText: "Read More",
-    date: "March 24",
-    icon: "workshop",
+    date: "March 25",
+    icon: "Competition",
   },
 ];
 

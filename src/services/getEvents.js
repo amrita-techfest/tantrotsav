@@ -2,12 +2,12 @@ import { query, where,collection,getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 
 
-
-
 const getEvents = async (evtList) => {
     console.log(evtList);
-    const evtRef = collection(db,'events')
+    const evtRef = collection(db,'events_final')
+    // const evtRef = collection(db,'events')
     const q = query(evtRef, where("name", "in", evtList));
+    console.log("q" , q);
     const querySnapshot = await getDocs(q);
     var res = []
     querySnapshot.forEach((doc) => {res.push({id:doc.id, data:doc.data()})})

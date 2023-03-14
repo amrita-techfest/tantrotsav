@@ -8,9 +8,11 @@ import { Link } from "react-router-dom";
 
 function EventsIndex({ setEvent, isOpen }) {
   function onClick(eventId) {
+    console.log("eventId", eventId);
     setEvent(eventId);
   }
 
+  console.log("event" , event);
   return (
     <>
       {event.map(det => {
@@ -25,6 +27,7 @@ function EventsIndex({ setEvent, isOpen }) {
               <div className='container12'>
                 {det.gameDetails.map(details => {
                   const id = btoa(details.documentId);
+                  console.log(details.documentId)
                   return (
                     <div className='card'>
                       <div className='imgBox'>
