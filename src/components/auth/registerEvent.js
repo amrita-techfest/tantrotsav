@@ -87,15 +87,15 @@ const RegisterEvent = () => {
   };
   const show = () => {
     switch (step) {
+      // case 0:
+      //   return <UserAuth nextStep={nextStep} />;
       case 0:
-        return <UserAuth nextStep={nextStep} />;
-      case 1:
         return <PersonalInfo nextStep={nextStep} />;
-      case 2:
+      case 1:
         return <IndividualEvents nextStep={nextStep} prevStep={prevStep} />;
-      case 3:
+      case 2:
         return <GroupEvents nextStep={nextStep} prevStep={prevStep} />;
-      case 4:
+      case 3:
         return <RegistrationFeePayment />;
       default:
         break;
@@ -103,65 +103,64 @@ const RegisterEvent = () => {
   };
   return (
     <>
-      {isMobileView ? (
+      {/* {isMobileView ? (
         <MobileView />
-      ) : (
-        <ThemeProvider theme={theme}>
-          <div>
-            {!open && !tc && <Navigate to='/' />}
-            {show()}
-            <Dialog
-              fullScreen={fullScreen}
-              open={open}
-              onClose={() => handleClose(false)}
-              aria-labelledby='responsive-dialog-title'
-            >
-              <DialogTitle id='responsive-dialog-title'>
-                {
-                  "Terms and Conditions for TechFest (Registration starts from 13th March, 2023 - Monday, 5 pm onwards)"
-                }
-              </DialogTitle>
-              <DialogContent>
-                <DialogContentText>
-                  <ol style={{ listStyle: "initial", fontSize: "14px" }}>
-                    <li>
-                      All attendees must respect the code of conduct and behave
-                      appropriately.
-                    </li>
-                    <li>
-                      Attendees must carefully select the events and activities
-                      they participate in, taking into consideration the timings
-                      as the TechFest will not be liable for any clash of events
-                      and refunds.
-                    </li>
-                    <li>
-                      TechFest reserves the right to refuse entry or remove
-                      anyone from the event for any reason, including but not
-                      limited to inappropriate behavior or violation of the code
-                      of conduct.
-                    </li>
+      ) : ( */}
+      <ThemeProvider theme={theme}>
+        <div>
+          {!open && !tc && <Navigate to='/' />}
+          {show()}
+          <Dialog
+            fullScreen={fullScreen}
+            open={open}
+            onClose={() => handleClose(false)}
+            aria-labelledby='responsive-dialog-title'
+          >
+            <DialogTitle id='responsive-dialog-title'>
+              {
+                "Terms and Conditions for TechFest (Registration starts from 13th March, 2023 - Monday, 5 pm onwards)"
+              }
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText>
+                <ol style={{ listStyle: "initial", fontSize: "14px" }}>
+                  <li>
+                    All attendees must respect the code of conduct and behave
+                    appropriately.
+                  </li>
+                  <li>
+                    Attendees must carefully select the events and activities
+                    they participate in, taking into consideration the timings
+                    as the TechFest will not be liable for any clash of events
+                    and refunds.
+                  </li>
+                  <li>
+                    TechFest reserves the right to refuse entry or remove anyone
+                    from the event for any reason, including but not limited to
+                    inappropriate behavior or violation of the code of conduct.
+                  </li>
 
-                    <li>
-                      By attending TechFest, all attendees agree to grant
-                      TechFest and its partners the right to use any
-                      photographs, videos, or other recordings taken during the
-                      event for promotional purposes.
-                    </li>
-                  </ol>
-                </DialogContentText>
-              </DialogContent>
-              <DialogActions>
-                <Button autoFocus onClick={() => handleClose(false)}>
-                  Disagree
-                </Button>
-                <Button onClick={() => handleClose(true)} autoFocus>
-                  Agree
-                </Button>
-              </DialogActions>
-            </Dialog>
-          </div>
-        </ThemeProvider>
-      )}
+                  <li>
+                    By attending TechFest, all attendees agree to grant TechFest
+                    and its partners the right to use any photographs, videos,
+                    or other recordings taken during the event for promotional
+                    purposes.
+                  </li>
+                </ol>
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button autoFocus onClick={() => handleClose(false)}>
+                Disagree
+              </Button>
+              <Button onClick={() => handleClose(true)} autoFocus>
+                Agree
+              </Button>
+            </DialogActions>
+          </Dialog>
+        </div>
+      </ThemeProvider>
+      {/* )} */}
     </>
   );
 };

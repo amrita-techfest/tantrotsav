@@ -7,7 +7,7 @@ import {
   StyleSheet,
   Image,
 } from "@react-pdf/renderer";
-import Logo1 from "./logo1.png";
+import Logo1 from "./logosan.png";
 
 import Logo from "./logo.png";
 
