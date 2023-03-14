@@ -127,7 +127,6 @@ function EventDetails({
                 ))}
               </div>
             </div>
-<<<<<<< HEAD
 
             <div className="">
               <h2 className="text-[#09ff00] text-[20px] underline py-2">
@@ -146,15 +145,10 @@ function EventDetails({
 
             <div className="">
               {/* <h1 className="text-[30px] mb-3 text-[#09ff00] underline font-space">
-=======
-            <div className=''>
-              <h1 className='text-[30px] mb-3 text-[#09ff00] underline font-space'>
->>>>>>> 28fd8370518a351b696739790b19d62bd11c96e1
                 Description
               </h1>
               <p className='desc text-[16px] py-2 w-full text-justify'>
                 {eventDetails.description}
-<<<<<<< HEAD
               </p> */}
               <h1 className="text-[30px] mb-3 mt-3 underline font-space text-[#09ff00] ">
                 Rules
@@ -170,13 +164,6 @@ function EventDetails({
                 ))}
               </p>
               {/* <p className="w-full">{eventDetails.rules}</p> */}
-=======
-              </p>
-              <h1 className='text-[30px] mb-3 mt-3 underline font-space text-[#09ff00] '>
-                Rules
-              </h1>
-              <p className='w-full'>{eventDetails.rules}</p>
->>>>>>> 28fd8370518a351b696739790b19d62bd11c96e1
               {/* {eventId.subString(ece)} */}
             </div>
           </div>
@@ -189,12 +176,8 @@ function EventDetails({
   );
 }
 
-<<<<<<< HEAD
 const mapStateToProps = (state) => (
   {
-=======
-const mapStateToProps = state => ({
->>>>>>> 28fd8370518a351b696739790b19d62bd11c96e1
   eventDetails: state.eventDetails.eventDetails,
   loading: state.eventDetails.isFetching,
   eventId: state.eventSetter.eventId,
