@@ -28,6 +28,7 @@
     "react-dom": "^18.2.0",
     "react-google-button": "^0.7.2",
     "react-icons": "^4.8.0",
+    "react-multi-select-component": "^4.3.4",
     "react-particles": "^2.9.3",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",

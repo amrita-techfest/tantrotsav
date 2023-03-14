@@ -13,14 +13,14 @@ const TopContent = ({ isOpen }) => {
     console.log(isOpen);
   }, [isOpen]);
   return (
-    <div className='hero ' id='hero'>
+    <div className='hero' id='hero'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5, y: -400 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         className='to relative z-[1000000000] xs:bottom-10 bottom-32 top-[460px] left-[50%] translate-x-[-50%] w-fit flex justify-center items-center'
       >
-        <HashLink to='/#about' smooth>
+        <HashLink to='/#contact' smooth>
           <div className='border-white w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{ y: [0, 15, 0] }}
@@ -95,11 +95,11 @@ const TopContent = ({ isOpen }) => {
           </h1>
           <div className='btns'>
             {moment().format("YYYY-MM-DD, h:mm:ss a") <
-            "2023-03-13, 5:00:00 pm" ? (
+            "2023-04-02, 5:00:00 pm" ? (
               <button
                 className='reg ml-4'
                 onClick={() =>
-                  alert("Registration will start from 13th March 2023, 5 pm")
+                  alert("Registration will start soon. Stay tuned!")
                 }
               >
                 Register Now

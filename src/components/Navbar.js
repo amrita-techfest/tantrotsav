@@ -13,11 +13,11 @@ import Avatar from "@mui/material/Avatar";
 
 function Navbar({ isOpen, setOpen, user, setUser }) {
   const links = [
-    ["Home", "/"],
-    ["About", "/#aboutR"],
+    ["Home", "/#hero"],
+    // ["About", "/#aboutR"],
     ["Events", "/events"],
     // ["FAQ", "/#faq"],
-    ["Know Us", "https://www.amrita.edu/campus/chennai"],
+    ["About Amrita", "https://www.amrita.edu/campus/chennai"],
     ["Contact", "#contact"],
   ];
 
@@ -44,7 +44,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                 <img
                   className='logo h-20'
                   id='logo'
-                  src='https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/01/amrita-c20-logo-white.svg'
+                  src='https://res.cloudinary.com/dtv0aopo3/image/upload/v1678705666/events/amrita_c20_g20_white_rfgepn.png'
                   alt='logo'
                 />
               </Link>
@@ -78,9 +78,26 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                       <ol>
                         <li class='menu-item '>
                           <HashLink className='l1' to='/'>
-                            Events
+                            <span
+                              style={{
+                                fontWeight: "bold",
+                              }}
+                            >
+                              Events
+                            </span>
                           </HashLink>
                           <ol id='sub' className='sub-menu'>
+                            <li className='menu-item'>
+                              <HashLink
+                                onClick={() => {
+                                  setOpen(false);
+                                }}
+                                className='l'
+                                to='/c-20'
+                              >
+                                C20 Events
+                              </HashLink>
+                            </li>
                             <li className='menu-item'>
                               <HashLink
                                 onClick={() => {
@@ -112,17 +129,6 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                                 to='/mech'
                               >
                                 MECH Events
-                              </HashLink>
-                            </li>
-                            <li className='menu-item'>
-                              <HashLink
-                                onClick={() => {
-                                  setOpen(false);
-                                }}
-                                className='l'
-                                to='/c-20'
-                              >
-                                C20 Events
                               </HashLink>
                             </li>
                           </ol>
@@ -168,9 +174,20 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                     <ol>
                       <li class='menu-item '>
                         <HashLink className='l1' to='/'>
-                          Events
+                          <span
+                            style={{
+                              fontWeight: "bold",
+                            }}
+                          >
+                            Events
+                          </span>
                         </HashLink>
                         <ol className='sub-menu'>
+                          <li className='menu-item'>
+                            <HashLink className='l' to='/c20'>
+                              C20 Events
+                            </HashLink>
+                          </li>
                           <li className='menu-item'>
                             <HashLink className='l' to='/events'>
                               CSE Events
@@ -184,11 +201,6 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                           <li className='menu-item'>
                             <HashLink className='l' to='/mech'>
                               MECH Events
-                            </HashLink>
-                          </li>
-                          <li className='menu-item'>
-                            <HashLink className='l' to='/c20'>
-                              C20 Events
                             </HashLink>
                           </li>
                         </ol>

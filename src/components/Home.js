@@ -12,10 +12,10 @@ function Home({ isOpen }) {
   return (
     <div className='home h-auto sm:h-screen'>
       <TopContent isOpen={isOpen} />
-      <EventsSilder />
-      <About />
+      {/* <EventsSilder /> */}
+      {/* <About /> */}
       {/* <Sponsors /> */}
-      <Timeline />
+      {/* <Timeline /> */}
       <Footer />
     </div>
   );
