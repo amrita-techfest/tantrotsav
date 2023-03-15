@@ -311,7 +311,7 @@ improved and used in real time`,
 
     duration: "",
     registrationFees: "Rs 300/- per team (max 3 per team)",
-    date: "24/03/23",
+    date: "03/04/23",
     time: "10:00 AM ",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688578/events/mech/Untitled%20design/Roborace_zxbeh6.png",
   },
@@ -365,7 +365,7 @@ improved and used in real time`,
     ],
     duration: "",
     registrationFees: "Rs. 300/- per head",
-    date: "25/03/23",
+    date: "04/04/23",
     time: " 10:00 AM ",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688577/events/mech/Untitled%20design/Spark_vvug9h.png",
   },
@@ -417,7 +417,7 @@ improved and used in real time`,
     ],
     duration: "",
     registrationFees: "Rs. 300/- per team (max 3 per team)",
-    date: "24/03/23",
+    date: "03/04/23",
     time: " 10:00 AM to 1:00PM",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Maze_trjqh1.png",
   },
@@ -482,7 +482,7 @@ improved and used in real time`,
     ],
     duration: "",
     registrationFees: "Rs.150 /- per team",
-    date: "25/03/23",
+    date: "04/04/23",
     time: " 10:00 AM to 1:00PM",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688577/events/mech/Untitled%20design/prastavam_nmhazk.png",
   },
@@ -526,7 +526,7 @@ improved and used in real time`,
     ],
     duration: "",
     registrationFees: " /- ",
-    date: "24/03/23",
+    date: "03/04/23",
     time: " 10:00 AM - 1:00PM",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Auto_expo_e1tukw.png",
   },
@@ -571,7 +571,7 @@ improved and used in real time`,
     ],
     duration: "",
     registrationFees: " /- ",
-    date: "24/03/23",
+    date: "03/04/23",
     time: " 10:30 AM - 11:30 AM & 2:30 PM - 3:30 PM",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Stunt_kpnpig.png",
   },
@@ -639,7 +639,7 @@ const events = {
       },
     ],
     time: "10.00 am to 12.30pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "CYS LAB 2",
     studentCoordinator: [
       {
@@ -759,7 +759,7 @@ const events = {
     ],
 
     time: "10.00 am to 3.00pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "Online Event",
     studentCoordinator: [
       {
@@ -837,7 +837,7 @@ const events = {
       },
     ],
     time: "10.00 am to 4.00pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "Online Event",
     studentCoordinator: [
       {
@@ -913,7 +913,7 @@ const events = {
     ],
 
     time: "10.00 am to 12.00pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "CSE LAB - Gound Floor",
     studentCoordinator: [
       {
@@ -975,7 +975,7 @@ const events = {
       },
     ],
     time: "10.00 am to 2.00pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "CYS 1 LAB",
     studentCoordinator: [
       {
@@ -1053,7 +1053,7 @@ const events = {
       },
     ],
     time: "10.00 am to 3.00pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "CSE LAB 1st Floor",
     studentCoordinator: [
       {
@@ -1140,7 +1140,7 @@ const events = {
       },
     ],
     time: "10.00 am to 4.00pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AI Lab",
     studentCoordinator: [
       {
@@ -1217,7 +1217,7 @@ const events = {
       },
     ],
     time: "10.00 am to 12.30pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "Intel AI lab",
     studentCoordinator: [
       {
@@ -1277,7 +1277,7 @@ const events = {
       },
     ],
     time: "11.00 am to 4.00pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -1373,7 +1373,7 @@ const events = {
       },
     ],
     time: "10.00 am to 4.00pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Classrooms (AB-103) and Conference Hall (near Prayer Hall )",
     studentCoordinator: [
       {
@@ -1441,7 +1441,7 @@ const events = {
       },
     ],
     time: "9.00 am to 2.30pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -1494,7 +1494,7 @@ const events = {
       },
     ],
     time: "9.00 am to 2.30pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -1533,7 +1533,7 @@ const events = {
       },
     ],
     time: "9.30 am to 1.30pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -1581,7 +1581,7 @@ const events = {
       },
     ],
     time: "10.00 am to 3.30pm",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -1633,7 +1633,7 @@ const events = {
       },
     ],
     time: "1.00 am to 4.00pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -1672,7 +1672,7 @@ const events = {
       },
     ],
     time: "10.00 am to 4.00pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -1705,7 +1705,7 @@ const events = {
       },
     ],
     time: "10.00 am to 4.00pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "online,classroom",
     studentCoordinator: [
       {
@@ -1741,7 +1741,7 @@ const events = {
       },
     ],
     time: "9.30 am to 1.30pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Classroom/prayer hall",
     studentCoordinator: [
       {
@@ -2128,6 +2128,12 @@ const c20Events = {
       {
         point: "Number of Teams expected for finals : 5 (2 students per team).",
       },
+      {
+        point : 'Questions will be based on the above mentioned themes.',
+      },
+      {
+        point : 'To know more about the C20, visit https://c20.amma.org/',
+      }
     ],
     rules: [
       {
@@ -2138,33 +2144,34 @@ const c20Events = {
       },
     ],
     time: "10:00 AM to 12:00 PM",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "AB1-30",
     studentCoordinator: [
       {
         Name: "Prateek Kumar",
         Dept: "AIE",
-        Year: "2nd year",
+        Year: "1st year",
         contact: "9566171444",
       },
       {
         Name: "Jeevan Sendur",
         Dept: "AIE",
-        Year: " 2nd year",
+        Year: "1st year",
         contact: "8148460232",
       },
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr. IR Oviya",
       },
     ],
+    judging : [],
     prizeMoney: [
       {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704253/events/smart_trivia_nibhsc.png",
@@ -2186,8 +2193,11 @@ const c20Events = {
     ],
     description: [
       {
-        point: `The theme of the competition is "Inclusive Health and Equality,”. The guidelines are centred around three categories: Gender Equality, Addressing the Disabled, and Integrated holistic health: Mind, body, and environment.`,
+        point: `Competition will be based on the above mentioned themes.`,
       },
+      {
+        point : 'Maximum of 2 participants per team is allowed'
+      }
     ],
     rules: [
       {
@@ -2197,10 +2207,10 @@ const c20Events = {
         rule: "The selfie can be taken with a smartphone or any other camera device.",
       },
       {
-        rule: "Participants can submit only one selfie per category (three selfies in total).",
+        rule: "Participants can submit only one selfie per theme (three selfies in total).",
       },
       {
-        rule: `2 Selfies should be taken before the competition (location of the selfie can be inside or outside the campus) and one selfie should be taken on the day of the competition (inside the campus only).`,
+        rule: `Out of 3 selfies, 2 selfies should be taken before the competition (location of the selfie can be inside or outside the campus) and one selfie should be taken on the day of the competition (inside the campus only).`,
       },
       {
         rule: "Maximum participants for a team is 2. Which doesn’t mean only these 2 people have to be in the selfie. But the responsibility of the work goes to those 2 students.",
@@ -2217,13 +2227,24 @@ const c20Events = {
       {
         rule: "The competition is open for a limited time, and the winners will be announced on the final day of the competition.",
       },
+    ],
+    judging : [
       {
-        rule: "Judging: The selfies will be judged on the following criteria: Relevance to the theme of the competition. Creativity and originality. Quality of the photo. The effectiveness of the description in conveying the message of the selfie.",
+        criteria : 'Relevance to the theme of the competition.'
       },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria : 'Quality of the photo.'
+      },
+      {
+        criteria : 'The effectiveness of the description in conveying the message of the selfie.'
+      }
     ],
     time: "1:00 PM to 2:00 PM",
-    date: "24/03/23",
-    venue: "",
+    date: "03/04/23",
+    venue: "AB1-26",
     studentCoordinator: [
       {
         Name: "Mohanaram",
@@ -2240,12 +2261,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
-      },
-    ],
-    prizeMoney: [
-      {
-        prize: "",
+        Name: "Dr. Deepak",
       },
     ],
     prizeMoney: [
@@ -2253,17 +2269,32 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701664/Selfiegram_icon_mjejhi.png",
     registrationFees: "Rs. 100",
   },
+
   "c20-3": {
     name: "Reels",
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria : 'Quality of the video.'
+      },
+      {
+        criteria : 'The effectiveness of the description in conveying the message of the video.'
+      }
+    ],
     themes: [
       {
         theme: "Gender Equality and Disability",
@@ -2275,12 +2306,15 @@ const c20Events = {
     ],
     description: [
       {
-        point: "",
+        point: "It is an individual event.",
+      },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
       },
     ],
     rules: [
       {
-        rule: "Reel video must be between 5 and 90 seconds long and have an aspect ratio of 9:16.",
+        rule: "Reel video must be between 5 - 90 seconds long and have an aspect ratio of 9:16.",
       },
       {
         rule: `Video should not intend to hurt the sentiments of any individual, community, sect or religion. 
@@ -2299,9 +2333,9 @@ const c20Events = {
         rule: `The reel should be related to the theme given, and can contain any cine-clipped clips, trending reel clips, etc.,`,
       },
     ],
-    time: "12.30pm to 4.30pm",
-    date: "24/03/23",
-    venue: "AB01-334",
+    time: "12.30 PM to 4.30 PM",
+    date: "03/04/23",
+    venue: "AB1-334",
     studentCoordinator: [
       {
         Name: "Mithun.R ",
@@ -2318,7 +2352,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr. Mathivanan",
       },
     ],
     prizeMoney: [
@@ -2326,7 +2360,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701663/Copy_of_Reels_aqok3b.png",
@@ -2337,6 +2371,24 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria: `How impactful is the idea in solving the problem or an aspect of the problem 
+        (Impact) → 25%`,
+      },
+      {
+        criteria: "The clarity the team has in terms of what might  be needed in taking the idea to fruition (Clarity, technical feasibility) →  25% ",
+      },
+      {
+        criteria: "Product Innovation →  25%",
+      },
+      {
+        criteria: "Market research analysis → 15%",
+      },
+      {
+        criteria: "Financial feasibility → 10%",
+      },
+    ],
     themes: [
       {
         theme: "Education and Digital Transformation.",
@@ -2350,13 +2402,13 @@ const c20Events = {
       },
     ],
     description: [
+      
+      {
+        point: `Competition will be based on the above mentioned themes.`,
+      },
       {
         point:
           "New ideas are the source of innovation. We need new perspectives and ideas for development.",
-      },
-      {
-        point: `In order to reach the ideas of large groups and to combine different information into innovative ideas, new idea generation tools and platforms such as Ideathons are 
-        becoming more common day by day also have a competition dimension where the innovative ideas revealed by the teams are rewarded as a result of the jury voting.`,
       },
     ],
     rules: [
@@ -2378,31 +2430,9 @@ const c20Events = {
       {
         rule: "During event you can express your idea through any mode of presentation (videos, animation, presentation(ppt),etc.)",
       },
-      {
-        rule: "Final Judgement on the basis of innovativeness and Feasibility of the Presented Idea.",
-      },
-      {
-        rule: "Final judgement metrics : ",
-      },
-      {
-        rule: `How impactful is the idea in solving the problem or an aspect of the problem 
-        (Impact) → 25%`,
-      },
-      {
-        rule: "The clarity the team has in terms of what might  be needed in taking the idea to fruition (Clarity, technical feasibility) →  25% ",
-      },
-      {
-        rule: "Product Innovation →  25%",
-      },
-      {
-        rule: "Market research analysis → 15%",
-      },
-      {
-        rule: "Financial feasibility → 10%",
-      },
     ],
     time: "10.00 am to 2.30 pm",
-    date: "25.03.2023",
+    date: "04/04/2023",
     venue: "AB1-13",
     studentCoordinator: [
       {
@@ -2420,7 +2450,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr. Veluchamy",
       },
     ],
     prizeMoney: [
@@ -2428,7 +2458,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704617/events/sail_on_the_idea_bph6lo.png",
@@ -2440,6 +2470,14 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+    ],
     themes: [
       {
         theme: "Education and Digital Transformation.",
@@ -2452,6 +2490,12 @@ const c20Events = {
       },
     ],
     description: [
+      {
+        point : 'It is an individual event'
+      },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
+      },
       {
         point: `Among the above three themes, any one topic will be given on the spot.`,
       },
@@ -2471,7 +2515,7 @@ const c20Events = {
       },
     ],
     time: "10.30 am to 1.00 pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AB 2-30",
     studentCoordinator: [
       {
@@ -2483,7 +2527,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Ms. Rithani",
       },
     ],
     prizeMoney: [
@@ -2491,7 +2535,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704254/events/snap_art_wt2gar.png",
@@ -2506,62 +2550,53 @@ const c20Events = {
     themes: [
       {
         theme:
+          "Gender Equality and Disability"
+      },
+      {
+        theme:
           "Integrated Holistic Health: Mind, Body and Environment - Nutritional Health",
       },
       {
         theme:
           "Sustainable Resilient Communities: Climate, Environment Net Zero Targets - Net-Zero",
       },
+    ],
+    
+    judging : [
       {
-        theme: "Emission Management",
+        criteria : 'Relevance to the theme of the competition.'
       },
       {
-        theme:
-          "Technology Security and Transparency - Security, Safety, And Resilience",
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria: "Decision of the judges will be final and binding.",
       },
     ],
+
     description: [
       {
         point: "It is a team event. There can be only 2 participants in a team",
       },
       {
-        point: "Participants should bring their own colours, brushes etc.",
-      },
-      {
-        point: "Time limit is 60 minutes.",
-      },
-      {
-        point: "Themes are mentioned above.",
-      },
-      {
-        point:
-          "Participants will be judged based on creativity, innovation, and design.",
-      },
-      {
-        point: "Decision of the judges will be final and binding.",
-      },
+        point: `Competition will be based on the above mentioned themes.`,
+      },       
     ],
     rules: [
       {
-        rule: "Participants from all backgrounds, genders, and geographies are welcome",
+        rule: "Participants should bring their own colours, brushes etc.",
+      },
+      {
+        rule: "Time limit is 60 minutes.",
+      },
+      {
+        rule: "Themes will be provided on spot",
       },
     ],
     time: "1.00pm to 2.00pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AB1-11",
     studentCoordinator: [
-      {
-        Name: "B Bhanu Sai Mani Kiran",
-        Dept: "CCE",
-        Year: "3rd year",
-        contact: "7995677214",
-      },
-      {
-        Name: "Vijay Kumar",
-        Dept: "CYS",
-        Year: "2nd year",
-        contact: "9629329074",
-      },
       {
         Name: "Vijay varma",
         Dept: "CYS",
@@ -2571,7 +2606,10 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr.Devi Sowjanya",
+      },
+      {
+        Name: "Ms.Divya",
       },
     ],
     prizeMoney: [
@@ -2579,19 +2617,26 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701663/Copy_of_Reels_aqok3b.png",
+    img: "https://user-images.githubusercontent.com/73429989/225205310-46e81623-c025-450c-854e-f980b46d3088.png",
     registrationFees: "Rs. 100",
   },
 
   "c20-7": {
     name: "Essay Writing",
-    mode: "Offline",
-    // below c20 heading
+    mode: "Offline", 
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     event_type: "Competitions",
+    judging : [
+      {
+        criteria: "The evaluation will be made on the basis of logical, coherent, and relevant content with a suitable format.",
+      },
+      {
+        criteria: "The decision of the judges shall be final and binding on all the participants.",
+      },
+    ],
 
     themes: [
       {
@@ -2613,11 +2658,11 @@ const c20Events = {
       {
         point: "It is an individual event.",
       },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
+      }, 
     ],
     rules: [
-      {
-        rule: "The topic for the essay writing competition will be announced on the spot.",
-      },
       {
         rule: "The time allotted for writing the essay is 1.30 hours.",
       },
@@ -2627,19 +2672,14 @@ const c20Events = {
       {
         rule: "Word limits for the essay will be 500-600.",
       },
-      {
-        rule: "The evaluation will be made on the basis of logical, coherent, and relevant content with a suitable format.",
-      },
-      {
-        rule: "The decision of the judges shall be final and binding on all the participants.",
-      },
+
     ],
     time: "10:00 am to 12:00 pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AB1-337",
     studentCoordinator: [
       {
-        Name: "Gopi Kishan",
+        Name: "Gopi Kishaan",
         Dept: "CSE",
         Year: "2nd year",
         contact: "9677187642",
@@ -2647,7 +2687,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr. Jeyalakshmi",
       },
     ],
     prizeMoney: [
@@ -2655,7 +2695,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
@@ -2667,6 +2707,17 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria: "The evaluation will be made on the basis of logical, coherent, and relevant content with a suitable format.",
+      },
+      {
+        criteria: "Discipline should be maintained by the participants such as following the code of conduct of a competition, and avoiding plagiarism",
+      },
+      {
+        criteria: "The decision of the judges shall be final and binding on all the participants.",
+      },
+    ],
     themes: [
       {
         theme: "Education and Digital Transformation.",
@@ -2682,29 +2733,23 @@ const c20Events = {
       {
         point: "It is an individual event.",
       },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
+      },
     ],
     rules: [
       {
-        rule: "The topic for the essay writing competition will be announced on the spot.",
+        rule: "The topic will be announced on the spot.",
       },
       {
-        rule: "The time allotted for writing the essay is 1.30 hours.",
+        rule: "The time allotted for drafting the peotry is 1.30 hours.",
       },
       {
         rule: "Sheets for writing will be provided by the university. Other required stationery needs to be carried by the participants.",
       },
-      {
-        rule: "The evaluation will be made on the basis of logical, coherent, and relevant content with a suitable format.",
-      },
-      {
-        rule: "Discipline should be maintained by the participants such as following the code of conduct of a competition, and avoiding plagiarism",
-      },
-      {
-        rule: "The decision of the judges shall be final and binding on all the participants.",
-      },
     ],
     time: "1:00 PM to 3:00 PM",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AB1-12",
     studentCoordinator: [
       {
@@ -2716,7 +2761,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Mr. Hariharan",
       },
     ],
     prizeMoney: [
@@ -2724,10 +2769,10 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
+    img: "https://user-images.githubusercontent.com/73429989/225205698-69829cc5-e783-4fd0-8df4-0fc0ac573c96.png",
     registrationFees: "Rs. 100",
   },
 
@@ -2736,6 +2781,17 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [ 
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria: "The decision of the judges shall be final and binding on all the participants.",
+      },
+    ],
     themes: [
       {
         theme: "Education and Digital Transformation.",
@@ -2752,7 +2808,10 @@ const c20Events = {
     ],
     description: [
       {
-        point: "It is an individual event.",
+        point: "A team may consist of 6-7 members.",
+      },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
       },
     ],
     rules: [
@@ -2766,15 +2825,18 @@ const c20Events = {
         rule: "Any foul language/misleading content leads to elimination from the contest.",
       },
       {
-        rule: "A team may consist of 6-7 members.",
+        rule : ' Submission details will be shared with the registered teams separately. '
       },
       {
-        rule: "Film must be embedded with any one of the themes",
+        rule : 'A copy of the script paper should be submitted (to avoid any sort of proxy or malpractice).'
       },
+      {
+        rule : 'The event is only for college students and strictly not for any part-time or full-time filmmakers.'
+      }
     ],
     time: "10:00 AM to 12:00 PM",
-    date: "25/03/23",
-    venue: "Seminar Hall",
+    date: "04/04/23",
+    venue: "AB1-02",
     studentCoordinator: [
       {
         Name: "S.Sarveshvaran",
@@ -2785,7 +2847,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Mr. Dhamodharan",
       },
     ],
     prizeMoney: [
@@ -2793,7 +2855,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
@@ -2805,6 +2867,17 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria: "The decision of the judges shall be final and binding on all the participants.",
+      },
+    ],
     themes: [
       {
         theme: "Education and Digital Transformation.",
@@ -2819,16 +2892,17 @@ const c20Events = {
     ],
     description: [
       {
-        point: "It is an individual event.",
+        point: "2 members in a team",
+      },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
       },
     ],
     rules: [
       {
         rule: "Time :90 minutes",
       },
-      {
-        rule: "2 members in a team",
-      },
+      
       {
         rule: "The rangoli should be max of 3ft x 3ft",
       },
@@ -2843,25 +2917,25 @@ const c20Events = {
       },
     ],
     time: "10:00 AM to 12:00 PM",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Prayar Hall",
     studentCoordinator: [
       {
         Name: "N.Sarrvesh",
-        Dept: "",
-        Year: "",
+        Dept: "AIE",
+        Year: "2nd year",
         contact: "9655879116",
       },
       {
         Name: "Paranav Raj S",
-        Dept: "",
-        Year: "",
+        Dept: "AIE",
+        Year: "2nd year",
         contact: "8939977933",
       },
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr. Sindhu",
       },
     ],
     prizeMoney: [
@@ -2869,7 +2943,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
@@ -2881,6 +2955,17 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria: "The decision of the judges shall be final and binding on all the participants.",
+      },
+    ],
     themes: [
       {
         theme: "Education and Digital Transformation.",
@@ -2892,13 +2977,14 @@ const c20Events = {
     ],
     description: [
       {
-        point: "Eligibility: All Participants should be students ",
+        point: "This is an individual event and one participant can submit a maximum of five photo.",
+      },
+  
+      {
+        point: `Competition will be based on the above mentioned themes.`,
       },
     ],
     rules: [
-      {
-        rule: "This is an individual event and one participant can submit a maximum of five photo.",
-      },
       {
         rule: "All photos must be original, meaning you may only enter photographs that you took. plagiarism is strictly restricted.",
       },
@@ -2918,7 +3004,7 @@ const c20Events = {
         rule: "Specifications :",
       },
       {
-        rule: "Please read the photograph specifications very carefully. failing to adhere to the format will lead to disqualification",
+        rule: "Photos should be taken using DSLR or mirrorless or mobile phones.",
       },
       {
         rule: "Photo submissions should be in landscape mode.",
@@ -2930,17 +3016,23 @@ const c20Events = {
         rule: "The EXIF data of the photograph must remain intact.",
       },
       {
-        rule: "Digitally manipulating photos should be kept to a minimum. Your photograph must authentically depict the setting as you saw it when you took the photograph. ",
+        rule: "Digitally manipulating photos should be kept to a minimum.",
+      },
+      {
+        rule : 'Your photograph must authentically depict the setting as you saw it when you took the photograph.'
       },
       {
         rule: "Images must not include a border. if an image includes a border, organisers reserves the right to crop the border.",
       },
       {
-        rule: "A subtle watermark in the corner of the image is acceptable, but organisers re- serve the right to crop photos, which may remove a watermark. The watermark should cover no more than 5% of the photo.",
+        rule: "A subtle watermark in the corner of the image is acceptable, but organisers re- serve the right to crop photos, which may remove a watermark.",
       },
+      {
+        rule : 'The watermark should cover no more than 5% of the photo.'
+      }
     ],
     time: "11:00 AM to 1:00 PM",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "Prayar Hall",
     studentCoordinator: [
       {
@@ -2951,14 +3043,14 @@ const c20Events = {
       },
       {
         Name: "Surya S",
-        Dept: "",
-        Year: "",
+        Dept: "Mech",
+        Year: "3rd year",
         contact: "8921569817",
       },
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr. Piyush",
       },
     ],
     prizeMoney: [
@@ -2966,7 +3058,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
@@ -2978,6 +3070,17 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria: "The decision of the judges shall be final and binding on all the participants.",
+      },
+    ],
     themes: [
       {
         theme: "Education and Digital Transformation.",
@@ -2994,6 +3097,9 @@ const c20Events = {
       {
         point: "It is an individual event.",
       },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
+      },
     ],
     rules: [
       {
@@ -3006,40 +3112,26 @@ const c20Events = {
         rule: "All Poster should be original work of participant. No copyrighted content can be used. Any participant found violating rules and regulation will be disqualified from competition",
       },
       {
-        rule: `The poster must be related to the given theme "Gender Equality and Disability;
-      Sustainable Resilient Communities: Climate, Environment & net zero target;
-      Technology Security and Transparency."`,
-      },
-      {
         rule: "Contestants must create poster only in  the given 1.30 hours at the venue.",
       },
       {
         rule: "Final file format should be pdf with maximum size of 10MB.",
       },
-      {
-        rule: "Decision of jury will be considered final",
-      },
     ],
     time: "10:30 AM to 12:00 PM",
-    date: "24/03/23",
+    date: "03/04/23",
     venue: "AB1-24",
     studentCoordinator: [
       {
-        Name: "Abhinav Krishnakumar",
-        Dept: "",
-        Year: "",
-        contact: "9500165102",
-      },
-      {
-        Name: "Jaya Malar",
-        Dept: "ARE",
-        Year: "1st year",
-        contact: "9524367891",
+        Name: "Sujith",
+        Dept: "Mech",
+        Year: "3rd year",
+        contact: "9791796848",
       },
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Mr.A K Hemanth",
       },
     ],
     prizeMoney: [
@@ -3047,7 +3139,7 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
@@ -3059,6 +3151,17 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria: "The decision of the judges shall be final and binding on all the participants.",
+      },
+    ],
     themes: [
       {
         theme: "Integrated Holistic Health: Mind, Body and Environment",
@@ -3069,22 +3172,19 @@ const c20Events = {
       {
         theme: `Sustainable Resilient Communities: Climate, Environment 
         & Net Zero Targets`,
-      },
-      {
-        rule: "Technology Security and Transparency",
-      },
+      }
     ],
     description: [
       {
         point: "It is an individual event.",
       },
+      {
+        point: `Competition will be based on the above mentioned themes.`,
+      },
     ],
     rules: [
       {
         rule: "Participants have to carry their own drawing sheet, stationery material, colors etc.",
-      },
-      {
-        rule: "A single Participant only should Sketch",
       },
       {
         rule: "The sketch is open to both 2-dimensional and 3-dimensional works.",
@@ -3094,13 +3194,13 @@ const c20Events = {
       },
     ],
     time: "9:30 AM to 11:00 AM",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AB1-335",
     studentCoordinator: [
       {
         Name: "Jeshwanth",
         Dept: "CSE",
-        Year: "3rs year",
+        Year: "3rd year",
         contact: "6301218072",
       },
       {
@@ -3112,7 +3212,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr. G Saranya",
       },
     ],
     prizeMoney: [
@@ -3120,10 +3220,10 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
+    img: "https://user-images.githubusercontent.com/73429989/225205876-1f48ec68-ff55-4d86-a61d-b7f75af8e120.png",
     registrationFees: "Rs. 100",
   },
 
@@ -3132,83 +3232,77 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+    ],
     themes: [
       {
         theme:
-          "Integrated Holistic Health: Mind, Body and Environment - Nutritional Health",
+          "Education and Digital Transformation",
       },
       {
-        theme:
-          "Sustainable Resilient Communities: Climate, Environment Net Zero Targets - Net-Zero",
+        theme : 'Gender Equality and Disability'
       },
       {
-        theme: "Emission Management",
-      },
-      {
-        theme:
-          "Technology Security and Transparency - Security, Safety, And Resilience",
+        theme: "Integrated Holistic Health: Mind, Body and Environment",
       },
     ],
     description: [
       {
         point: "It is an individual event.",
-      },
+      },  
       {
-        point: "The use of brushes is strictly prohibited.",
-      },
-      {
-        point: `Paints, fingers, a palette knife, newsprint, cloth rags, earbuds, and threadbare can all be used to create artwork. 
-      Any other supportable equipment other than a brush is permissible.`,
-      },
-      {
-        point:
-          "Digital media during painting is not allowed in the nearby vicinity.",
-      },
-      {
-        point:
-          "Participants will be given 45 minutes, and only time-bound submissions will be evaluated.",
-      },
-      {
-        point: "Participants should bring their Drawing sheets (A2 size).",
-      },
-      {
-        point: "Students must bring their own colors.",
-      },
-      {
-        point: "All types of colors are allowed without brushes.",
-      },
+        point: `Competition will be based on the above mentioned themes.`,
+      },    
     ],
     rules: [
       {
-        rule: "Participants from all backgrounds, genders, and geographies are welcome",
+        rule: "The use of brushes is strictly prohibited.",
+      },
+      {
+        rule: `Paints, fingers, a palette knife, newsprint, cloth rags, earbuds, and threadbare can all be used to create artwork. 
+      Any other supportable equipment other than a brush is permissible.`,
+      },
+      {
+        rule:
+          "Digital media during painting is not allowed in the nearby vicinity.",
+      },
+      {
+        rule:
+          "Participants will be given 45 minutes, and only time-bound submissions will be evaluated.",
+      },
+      {
+        rule: "Participants should bring their Drawing sheets (A2 size).",
+      },
+      {
+        rule: "Students must bring their own colors.",
+      },
+      {
+        rule: "All types of colors are allowed without brushes.",
       },
     ],
     time: "11.30am to 12.30pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AB1-06",
     studentCoordinator: [
-      {
-        Name: "B Bhanu Sai Mani Kiran",
-        Dept: "CCE",
-        Year: "3rd year",
-        contact: "7995677214",
-      },
       {
         Name: "Vijay Kumar",
         Dept: "CYS",
         Year: "2nd year",
         contact: "9629329074",
       },
-      {
-        Name: "Vijay varma",
-        Dept: "CYS",
-        Year: "2nd year",
-        contact: "9778597445",
-      },
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr.Devi Sowjanya",
+      },
+      {
+        Name: "Ms.Divya",
       },
     ],
     prizeMoney: [
@@ -3216,10 +3310,10 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701663/Copy_of_Reels_aqok3b.png",
+    img: "https://user-images.githubusercontent.com/73429989/225205589-a8874707-de0d-48b0-9daa-c729f17c79ea.png",
     registrationFees: "Rs. 100",
   },
 
@@ -3228,6 +3322,17 @@ const c20Events = {
     mode: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    judging : [
+      {
+        criteria : 'Relevance to the theme of the competition.'
+      },
+      {
+        criteria  : 'Creativity and originality.'
+      },
+      {
+        criteria: "Decision of the judges will be final and binding.",
+      },
+    ],
     themes: [
       {
         theme:
@@ -3236,9 +3341,6 @@ const c20Events = {
       {
         theme:
           "Sustainable Resilient Communities: Climate, Environment Net Zero Targets - Net-Zero",
-      },
-      {
-        theme: "Emission Management",
       },
       {
         theme:
@@ -3250,29 +3352,23 @@ const c20Events = {
         point: "It is an individual event.",
       },
       {
-        point: "Participants should bring their own colours, brushes etc.",
-      },
-      {
-        point: "Time limit is 60 minutes.",
-      },
-      {
-        point: "Themes are mentioned above.",
-      },
-      {
-        point:
-          "Participants will be judged based on creativity, innovation, and design.",
-      },
-      {
-        point: "Decision of the judges will be final and binding.",
-      },
+        point: `Competition will be based on the above mentioned themes.`,
+      }, 
+      
     ],
     rules: [
       {
-        rule: "Participants from all backgrounds, genders, and geographies are welcome",
+        rule: "Participants should bring their own colours, brushes etc.",
+      },
+      {
+        rule : 'The dimension of white cloth is 48cm x 48cm. (White XXL size cloth)'
+      },
+      {
+        rule: "Time limit is 60 minutes.",
       },
     ],
     time: "2.30pm to 3.30pm",
-    date: "25/03/23",
+    date: "04/04/23",
     venue: "AB1-07",
     studentCoordinator: [
       {
@@ -3281,22 +3377,13 @@ const c20Events = {
         Year: "3rd year",
         contact: "7995677214",
       },
-      {
-        Name: "Vijay Kumar",
-        Dept: "CYS",
-        Year: "2nd year",
-        contact: "9629329074",
-      },
-      {
-        Name: "Vijay varma",
-        Dept: "CYS",
-        Year: "2nd year",
-        contact: "9778597445",
-      },
     ],
     facultyCoordinator: [
       {
-        Name: "",
+        Name: "Dr.Devi Sowjanya",
+      },
+      {
+        Name: "Ms.Divya",
       },
     ],
     prizeMoney: [
@@ -3304,10 +3391,10 @@ const c20Events = {
         prize: "1st prize : Rs. 3000",
       },
       {
-        prize: "1st prize : Rs. 2000",
+        prize: "2nd prize : Rs. 2000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701663/Copy_of_Reels_aqok3b.png",
+    img: "https://user-images.githubusercontent.com/73429989/225205111-acb2184f-965f-4730-b064-5d4f2fbd5b82.png",
     registrationFees: "Rs. 100",
   },
 };
@@ -3330,10 +3417,13 @@ function run() {
       registrationFees: c20Events[_.keys(c20Events)[i]].registrationFees,
       img: c20Events[_.keys(c20Events)[i]].img,
       date: c20Events[_.keys(c20Events)[i]].date,
+      themes : c20Events[_.keys(c20Events)[i]].themes,
+      judging : c20Events[_.keys(c20Events)[i]].judging,
       // duration : c20Events[_.keys(c20Events)[i]].duration,
+      prizeMoney : c20Events[_.keys(c20Events)[i]].prizeMoney,
       time: c20Events[_.keys(c20Events)[i]].time,
     });
-    console.log("schema", c20Events[_.keys(c20Events)[i]].description);
+    console.log("schema", c20Events[_.keys(c20Events)[i]].themes);
     i++;
     console.log(i + 1 + "done"); // just to check if the loop is working
   }
