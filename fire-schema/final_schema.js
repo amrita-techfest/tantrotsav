@@ -1786,11 +1786,10 @@ const eceEvents = {
     ],
     prizeMoney : [],
 
-    date: " 24th March 2023",
+    date: " 3rd April 2023",
     time: "10:00AM - 1:00PM",
     duration: "-",
     venue: "VLSI LAB",
-    duration: "",
     studentCoordinator: [
       {
         Name: "G. Anuradha Reddy",
@@ -1804,7 +1803,7 @@ const eceEvents = {
         Name: "Dr. C. Ganesh Kumar",
       },
       {
-        Name: "Dr Sakthi Abirami B",
+        Name: "Dr. Sakthi Abirami B",
       },
     ],
     registrationFees: "UG - Rs.100 Per person PG - Rs.150 Per person",
@@ -2164,6 +2163,15 @@ const c20Events = {
       {
         rule: "The competition is open for a limited time, and the winners will be announced on the final day of the competition.",
       },
+      {
+        rule : "The deadline for submitting the photographs is till 30th March,2023, 5pm"
+      },
+      {
+        rule : "Link to submit the photograph : "
+      },
+      {
+        rule : "Shortlisted participants for the next level will be intimated by mail on 1st April,2023"
+      }
     ],
     judging : [
       {

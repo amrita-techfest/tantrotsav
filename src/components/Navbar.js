@@ -14,10 +14,10 @@ import Avatar from "@mui/material/Avatar";
 function Navbar({ isOpen, setOpen, user, setUser }) {
   const links = [
     ["Home", "/#hero"],
+    ["About Us", "https://www.amrita.edu/campus/chennai"],
     // ["About", "/#aboutR"],
     ["Events", "/events"],
-    // ["FAQ", "/#faq"],
-    ["About Amrita", "https://www.amrita.edu/campus/chennai"],
+    ["Master Schedule", "#masterschedule"],
     ["Contact", "#contact"],
   ];
 

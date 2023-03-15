@@ -25,11 +25,11 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <a href='tel:+919025313327'>
+          <a href='tel:04435533222'>
             <i class='fa fa-phone'></i>
           </a>
           <p>
-            <a href='tel:+919025313327'>+91 9025313327</a>
+            <a href='tel:04435533222'>+91 044 35533222</a>
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <h1 className='text-center'>Made with 💖 by Team Tantrotsav</h1>
+      {/* <h1 className='text-center'>Made with 💖 by Team Tantrotsav</h1> */}
       <h1 className='text-center mt-5'>
         2023@copyright{" "}
         <span className=' text-[#3f0]'>All rights are reserved</span>{" "}
