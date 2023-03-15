@@ -157,7 +157,7 @@ const eventmech = {
     event_type: "CAD Competition",
     description: [
       {
-        point: "Prelims (Online , 24/03/2023) & Finals (Offline, 25/03/2023) ",
+        point: "Prelims (Online , 03/04/2023) & Finals (Offline, 04/04/2023) ",
       },
       {
         point: "Requisites of the CAD designing ",
@@ -241,7 +241,7 @@ improved and used in real time`,
       },
     ],
     registrationFees: "Rs. 150/- per head",
-    date: "24/03/23 - 25/03/23",
+    date: "03/04/2023 - 04/04/2023",
     time: "10:00 AM - 12:00 PM ",
     duration: "2 hours",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688582/events/mech/Untitled%20design/Srujan_klwcqm.png",
@@ -352,7 +352,7 @@ improved and used in real time`,
     ],
     facultyCoordinator: [
       {
-        Name: "Mr. P.R.Raghavendran",
+        Name: "Dr. M. Vignesh",
       },
     ],
     prizeMoney: [],
@@ -499,13 +499,13 @@ improved and used in real time`,
     ],
     facultyCoordinator: [
       {
-        Name: "Mr.PR Raghavendran",
+        Name: "Dr. M. Vignesh",
       },
     ],
     prizeMoney: [],
     duration: "",
     registrationFees: " /- ",
-    date: "03/04/23",
+    date: "03/04/23 - 04/04/23",
     time: " 10:00 AM - 1:00PM",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Auto_expo_e1tukw.png",
   },
@@ -537,14 +537,14 @@ improved and used in real time`,
     ],
     facultyCoordinator: [
       {
-        Name: "Mr.PR Raghavendran",
+        Name: "Dr. M. Vignesh",
       },
     ],
     prizeMoney: [],
     duration: "",
     registrationFees: " /- ",
     date: "03/04/23",
-    time: " 10:30 AM - 11:30 AM & 2:30 PM - 3:30 PM",
+    time: "10:30 AM - 11:30 AM & 2:30 PM - 3:30 PM",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Stunt_kpnpig.png",
   },
 };
@@ -1784,11 +1784,18 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney : [],
+    prizeMoney : [
+      {
+        prize : '1st place : Rs. 3000/-'
+      },
+      {
+        prize : '2nd place : Rs. 2000/-'
+      }
+    ],
 
     date: " 3rd April 2023",
     time: "10:00AM - 1:00PM",
-    duration: "-",
+    duration: "",
     venue: "VLSI LAB",
     studentCoordinator: [
       {
@@ -1811,7 +1818,7 @@ const eceEvents = {
   },
   ece2: {
     name: "CIRCUITAL DILEMMA",
-    duration: "-",
+    duration: "",
     mode: "Offline",
     description: [
       {
@@ -1833,11 +1840,18 @@ const eceEvents = {
       },
     ],
 
-    prizeMoney : [],
+    prizeMoney : [
+      {
+        prize : '1st place : Rs. 5000/-'
+      },
+      {
+        prize : '2nd place : Rs. 3000/-'
+      }
+    ],
 
-    date: " 24th March 2023",
-    time: " 2:00PM - 3:30PM",
-    venue: "VLSI LAB",
+    date: " 3rd April 2023",
+    time: "1:00PM - 3:00PM",
+    venue: "VLSI LAB & SDR LAB",
     studentCoordinator: [
       {
         Name: "Pavithra Arcot",
@@ -1860,11 +1874,11 @@ const eceEvents = {
         Name: "Dr. Parthasarathy Srinivasan",
       },
     ],
-    registrationFees: "",
+    registrationFees: "Rs. 150 per team (2-3 participants)",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343637/events/ece/circuital_nppvoz.png",
   },
   ece3: {
-    name: "IoT-CTF",
+    name: "IoT-Banda Dhavaja (CTF)",
     duration: "-",
     mode: "Offline",
     description: [
@@ -1888,10 +1902,16 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney : [],
-
-    date: "25th March 2023",
-    time: "9:00AM - 11:00AM",
+    prizeMoney : [
+      {
+        prize : '1st place : Rs. 5000/-'
+      },
+      {
+        prize : '2nd place : Rs. 3000/-'
+      }
+    ],
+    date: "4th April 2023",
+    time: "9:00AM - 12:00AM",
     venue: "VLSI LAB and SDR Lab",
     studentCoordinator: [
       {
@@ -1909,7 +1929,7 @@ const eceEvents = {
         Name: "Dr. K P Jayaram",
       },
     ],
-    registrationFees: "",
+    registrationFees: "Rs. 200 per team (2-3 participants)",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343742/events/ece/iot_jcrqf1.png",
   },
   ece4: {
@@ -1937,9 +1957,16 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney : [],
+    prizeMoney : [
+      {
+        prize : '1st place : Rs. 5000/-'
+      },
+      {
+        prize : '2nd place : Rs. 3000/-'
+      }
+    ],
 
-    date: "25th March 2023",
+    date: "4th April 2023",
     time: " 11:00AM - 01:00PM",
     venue: "VLSI LAB and SDR Lab",
     studentCoordinator: [
@@ -1958,12 +1985,12 @@ const eceEvents = {
         Name: "Dr. Ramachandran",
       },
     ],
-    registrationFees: "",
+    registrationFees: "Rs. 150 per team (2-3 participants)",  
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343739/events/ece/passive_mkimfl.png",
   },
   ece5: {
     name: "INGENIUM",
-    duration: "-",
+    duration: "",
     mode: "Offline",
     description: [
       {
@@ -1998,10 +2025,17 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney : [],
+    prizeMoney : [
+      {
+        prize : '1st place : Rs. 5000/-'
+      },
+      {
+        prize : '2nd place : Rs. 3000/-'
+      }
+    ],
 
-    date: "24th and 25th March 2023",
-    time: " 24h (Starts At 10AM)",
+    date: "3rd April and 4th March 2023",
+    time: " 24h (Starts at 10AM on 3rd April and Ends At 12PM on 4th April)",
     venue: "INTEL IoT lab",
     studentCoordinator: [
       {
@@ -2029,7 +2063,7 @@ const eceEvents = {
         Name: "Mr. V Damodaran",
       },
     ],
-    registrationFees: "",
+    registrationFees: "Rs. 150 per team (2-3 participants)",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678343738/events/ece/ingenium_k47f15.png",
   },
 };
@@ -2071,13 +2105,31 @@ const c20Events = {
         point : 'To know more about the C20, visit https://c20.amma.org/',
       }
     ],
+    
     rules: [
       {
-        rule: "Preliminary round to selected final teams",
+        rule: "Each team will consist of 2 members.",
       },
       {
-        rule: "Six rounds with min 5 question per team",
+        rule: "Smart trivia will consist of 5 rounds with C20 theme.",
       },
+      {
+        rule : 'All questions must be answered within the time limit of 30 seconds for 10 marks. '
+      },
+      {
+        
+        rule : 'The questions will be asked to the respective groups. If a group fails to answer, the question will be passed to the next group for 5 marks.'  
+      },
+      {
+        rule : 'All participants must remain respectful to the host and other competitors.'
+      },
+      {
+        rule  :'If any kind of malpractice (answers from the audience, using mobiles, etc.), the turn for that team will be disqualified.'
+      },
+      {
+        rule  : "No outside resources, such as phones or tablets, are allowed during the competition."
+      },
+
     ],
     time: "10:00 AM to 12:00 PM",
     date: "03/04/23",
@@ -2101,7 +2153,11 @@ const c20Events = {
         Name: "Dr. IR Oviya",
       },
     ],
-    judging : [],
+    judging : [
+      {
+        criteria : 'Team with maximum points at the end wins. In the event of a tie, a tie-breaker question will be asked.'
+      }
+    ],
     prizeMoney: [
       {
         prize: "1st prize : Rs. 3000",
@@ -3355,32 +3411,32 @@ function run() {
   const docRef = db.collection("events_final"); // collection name
   // const docRef = db.collection("events"); // collection name
   let i = 0;
-  while (i < _.keys(events).length) {
-    docRef.doc(_.keys(events)[i]).set({
-      name: events[_.keys(events)[i]].name,
-      event_type: events[_.keys(events)[i]].event_type,
+  while (i < _.keys(eceEvents).length) {
+    docRef.doc(_.keys(eceEvents)[i]).set({
+      name: eceEvents[_.keys(eceEvents)[i]].name,
+      // event_type: eceEvents[_.keys(eceEvents)[i]].event_type,
 
-      // content: events[_.keys(events)[i]].content,
-      // themes : events[_.keys(events)[i]].themes,
-      // judging : events[_.keys(events)[i]].judging,
-      // duration : events[_.keys(events)[i]].duration,
+      // content: eceEvents[_.keys(eceEvents)[i]].content,
+      // themes : eceEvents[_.keys(eceEvents)[i]].themes,
+      // judging : eceEvents[_.keys(eceEvents)[i]].judging,
+      // duration : eceEvents[_.keys(eceEvents)[i]].duration,
 
-      description: events[_.keys(events)[i]].description,
-      rules: events[_.keys(events)[i]].rules,
-      venue: events[_.keys(events)[i]].venue,
-      studentCoordinator: events[_.keys(events)[i]].studentCoordinator,
-      facultyCoordinator: events[_.keys(events)[i]].facultyCoordinator,
-      registrationFees: events[_.keys(events)[i]].registrationFees,
-      img: events[_.keys(events)[i]].img,
-      date: events[_.keys(events)[i]].date,
-      prizeMoney : events[_.keys(events)[i]].prizeMoney,
-      time: events[_.keys(events)[i]].time,
+      description: eceEvents[_.keys(eceEvents)[i]].description,
+      rules: eceEvents[_.keys(eceEvents)[i]].rules,
+      venue: eceEvents[_.keys(eceEvents)[i]].venue,
+      studentCoordinator: eceEvents[_.keys(eceEvents)[i]].studentCoordinator,
+      facultyCoordinator: eceEvents[_.keys(eceEvents)[i]].facultyCoordinator,
+      registrationFees: eceEvents[_.keys(eceEvents)[i]].registrationFees,
+      img: eceEvents[_.keys(eceEvents)[i]].img,
+      date: eceEvents[_.keys(eceEvents)[i]].date,
+      prizeMoney : eceEvents[_.keys(eceEvents)[i]].prizeMoney,
+      time: eceEvents[_.keys(eceEvents)[i]].time,
     });
-    console.log("schema", events[_.keys(events)[i]].prizeMoney);
+    console.log("schema", eceEvents[_.keys(eceEvents)[i]].prizeMoney);
     i++;
     console.log(i + 1 + "done"); // just to check if the loop is working
   }
-  console.log(_.keys(events).map((event) => events[event].name));
+  console.log(_.keys(eceEvents).map((event) => eceEvents[event].name));
 }
 
 run();
