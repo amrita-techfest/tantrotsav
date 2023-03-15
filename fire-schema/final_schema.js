@@ -1784,14 +1784,8 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney : [],
+
     date: " 24th March 2023",
     time: "10:00AM - 1:00PM",
     duration: "-",
@@ -1840,14 +1834,8 @@ const eceEvents = {
       },
     ],
 
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney : [],
+
     date: " 24th March 2023",
     time: " 2:00PM - 3:30PM",
     venue: "VLSI LAB",
@@ -1901,14 +1889,8 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney : [],
+
     date: "25th March 2023",
     time: "9:00AM - 11:00AM",
     venue: "VLSI LAB and SDR Lab",
@@ -1956,14 +1938,8 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney : [],
+
     date: "25th March 2023",
     time: " 11:00AM - 01:00PM",
     venue: "VLSI LAB and SDR Lab",
@@ -2023,14 +1999,8 @@ const eceEvents = {
         rule: "https://acsha.vercel.app/",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney : [],
+
     date: "24th and 25th March 2023",
     time: " 24h (Starts At 10AM)",
     venue: "INTEL IoT lab",
