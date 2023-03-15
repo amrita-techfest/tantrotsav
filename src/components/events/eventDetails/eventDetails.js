@@ -79,22 +79,21 @@ function EventDetails({
               Register Now
             </button>
 
-            <br />
+            {eventDetails?.prizeMoney?.length > 0 ? 
             <div className="">
-            <h2 className="text-[#09ff00] text-[20px] underline py-2">
-            Prizes
-             </h2>
-
-              <p className="p-3">
+            <div>
+              <h1 class="event_name pt-10 pb-0 p-08 text-[30px] tracking-[5px] font-bold text-white">Prizes</h1>
+                <div>
+                  <div className="ve flex flex-col gap-3 p-05 pt-0 mt-4 text-[15px] font-medium pb-0">
                 {eventDetails?.prizeMoney?.map((x) => (
-                  <div>
-                    <div>
-                      <li>{x.prize}</li>
-                    </div>
-                  </div>
+
+                    <h2><li>{x.prize}</li></h2> 
                 ))}
-              </p>
+                </div>
+                </div>
             </div>
+            </div>
+                : null}
             </>
           ) : (
             <HashLink to='/register'>
@@ -128,7 +127,7 @@ function EventDetails({
           {eventDetails.themes?.length > 0 ? (
              <div className="">
              <h2 className="text-[#09ff00] text-[20px] underline py-2">
-               Themes
+               C20 Themes
              </h2>
              <p className="p-3">
                {eventDetails?.themes?.map((x) => (

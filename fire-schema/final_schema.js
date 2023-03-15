@@ -355,14 +355,7 @@ improved and used in real time`,
         Name: "Mr. P.R.Raghavendran",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney: [],
     duration: "",
     registrationFees: "Rs. 300/- per head",
     date: "04/04/23",
@@ -449,14 +442,7 @@ improved and used in real time`,
         rule: `Idea plagiarism and content plagiarism is strictly not entertained.`,
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney: [],
     venue: "AB105 class room",
     studentCoordinator: [
       {
@@ -516,14 +502,7 @@ improved and used in real time`,
         Name: "Mr.PR Raghavendran",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney: [],
     duration: "",
     registrationFees: " /- ",
     date: "03/04/23",
@@ -561,14 +540,7 @@ improved and used in real time`,
         Name: "Mr.PR Raghavendran",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney: [],
     duration: "",
     registrationFees: " /- ",
     date: "03/04/23",
@@ -638,6 +610,7 @@ const events = {
         rule: `If required, a intro on Unity/Blender will be given to the participants before the event by the club members.`,
       },
     ],
+    prizeMoney : [],
     time: "10.00 am to 12.30pm",
     date: "03/04/23",
     venue: "CYS LAB 2",
@@ -661,14 +634,6 @@ const events = {
         contact: "9952803109",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "1 st prize: 3000",
-      },
-      {
-        prize: "2nd prize: 2000",
-      },
-    ],
     facultyCoordinator: [
       {
         Name: "Dr.Udhaya Kumar",
@@ -677,6 +642,7 @@ const events = {
     registrationFees: 100,
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
   },
+
   event2: {
     name: "Battle Of The Ice - Gaming Tournment",
     mode: "Online Gaming ",
@@ -751,7 +717,7 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1 st prize: 3000",
+        prize: "1st prize: 3000",
       },
       {
         prize: "2nd prize: 2000",
@@ -830,7 +796,7 @@ const events = {
     ],
     prizeMoney: [
       {
-        prize: "1 st prize: 5000",
+        prize: "1st prize: 5000",
       },
       {
         prize: "2nd prize: 3000",
@@ -936,7 +902,7 @@ const events = {
     ],
     prizeMoney: [
       {
-        prize: "1 st prize: 5000",
+        prize: "1st prize: 5000",
       },
       {
         prize: "2nd prize: 3000",
@@ -1005,14 +971,7 @@ const events = {
         Name: "Dr.Mathivanan",
       },
     ],
-    prizeMoney: [
-      {
-        prize: "",
-      },
-      {
-        prize: "",
-      },
-    ],
+    prizeMoney : [],
     registrationFees: "Team Rs.250 ( Max: 4/team)",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099142/events/Bidders%20Coding%20Camp.png",
   },
@@ -1166,7 +1125,7 @@ const events = {
     ],
     prizeMoney: [
       {
-        prize: "1 st prize: 5000",
+        prize: "1st prize: 5000",
       },
       {
         prize: "2nd prize: 3000",
@@ -1246,7 +1205,7 @@ const events = {
     ],
     prizeMoney: [
       {
-        prize: "1 st prize: 5000",
+        prize: "1st prize: 5000",
       },
       {
         prize: "2nd prize: 3000",
@@ -1309,7 +1268,7 @@ const events = {
     ],
     prizeMoney: [
       {
-        prize: "1 st prize: 5000",
+        prize: "1st prize: 5000",
       },
       {
         prize: "2nd prize: 3000",
@@ -1408,7 +1367,7 @@ const events = {
     ],
     prizeMoney: [
       {
-        prize: "1 st prize: 5000",
+        prize: "1st prize: 5000",
       },
       {
         prize: "2nd prize: 3000",
@@ -1440,6 +1399,7 @@ const events = {
         rule: "Participants Should bring their own laptop",
       },
     ],
+    prizeMoney: [],
     time: "9.00 am to 2.30pm",
     date: "03/04/23",
     venue: "Class Room",
@@ -1488,6 +1448,7 @@ const events = {
         enabling participants to create high-quality interfaces that are both visually appealing and functional.`,
       },
     ],
+    prizeMoney: [],
     rules: [
       {
         rule: "Participants Should bring their own laptop",
@@ -1554,6 +1515,7 @@ const events = {
         Name: "Dr S Sridevi",
       },
     ],
+    prizeMoney: [],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098007/events/quantum_computing.png",
     registrationFees: 200,
   },
@@ -1580,6 +1542,7 @@ const events = {
         rule: "Bring your own laptop, chargers and required gadgets for the session.",
       },
     ],
+    prizeMoney: [],
     time: "10.00 am to 3.30pm",
     date: "03/04/23",
     venue: "Class Room",
@@ -1649,6 +1612,8 @@ const events = {
         contact: "6374784736",
       },
     ],
+    prizeMoney: [],
+
     facultyCoordinator: [
       {
         Name: "B.Natarajan",
@@ -1687,6 +1652,7 @@ const events = {
         Name: "Ms.Rithani",
       },
     ],
+    prizeMoney: [],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099987/events/X%20Gen%20Learning.jpg",
     registrationFees: 200,
   },
@@ -1722,6 +1688,7 @@ const events = {
         Name: "Ms. Rithani",
       },
     ],
+    prizeMoney: [],
     registrationFees: 100,
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
   },
@@ -2679,10 +2646,16 @@ const c20Events = {
     venue: "AB1-337",
     studentCoordinator: [
       {
-        Name: "Gopi Kishaan",
+        Name: "Ashutosh P",
         Dept: "CSE",
-        Year: "2nd year",
-        contact: "9677187642",
+        Year: "3rd year",
+        contact: "9790803450",
+      },
+      {
+        Name: "Dharan Kumar",
+        Dept: "CSE",
+        Year: "3rd year",
+        contact: "9262083251",
       },
     ],
     facultyCoordinator: [
@@ -3404,30 +3377,32 @@ function run() {
   const docRef = db.collection("events_final"); // collection name
   // const docRef = db.collection("events"); // collection name
   let i = 0;
-  while (i < _.keys(c20Events).length) {
-    docRef.doc(_.keys(c20Events)[i]).set({
-      name: c20Events[_.keys(c20Events)[i]].name,
-      event_type: c20Events[_.keys(c20Events)[i]].event_type,
-      content: c20Events[_.keys(c20Events)[i]].content,
-      description: c20Events[_.keys(c20Events)[i]].description,
-      rules: c20Events[_.keys(c20Events)[i]].rules,
-      venue: c20Events[_.keys(c20Events)[i]].venue,
-      studentCoordinator: c20Events[_.keys(c20Events)[i]].studentCoordinator,
-      facultyCoordinator: c20Events[_.keys(c20Events)[i]].facultyCoordinator,
-      registrationFees: c20Events[_.keys(c20Events)[i]].registrationFees,
-      img: c20Events[_.keys(c20Events)[i]].img,
-      date: c20Events[_.keys(c20Events)[i]].date,
-      themes : c20Events[_.keys(c20Events)[i]].themes,
-      judging : c20Events[_.keys(c20Events)[i]].judging,
-      // duration : c20Events[_.keys(c20Events)[i]].duration,
-      prizeMoney : c20Events[_.keys(c20Events)[i]].prizeMoney,
-      time: c20Events[_.keys(c20Events)[i]].time,
+  while (i < _.keys(events).length) {
+    docRef.doc(_.keys(events)[i]).set({
+      name: events[_.keys(events)[i]].name,
+      event_type: events[_.keys(events)[i]].event_type,
+
+      // content: events[_.keys(events)[i]].content,
+      // themes : events[_.keys(events)[i]].themes,
+      // judging : events[_.keys(events)[i]].judging,
+      // duration : events[_.keys(events)[i]].duration,
+
+      description: events[_.keys(events)[i]].description,
+      rules: events[_.keys(events)[i]].rules,
+      venue: events[_.keys(events)[i]].venue,
+      studentCoordinator: events[_.keys(events)[i]].studentCoordinator,
+      facultyCoordinator: events[_.keys(events)[i]].facultyCoordinator,
+      registrationFees: events[_.keys(events)[i]].registrationFees,
+      img: events[_.keys(events)[i]].img,
+      date: events[_.keys(events)[i]].date,
+      prizeMoney : events[_.keys(events)[i]].prizeMoney,
+      time: events[_.keys(events)[i]].time,
     });
-    console.log("schema", c20Events[_.keys(c20Events)[i]].themes);
+    console.log("schema", events[_.keys(events)[i]].prizeMoney);
     i++;
     console.log(i + 1 + "done"); // just to check if the loop is working
   }
-  console.log(_.keys(c20Events).map((event) => c20Events[event].name));
+  console.log(_.keys(events).map((event) => events[event].name));
 }
 
 run();
