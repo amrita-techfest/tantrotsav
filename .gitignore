@@ -26,3 +26,5 @@ yarn.lock
 .vercel
 
 notes.txt
+
+fire-schema/node_modules
