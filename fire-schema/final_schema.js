@@ -567,7 +567,7 @@ const events = {
         point: "Event 1: Map creation",
       },
       {
-        point: "Timing: 23/03/23: 8.00 am to 12.00pm",
+        point: "Timing: 03/04/23: 10.00am to 12.30pm",
       },
       {
         point:
@@ -584,7 +584,7 @@ const events = {
         point: "Event 2: Character Creation",
       },
       {
-        point: "Timing: 23/03/23: 1.00 pm to 5.00pm",
+        point: "Timing: 03/04/23: 1.00pm to 04/04/23 1.00pm",
       },
       {
         point:
@@ -597,30 +597,31 @@ const events = {
     ],
     rules: [
       {
-        rule: `Requirements:  
-        Latest version of Unity/Blender.`,
+        rule: `Requirements:`,
+
       },
       {
-        rule: `Pc of i5, 8Gb Ram and at least 2 GB graphics card(Any version: Nvidia/Amd).`,
+        rule: `Latest version of Unity/Any other platform you are going to use.`,
+
       },
       {
-        rule: `No need of prior knowledge on Programming.`,
+        rule: `Pc of i5(U or H series)/Ryzen 5(H series), 8Gb Ram and at least 2 GB graphics card(Any version: Nvidia/Amd).`,
       },
       {
-        rule: `If required, a intro on Unity/Blender will be given to the participants before the event by the club members.`,
+        rule: `Needed prior knowledge on Unity/any other game development platform.`,
       },
     ],
     prizeMoney: [
       {
-        prize: "1 st prize: 3000",
+        prize: "1st prize: 3000",
       },
       {
         prize: "2nd prize: 2000",
       },
     ],
-    time: "10.00 am to 12.30pm",
-    date: "03/04/23",
-    venue: "CYS LAB 2",
+    time: "10.00 am to 04.30pm",
+    date: "03/04/23 and 04/04/23",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Karuppiah Sabari Kumar",
@@ -647,11 +648,11 @@ const events = {
       },
     ],
     registrationFees: 100,
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Strigrays%20league%20gaming%20jam.png?alt=media&token=51f6fd62-5951-48e7-a686-ea2004cfa972",
   },
 
   event2: {
-    name: "Battle Of The Ice - Gaming Tournment",
+    name: "Battle Of The Ice - Gaming Tournament",
     mode: "Online Gaming ",
     event_type: "Competition ",
     description: [
@@ -665,7 +666,7 @@ const events = {
         point: "Team Size: Solo (1) or Duo (2)",
       },
       {
-        point: "Timing: 23/03/23: 8.00 am to 10.00pm",
+        point: "Timing: 03/04/23: 8.00 am to 10.00pm",
       },
       {
         point: "Event 2: Clash of Clans ",
@@ -674,7 +675,7 @@ const events = {
         point: "Team Size: 5+1 sub",
       },
       {
-        point: "Timing: 23/03/23: 10.00 am to 1.00pm",
+        point: "Timing: 03/04/23: 10.00 am to 1.00pm",
       },
       {
         point: "Event 3: Over-watch",
@@ -683,7 +684,7 @@ const events = {
         point: "Team Size: 5 + 1 sub.",
       },
       {
-        point: "Timing: 23/03/23: 2.00 pm to 5.00pm",
+        point: "Timing: 03/04/23: 2.00 pm to 5.00pm",
       },
       {
         point: "Event 4: Valorant",
@@ -692,16 +693,7 @@ const events = {
         point: "Team Size: 5 + 1 sub.",
       },
       {
-        point: "Timing: 24/03/23: 9.00 am to 2.00pm",
-      },
-      {
-        point: "Event 5: Fall guys.",
-      },
-      {
-        point: "Team Size: Solo.",
-      },
-      {
-        point: "Timing: 24/03/23: 3.00 pm to 5.00pm",
+        point: "Timing: 04/04/23: 9.00 am to 2.00pm",
       },
     ],
     rules: [
@@ -731,9 +723,9 @@ const events = {
       },
     ],
 
-    time: "10.00 am to 3.00pm",
-    date: "03/04/23",
-    venue: "Online Event",
+    time: "10.00 am to 4.30pm",
+    date: "03/04/23 and 04/04/23",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Karuppiah Sabari Kumar",
@@ -748,10 +740,10 @@ const events = {
         contact: "8668169291",
       },
       {
-        Name: " Ajai raj",
+        Name: "Lokesh kumar",       
         Dept: "CSE",
         Year: "3rd-year",
-        contact: "7806820068",
+        contact: "80728 52971",
       },
     ],
     facultyCoordinator: [
@@ -759,7 +751,7 @@ const events = {
         Name: "Dr.Udhaya Kumar",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298458/events/valorant.jpg",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Battle%20of%20the%20ice.png?alt=media&token=8d99fc69-3276-43c0-a8dc-b2964691b6a8",
     registrationFees: "Team Rs.250 ( Max: 5/team)",
   },
   event3: {
@@ -786,19 +778,19 @@ const events = {
     ],
     rules: [
       {
-        rule: "A team can have a minimum of 1 members and maximum of 4 members.",
+        rule: "Do not brute force, perform denial of service or attack the platform.",
       },
       {
-        rule: "DOS attacks or generating huge traffic by any means is strictly prohibited.",
+        rule: "Do not share flags nor send/post any kind of hints.",
       },
       {
-        rule: "Teams are not allowed to share flags, solutions or collaborate in any other ways during the period of competition.",
+        rule: "Do not use the machines to perform any malicious activities.",
       },
       {
-        rule: "Usage of any kind of AI tools like chat GPT and others are strictly prohibited.",
+        rule: "Do not hack any service except the intended ones.",
       },
       {
-        rule: "The criteria for final judgement will include duration to collect all flags and final scores.",
+        rule: "Each task in the event will include instructions on interacting with the practical material. Please follow them carefully!",
       },
     ],
     prizeMoney: [
@@ -809,9 +801,9 @@ const events = {
         prize: "2nd prize: 3000",
       },
     ],
-    time: "10.00 am to 4.00pm",
-    date: "03/04/23",
-    venue: "Online Event",
+    time: "10.00 am to 4.30pm",
+    date: "03/04/23 and 04/04/23",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Prathunan K.K",
@@ -819,13 +811,6 @@ const events = {
         Year: "2nd-year",
         contact: "8610185441",
       },
-      {
-        Name: "Pranav ",
-        Dept: "CYS",
-        Year: "2nd year",
-        contact: "9952694417",
-      },
-      
       { Name: "Siddhanth kundragi", 
         Dept: "CYS", 
         Year: "2nd-year", 
@@ -839,7 +824,7 @@ const events = {
         Name: "Dr.Mathivanan",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097189/events/capture%20the%20flag.jpg",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Z3ro.png?alt=media&token=eb27a32d-85f9-459f-80bd-799bfa32b88d",
     registrationFees: "Team Rs.100 ( Max: 4/team)",
   },
   event4: {
@@ -876,9 +861,6 @@ const events = {
         rule: "The idea should be presented in a PowerPoint presentation with no more than 10-15 slides.",
       },
       {
-        rule: "An description of idea in detail should be provided in a document.",
-      },
-      {
         rule: "The team should be aware of an idea within the first hour so that it may be reviewed for feasibility.",
       },
       {
@@ -889,9 +871,9 @@ const events = {
       },
     ],
 
-    time: "10.00 am to 12.00pm",
+    time: "10.00 am to 12.30pm",
     date: "03/04/23",
-    venue: "CSE LAB - Gound Floor",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Swarna Venkata Naga Aditya",
@@ -920,7 +902,7 @@ const events = {
       },
     ],
     registrationFees: "Team - Rs,200 ( Max 3/team)",
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099706/events/Platonic%20%28%20Ideathon%29.jpg",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Platonic.png?alt=media&token=2dad14f0-c52f-433b-a79f-14e63ba5f65c",
   },
   event5: {
     name: "Bidders Coding Camp",
@@ -936,24 +918,37 @@ const events = {
     ],
     rules: [
       {
-        rule: "A team can have a minimum of 1 member and maximum of 2 members.",
+        rule: "Number of participants per team: 1-2 members.",
       },
       {
         rule: "System will be provided for the competition.",
       },
       {
-        rule: "Set of Problems will be provided based on difficulty-levels.",
-      },
-      {
-        rule: "Specific time will be provided to each question for grace points.",
-      },
-      {
         rule: "Almost all the Online-sites will be banned.",
       },
+      {
+        rule: "No additional time will be given.",
+      },
+      {
+        rule: "Participants shouldn't speak to other teams during the event(Will be monitored).",
+      },
+      {
+        rule: "Usage of ChatGPT or AI is Prohibited.",
+      },
+      {
+        rule: `Judges' decision is final.`,
+      },
+
+      {
+        rule: "Points will be awarded based on FCFS basis.",
+      },
+      {
+        rule: "Certificates will be provided.",
+      },
     ],
-    time: "10.00 am to 2.00pm",
+    time: "10:00 am to 12.30pm",
     date: "03/04/23",
-    venue: "CYS 1 LAB",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Abhishek Sharma",
@@ -988,7 +983,7 @@ const events = {
       },
     ],
     registrationFees: "Team Rs.250 ( Max: 4/team)",
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099142/events/Bidders%20Coding%20Camp.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Bidders%20coding%20acamp.png?alt=media&token=7b162bf8-4eb5-4cb4-be0a-7df92ab5bb63",
   },
   event6: {
     name: "BotBattleBash B3",
@@ -997,38 +992,67 @@ const events = {
     description: [
       {
         point:
-          "The B3 Competition is a challenge that invites developers and AI enthusiasts to create their own chat bot.",
+          "BotBattleBash B3 is an event where programmers and coders can come forward to build chatbots which will be based on the theme provided on the day of the event.",
       },
       {
         point:
-          "Chat bots are becoming increasingly popular as a way to automate customer service, provide personalized interactions, and even simulate human conversations.",
+          "Participants will be given a duration of time to make a working model of the bot and record a demo video for the same.",
       },
       {
         point:
-          "This competition is a great opportunity to showcase your skills and creativity in building chat bots that are engaging, useful, and fun to interact with.",
+          "The goal is to promote the rise of automation, intelligent bots and their development.",
       },
       {
         point:
-          "Participants will have the freedom to choose the platform and programming language of their choice to build their chat bot.",
+          "The bots will be judged mostly by the criteria of :",
+      },
+      {
+        point:
+          "     - Innovation",
+      },
+      {
+        point:
+          "     - Functionality",
+      },
+      {
+        point:
+          "     - User experience",
+      },
+      {
+        point:
+          "     - Presentation",
+      },
+      {
+        point:
+          "     - Originality",
       },
     ],
     rules: [
       {
-        rule: "Eligibility: The competition is open to teams of two to four people.",
+        rule: "Bot could be made on any platform",
       },
       {
-        rule: `Submission Requirements: Participants must submit a working prototype of their chat bot, as well as a demo video demonstrating its features and functionality. 
-        The demo video should be no more than 3 minutes long and should emphasise the primary functionalities and use cases of the chat bot. 
-        A brief textual description of the chat bot, including the programming language and platform utilised, should also be included in the application.`,
+        rule: `Bring your own device to build the bot        `,
       },
       {
-        rule: `Plagiarism and originality: The chat bot must be the team's unique innovation.
-        Any plagiarism or usage of third-party code must be mentioned in the submission or the entry will be disqualified.`,
+        rule: `Team should consist of 2-3 people.        `,
+      },
+      {
+        rule: "Participants must submit a working prototype of their chat bot, as well as a demo video demonstrating its features and functionality",
+      },
+      {
+        rule: `The demo video should be no more than 3 minutes long and should emphasize the primary functionalities and use cases of the chat bot      `,
+      },
+      {
+        rule: `A brief textual description of the chat bot, including the programming language and platform utilized, should also be included in the application.       `,
+      },
+      {
+        rule: "The chat bot must be the team's unique innovation. Any plagiarism or usage of third-party code must be mentioned in the submission or the entry will be disqualified."        ,
       },
     ],
     time: "10.00 am to 3.00pm",
     date: "03/04/23",
-    venue: "CSE LAB 1st Floor",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Abhiram",
@@ -1065,7 +1089,7 @@ const events = {
         prize: "2nd prize: 3000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097401/events/BotBattleBash%20B3.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/BotBattleBash.png?alt=media&token=a41658f6-c13c-4c9e-b76d-ec4ffcd247ae",
     registrationFees: "Team - Rs.200 ( Max 3/team)",
   },
   event7: {
@@ -1074,48 +1098,30 @@ const events = {
     event_type: "Competition ",
     description: [
       {
-        point: `Welcome to ML-XLR8, the ultimate machine learning hackathon! 
-        This event is your chance to bring your skills to the forefront and showcase your innovative ideas.`,
-      },
-      {
-        point:
-          "ML-XLR8 will present a set of diverse and exciting problem statements for teams to choose from.",
-      },
-      {
-        point:
-          "The teams will then race against the clock to create a solution that can compete with the best.",
-      },
-      {
-        point:
-          "With the freedom to innovate and the power to make an impact, we are inviting all participants to join us in this thrilling event.",
-      },
-      {
-        point: `The finalists will present their projects on the day of the event, and the judges will evaluate their work based on creativity, feasibility, and impact. 
-        Don't miss your chance to participate in this fantastic event and take your machine learning skills to the next level!`,
+        point: `Machine learning hackathon event with diverse problem statements for teams to choose from, encouraging innovation and impact. Finalists will present their projects on the event day and be evaluated based on creativity, feasibility, and impact.`,
       },
     ],
     rules: [
       {
-        rule: "Team Size : 5 members",
+        rule: "Team Size : 4 members",
       },
       {
-        rule: "Proposal Submission: One week before the event, participating teams are required to submit their proposal PowerPoint presentations to the organizing committee.",
+        rule: " Proposal submission deadline: One week before the event (28/03/2023)",
+      },
+
+      {
+        rule: `Proposal evaluation criteria: Creativity, feasibility, relevance to the problem statement`,
       },
       {
-        rule: "The proposals will be evaluated based on their creativity, feasibility, and relevance to the given problem statement.",
+        rule: `Team notification: Three days prior to the event day (01/04/2023)`,
       },
       {
-        rule: `Team Notification: Three days prior to the event day, teams will be notified of their status and whether they have been selected to proceed with the chosen problem statement. 
-        We will provide feedback on the proposals to help teams improve their ideas and ensure a high standard of innovation and originality.`,
-      },
-      {
-        rule: `Presentation and Evaluation: On the day of the Hackathon, finalized teams will present their projects to the judges and other participants. The evaluation will be based on the criteria specified in the problem statement, including originality, creativity, feasibility, technical implementation, and impact. 
-        The judges will select the winners based on their scores and provide feedback to all participants.`,
+        rule: ` Presentation and evaluation: On the day of the hackathon, teams will present their projects to judges and participants. Evaluation criteria include originality, creativity, feasibility, technical implementation, and impact. Judges will provide feedback and select winners based on scores.`,
       },
     ],
     time: "10.00 am to 4.00pm",
     date: "04/04/23",
-    venue: "AI Lab",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Varsha P",
@@ -1146,7 +1152,7 @@ const events = {
         prize: "2nd prize: 3000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099478/events/ml%20and%20deeplearning.jpg",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ML%20XLR8.png?alt=media&token=fe1c4629-c083-4523-898d-f0766c3f001b",
     registrationFees: "Team - Rs.200(Max 4/team)",
   },
   event8: {
@@ -1155,10 +1161,10 @@ const events = {
     event_type: "Competition ",
     description: [
       {
-        point: `Coley is a thrilling code relay event that will test the participants' coding skills and teamwork.`,
+        point: `Colay is a thrilling code relay event that will test the participants' coding skills and teamwork.`,
       },
       {
-        point: `Coley is a thrilling code relay event that will test the participants' coding skills and teamwork.`,
+        point: `Colay is a thrilling code relay event that will test the participants' coding skills and teamwork.`,
       },
       {
         point: `The event will consist of 10 teams, each with 4 participants. 
@@ -1226,7 +1232,7 @@ const events = {
         prize: "2nd prize: 3000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097270/events/colay.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Colay.png?alt=media&token=a83ec1fe-9a38-422b-a2a4-d90cea41073f",
     registrationFees: "Team - Rs 150(Max 4/team)",
   },
   event9: {
@@ -1238,16 +1244,31 @@ const events = {
         point: `The event is all about unlocking the burgeoning
         ideas with hidden innovation underlying among the students using modern technologies.`,
       },
+      {
+        point: `Each participant will work individually in the first round, which is a coding assessment. The ones that qualify for the next round, are randomly paired in groups of two.`,
+      },
+      {
+        point: `The main goal of this ideathon is to ensure that the team members are able to coordinate and communicate with each other to formulate a novel and inventive idea.`,
+      },
+      {
+        point: `These skills would prove to be extremely helpful in the real world, while working in a new job environment.`,
+      },
     ],
     rules: [
       {
-        rule: `Round 1: The first is all about coding,
-        and participation will be on an 
-        individual basis. `,
+        rule: `Round 1: It is the coding round to short list the participants`,
       },
       {
-        rule: `Round 2 : On the basis of your performance,we will be shortlisting the participants as a group of 2.
-        You have to come up with an idea and demonstrate the idea within three hours.`,
+        rule: `         participation will be on an individual basis.`,
+      },
+      {
+        rule: `Round 2 : On the basis of your performance,we will be shortlisting the participants as a group of 2.`,
+      },
+      {
+        rule: `         You have to come up with an idea and demonstrate the idea within three hours.        `,
+      },
+      {
+        rule: `         PPT is required`,
       },
     ],
     time: "11.00 am to 4.00pm",
@@ -1289,7 +1310,7 @@ const events = {
         prize: "2nd prize: 3000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098791/events/Dare%20To%20be%20Different%20%28Ideathon%29.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Dare%20to%20be%20different.png?alt=media&token=b9baa7a1-fb76-44d5-8c16-579022840643",
     registrationFees: "Team - Rs 50(Max 2/team)",
   },
   event10: {
@@ -1388,7 +1409,7 @@ const events = {
         prize: "2nd prize: 3000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097927/events/forensic.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Forensics.png?alt=media&token=8143c4ce-8079-43e2-a3d9-389607ef6fd1",
     registrationFees: "Team - 300 (Max 4/Team) ",
   },
   event11: {
@@ -1491,7 +1512,7 @@ const events = {
         Name: "Dr.Vidyasagar ( resource person Dr.R.Parthipan)",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678096803/events/VR-and-AR-Technologies-1280x720_z3rpl8.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/AR_VR.png?alt=media&token=30102137-3d89-4fef-a922-805d4b4b9571",
     registrationFees: 200,
   },
   event13: {
@@ -1538,7 +1559,7 @@ const events = {
       },
     ],
     prizeMoney: [],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098007/events/quantum_computing.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Devops.png?alt=media&token=6b835faf-ba5a-4aa4-94a6-72bf1d71f528",
     registrationFees: 200,
   },
   event14: {
@@ -1587,7 +1608,7 @@ const events = {
         Name: "Bharathi Mohan.G",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098525/events/devops-icon-software-development-dev-and-it-operations-ops-loop-eight-logo-for-software_gn159a.jpg",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Devops.png?alt=media&token=6b835faf-ba5a-4aa4-94a6-72bf1d71f528",
     registrationFees: 200,
   },
   event15: {
@@ -1596,30 +1617,23 @@ const events = {
     event_type: "Workshop",
     description: [
       {
-        point: `A mobile app development workshop is a learning experience that teaches participants how to develop mobile apps for 
-        smartphones and tablets.`,
+        point: `The workshop focus on teaching participants how to develop a mobile app from scratch, covering everything from ideation and wireframing to coding and testing.        `,
       },
       {
-        point: `Topics covered in the workshop typically include mobile app design, development, and deployment, 
-        as well as programming languages and tools commonly used in mobile app development.`,
+        point: `This workshop introduce participants to popular mobile app development tools and technologies, such as React Native, Flutter, or Xcode. Participants could learn how to use these tools to build functional and visually appealing mobile apps.        `,
       },
       {
-        point: `Hands-on coding exercises, tutorials, 
-        and lectures from experienced mobile app developers may be included in the workshop.`,
-      },
-      {
-        point: `Participants should have gained the knowledge and skills required to create a basic mobile application by the end of the workshop, 
-        as well as a better understanding of the mobile app development process.`,
+        point: `Best techniques for testing and debugging mobile apps could be covered in the event. Participants could learn how to test their apps using emulators and real devices, as well as how to use debugging tools to find and repair bugs.`,
       },
     ],
     rules: [
       {
-        rule: "Participants Should bring their own laptop",
+        rule: "Bring your own laptop, chargers and required gadgets for the session.",
       },
     ],
     time: "1.00 am to 4.00pm",
     date: "04/04/23",
-    venue: "Class Room",
+    venue: " ",
     studentCoordinator: [
       {
         Name: "Vifert Jenuben Daniel V",
@@ -1641,7 +1655,7 @@ const events = {
         Name: "B.Natarajan",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298180/events/mobileapp.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Mobile%20app.png?alt=media&token=168b4bcf-e502-4cc0-92a5-bae593e1c79d",
     registrationFees: 200,
   },
   event16: {
@@ -1660,7 +1674,7 @@ const events = {
     ],
     time: "10.00 am to 4.00pm",
     date: "04/04/23",
-    venue: "Class Room",
+    venue: "",
     studentCoordinator: [
       {
         Name: "Varun Maniappan",
@@ -1689,44 +1703,56 @@ const events = {
       },
     ],
     prizeMoney: [],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099987/events/X%20Gen%20Learning.jpg",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/X%20gen.png?alt=media&token=f1a9bc6b-c46e-499c-aefb-41c4b8689bae",
     registrationFees: 200,
   },
-  event17: {
-    name: "Machine Learning/Deep Learning",
-    mode: "Workshop",
-    event_type: "Workshop",
+  event17:{
+    name: "ETH Amrita",
+    mode: "Workshop & Hackathon",
+    event_type: "Workshop & Hackathon",
     description: [
       {
-        point: "Basic knowledge of python programming language is required",
+        point: "The Reclaim Protocol workshop and hackathon on blockchain aims to educate participants on the fundamentals of the protocol and provide hands-on experience in building decentralized applications using the Reclaim Protocol.",
+      },
+      {
+        point: "The workshop will cover topics such as the design principles of the protocol, its architecture, and its applications in real-world scenarios.",
+      },
+      {
+        point: " The hackathon will provide participants with the opportunity to work collaboratively and use their skills to build innovative solutions using the Reclaim Protocol, with the chance to win prizes for their creations.",
       },
     ],
     rules: [
       {
-        rule: "Team size max 5, the project must be unique, novel, demonstratable, logically explainable, ethically feasible and have societal impact.",
+        rule: "The hackathon will have a specific start and end time, as well as scheduled breaks and presentations. Make sure you are aware of the schedule and follow it. Participants should bring their own devices.",
+      },
+      {
+        rule: "The judges will select the winners based on their scores and provide feedback to all participants. ",
+      },
+      {
+        rule: "On the day of the Hackathon, teams will present their projects and demo along with a 10min small speech to the judges and other participants.",
       },
     ],
-    time: "10.00 am to 4.00pm",
+    time: "09.00 am to 03.00pm",
     date: "04/04/23",
-    venue: "online,classroom",
+    venue: " ",
     studentCoordinator: [
       {
-        Name: "Varun Maniappan",
-        Dept: "AIE",
-        Year: " 2nd year",
-        contact: "9498370478",
+        Name: "Balaji",
+        Dept: "ECE",
+        Year: " 4th year",
+        contact: "7675852414",
       },
-      { Name: "Sukesh", Dept: "AIE", Year: " 2nd year", contact: "" },
-      { Name: "Jaikanth Y", Dept: "AIE", Year: " 2nd year", contact: "" },
+      { Name: "Dibyajyoti", Dept: "CSE", Year: " 4th year", contact: "" },
+      { Name: "K Gnapika Sindhu", Dept: "AIE", Year: "3rd year", contact: ""},
     ],
     facultyCoordinator: [
       {
-        Name: "Ms. Rithani",
+        Name: "Dr. Prasanna Kumar",
       },
     ],
     prizeMoney: [],
-    registrationFees: 100,
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
+    registrationFees: 300,
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ETH%20logo.png?alt=media&token=654f01d2-1eb0-4aac-8f61-a9f5e7907029",
   },
   event18: {
     name: "Project Expo",
@@ -1776,11 +1802,10 @@ const events = {
         prize: "2nd place: 3000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
+    img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Project%20expo.png?alt=media&token=2ee2f1b9-7125-423b-a117-62c18cb3cbff",
     registrationFees: 100,
   },
 };
-
 // --------- ECE EVENTS --------------
 
 const eceEvents = {
@@ -2107,7 +2132,7 @@ const c20Events = {
     name: "Smart Trivia",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     themes: [
       {
         theme: `Education and Digital Transformation`,
@@ -2128,14 +2153,14 @@ const c20Events = {
     ],
     description: [
       {
-        point: "Number of Teams expected for finals : 5 (2 students per team).",
+        point : `Smart Trivia is an engaging and interactive quiz game that challenges players' knowledge across a range of topics.`
+      },
+      {
+        point : ` With timed questions and multiple levels of difficulty, players can compete against each other to see who can answer the most questions correctly and climb the leaderboard.`
       },
       {
         point : 'Questions will be based on the above mentioned themes.',
       },
-      {
-        point : 'To know more about the C20, visit https://c20.amma.org/',
-      }
     ],
     
     rules: [
@@ -2145,8 +2170,12 @@ const c20Events = {
       {
         rule: "Smart trivia will consist of 5 rounds with C20 theme.",
       },
+
       {
-        rule : 'All questions must be answered within the time limit of 30 seconds for 10 marks. '
+        rule : "Each question will be of 10 marks."
+      },
+      {
+        rule : 'Time limit for each question will be 30 seconds.'
       },
       {
         
@@ -2199,14 +2228,14 @@ const c20Events = {
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704253/events/smart_trivia_nibhsc.png",
-    registrationFees: "Rs. 100",
+    registrationFees: "Rs. 100 per team",
   },
 
   "c20-2": {
     name: "SelfieGram",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     themes: [
       {
         theme: "Gender Equality and Disability",
@@ -2216,6 +2245,12 @@ const c20Events = {
       },
     ],
     description: [
+      {
+        point : `A selfie competition is a creative platform for individuals to showcase their unique style and personality through self-portrait photography.`
+      },
+      {
+        point : `It's a chance to join the selfie craze and express oneself creatively.`
+      },
       {
         point: `Competition will be based on the above mentioned themes.`,
       },
@@ -2251,15 +2286,6 @@ const c20Events = {
       {
         rule: "The competition is open for a limited time, and the winners will be announced on the final day of the competition.",
       },
-      {
-        rule : "The deadline for submitting the photographs is till 30th March,2023, 5pm"
-      },
-      {
-        rule : "Link to submit the photograph : "
-      },
-      {
-        rule : "Shortlisted participants for the next level will be intimated by mail on 1st April,2023"
-      }
     ],
     judging : [
       {
@@ -2306,14 +2332,14 @@ const c20Events = {
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701664/Selfiegram_icon_mjejhi.png",
-    registrationFees: "Rs. 100",
+    registrationFees: "Rs. 100 per team",
   },
 
   "c20-3": {
     name: "Reels",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -2339,11 +2365,16 @@ const c20Events = {
     ],
     description: [
       {
-        point: "It is an individual event.",
+        point: 'A reels competition is a social media contest where participants create short videos using the Reels feature on platforms such as Instagram.'
       },
+      {
+        point: "It is a team event(MAX 4 participants per team).",
+      },
+    
       {
         point: `Competition will be based on the above mentioned themes.`,
       },
+      
     ],
     rules: [
       {
@@ -2357,13 +2388,10 @@ const c20Events = {
         rule: `The reel should be informative, entertaining, and fun, with twists having LOL and WOW factors.`,
       },
       {
-        rule: "The reel should be made within 2 hours, as the TOPIC WILL BE INFORMED PRIOR to the beginning of the event.",
+        rule: "The reel should be made within 2 hours, as the TOPIC WILL BE GIVEN ON SPOT.",
       },
       {
         rule: "Participants must bring their own devices (mobile, laptop) with software (editing apps, etc.,)",
-      },
-      {
-        rule: `The reel should be related to the theme given, and can contain any cine-clipped clips, trending reel clips, etc.,`,
       },
     ],
     time: "12.30 PM to 4.30 PM",
@@ -2397,13 +2425,13 @@ const c20Events = {
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701663/Copy_of_Reels_aqok3b.png",
-    registrationFees: "Rs. 100",
+    registrationFees: "Rs. 100/-per team",
   },
   "c20-4": {
     name: "Sail On the Idea",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria: `How impactful is the idea in solving the problem or an aspect of the problem 
@@ -2435,7 +2463,9 @@ const c20Events = {
       },
     ],
     description: [
-      
+      {
+        point : 'Sale on the Idea is an ideathon that challenges participants to come up with innovative and creative ideas to solve a specific problem or meet a particular need.'
+      },
       {
         point: `Competition will be based on the above mentioned themes.`,
       },
@@ -2443,11 +2473,11 @@ const c20Events = {
         point:
           "New ideas are the source of innovation. We need new perspectives and ideas for development.",
       },
+      {
+        point: "It is a team event(MAX 2 participants per team).",
+      },
     ],
     rules: [
-      {
-        rule: "You can register Individually or in Teams of 2  maximum members.",
-      },
       {
         rule: "Teams will be assigned with their on-spot problem/topics statement.",
       },
@@ -2495,20 +2525,20 @@ const c20Events = {
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704617/events/sail_on_the_idea_bph6lo.png",
-    registrationFees: "Rs. 100",
+    registrationFees: "Rs. 100/ -per team",
   },
 
   "c20-5": {
     name: "SnapArt (Collage Making)",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
       },
       {
-        criteria  : 'Creativity and originality.'
+        criteria  : 'Creativity and Uniqueness.'
       },
     ],
     themes: [
@@ -2524,6 +2554,10 @@ const c20Events = {
     ],
     description: [
       {
+        point : `Are you ready to unleash your inner artist and showcase your creative skills? A collage making competition is the perfect opportunity to do so! Participants use a variety of materials to craft a unique and visually stunning piece of art that tells a story or evokes emotions.`
+      },
+      
+      {
         point : 'It is an individual event'
       },
       {
@@ -2538,7 +2572,7 @@ const c20Events = {
         rule: "Collage to be made on chart paper (A1 size)",
       },
       {
-        rule: "Participants are required to bring their own materials (like sketches, paint etc).",
+        rule: "Participants are required to bring their own stationary materials.",
       },
       {
         rule: "Magazine cutting, newspaper cutting and paintings can be included.",
@@ -2579,7 +2613,7 @@ const c20Events = {
     name: "Face Painting",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     themes: [
       {
         theme:
@@ -2609,7 +2643,16 @@ const c20Events = {
 
     description: [
       {
-        point: "It is a team event. There can be only 2 participants in a team",
+        point : `A face painting competition is a contest where participants showcase their artistic skills by creating unique and creative designs on human faces using paints and makeup.`
+      },
+      {
+        point : `The competition can have different themes or categories, and the designs are judged based on creativity, technique, and overall presentation.`
+      },
+      {
+        point : `Winners are usually awarded prizes or recognition for their outstanding work.`
+      },
+      {
+        point: "It is a team event of where one of the person should be a model and the other should paint.",
       },
       {
         point: `Competition will be based on the above mentioned themes.`,
@@ -2631,10 +2674,10 @@ const c20Events = {
     venue: "AB1-11",
     studentCoordinator: [
       {
-        Name: "Vijay varma",
-        Dept: "CYS",
-        Year: "2nd year",
-        contact: "9778597445",
+        Name: "Ashutosh P",
+        Dept: "CSE",
+        Year: "3rd year",
+        contact: "9790803450",
       },
     ],
     facultyCoordinator: [
@@ -2654,13 +2697,13 @@ const c20Events = {
       },
     ],
     img: "https://user-images.githubusercontent.com/73429989/225205310-46e81623-c025-450c-854e-f980b46d3088.png",
-    registrationFees: "Rs. 100",
+    registrationFees: "Rs. 100/ -per team",
   },
 
   "c20-7": {
     name: "Essay Writing",
     mode: "Offline", 
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     event_type: "Competitions",
     judging : [
       {
@@ -2689,6 +2732,15 @@ const c20Events = {
     ],
     description: [
       {
+        point : 'An essay writing competition is a contest where participants are asked to write an essay on a particular topic or theme.'
+      },
+      {
+        point : 'The essays are judged based on criteria such as originality, creativity, coherence, grammar, and overall quality.'
+      },
+      {
+        point : 'Prizes may be awarded to the winners, and the competition may be open to different age groups and skill levels.'
+      },
+      {
         point: "It is an individual event.",
       },
       {
@@ -2700,10 +2752,10 @@ const c20Events = {
         rule: "The time allotted for writing the essay is 1.30 hours.",
       },
       {
-        rule: "Sheets for writing will be provided by the university. Other required stationery needs to be carried by the participants.",
+        rule: "Sheets for writing will be provided by the university. Other required stationary needs to be carried by the participants.",
       },
       {
-        rule: "Word limits for the essay will be 500-600.",
+        rule: "Word limits for the essay will be 750-1000.",
       },
 
     ],
@@ -2712,16 +2764,10 @@ const c20Events = {
     venue: "AB1-337",
     studentCoordinator: [
       {
-        Name: "Ashutosh P",
-        Dept: "CSE",
-        Year: "3rd year",
-        contact: "9790803450",
-      },
-      {
-        Name: "Dharan Kumar",
-        Dept: "CSE",
-        Year: "3rd year",
-        contact: "9262083251",
+        Name: "Vishal R",
+        Dept: "ARE",
+        Year: "1st year",
+        contact: "8015411811",
       },
     ],
     facultyCoordinator: [
@@ -2745,7 +2791,7 @@ const c20Events = {
     name: "Thought Talk (Poetry Competition)",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria: "The evaluation will be made on the basis of logical, coherent, and relevant content with a suitable format.",
@@ -2769,6 +2815,15 @@ const c20Events = {
       },
     ],
     description: [
+      {
+        point : `It is a poetry competition that invites participants to share their thoughts and emotions through their poetry.`
+      },
+      {
+        point : `Participants can showcase their writing skills, creative use of language, and ability to connect with the audience emotionally.`
+      },
+      {
+        point : `The competition encourages participants to experiment with different forms and styles of poetry to bring their ideas to life.`
+      },
       {
         point: "It is an individual event.",
       },
@@ -2819,13 +2874,16 @@ const c20Events = {
     name: "NovelNolan (Short Film Making Competition)",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [ 
       {
-        criteria : 'Relevance to the theme of the competition.'
+        criteria : 'The winner among the top 10 (1st, 2nd and 3rd place) will be selected based on the following metrics'
       },
       {
-        criteria  : 'Creativity and originality.'
+        criteria  : '70℅ - Jury decision'
+      },
+      {
+        criteria : '30℅ - Audience polling'
       },
       {
         criteria: "The decision of the judges shall be final and binding on all the participants.",
@@ -2847,7 +2905,11 @@ const c20Events = {
     ],
     description: [
       {
-        point: "A team may consist of 6-7 members.",
+        point : `Ready to take the world by storm with your cinematic storytelling skills? A short film making competition is the perfect arena to showcase your creativity and filmmaking prowess.`
+      },
+      
+      {
+        point: "A team may consist of maximum 7 members.",
       },
       {
         point: `Competition will be based on the above mentioned themes.`,
@@ -2858,19 +2920,29 @@ const c20Events = {
         rule: "Film time span must be 6-8 minutes",
       },
       {
-        rule: "Strictly English language films (if in case the regional language is used juries will disqualify the entry)",
+        rule: "The film should be filmed in any of the languages [English, Tamil, Malayalam, Hindi, Telugu ].",
       },
       {
         rule: "Any foul language/misleading content leads to elimination from the contest.",
       },
+      
       {
-        rule : ' Submission details will be shared with the registered teams separately. '
+        rule : 'Submission details will be shared with the registered teams separately.'
       },
       {
         rule : 'A copy of the script paper should be submitted (to avoid any sort of proxy or malpractice).'
       },
       {
         rule : 'The event is only for college students and strictly not for any part-time or full-time filmmakers.'
+      },
+      {
+         rule : 'All submitted movies (last date 31st march) will be considered for initial screening by the expert jury.'
+      },
+      {
+        rule : "Among the submission top 10 will be selected and announced on April 2nd. These 10 movies will be screened during the tech fest for the audience on April 4th."
+      },
+      {
+        rule : 'A special mention for the following four category will be announced at the end of the screening on April 4 : Best Director, Best Performer, Best Cinematographer, Best Editor'
       }
     ],
     time: "10:00 AM to 12:00 PM",
@@ -2898,14 +2970,14 @@ const c20Events = {
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
-    registrationFees: "Rs. 100",
+    registrationFees: "Rs. 100/ -per team",
   },
 
   "c20-10": {
     name: "Rang De (Rangoli Competition)",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -2931,7 +3003,13 @@ const c20Events = {
     ],
     description: [
       {
-        point: "2 members in a team",
+        point : 'Rangoli competition is a traditional Indian art form where patterns and designs are created on the floor using colored powder, flowers, and other materials.'
+      },
+      {
+        point :  'The competition celebrates the rich cultural heritage of India and promotes teamwork and artistic expression.'
+      },
+      {
+        point: "It is a team event of maximum 2 members",
       },
       {
         point: `Competition will be based on the above mentioned themes.`,
@@ -2952,7 +3030,7 @@ const c20Events = {
         rule: "Multiple entries by one person is not allowed",
       },
       {
-        rule: "Participants are instructed to bring their own materials for the competition.",
+        rule: "Participants are instructed to bring their OWN materials for the competition.",
       },
     ],
     time: "10:00 AM to 12:00 PM",
@@ -2986,14 +3064,14 @@ const c20Events = {
       },
     ],
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
-    registrationFees: "Rs. 100",
+    registrationFees: "Rs. 100/ -per team",
   },
 
   "c20-11": {
-    name: "Pick & Click (Photography Competition)",
+    name: "Shutter Showcase (Photography Competition)",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3015,6 +3093,12 @@ const c20Events = {
       },
     ],
     description: [
+      {
+        point  : `This competition invites participants to submit their best photos.`
+      },
+      {
+        point : `The competition requires participants to capture stunning moments with a click of their camera and showcase their creativity and talent.`
+      },
       {
         point: "This is an individual event and one participant can submit a maximum of five photo.",
       },
@@ -3040,10 +3124,7 @@ const c20Events = {
         rule: "Please read the photograph specifications very carefully. failing to adhere to the format will lead to disqualification",
       },
       {
-        rule: "Specifications :",
-      },
-      {
-        rule: "Photos should be taken using DSLR or mirrorless or mobile phones.",
+        rule: "Specifications : Any Camera can be used.",
       },
       {
         rule: "Photo submissions should be in landscape mode.",
@@ -3068,6 +3149,15 @@ const c20Events = {
       },
       {
         rule : 'The watermark should cover no more than 5% of the photo.'
+      },
+      {
+        rule : "The deadline for submitting the photographs is till 30th March,2023, 5pm"
+      },
+      {
+        rule : "Link to submit the photograph : https://forms.gle/3Zj6X2ormMM4NBZs5"
+      },
+      {
+        rule : "Shortlisted participants for the next level will be intimated by mail on 2nd April,2023"
       }
     ],
     time: "11:00 AM to 1:00 PM",
@@ -3089,7 +3179,7 @@ const c20Events = {
     ],
     facultyCoordinator: [
       {
-        Name: "Dr. Piyush",
+        Name: "Dr. Piyush Pratap Singh",
       },
     ],
     prizeMoney: [
@@ -3108,7 +3198,7 @@ const c20Events = {
     name: "Gen-Z Hoffman (Poster Making)",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3134,6 +3224,15 @@ const c20Events = {
     ],
     description: [
       {
+        point : `Get ready to channel your inner artist and create an impactful message through a poster making competition! Participants are challenged to design a poster that effectively communicates a message or theme on social issues, health and safety, or any relevant topic.`
+      },
+      {
+        point : `The winning entry is chosen based on the creative design, powerful message, and visual impact.`
+      },
+      {
+        point : 'The prizes and recognition received are just the icing on the cake, as the winning posters may be used for promotional or awareness-raising purposes, creating a lasting impact on society.'
+      },
+      {
         point: "It is an individual event.",
       },
       {
@@ -3142,7 +3241,7 @@ const c20Events = {
     ],
     rules: [
       {
-        rule: "The poster should be in A3 size (portrait or landscape) (11.7 * 16.5 inches) sheet.",
+        rule: "The poster should be in A4 size.",
       },
       {
         rule: "Each participant can create only one poster.",
@@ -3162,7 +3261,7 @@ const c20Events = {
     venue: "AB1-24",
     studentCoordinator: [
       {
-        Name: "Sujith",
+        Name: "Sujit M",
         Dept: "Mech",
         Year: "3rd year",
         contact: "9791796848",
@@ -3189,7 +3288,7 @@ const c20Events = {
     name: "Sketch Art (Sketching)",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3214,6 +3313,9 @@ const c20Events = {
       }
     ],
     description: [
+      {
+        point : 'A sketch art competition is an event where participants create drawings using various techniques such as pencil, charcoal, or ink.'
+      },
       {
         point: "It is an individual event.",
       },
@@ -3270,7 +3372,7 @@ const c20Events = {
     name: "Brushless Painting",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3293,24 +3395,23 @@ const c20Events = {
     ],
     description: [
       {
+        point : 'A brushless painting competition is a creative contest where the participant should not use any conventional painting tools or devices instead they can use any other objects and paint a unique painting potraiting the C20 themes which will be given on the same day.'
+      },
+      
+      {
         point: "It is an individual event.",
       },  
-      {
-        point: `Competition will be based on the above mentioned themes.`,
-      },    
+      
     ],
     rules: [
       {
-        rule: "The use of brushes is strictly prohibited.",
+        rule: "The use of any conventional painting tools is strictly prohibited.",
       },
       {
         rule: `Paints, fingers, a palette knife, newsprint, cloth rags, earbuds, and threadbare can all be used to create artwork. 
       Any other supportable equipment other than a brush is permissible.`,
       },
-      {
-        rule:
-          "Digital media during painting is not allowed in the nearby vicinity.",
-      },
+      
       {
         rule:
           "Participants will be given 45 minutes, and only time-bound submissions will be evaluated.",
@@ -3319,10 +3420,7 @@ const c20Events = {
         rule: "Participants should bring their Drawing sheets (A2 size).",
       },
       {
-        rule: "Students must bring their own colors.",
-      },
-      {
-        rule: "All types of colors are allowed without brushes.",
+        rule: "Students must bring their own colors and other stationar materials.",
       },
     ],
     time: "11.30am to 12.30pm",
@@ -3334,6 +3432,12 @@ const c20Events = {
         Dept: "CYS",
         Year: "2nd year",
         contact: "9629329074",
+      },
+      {
+        Name: "Vijay Varma",
+        Dept: "CYS",
+        Year: "2nd year",
+        contact: "9778597445",
       },
     ],
     facultyCoordinator: [
@@ -3360,7 +3464,7 @@ const c20Events = {
     name: "Cloth Painting",
     mode: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3387,6 +3491,15 @@ const c20Events = {
       },
     ],
     description: [
+      {
+        point : `Cloth Painting competition challenges participants to showcase their creativity and artistic skills on fabric or cloth.`
+      },
+      {
+        point : `The competition is judged based on the design's uniqueness, the use of colors, and how well the design complements the fabric. `
+      },
+      {
+        point : `The competition encourages participants to experiment with different styles, techniques, and mediums to create stunning and unique fabric paintings.`
+      },
       {
         point: "It is an individual event.",
       },
@@ -3443,32 +3556,32 @@ function run() {
   const docRef = db.collection("events_final"); // collection name
   // const docRef = db.collection("events"); // collection name
   let i = 0;
-  while (i < _.keys(eceEvents).length) {
-    docRef.doc(_.keys(eceEvents)[i]).set({
-      name: eceEvents[_.keys(eceEvents)[i]].name,
-      // event_type: eceEvents[_.keys(eceEvents)[i]].event_type,
+  while (i < _.keys(c20Events).length) {
+    docRef.doc(_.keys(c20Events)[i]).set({
+      name: c20Events[_.keys(c20Events)[i]].name,
+      // event_type: c20Events[_.keys(c20Events)[i]].event_type,
 
-      // content: eceEvents[_.keys(eceEvents)[i]].content,
-      // themes : eceEvents[_.keys(eceEvents)[i]].themes,
-      // judging : eceEvents[_.keys(eceEvents)[i]].judging,
-      // duration : eceEvents[_.keys(eceEvents)[i]].duration,
+      content: c20Events[_.keys(c20Events)[i]].content,
+      themes : c20Events[_.keys(c20Events)[i]].themes,
+      judging : c20Events[_.keys(c20Events)[i]].judging,
+      // duration : c20Events[_.keys(c20Events)[i]].duration,
 
-      description: eceEvents[_.keys(eceEvents)[i]].description,
-      rules: eceEvents[_.keys(eceEvents)[i]].rules,
-      venue: eceEvents[_.keys(eceEvents)[i]].venue,
-      studentCoordinator: eceEvents[_.keys(eceEvents)[i]].studentCoordinator,
-      facultyCoordinator: eceEvents[_.keys(eceEvents)[i]].facultyCoordinator,
-      registrationFees: eceEvents[_.keys(eceEvents)[i]].registrationFees,
-      img: eceEvents[_.keys(eceEvents)[i]].img,
-      date: eceEvents[_.keys(eceEvents)[i]].date,
-      prizeMoney : eceEvents[_.keys(eceEvents)[i]].prizeMoney,
-      time: eceEvents[_.keys(eceEvents)[i]].time,
+      description: c20Events[_.keys(c20Events)[i]].description,
+      rules: c20Events[_.keys(c20Events)[i]].rules,
+      venue: c20Events[_.keys(c20Events)[i]].venue,
+      studentCoordinator: c20Events[_.keys(c20Events)[i]].studentCoordinator,
+      facultyCoordinator: c20Events[_.keys(c20Events)[i]].facultyCoordinator,
+      registrationFees: c20Events[_.keys(c20Events)[i]].registrationFees,
+      img: c20Events[_.keys(c20Events)[i]].img,
+      date: c20Events[_.keys(c20Events)[i]].date,
+      prizeMoney : c20Events[_.keys(c20Events)[i]].prizeMoney,
+      time: c20Events[_.keys(c20Events)[i]].time,
     });
-    console.log("schema", eceEvents[_.keys(eceEvents)[i]].prizeMoney);
+    console.log("schema", c20Events[_.keys(c20Events)[i]].prizeMoney);
     i++;
     console.log(i + 1 + "done"); // just to check if the loop is working
   }
-  console.log(_.keys(eceEvents).map((event) => eceEvents[event].name));
+  console.log(_.keys(c20Events).map((event) => c20Events[event].name));
 }
 
 run();

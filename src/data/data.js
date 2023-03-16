@@ -8,18 +8,17 @@ export const event = [
         about: "Game Development",
         mode: "Offline",
         link: "/strigrays-league",
-        image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
+        image: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Strigrays%20league%20gaming%20jam.png?alt=media&token=51f6fd62-5951-48e7-a686-ea2004cfa972",
         documentId: "event1",
       },
       {
         id: 2,
-        name: "Battle Of The Ice - Gaming Tournment",
+        name: "Battle Of The Ice - Gaming Tournament",
         about: "Online Gaming",
         mode: "Online",
         link: "/battle-of-the-ice",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298458/events/valorant.jpg",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Battle%20of%20the%20ice.png?alt=media&token=8d99fc69-3276-43c0-a8dc-b2964691b6a8",
         documentId: "event2",
       },
       {
@@ -28,7 +27,7 @@ export const event = [
         mode: "Online",
         link: "/zh3r0",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097189/events/capture%20the%20flag.jpg",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Z3ro.png?alt=media&token=eb27a32d-85f9-459f-80bd-799bfa32b88d",
         documentId: "event3",
       },
       {
@@ -37,7 +36,7 @@ export const event = [
         mode: "Offline",
         link: "/platonic",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099706/events/Platonic%20%28%20Ideathon%29.jpg",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Platonic.png?alt=media&token=2dad14f0-c52f-433b-a79f-14e63ba5f65c",
         documentId: "event4",
       },
       {
@@ -46,7 +45,7 @@ export const event = [
         mode: "Offline",
         link: "/bidders-coding-camp",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099142/events/Bidders%20Coding%20Camp.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Bidders%20coding%20acamp.png?alt=media&token=7b162bf8-4eb5-4cb4-be0a-7df92ab5bb63",
         documentId: "event5",
       },
       {
@@ -55,7 +54,7 @@ export const event = [
         mode: "Offline",
         link: "/botbattlebash-b3",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097401/events/BotBattleBash%20B3.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/BotBattleBash.png?alt=media&token=a41658f6-c13c-4c9e-b76d-ec4ffcd247ae",
         documentId: "event6",
       },
       {
@@ -64,7 +63,7 @@ export const event = [
         mode: "Offline",
         link: "/ml-xlr8",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099478/events/ml%20and%20deeplearning.jpg",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ML%20XLR8.png?alt=media&token=fe1c4629-c083-4523-898d-f0766c3f001b",
         documentId: "event7",
       },
       // {
@@ -80,7 +79,7 @@ export const event = [
         mode: "Offline",
         link: "/colay",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097270/events/colay.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Colay.png?alt=media&token=a83ec1fe-9a38-422b-a2a4-d90cea41073f",
         documentId: "event8",
       },
       {
@@ -89,7 +88,7 @@ export const event = [
         mode: "Offline",
         link: "/dare-to-be-different",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098791/events/Dare%20To%20be%20Different%20%28Ideathon%29.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Dare%20to%20be%20different.png?alt=media&token=b9baa7a1-fb76-44d5-8c16-579022840643",
         documentId: "event9",
       },
       {
@@ -98,7 +97,7 @@ export const event = [
         mode: "Offline",
         link: "/forensics-investigation-challenge",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678097927/events/forensic.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Forensics.png?alt=media&token=8143c4ce-8079-43e2-a3d9-389607ef6fd1",
         documentId: "event10",
       },
     ],
@@ -121,7 +120,7 @@ export const event = [
         mode: "Offline",
         link: "/ar-vr",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678096803/events/VR-and-AR-Technologies-1280x720_z3rpl8.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/AR_VR.png?alt=media&token=30102137-3d89-4fef-a922-805d4b4b9571",
         documentId: "event12",
       },
       {
@@ -130,7 +129,7 @@ export const event = [
         mode: "Offline",
         link: "/quantum-computing",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098007/events/quantum_computing.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Devops.png?alt=media&token=6b835faf-ba5a-4aa4-94a6-72bf1d71f528",
         documentId: "event13",
       },
       {
@@ -139,7 +138,7 @@ export const event = [
         mode: "Offline",
         link: "/devops",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098525/events/devops-icon-software-development-dev-and-it-operations-ops-loop-eight-logo-for-software_gn159a.jpg",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Devops.png?alt=media&token=6b835faf-ba5a-4aa4-94a6-72bf1d71f528",
         documentId: "event14",
       },
       {
@@ -148,7 +147,7 @@ export const event = [
         mode: "Offline",
         link: "/mobile-app",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678298180/events/mobileapp.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Mobile%20app.png?alt=media&token=168b4bcf-e502-4cc0-92a5-bae593e1c79d",
         documentId: "event15",
       },
       {
@@ -157,16 +156,16 @@ export const event = [
         mode: "Offline",
         link: "/x-gen-learning",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099987/events/X%20Gen%20Learning.jpg",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/X%20gen.png?alt=media&token=f1a9bc6b-c46e-499c-aefb-41c4b8689bae",
         documentId: "event16",
       },
 
       {
-        name: "Machine Learning/Deep Learning",
-        about: "Workshop",
+        name: "ETH Amrita",
+        about: "Workshop & Hackathon",
         mode: "Offline",
-        link: "/machine-learning",
-        image: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678093345/events/Strigrays%20League%20-%20Gaming%20Jam.png",
+        link: "/ETH-Amrita",
+        image: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ETH%20logo.png?alt=media&token=654f01d2-1eb0-4aac-8f61-a9f5e7907029",
         documentId: "event17",
       },
 
@@ -181,12 +180,13 @@ export const event = [
         mode: "Offline",
         link: "/project-expo",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678098422/events/project%20expo.png",
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Project%20expo.png?alt=media&token=2ee2f1b9-7125-423b-a117-62c18cb3cbff",
         documentId: "event18",
       },
     ],
   },
 ];
+
 
 export const eceEvent = [
   {
@@ -437,10 +437,10 @@ export const c20Event = [
         documentId: "c20-10",
       },
       {
-        name: "Pick & Click",
+        name: "Shutter Showcase",
         about: "Photography Competition",
         mode: "Offline",
-        link: "/pick-and-click",
+        link: "/shutter-showcase",
         image:
           "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701667/PICK_AND_CLICK_photo_zj2rfj.png  ",
         documentId: "c20-11",

@@ -28,3 +28,6 @@ yarn.lock
 notes.txt
 
 fire-schema/node_modules
+
+build.zip
+build/
