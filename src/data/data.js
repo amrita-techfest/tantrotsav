@@ -382,7 +382,7 @@ export const c20Event = [
         about: "Painting Competition",
         mode: "Offline",
         link: "/brushless-painting",
-        image: "",
+        image: "https://user-images.githubusercontent.com/73429989/225205589-a8874707-de0d-48b0-9daa-c729f17c79ea.png",
         documentId: "c20-14",
       },
       {
@@ -390,7 +390,7 @@ export const c20Event = [
         about: "Painting Competition",
         mode: "Offline",
         link: "/cloth-painting",
-        image: "",
+        image: "https://user-images.githubusercontent.com/73429989/225205111-acb2184f-965f-4730-b064-5d4f2fbd5b82.png",
         documentId: "c20-15",
       },
       {
@@ -398,7 +398,7 @@ export const c20Event = [
         about: "Painting Competition",
         mode: "Offline",
         link: "/face-painting",
-        image: "",
+        image: "https://user-images.githubusercontent.com/73429989/225205310-46e81623-c025-450c-854e-f980b46d3088.png",
         documentId: "c20-6",
       },
       {
@@ -415,7 +415,7 @@ export const c20Event = [
         about: "Poetry Competition",
         mode: "Offline",
         link: "/thought-talk",
-        image: "",
+        image: "https://user-images.githubusercontent.com/73429989/225205698-69829cc5-e783-4fd0-8df4-0fc0ac573c96.png",
         documentId: "c20-8",
       },
       {
@@ -459,7 +459,7 @@ export const c20Event = [
         about: "Sketching Competition",
         mode: "Offline",
         link: "/sketch-art",
-        image: "",
+        image: "https://user-images.githubusercontent.com/73429989/225205876-1f48ec68-ff55-4d86-a61d-b7f75af8e120.png",
         documentId: "c20-13",
       },
     ],

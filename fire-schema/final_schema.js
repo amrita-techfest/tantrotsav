@@ -610,7 +610,14 @@ const events = {
         rule: `If required, a intro on Unity/Blender will be given to the participants before the event by the club members.`,
       },
     ],
-    prizeMoney : [],
+    prizeMoney: [
+      {
+        prize: "1 st prize: 3000",
+      },
+      {
+        prize: "2nd prize: 2000",
+      },
+    ],
     time: "10.00 am to 12.30pm",
     date: "03/04/23",
     venue: "CYS LAB 2",
@@ -818,7 +825,11 @@ const events = {
         Year: "2nd year",
         contact: "9952694417",
       },
-      { Name: "Ragul", Dept: "CSE", Year: "2nd-year", contact: "9597664312" },
+      
+      { Name: "Siddhanth kundragi", 
+        Dept: "CYS", 
+        Year: "2nd-year", 
+        contact: "9372699515" },
     ],
     facultyCoordinator: [
       {
@@ -971,7 +982,11 @@ const events = {
         Name: "Dr.Mathivanan",
       },
     ],
-    prizeMoney : [],
+    prizeMoney : [
+      {
+        prize: "Win exiting prizes of worth 5k",
+      },
+    ],
     registrationFees: "Team Rs.250 ( Max: 4/team)",
     img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678099142/events/Bidders%20Coding%20Camp.png",
   },
@@ -1055,7 +1070,7 @@ const events = {
   },
   event7: {
     name: "ML-XLR8",
-    mode: "Hackethon",
+    mode: "Hackathon",
     event_type: "Competition ",
     description: [
       {
@@ -1485,8 +1500,15 @@ const events = {
     event_type: "Workshop",
     description: [
       {
-        point: "",
+        point: "A quantum computing workshop is a specialized training program that aims to educate participants on the principles and practical applications of quantum computing. These workshops typically include lectures, discussions, and hands-on activities that provide attendees with a basic understanding of quantum mechanics, quantum algorithms, and quantum hardware.",
       },
+      {
+        point: "Participants are also provided practical training in programming quantum computers using languages such as Qiskit or Cirq. They work in teams to develop and test quantum algorithms on real quantum hardware or simulators, allowing them to gain hands-on experience with this emerging technology.",
+      },
+      {
+        point: "Overall, a quantum computing workshop is an excellent opportunity for individuals with a background in physics, computer science, mathematics, or engineering to explore the cutting-edge field of quantum computing and its potential applications in fields such as cryptography, optimization, and simulation. By the end of the workshop, attendees will have gained a solid foundation in quantum computing and will be able to apply their knowledge to real-world problems.",
+      }
+
     ],
     rules: [
       {
@@ -1641,11 +1663,25 @@ const events = {
     venue: "Class Room",
     studentCoordinator: [
       {
-        Name: "Archanaa.N",
+        Name: "Varun Maniappan",
+        Dept: "AIE",
+        Year: " 2nd year",
+        contact: "9498370478",
+      },
+      {
+        Name: "Archanaa N",
         Dept: "AIE",
         Year: " 2nd year",
         contact: "",
       },
+      { Name: "Sukesh", 
+        Dept: "AIE", 
+        Year: " 2nd year", 
+        contact: "" },
+      { Name: "Jaikanth Y", 
+        Dept: "AIE", 
+        Year: " 2nd year", 
+        contact: "" },
     ],
     facultyCoordinator: [
       {
@@ -1667,7 +1703,7 @@ const events = {
     ],
     rules: [
       {
-        rule: "Participants Should bring their own laptop",
+        rule: "Team size max 5, the project must be unique, novel, demonstratable, logically explainable, ethically feasible and have societal impact.",
       },
     ],
     time: "10.00 am to 4.00pm",
@@ -1718,15 +1754,11 @@ const events = {
         contact: "6382101448",
       },
       {
-        Name: "Umme Rooman",
+        Name: "Deependra Kumar Singh",
         Dept: "CSE",
-        Year: " 2nd year",
-      },
-      {
-        Name: "Moulika",
-        Dept: "CSE",
-        Year: " 2nd year",
-      },
+        Year: "2nd year",
+        contact: "9359840082",
+      }
     ],
     facultyCoordinator: [
       {
