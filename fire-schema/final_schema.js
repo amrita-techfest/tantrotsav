@@ -154,6 +154,7 @@ const eventLists = [
 const eventmech = {
   mech1: {
     name: "SRUJAN",
+    mode_type: "Offline",
     event_type: "CAD Competition",
     description: [
       {
@@ -249,6 +250,7 @@ improved and used in real time`,
 
   mech2: {
     name: "ROBORACE",
+    mode_type: "Offline",
     event_type: "Competition",
     description: [
       {
@@ -318,6 +320,7 @@ improved and used in real time`,
 
   mech3: {
     name: "SPARK",
+    mode_type: "Offline",
     event_type: "Workshop ",
     description: [
       {
@@ -365,6 +368,7 @@ improved and used in real time`,
 
   mech4: {
     name: "Maze Solver Challenge",
+    mode_type: "Offline",
     event_type: "Competition",
     description: [
       {
@@ -417,6 +421,7 @@ improved and used in real time`,
 
   mech5: {
     name: "Prastavam",
+    mode_type: "Offline",
     event_type: "Competition ",
     description: [
       {
@@ -475,6 +480,7 @@ improved and used in real time`,
 
   mech6: {
     name: "Auto Expo",
+    mode_type: "Offline",
     mode: "Competition",
     event_type: "Competition ",
     description: [
@@ -512,6 +518,7 @@ improved and used in real time`,
 
   mech7: {
     name: "stunt-show",
+    mode_type: "Offline",
     event_type: "Exhibition ",
     description: [
       {
@@ -555,6 +562,7 @@ const events = {
   event1: {
     name: "Strigrays League - Gaming Jam",
     mode: "Game Development",
+    mode_type : 'Offline',
     event_type: "Competition ",
     description: [
       {
@@ -652,48 +660,16 @@ const events = {
   },
 
   event2: {
-    name: "Battle Of The Ice - Gaming Tournament",
+    name: "Battle Of The Ice - Over Watch",
     mode: "Online Gaming ",
-    event_type: "Competition ",
+    event_type: "Competition",
+    mode_type : 'Online',
     description: [
       {
         point: `This event is a classic gaming tournament where teams will be competing against each other to win the game.`,
       },
       {
-        point: "Event 1: Call of duty Mobile-Battle Royale",
-      },
-      {
-        point: "Team Size: Solo (1) or Duo (2)",
-      },
-      {
-        point: "Timing: 03/04/23: 8.00 am to 10.00pm",
-      },
-      {
-        point: "Event 2: Clash of Clans ",
-      },
-      {
-        point: "Team Size: 5+1 sub",
-      },
-      {
-        point: "Timing: 03/04/23: 10.00 am to 1.00pm",
-      },
-      {
-        point: "Event 3: Over-watch",
-      },
-      {
         point: "Team Size: 5 + 1 sub.",
-      },
-      {
-        point: "Timing: 03/04/23: 2.00 pm to 5.00pm",
-      },
-      {
-        point: "Event 4: Valorant",
-      },
-      {
-        point: "Team Size: 5 + 1 sub.",
-      },
-      {
-        point: "Timing: 04/04/23: 9.00 am to 2.00pm",
       },
     ],
     rules: [
@@ -723,9 +699,9 @@ const events = {
       },
     ],
 
-    time: "10.00 am to 4.30pm",
-    date: "03/04/23 and 04/04/23",
-    venue: " ",
+    time: "10.00 am to 4.00 pm",
+    date: "03/04/23",
+    venue: "",
     studentCoordinator: [
       {
         Name: "Karuppiah Sabari Kumar",
@@ -754,10 +730,12 @@ const events = {
     img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Battle%20of%20the%20ice.png?alt=media&token=8d99fc69-3276-43c0-a8dc-b2964691b6a8",
     registrationFees: "Team Rs.250 ( Max: 5/team)",
   },
+
   event3: {
     name: "Z3r0-Capture the Flag",
     mode: "Capture the Flag",
     event_type: "Competition-Online ",
+    mode_type : 'Offline',
     description: [
       {
         point:
@@ -830,6 +808,7 @@ const events = {
   event4: {
     name: "Platonic ( Ideathon)",
     mode: "Innovative idea proposal competation.",
+    mode_type : 'Offline',
     event_type: "Competition ",
     description: [
       {
@@ -906,6 +885,7 @@ const events = {
   },
   event5: {
     name: "Bidders Coding Camp",
+    mode_type : 'Offline',
     mode: "Coding event to earn/spend points in Unique way",
     event_type: "Competition ",
     description: [
@@ -989,6 +969,7 @@ const events = {
     name: "BotBattleBash B3",
     mode: "Build a chat bot",
     event_type: "Competition ",
+    mode_type : 'Offline',
     description: [
       {
         point:
@@ -1096,6 +1077,7 @@ const events = {
     name: "ML-XLR8",
     mode: "Hackathon",
     event_type: "Competition ",
+    mode_type : 'Offline',
     description: [
       {
         point: `Machine learning hackathon event with diverse problem statements for teams to choose from, encouraging innovation and impact. Finalists will present their projects on the event day and be evaluated based on creativity, feasibility, and impact.`,
@@ -1159,6 +1141,7 @@ const events = {
     name: "Colay",
     mode: "Coding competition (code relay)",
     event_type: "Competition ",
+    mode_type : 'Offline',
     description: [
       {
         point: `Colay is a thrilling code relay event that will test the participants' coding skills and teamwork.`,
@@ -1239,6 +1222,7 @@ const events = {
     name: "Dare To be Different (Ideathon)",
     mode: "Ideathon",
     event_type: "Competition ",
+    mode_type : 'Offline',
     description: [
       {
         point: `The event is all about unlocking the burgeoning
@@ -1317,6 +1301,7 @@ const events = {
     name: "Forensics Investigation Challenge",
     mode: "Investigation Competition ",
     event_type: "Competition ",
+    mode_type : 'Offline',
     description: [
       {
         point: `The majority of us would have yelled, ""I think this was the 
@@ -1416,6 +1401,7 @@ const events = {
     name: "Intro to React JS",
     mode: "Workshop",
     event_type: "Workshop",
+    mode_type : 'Offline',
     description: [
       {
         point: `This workshop on UI designing and ReactJS will focus on helping participants understand the fundamentals of 
@@ -1470,6 +1456,7 @@ const events = {
   event12: {
     name: "AR/VR",
     mode: "Workshop",
+    mode_type : 'Offline',
     event_type: "Workshop",
     description: [
       {
@@ -1519,6 +1506,7 @@ const events = {
     name: "Quantum Computing",
     mode: "Workshop",
     event_type: "Workshop",
+    mode_type : 'Offline',
     description: [
       {
         point: "A quantum computing workshop is a specialized training program that aims to educate participants on the principles and practical applications of quantum computing. These workshops typically include lectures, discussions, and hands-on activities that provide attendees with a basic understanding of quantum mechanics, quantum algorithms, and quantum hardware.",
@@ -1566,6 +1554,7 @@ const events = {
     name: "DevOps",
     mode: "Workshop",
     event_type: "Workshop",
+    mode_type : 'Offline',
     description: [
       {
         point: `DevOps workshop is a training session designed to help individuals or teams understand the principles, practices,
@@ -1615,6 +1604,7 @@ const events = {
     name: "Mobile App",
     mode: "Workshop",
     event_type: "Workshop",
+    mode_type : 'Offline',
     description: [
       {
         point: `The workshop focus on teaching participants how to develop a mobile app from scratch, covering everything from ideation and wireframing to coding and testing.        `,
@@ -1662,6 +1652,7 @@ const events = {
     name: "X Gen Learning",
     mode: "Workshop",
     event_type: "Workshop",
+    mode_type : 'Offline',
     description: [
       {
         point: "Basic introduction on the X Gen learning",
@@ -1709,6 +1700,7 @@ const events = {
   event17:{
     name: "ETH Amrita",
     mode: "Workshop & Hackathon",
+    mode_type : 'Offline',
     event_type: "Workshop & Hackathon",
     description: [
       {
@@ -1758,6 +1750,7 @@ const events = {
     name: "Project Expo",
     mode: "Exhibition",
     event_type: "Exhibition and demonstration",
+    mode_type : 'Offline',
     description: [
       {
         point:
@@ -1805,13 +1798,227 @@ const events = {
     img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Project%20expo.png?alt=media&token=2ee2f1b9-7125-423b-a117-62c18cb3cbff",
     registrationFees: 100,
   },
+
+  event19: {
+    name: "Battle Of The Ice - Clash of Clans",
+    mode: "Online Gaming",
+    event_type: "Competition",
+    mode_type : 'Online',
+    description: [
+      {
+        point: `This event is a classic gaming tournament where teams will be competing against each other to win the game.`,
+      },
+      {
+        point: "Team Size: 5+1 sub",
+      },
+    ],
+    rules: [
+      {
+        rule: "Requirements:",
+      },
+      {
+        rule: "Latest version of Participating Game.",
+      },
+      {
+        rule: "Own Gaming PC.",
+      },
+      {
+        rule: "Good network connectivity.",
+      },
+      {
+        rule: "Necessary gadgets required.",
+      },
+    ],
+
+    prizeMoney: [
+      {
+        prize: "1st prize: 3000",
+      },
+      {
+        prize: "2nd prize: 2000",
+      },
+    ],
+
+    time: "4.00 pm to 6.00 pm",
+    date: "03/04/23",
+    venue: " ",
+    studentCoordinator: [
+      {
+        Name: "Karuppiah Sabari Kumar",
+        Dept: "CYS",
+        Year: "3rd-year",
+        contact: "9488519924",
+      },
+      {
+        Name: "Harsha Vardhan",
+        Dept: "3rd year",
+        Year: "Cys",
+        contact: "8668169291",
+      },
+      {
+        Name: "Lokesh kumar",       
+        Dept: "CSE",
+        Year: "3rd-year",
+        contact: "80728 52971",
+      },
+    ],
+    facultyCoordinator: [
+      {
+        Name: "Dr.Udhaya Kumar",
+      },
+    ],
+    img : 'https://user-images.githubusercontent.com/73429989/225873381-f3edc034-af8a-4940-ad1a-a3cf7bf1bf5c.png',
+    registrationFees: "Team Rs.250 ( Max: 5/team)",
+  },
+  event20: {
+    name: "Battle Of The Ice - Call of Duty Mobile - TDM",
+    mode: "Online Gaming",
+    mode_type : 'Online',
+    event_type: "Competition ",
+    description: [
+      {
+        point: `This event is a classic gaming tournament where teams will be competing against each other to win the game.`,
+      },
+      {
+        point: "Team Size: Solo (1) or Duo (2)",
+      },
+    ],
+    rules: [
+      {
+        rule: "Requirements:",
+      },
+      {
+        rule: "Latest version of Participating Game.",
+      },
+      {
+        rule: "Own Gaming PC.",
+      },
+      {
+        rule: "Good network connectivity.",
+      },
+      {
+        rule: "Necessary gadgets required.",
+      },
+    ],
+
+    prizeMoney: [
+      {
+        prize: "1st prize: 3000",
+      },
+      {
+        prize: "2nd prize: 2000",
+      },
+    ],
+
+    time: "6.30 pm to 10.00 pm",
+    date: "03/04/23",
+    venue: "",
+    studentCoordinator: [
+      {
+        Name: "Karuppiah Sabari Kumar",
+        Dept: "CYS",
+        Year: "3rd-year",
+        contact: "9488519924",
+      },
+      {
+        Name: "Harsha Vardhan",
+        Dept: "3rd year",
+        Year: "Cys",
+        contact: "8668169291",
+      },
+      {
+        Name: "Lokesh kumar",       
+        Dept: "CSE",
+        Year: "3rd-year",
+        contact: "80728 52971",
+      },
+    ],
+    facultyCoordinator: [
+      {
+        Name: "Dr.Udhaya Kumar",
+      },
+    ],
+    img : 'https://user-images.githubusercontent.com/73429989/225873747-dd0d1377-44a6-4aaf-8bc6-570665e68a7a.png',
+    registrationFees: "Team Rs.250 ( Max: 5/team)",
+  },
+  event21: {
+    name: "Battle Of The Ice - Valorant",
+    mode: "Online Gaming ",
+    mode_type : 'Online',
+    event_type: "Competition ",
+    description: [
+      {
+        point: `This event is a classic gaming tournament where teams will be competing against each other to win the game.`,
+      },
+      {
+        point: "Team Size: 5 + 1 sub.",
+      },
+    ],
+    rules: [
+      {
+        rule: "Requirements:",
+      },
+      {
+        rule: "Latest version of Participating Game.",
+      },
+      {
+        rule: "Own Gaming PC.",
+      },
+      {
+        rule: "Good network connectivity.",
+      },
+      {
+        rule: "Necessary gadgets required.",
+      },
+    ],
+
+    prizeMoney: [
+      {
+        prize: "1st prize: 3000",
+      },
+      {
+        prize: "2nd prize: 2000",
+      },
+    ],
+
+    time: "10.00 am to 2.00 pm",
+    date: "03/04/23 and 04/04/23",
+    venue: " ",
+    studentCoordinator: [
+      {
+        Name: "Karuppiah Sabari Kumar",
+        Dept: "CYS",
+        Year: "3rd-year",
+        contact: "9488519924",
+      },
+      {
+        Name: "Harsha Vardhan",
+        Dept: "3rd year",
+        Year: "Cys",
+        contact: "8668169291",
+      },
+      {
+        Name: "Lokesh kumar",       
+        Dept: "CSE",
+        Year: "3rd-year",
+        contact: "80728 52971",
+      },
+    ],
+    facultyCoordinator: [
+      {
+        Name: "Dr.Udhaya Kumar",
+      },
+    ],
+    img : 'https://user-images.githubusercontent.com/73429989/225873918-236d4edc-0b51-4edf-a56a-ba9928353bb7.png',
+    registrationFees: "Team Rs.250 ( Max: 5/team)",
+  },
 };
 // --------- ECE EVENTS --------------
 
 const eceEvents = {
   ece1: {
     name: "POSTER PRESENTATION",
-    mode: "Offline",
+    mode_type: "Offline",
     description: [
       {
         point: `
@@ -1876,7 +2083,7 @@ const eceEvents = {
   ece2: {
     name: "CIRCUITAL DILEMMA",
     duration: "",
-    mode: "Offline",
+    mode_type: "Offline",
     description: [
       {
         point: "This is a group event with maximum of 3 participants.",
@@ -1937,7 +2144,7 @@ const eceEvents = {
   ece3: {
     name: "IoT-Banda Dhavaja (CTF)",
     duration: "-",
-    mode: "Offline",
+    mode_type: "Offline",
     description: [
       {
         point: "IoT-CTF is a group event of maximum 3 participants.",
@@ -1992,7 +2199,7 @@ const eceEvents = {
   ece4: {
     name: "PASSIVE HACK",
     duration: "-",
-    mode: "Offline",
+    mode_type: "Offline",
     description: [
       {
         point: "Passive Hack is a group event with maximum 3 participants.",
@@ -2048,7 +2255,7 @@ const eceEvents = {
   ece5: {
     name: "INGENIUM",
     duration: "",
-    mode: "Offline",
+    mode_type: "Offline",
     description: [
       {
         point:
@@ -2130,7 +2337,7 @@ const eceEvents = {
 const c20Events = {
   "c20-1": {
     name: "Smart Trivia",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     themes: [
@@ -2233,7 +2440,7 @@ const c20Events = {
 
   "c20-2": {
     name: "SelfieGram",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     themes: [
@@ -2337,7 +2544,7 @@ const c20Events = {
 
   "c20-3": {
     name: "Reels",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -2429,7 +2636,7 @@ const c20Events = {
   },
   "c20-4": {
     name: "Sail On the Idea",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -2530,7 +2737,7 @@ const c20Events = {
 
   "c20-5": {
     name: "SnapArt (Collage Making)",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -2611,7 +2818,7 @@ const c20Events = {
 
   "c20-6": {
     name: "Face Painting",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     themes: [
@@ -2702,7 +2909,7 @@ const c20Events = {
 
   "c20-7": {
     name: "Essay Writing",
-    mode: "Offline", 
+    mode_type: "Offline", 
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     event_type: "Competitions",
     judging : [
@@ -2789,7 +2996,7 @@ const c20Events = {
 
   "c20-8": {
     name: "Thought Talk (Poetry Competition)",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -2872,7 +3079,7 @@ const c20Events = {
 
   "c20-9": {
     name: "NovelNolan (Short Film Making Competition)",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [ 
@@ -2975,7 +3182,7 @@ const c20Events = {
 
   "c20-10": {
     name: "Rang De (Rangoli Competition)",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -3069,7 +3276,7 @@ const c20Events = {
 
   "c20-11": {
     name: "Shutter Showcase (Photography Competition)",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -3190,13 +3397,13 @@ const c20Events = {
         prize: "2nd prize : Rs. 2000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
+    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701667/PICK_AND_CLICK_photo_zj2rfj.png",
     registrationFees: "Rs. 100",
   },
 
   "c20-12": {
     name: "Gen-Z Hoffman (Poster Making)",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -3286,7 +3493,7 @@ const c20Events = {
 
   "c20-13": {
     name: "Sketch Art (Sketching)",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -3370,7 +3577,7 @@ const c20Events = {
 
   "c20-14": {
     name: "Brushless Painting",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -3462,7 +3669,7 @@ const c20Events = {
 
   "c20-15": {
     name: "Cloth Painting",
-    mode: "Offline",
+    mode_type: "Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
     judging : [
@@ -3559,7 +3766,7 @@ function run() {
   while (i < _.keys(c20Events).length) {
     docRef.doc(_.keys(c20Events)[i]).set({
       name: c20Events[_.keys(c20Events)[i]].name,
-      // event_type: c20Events[_.keys(c20Events)[i]].event_type,
+      mode_type: c20Events[_.keys(c20Events)[i]].mode_type,
 
       content: c20Events[_.keys(c20Events)[i]].content,
       themes : c20Events[_.keys(c20Events)[i]].themes,
@@ -3585,3 +3792,93 @@ function run() {
 }
 
 run();
+
+function cseEvents() {
+  const db = firebase.default.firestore();
+  const docRef = db.collection("events_final"); // collection name
+  // const docRef = db.collection("events"); // collection name
+  let i = 0;
+  while (i < _.keys(events).length) {
+    docRef.doc(_.keys(events)[i]).set({
+      name: events[_.keys(events)[i]].name,
+      mode_type: events[_.keys(events)[i]].mode_type,
+
+      description: events[_.keys(events)[i]].description,
+      rules: events[_.keys(events)[i]].rules,
+      venue: events[_.keys(events)[i]].venue,
+      studentCoordinator: events[_.keys(events)[i]].studentCoordinator,
+      facultyCoordinator: events[_.keys(events)[i]].facultyCoordinator,
+      registrationFees: events[_.keys(events)[i]].registrationFees,
+      img: events[_.keys(events)[i]].img,
+      date: events[_.keys(events)[i]].date,
+      prizeMoney : events[_.keys(events)[i]].prizeMoney,
+      time: events[_.keys(events)[i]].time,
+    });
+    console.log("schema", events[_.keys(events)[i]].prizeMoney);
+    i++;
+    console.log(i + 1 + "done"); // just to check if the loop is working
+  }
+  console.log(_.keys(events).map((event) => events[event].name));
+}
+
+// cseEvents();
+
+
+function eventMech() {
+  const db = firebase.default.firestore();
+  const docRef = db.collection("events_final"); // collection name
+  // const docRef = db.collection("events"); // collection name
+  let i = 0;
+  while (i < _.keys(eventmech).length) {
+    docRef.doc(_.keys(eventmech)[i]).set({
+      name: eventmech[_.keys(eventmech)[i]].name,
+      mode_type: eventmech[_.keys(eventmech)[i]].mode_type,
+
+      description: eventmech[_.keys(eventmech)[i]].description,
+      rules: eventmech[_.keys(eventmech)[i]].rules,
+      venue: eventmech[_.keys(eventmech)[i]].venue,
+      studentCoordinator: eventmech[_.keys(eventmech)[i]].studentCoordinator,
+      facultyCoordinator: eventmech[_.keys(eventmech)[i]].facultyCoordinator,
+      registrationFees: eventmech[_.keys(eventmech)[i]].registrationFees,
+      img: eventmech[_.keys(eventmech)[i]].img,
+      date: eventmech[_.keys(eventmech)[i]].date,
+      prizeMoney : eventmech[_.keys(eventmech)[i]].prizeMoney,
+      time: eventmech[_.keys(eventmech)[i]].time,
+    });
+    console.log("schema", eventmech[_.keys(eventmech)[i]].prizeMoney);
+    i++;
+    console.log(i + 1 + "done"); // just to check if the loop is working
+  }
+  console.log(_.keys(eventmech).map((event) => eventmech[event].name));
+}
+
+// eventMech();
+
+function eventECE() {
+  const db = firebase.default.firestore();
+  const docRef = db.collection("events_final"); // collection name
+  // const docRef = db.collection("events"); // collection name
+  let i = 0;
+  while (i < _.keys(eceEvents).length) {
+    docRef.doc(_.keys(eceEvents)[i]).set({
+      name: eceEvents[_.keys(eceEvents)[i]].name,
+      mode_type: eceEvents[_.keys(eceEvents)[i]].mode_type,
+      description: eceEvents[_.keys(eceEvents)[i]].description,
+      rules: eceEvents[_.keys(eceEvents)[i]].rules,
+      venue: eceEvents[_.keys(eceEvents)[i]].venue,
+      studentCoordinator: eceEvents[_.keys(eceEvents)[i]].studentCoordinator,
+      facultyCoordinator: eceEvents[_.keys(eceEvents)[i]].facultyCoordinator,
+      registrationFees: eceEvents[_.keys(eceEvents)[i]].registrationFees,
+      img: eceEvents[_.keys(eceEvents)[i]].img,
+      date: eceEvents[_.keys(eceEvents)[i]].date,
+      prizeMoney : eceEvents[_.keys(eceEvents)[i]].prizeMoney,
+      time: eceEvents[_.keys(eceEvents)[i]].time,
+    });
+    console.log("schema", eceEvents[_.keys(eceEvents)[i]].prizeMoney);
+    i++;
+    console.log(i + 1 + "done"); // just to check if the loop is working
+  }
+  console.log(_.keys(eceEvents).map((event) => eceEvents[event].name));
+}
+
+// eventECE();

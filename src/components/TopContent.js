@@ -92,6 +92,8 @@ const TopContent = ({ isOpen }) => {
             Vishwa Vidyapeetham, Chennai. We are glad to announce that
             Tantrotsav'23 will be held from 24th to 25th March 2023. We invite
             you to be a part of this event and make it a grand success.
+
+            Join the revolution and explore the limitless possibilities of technology at Tantrotsav - the ultimate tech extravaganza!
           </h1>
           <div className='btns'>
             {moment().format("YYYY-MM-DD, h:mm:ss a") <

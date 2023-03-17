@@ -13,10 +13,10 @@ export const event = [
       },
       {
         id: 2,
-        name: "Battle Of The Ice - Gaming Tournament",
+        name: "Battle Of The Ice - Over Watch",
         about: "Online Gaming",
         mode: "Online",
-        link: "/battle-of-the-ice",
+        link: "/battle-of-the-ice-over-watch",
         image:
           "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Battle%20of%20the%20ice.png?alt=media&token=8d99fc69-3276-43c0-a8dc-b2964691b6a8",
         documentId: "event2",
@@ -66,13 +66,6 @@ export const event = [
           "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ML%20XLR8.png?alt=media&token=fe1c4629-c083-4523-898d-f0766c3f001b",
         documentId: "event7",
       },
-      // {
-      //   name: "AI Escape Room",
-      //   about: "AI Escape room",
-      //   mode: "Offline",
-      //   link: "/ai-escape-room",
-      //   documentId: "event8",
-      // },
       {
         name: "Colay",
         about: "Coding competition (code relay)",
@@ -100,6 +93,34 @@ export const event = [
           "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Forensics.png?alt=media&token=8143c4ce-8079-43e2-a3d9-389607ef6fd1",
         documentId: "event10",
       },
+
+      {
+        name: "Battle Of The Ice - Clash of Clans",
+        about: "Online Gaming",
+        mode: "Online",
+        link: "/battle-of-the-ice-clash-of-clans",
+        image : 'https://user-images.githubusercontent.com/73429989/225873381-f3edc034-af8a-4940-ad1a-a3cf7bf1bf5c.png',
+        documentId: "event19",
+      },
+
+      {
+        name: "Battle Of The Ice - Call of Duty Mobile - TDM",
+        about: "Online Gaming",
+        mode: "Online",
+        link: "/battle-of-the-ice-call-of-duty-mobile-tdm",
+        image : 'https://user-images.githubusercontent.com/73429989/225873747-dd0d1377-44a6-4aaf-8bc6-570665e68a7a.png',
+        documentId: "event20",
+      },
+      {
+        name: "Battle Of The Ice - Valorant",
+        about: "Online Gaming",
+        mode: "Online",
+        link: "/battle-of-the-ice-valorant",
+        image : 'https://user-images.githubusercontent.com/73429989/225873918-236d4edc-0b51-4edf-a56a-ba9928353bb7.png',
+        documentId: "event21",
+      },
+
+
     ],
   },
   {
@@ -442,7 +463,7 @@ export const c20Event = [
         mode: "Offline",
         link: "/shutter-showcase",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701667/PICK_AND_CLICK_photo_zj2rfj.png  ",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701667/PICK_AND_CLICK_photo_zj2rfj.png",
         documentId: "c20-11",
       },
       {

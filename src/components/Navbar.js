@@ -16,9 +16,10 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     ["Home", "/#hero"],
     ["About Us", "https://www.amrita.edu/campus/chennai"],
     // ["About", "/#aboutR"],
+    ["C20", "https://c20.amma.org/"],
     ["Events", "/events"],
     ["Master Schedule", "#masterschedule"],
-    ["Contact", "#contact"],
+    ["Contact", "/#contact"],
   ];
 
   const handleLogin = () => {
@@ -95,7 +96,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                                 className='l'
                                 to='/c-20'
                               >
-                                C20 Events
+                                C20 Themed Events
                               </HashLink>
                             </li>
                             <li className='menu-item'>
@@ -185,7 +186,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                         <ol className='sub-menu'>
                           <li className='menu-item'>
                             <HashLink className='l' to='/c20'>
-                              C20 Events
+                              C20 Themed Events
                             </HashLink>
                           </li>
                           <li className='menu-item'>
