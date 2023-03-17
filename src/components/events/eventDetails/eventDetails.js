@@ -106,7 +106,7 @@ function EventDetails({
             {eventDetails.name}
           </h1>
           <h1 className='mo text-[30px] pt-0 mt-4 pb-0 font-space p-10'>
-            Mode: Offline
+            Mode: {eventDetails.mode_type ? eventDetails.mode_type : "Offline"}
           </h1>
           <div className=" ve flex flex-col gap-3 p-10 pt-0 mt-4 text-[18px] font-medium pb-0">
             <p>Event Date : {eventDetails.date}</p>
@@ -116,12 +116,27 @@ function EventDetails({
             <h2>Registration Fee : {eventDetails.registrationFees}</h2>
             
             {eventDetails.content ? (
+              <>
               <div className="">
                 <h2 className="text-[#09ff00] text-[20px] underline py-2">
                   About C20
                 </h2>
-                <p className="p-3">{eventDetails?.content}</p>
+                <p className="p-3">{eventDetails?.content}
+                  <br/>
+                  <br/>
+                  To know more about the C20, visit <a href="https://c20.amma.org" >https://c20.amma.org/</a>
+                </p>
               </div>
+
+              <div className="">
+                <h2 className="text-[#09ff00] text-[20px] underline py-2">
+                  Eligibility
+                </h2>
+                <p className="p-3">
+                  Students from Engineering, Medicine, Arts and Science, and Diploma are welcome to participate in the C20 themed events.
+                </p>
+              </div>
+              </>
             ) : null}
 
           {eventDetails.themes?.length > 0 ? (

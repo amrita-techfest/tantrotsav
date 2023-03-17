@@ -29,7 +29,7 @@ const Footer = () => {
             <i class='fa fa-phone'></i>
           </a>
           <p>
-            <a href='tel:04435533222'>+91 044 35533222</a>
+            <a href='tel:04435533222'>+91 44 35533222</a>
           </p>
         </div>
 

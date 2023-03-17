@@ -16,9 +16,10 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     ["Home", "/#hero"],
     ["About Us", "https://www.amrita.edu/campus/chennai"],
     // ["About", "/#aboutR"],
+    ["C20", "https://c20.amma.org/"],
     ["Events", "/events"],
     ["Master Schedule", ""],
-    ["Contact", "#contact"],
+    ["Contact", "/#contact"],
   ];
 
   const handleLogin = () => {
