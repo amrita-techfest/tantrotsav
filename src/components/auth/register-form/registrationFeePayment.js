@@ -16,7 +16,7 @@ const RegistrationFeePayment = ({
   const navigate = useNavigate();
 
   const handleClick = () => {
-    window.open("https://google.com", "_blank");
+    window.open("https://payment.tantrotsav.co.in/", "_blank");
   };
 
   const handleRegistration = () => {
