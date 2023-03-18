@@ -28,6 +28,7 @@ const IndividualEvents = ({
         };
         events.push(eventObj);
       });
+      // console.log(events);
       addEvents(events);
     }
     nextStep();
