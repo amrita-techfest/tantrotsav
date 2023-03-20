@@ -27,7 +27,7 @@ function detectMob() {
     /Windows Phone/i,
   ];
 
-  return toMatch.some(toMatchItem => {
+  return toMatch.some((toMatchItem) => {
     return navigator.userAgent.match(toMatchItem);
   });
 }
@@ -72,7 +72,7 @@ const RegisterEvent = () => {
 
   const fullScreen = useMediaQuery(theme1.breakpoints.down("md"));
 
-  const handleClose = val => {
+  const handleClose = (val) => {
     setOpen(false);
     setTC(val);
   };
@@ -108,17 +108,17 @@ const RegisterEvent = () => {
       ) : ( */}
       <ThemeProvider theme={theme}>
         <div>
-          {!open && !tc && <Navigate to='/' />}
+          {!open && !tc && <Navigate to="/" />}
           {show()}
           <Dialog
             fullScreen={fullScreen}
             open={open}
             onClose={() => handleClose(false)}
-            aria-labelledby='responsive-dialog-title'
+            aria-labelledby="responsive-dialog-title"
           >
-            <DialogTitle id='responsive-dialog-title'>
+            <DialogTitle id="responsive-dialog-title">
               {
-                "Terms and Conditions for TechFest (Registration starts from 13th March, 2023 - Monday, 5 pm onwards)"
+                "Terms and Conditions for TechFest (Registration starts from 20th March, 2023 - Monday, 8 pm onwards)"
               }
             </DialogTitle>
             <DialogContent>
@@ -165,7 +165,7 @@ const RegisterEvent = () => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   eventData: state.eventLists,
 });
 
