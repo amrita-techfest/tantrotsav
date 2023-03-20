@@ -99,7 +99,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                                 className="l"
                                 to="/c-20"
                               >
-                                C20 Events
+                                C20 Themed Events
                               </HashLink>
                             </li>
                             <li className="menu-item">
@@ -189,7 +189,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                         <ol className="sub-menu">
                           <li className="menu-item">
                             <HashLink className="l" to="/c20">
-                              C20 Events
+                              C20 Themed Events
                             </HashLink>
                           </li>
                           <li className="menu-item">

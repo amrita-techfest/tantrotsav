@@ -13,15 +13,15 @@ const TopContent = ({ isOpen }) => {
     console.log(isOpen);
   }, [isOpen]);
   return (
-    <div className='hero' id='hero'>
+    <div className="hero" id="hero">
       <motion.div
         initial={{ opacity: 0, scale: 0.5, y: -400 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className='to relative z-[1000000000] xs:bottom-10 bottom-32 top-[460px] left-[50%] translate-x-[-50%] w-fit flex justify-center items-center'
+        className="to relative z-[1000000000] xs:bottom-10 bottom-32 top-[460px] left-[50%] translate-x-[-50%] w-fit flex justify-center items-center"
       >
-        <HashLink to='/#contact' smooth>
-          <div className='border-white w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+        <HashLink to="/#contact" smooth>
+          <div className="border-white w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{ y: [0, 15, 0] }}
               transition={{
@@ -29,7 +29,7 @@ const TopContent = ({ isOpen }) => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-2 h-2 mb-1 bg-white rounded-full bg-secondary'
+              className="w-2 h-2 mb-1 bg-white rounded-full bg-secondary"
             />
           </div>
         </HashLink>
@@ -38,69 +38,68 @@ const TopContent = ({ isOpen }) => {
         initial={{ opacity: 0, scale: 0.5, y: -400 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className='social '
+        className="social "
       >
         <SocialIcon
           style={{ borderRadius: 50, height: 36, width: 36 }}
-          id='ic'
-          fgColor='#0dff00'
-          bgColor='transparent'
-          url='https://www.instagram.com/tantrotsav_avv/'
+          id="ic"
+          fgColor="#0dff00"
+          bgColor="transparent"
+          url="https://www.instagram.com/tantrotsav_avv/"
         />
         <SocialIcon
           style={{ borderRadius: 50, height: 36, width: 36 }}
-          id='ic'
-          fgColor='#0dff00'
-          bgColor='transparent'
-          url='https://twitter.com/'
+          id="ic"
+          fgColor="#0dff00"
+          bgColor="transparent"
+          url="https://twitter.com/"
         />
         <SocialIcon
           style={{ borderRadius: 50, height: 36, width: 36 }}
-          id='ic'
-          fgColor='#0dff00'
-          bgColor='transparent'
-          url='https://www.amrita.edu/events/tantrotsav-2023'
+          id="ic"
+          fgColor="#0dff00"
+          bgColor="transparent"
+          url="https://www.amrita.edu/events/tantrotsav-2023"
         />
       </motion.div>
       <div
-        id='intro'
-        className=' max-w-7xl mt-[-236px] mx-auto intro z-50 flex justify-between items-center h-full w-full p-[140px]'
+        id="intro"
+        className=" max-w-7xl mt-[-236px] mx-auto intro z-50 flex justify-between items-center h-full w-full p-[140px]"
       >
-        <div className='absolute ani  w-72 h-72 left-[600px] bg-blue-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob'></div>
-        <div className='absolute ani left-[700px] w-72 h-72 bg-pink-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-2000'></div>
-        <div className='absolute ani left-[500px] w-72 h-72 bg-green-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
-        <div className='absolute ani left-[800px] w-72 h-72 bg-orange-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-6000'></div>
+        <div className="absolute ani  w-72 h-72 left-[600px] bg-blue-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute ani left-[700px] w-72 h-72 bg-pink-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute ani left-[500px] w-72 h-72 bg-green-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="absolute ani left-[800px] w-72 h-72 bg-orange-600 rounded-full mix-blend-lighten filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className='flex-1 '
-          id='hero-section'
+          className="flex-1 "
+          id="hero-section"
         >
           <h1
-            id='title'
-            className='title-text text-[#0dff00] tracking-[3px] text-[60px] p-3 font-bold'
+            id="title"
+            className="title-text text-[#0dff00] tracking-[3px] text-[60px] p-3 font-bold"
           >
             Tantrotsav'23
           </h1>
           <h1
-            id='hero-p'
-            className='hero-p p-3 text-[10px] mt-[-10px] text-white tracking-wide'
+            id="hero-p"
+            className="hero-p p-3 text-[10px] mt-[-10px] text-white tracking-wide"
           >
             {/* Welcome to Tantrotsav'23, the National Level Techfest of Amrita
             Vishwa Vidyapeetham, Chennai. We are glad to announce that
             Tantrotsav'23 will be held from 24th to 25th March 2023. We invite
             you to be a part of this event and make it a grand success. */}
-            Join the revolution and explore the limitless possibilities of technology at Tantrotsav - the ultimate tech extravaganza!
-
-
+            Join the revolution and explore the limitless possibilities of
+            technology at Tantrotsav - the ultimate tech extravaganza!
           </h1>
-          <div className='btns'>
+          <div className="btns">
             {moment().format("YYYY-MM-DD, h:mm:ss a") <
             "2023-04-02, 5:00:00 pm" ? (
               <button
-                className='reg ml-4'
+                className="reg ml-4"
                 onClick={() =>
                   alert("Registration will start soon. Stay tuned!")
                 }
@@ -108,8 +107,8 @@ const TopContent = ({ isOpen }) => {
                 Register Now
               </button>
             ) : (
-              <Link to='/register'>
-                <button className='reg ml-4'>Register Now</button>
+              <Link to="/register">
+                <button className="reg ml-4">Register Now</button>
               </Link>
             )}
 
@@ -126,7 +125,7 @@ const TopContent = ({ isOpen }) => {
           initial={{ opacity: 0, scale: 0.5, y: -400 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className='svg-sec '
+          className="svg-sec "
         >
           {!isOpen ? (
             // <img
@@ -134,7 +133,7 @@ const TopContent = ({ isOpen }) => {
             //   src="https://tri-nit.com/landing_page_vector.svg"
             //   alt="pic"
             // />
-            <img className='space ' src={space} alt='pic' />
+            <img className="space " src={space} alt="pic" />
           ) : (
             ""
           )}
