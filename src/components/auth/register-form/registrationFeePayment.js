@@ -82,7 +82,7 @@ const RegistrationFeePayment = ({
       registerUser(userData);
       swal({
         title: "Good job!",
-        text: "Registration Successful!",
+        text: "Registration Successful! Find the receipt in your profile",
         icon: "success",
         button: "Aww yiss!",
       }).then(() => {
