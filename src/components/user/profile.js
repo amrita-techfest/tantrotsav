@@ -53,11 +53,10 @@ const Profile = ({ eventDetails, setUserL }) => {
   const handleSignOut = () => {
     signout({ setUserL });
   };
-
+  const [sum, setSum] = useState(0);
   const getData = async (user) => {
     const data = await getUserDetails(user);
     var evtList = data.individualEvents.map((evt) => evt.eventName);
-
     var groupEvents = data.teamEvents.map((evt) => evt.eventName);
     evtList = [...evtList, ...groupEvents];
     setUser(data);

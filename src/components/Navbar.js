@@ -18,7 +18,10 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     // ["About", "/#aboutR"],
     ["C20", "https://c20.amma.org/"],
     ["Events", "/events"],
-    ["Master Schedule", ""],
+    [
+      "Master Schedule",
+      "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Sheet.pdf?alt=media&token=f6a3a461-0b65-42f2-bdbf-2f3e384aacdc",
+    ],
     ["Contact", "/#contact"],
   ];
 
