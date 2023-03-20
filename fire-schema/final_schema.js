@@ -1767,16 +1767,16 @@ const events = {
     venue: "Classroom/prayer hall",
     studentCoordinator: [
       {
-        Name: "Sanjev",
+        Name: "Arun kaarthic T P",
         Dept: "CSE",
         Year: " 2nd year",
-        contact: "6382101448",
+        contact: "7010707517",
       },
       {
-        Name: "Deependra Kumar Singh",
+        Name: "Kishore Kumar K P",
         Dept: "CSE",
         Year: "2nd year",
-        contact: "9359840082",
+        contact: "9962009520",
       }
     ],
     facultyCoordinator: [
@@ -2467,31 +2467,34 @@ const c20Events = {
     ],
     rules: [
       {
-        rule: `Participants should submit a selfie that highlights the theme of the competition. The selfie should be original and creative.`,
+        rule: `The selfie should be original and creative.`,
       },
       {
         rule: "The selfie can be taken with a smartphone or any other camera device.",
       },
       {
-        rule: "Participants can submit only one selfie per theme (three selfies in total).",
+        rule: "The participants have to submit two selfies of each portraiting the above-mentioned themes in the given link below by April 1st 2023 before 7pm",
       },
       {
-        rule: `Out of 3 selfies, 2 selfies should be taken before the competition (location of the selfie can be inside or outside the campus) and one selfie should be taken on the day of the competition (inside the campus only).`,
-      },
-      {
-        rule: "Maximum participants for a team is 2. Which doesn’t mean only these 2 people have to be in the selfie. But the responsibility of the work goes to those 2 students.",
+        rule: `Maximum number of participants for a team is 2. This doesn’t mean only these 2 people have to be in the selfie. But the responsibility of the work goes to those 2 students.`,
       },
       {
         rule: "The selfie should be accompanied by a brief description that explains how it relates to the theme.",
       },
       {
-        rule: "Participants should use the hashtag #InclusiveHealthAndEqualityC20 in their submissions.",
-      },
-      {
         rule: "The selfies should not contain any offensive or discriminatory content.",
       },
       {
-        rule: "The competition is open for a limited time, and the winners will be announced on the final day of the competition.",
+        rule: "The submitted selfies will be posted in the tantrostsav official Instagram page  by 1st April 2023.",
+      },
+      {
+        rule: "On based on the likes of each selfie, the participants will be selected for the next round and will receive the confirm mail by 2nd April 2023.",
+      },
+      {
+        rule: "The selected participants should come here physically and should take the third selfie on the theme given within the stipulated time and the final judgement will be done on the third selfie by the jury.",
+      },
+      {
+        rule: `Submission link: https://forms.gle/MbNvxBPqtNMGzmPi6`,
       },
     ],
     judging : [
@@ -3487,7 +3490,7 @@ const c20Events = {
         prize: "2nd prize : Rs. 2000",
       },
     ],
-    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678701665/Essay_Writing_icon_jimfls.png",
+    img: "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678704254/events/gen-_hoffman_i5mnqr.png",
     registrationFees: "Rs. 100",
   },
 
@@ -3791,7 +3794,7 @@ function run() {
   console.log(_.keys(c20Events).map((event) => c20Events[event].name));
 }
 
-run();
+// run();
 
 function cseEvents() {
   const db = firebase.default.firestore();
