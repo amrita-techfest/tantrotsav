@@ -20,7 +20,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     ["Events", "/events"],
     [
       "Master Schedule",
-      "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Sheet.pdf?alt=media&token=f6a3a461-0b65-42f2-bdbf-2f3e384aacdc",
+      "https://drive.google.com/file/d/1X0oMkQhZyPwSVa_ioAJi7QG7iU4j4-ow/view?usp=sharing",
     ],
     ["Contact", "/#contact"],
   ];
