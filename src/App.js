@@ -18,7 +18,7 @@ function detectMob() {
     /Windows Phone/i,
   ];
 
-  return toMatch.some(toMatchItem => {
+  return toMatch.some((toMatchItem) => {
     return navigator.userAgent.match(toMatchItem);
   });
 }
@@ -50,7 +50,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   React.useEffect(() => {
-    auth.onAuthStateChanged(user => {
+    auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
       } else {
@@ -61,7 +61,7 @@ function App() {
 
   return (
     <>
-      <div className='App  scrollbar' id='scrollbar5'>
+      <div className="App  scrollbar" id="scrollbar5">
         <Router>
           <NavBar
             isOpen={isOpen}
@@ -69,9 +69,12 @@ function App() {
             setUser={setUser}
             setOpen={setOpen}
           />
-          {!isOpen && (
+          {/* {!isOpen && (
             <RouteLinks isOpen={isOpen} user={user} setUser={setUser} />
-          )}
+          )} */}
+          <h1 className="text-center text-2xl font-bold mt-56">
+            Registration Will Begin At 8PM Today!
+          </h1>
         </Router>
       </div>{" "}
     </>
