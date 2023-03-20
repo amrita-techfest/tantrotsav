@@ -69,12 +69,12 @@ function App() {
             setUser={setUser}
             setOpen={setOpen}
           />
-          {/* {!isOpen && (
+          {!isOpen && (
             <RouteLinks isOpen={isOpen} user={user} setUser={setUser} />
-          )} */}
-          <h1 className="text-center text-2xl font-bold mt-56">
+          )}
+          {/* <h1 className="text-center text-2xl font-bold mt-56">
             Registration Will Begin At 8PM Today!
-          </h1>
+          </h1> */}
         </Router>
       </div>{" "}
     </>

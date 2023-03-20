@@ -7,8 +7,19 @@ import { SocialIcon } from "react-social-icons";
 // import
 import space from "../../src/components/assets/space-bg.png";
 import moment from "moment";
+import swal from "sweetalert";
 
 const TopContent = ({ isOpen }) => {
+  const handleSwal = () => {
+    swal({
+      title: "Caution",
+      text: "Please make sure you have logged in with your google account before proceeding!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    });
+  };
+
   useEffect(() => {
     console.log(isOpen);
   }, [isOpen]);
@@ -96,7 +107,7 @@ const TopContent = ({ isOpen }) => {
             technology at Tantrotsav - the ultimate tech extravaganza!
           </h1>
           <div className="btns">
-            {moment().format("YYYY-MM-DD, h:mm:ss a") <
+            {/* {moment().format("YYYY-MM-DD, h:mm:ss a") <
             "2023-04-02, 5:00:00 pm" ? (
               <button
                 className="reg ml-4"
@@ -107,10 +118,17 @@ const TopContent = ({ isOpen }) => {
                 Register Now
               </button>
             ) : (
+              
               <Link to="/register">
                 <button className="reg ml-4">Register Now</button>
               </Link>
-            )}
+            )} */}
+
+            <Link to="/register">
+              <button className="reg ml-4" onClick={handleSwal}>
+                Register Now
+              </button>
+            </Link>
 
             <br />
             <br />
