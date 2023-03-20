@@ -97,7 +97,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                                   setOpen(false);
                                 }}
                                 className="l"
-                                to="/c-20"
+                                to="/c20"
                               >
                                 C20 Themed Events
                               </HashLink>
