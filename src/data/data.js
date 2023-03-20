@@ -8,7 +8,8 @@ export const event = [
         about: "Game Development",
         mode: "Offline",
         link: "/strigrays-league",
-        image: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Strigrays%20league%20gaming%20jam.png?alt=media&token=51f6fd62-5951-48e7-a686-ea2004cfa972",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Strigrays%20league%20gaming%20jam.png?alt=media&token=51f6fd62-5951-48e7-a686-ea2004cfa972",
         documentId: "event1",
       },
       {
@@ -22,7 +23,7 @@ export const event = [
         documentId: "event2",
       },
       {
-        name: "Zh3r0-Capture the Flag",
+        name: "Z3r0-Capture the Flag",
         about: "Capture the Flag",
         mode: "Online",
         link: "/zh3r0",
@@ -99,7 +100,8 @@ export const event = [
         about: "Online Gaming",
         mode: "Online",
         link: "/battle-of-the-ice-clash-of-clans",
-        image : 'https://user-images.githubusercontent.com/73429989/225873381-f3edc034-af8a-4940-ad1a-a3cf7bf1bf5c.png',
+        image:
+          "https://user-images.githubusercontent.com/73429989/225873381-f3edc034-af8a-4940-ad1a-a3cf7bf1bf5c.png",
         documentId: "event19",
       },
 
@@ -108,7 +110,8 @@ export const event = [
         about: "Online Gaming",
         mode: "Online",
         link: "/battle-of-the-ice-call-of-duty-mobile-tdm",
-        image : 'https://user-images.githubusercontent.com/73429989/225873747-dd0d1377-44a6-4aaf-8bc6-570665e68a7a.png',
+        image:
+          "https://user-images.githubusercontent.com/73429989/225873747-dd0d1377-44a6-4aaf-8bc6-570665e68a7a.png",
         documentId: "event20",
       },
       {
@@ -116,11 +119,10 @@ export const event = [
         about: "Online Gaming",
         mode: "Online",
         link: "/battle-of-the-ice-valorant",
-        image : 'https://user-images.githubusercontent.com/73429989/225873918-236d4edc-0b51-4edf-a56a-ba9928353bb7.png',
+        image:
+          "https://user-images.githubusercontent.com/73429989/225873918-236d4edc-0b51-4edf-a56a-ba9928353bb7.png",
         documentId: "event21",
       },
-
-
     ],
   },
   {
@@ -186,10 +188,10 @@ export const event = [
         about: "Workshop & Hackathon",
         mode: "Offline",
         link: "/ETH-Amrita",
-        image: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ETH%20logo.png?alt=media&token=654f01d2-1eb0-4aac-8f61-a9f5e7907029",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ETH%20logo.png?alt=media&token=654f01d2-1eb0-4aac-8f61-a9f5e7907029",
         documentId: "event17",
       },
-
     ],
   },
   {
@@ -207,7 +209,6 @@ export const event = [
     ],
   },
 ];
-
 
 export const eceEvent = [
   {
@@ -343,10 +344,8 @@ export const mechEvent = [
           "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678688576/events/mech/Untitled%20design/Stunt_kpnpig.png",
         documentId: "mech7",
       },
-
     ],
   },
-
 ];
 
 export const c20Event = [
@@ -403,7 +402,8 @@ export const c20Event = [
         about: "Painting Competition",
         mode: "Offline",
         link: "/brushless-painting",
-        image: "https://user-images.githubusercontent.com/73429989/225205589-a8874707-de0d-48b0-9daa-c729f17c79ea.png",
+        image:
+          "https://user-images.githubusercontent.com/73429989/225205589-a8874707-de0d-48b0-9daa-c729f17c79ea.png",
         documentId: "c20-14",
       },
       {
@@ -411,7 +411,8 @@ export const c20Event = [
         about: "Painting Competition",
         mode: "Offline",
         link: "/cloth-painting",
-        image: "https://user-images.githubusercontent.com/73429989/225205111-acb2184f-965f-4730-b064-5d4f2fbd5b82.png",
+        image:
+          "https://user-images.githubusercontent.com/73429989/225205111-acb2184f-965f-4730-b064-5d4f2fbd5b82.png",
         documentId: "c20-15",
       },
       {
@@ -419,7 +420,8 @@ export const c20Event = [
         about: "Painting Competition",
         mode: "Offline",
         link: "/face-painting",
-        image: "https://user-images.githubusercontent.com/73429989/225205310-46e81623-c025-450c-854e-f980b46d3088.png",
+        image:
+          "https://user-images.githubusercontent.com/73429989/225205310-46e81623-c025-450c-854e-f980b46d3088.png",
         documentId: "c20-6",
       },
       {
@@ -436,7 +438,8 @@ export const c20Event = [
         about: "Poetry Competition",
         mode: "Offline",
         link: "/thought-talk",
-        image: "https://user-images.githubusercontent.com/73429989/225205698-69829cc5-e783-4fd0-8df4-0fc0ac573c96.png",
+        image:
+          "https://user-images.githubusercontent.com/73429989/225205698-69829cc5-e783-4fd0-8df4-0fc0ac573c96.png",
         documentId: "c20-8",
       },
       {
@@ -480,13 +483,13 @@ export const c20Event = [
         about: "Sketching Competition",
         mode: "Offline",
         link: "/sketch-art",
-        image: "https://user-images.githubusercontent.com/73429989/225205876-1f48ec68-ff55-4d86-a61d-b7f75af8e120.png",
+        image:
+          "https://user-images.githubusercontent.com/73429989/225205876-1f48ec68-ff55-4d86-a61d-b7f75af8e120.png",
         documentId: "c20-13",
       },
     ],
   },
 ];
-
 
 export const cardContents = [
   {
