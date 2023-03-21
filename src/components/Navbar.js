@@ -13,14 +13,14 @@ import Avatar from "@mui/material/Avatar";
 
 function Navbar({ isOpen, setOpen, user, setUser }) {
   const links = [
-    ["Home", "/#hero"],
+    ["Home", "/#home"],
     ["About Us", "https://www.amrita.edu/campus/chennai"],
     // ["About", "/#aboutR"],
     ["C20", "https://c20.amma.org/"],
     ["Events", "/events"],
     [
       "Master Schedule",
-      "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Sheet.pdf?alt=media&token=f6a3a461-0b65-42f2-bdbf-2f3e384aacdc",
+      "https://res.cloudinary.com/dtv0aopo3/image/upload/v1679331148/Sheet_l2bthk.pdf",
     ],
     ["Contact", "/#contact"],
   ];
@@ -161,6 +161,21 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
                   );
                 }
               })}
+              {!user ? (
+                <button
+                  id="btn1"
+                  onClick={() => {
+                    handleLogin();
+                  }}
+                  className=" border-2 border-[#0dff00] transition duration-500 hover:bg-[#0dff00] hover:font-bold text-[16px] hover:text-black p-2 rounded-[5px] w-[130px]"
+                >
+                  Login
+                </button>
+              ) : (
+                <Link to="/profile">
+                  <Avatar alt="dp" src={user.photoURL} />
+                </Link>
+              )}
             </ul>
           </div>
         )}

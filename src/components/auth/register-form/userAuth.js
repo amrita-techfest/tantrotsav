@@ -12,11 +12,11 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
   const divRef = useRef(null);
 
   React.useEffect(() => {
-    window.otpless = (otplessUser) => {
-      const waNumber = otplessUser.waNumber;
-      setUserWhatsAppNumber(waNumber);
-    };
-  }, []);
+    // window.otpless = (otplessUser) => {
+    //   const waNumber = otplessUser.waNumber;
+    //   setUserWhatsAppNumber(waNumber);
+    // };
+  }, [1]);
 
   React.useEffect(() => {
     if ((userEmail !== "" || userEmail !== null) && userWhatsAppNumber !== "") {
@@ -58,7 +58,7 @@ const UserAuth = ({ addAuthData, nextStep, authData }) => {
           better.
         </p>
         <div className="auth-buttons">
-          <div ref={divRef} id="otpless"></div>
+          {/* <div ref={divRef} id="otpless"></div> */}
           <p className="helper-content">And</p>
           <GoogleSignIn />
         </div>
