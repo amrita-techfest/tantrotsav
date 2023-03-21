@@ -2516,13 +2516,13 @@ const c20Events = {
     venue: "AB1-26",
     studentCoordinator: [
       {
-        Name: "Mohanaram",
+        Name: "Mohanraj",
         Dept: "CYS",
         Year: "1st year",
         contact: "9080906985",
       },
       {
-        Name: "Jeevan Sendur",
+        Name: "Jayanthi Khanna",
         Dept: "CYS",
         Year: " 1st year",
         contact: "9384508330",
@@ -2618,7 +2618,7 @@ const c20Events = {
         Name: "Aravindhan",
         Dept: "CYS",
         Year: "1st year",
-        contact: "8148460232",
+        contact: "7397412269",
       },
     ],
     facultyCoordinator: [
@@ -2768,7 +2768,7 @@ const c20Events = {
       },
       
       {
-        point : 'It is an individual event'
+        point : 'Max 1-3 members per team'
       },
       {
         point: `Competition will be based on the above mentioned themes.`,
@@ -3383,7 +3383,7 @@ const c20Events = {
       {
         Name: "Surya S",
         Dept: "Mech",
-        Year: "3rd year",
+        Year: "2nd year",
         contact: "8921569817",
       },
     ],
@@ -3794,7 +3794,7 @@ function run() {
   console.log(_.keys(c20Events).map((event) => c20Events[event].name));
 }
 
-// run();
+run();
 
 function cseEvents() {
   const db = firebase.default.firestore();
