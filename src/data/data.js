@@ -33,11 +33,11 @@ export const event = [
       },
       {
         name: "Platonic",
-        about: "Innovative idea proposal competation",
+        about: "Innovative idea proposal competition",
         mode: "Offline",
         link: "/platonic",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678946036/ASC%20website%20logos/Platonic_ukrngk.png",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1679376805/plat_p4yrzp.jpg",
         documentId: "event4",
       },
       {
