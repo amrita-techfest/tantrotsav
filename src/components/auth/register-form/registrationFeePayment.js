@@ -78,18 +78,22 @@ const RegistrationFeePayment = ({
       transactionID,
     };
 
-    if (termsChecked && policyChecked) {
-      registerUser(userData);
-      swal({
-        title: "Good job!",
-        text: "Registration Successful! Find the receipt in your profile",
-        icon: "success",
-        button: "Aww yiss!",
-      }).then(() => {
-        return navigate("/");
-      });
+    if (user) {
+      if (termsChecked && policyChecked) {
+        registerUser(userData);
+        swal({
+          title: "Good job!",
+          text: "Registration Successful! Find the receipt in your profile",
+          icon: "success",
+          button: "Aww yiss!",
+        }).then(() => {
+          return navigate("/");
+        });
+      } else {
+        alert("Please agree to the terms and conditions and privacy policy");
+      }
     } else {
-      alert("Please agree to the terms and conditions and privacy policy");
+      alert("Please login with google to register");
     }
   };
 
@@ -105,7 +109,14 @@ const RegistrationFeePayment = ({
         >
           Go to Payment Portal
         </button>
+
         <div class="mt-5 mb-3">
+          <div className="flex items-center gap-2">
+            <h1 className="text-black">Fill this form: </h1>
+            <a href="https://forms.gle/KfsXMnoxw4b4koXF7" target="_blank">
+              https://forms.gle/KfsXMnoxw4b4koXF7
+            </a>
+          </div>
           <label
             for="transactionIdField"
             className="form-label text-center font-bold"
