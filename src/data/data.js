@@ -19,7 +19,7 @@ export const event = [
         mode: "Online",
         link: "/battle-of-the-ice-over-watch",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678946018/ASC%20website%20logos/Battle_of_the_ice_zzjtzn.png",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1679390247/Picture1_ncbqx5.jpg",
         documentId: "event2",
       },
       {
@@ -134,7 +134,7 @@ export const event = [
         mode: "Offline",
         link: "/intro-to-reactjs",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1678946004/ASC%20website%20logos/An_react_to_JS_tkxal6.png",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1679389363/react_prlzan.png",
         documentId: "event11",
       },
       {
