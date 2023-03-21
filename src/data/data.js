@@ -37,7 +37,7 @@ export const event = [
         mode: "Offline",
         link: "/platonic",
         image:
-          "https://res.cloudinary.com/dtv0aopo3/image/upload/v1679376805/plat_p4yrzp.jpg",
+          "https://res.cloudinary.com/dtv0aopo3/image/upload/c_scale,h_153,w_167/v1679376805/plat_p4yrzp.jpg",
         documentId: "event4",
       },
       {
