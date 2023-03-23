@@ -968,7 +968,7 @@ const events = {
         prize: "Win exiting prizes of worth 5k",
       },
     ],
-    registrationFees: "Team Rs.250 ( Max: 4/team)",
+    registrationFees: "Team Rs.100 ( Max: 2/team)",
     img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Bidders%20coding%20acamp.png?alt=media&token=7b162bf8-4eb5-4cb4-be0a-7df92ab5bb63",
   },
   event6: {
