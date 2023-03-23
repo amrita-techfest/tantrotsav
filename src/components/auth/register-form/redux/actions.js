@@ -51,3 +51,8 @@ export const registerUserFailure = error => ({
   type: ActionTypes.REGISTER_USER_FAILURE,
   payload: error,
 });
+
+export const clearRegistrationData = () => ({
+  type: ActionTypes.CLEAR_REGISTRATION_DATA,
+});
+

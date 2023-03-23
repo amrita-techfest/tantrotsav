@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "./styles.css";
-import { addPersonalInfo } from "./redux/actions";
+import { addPersonalInfo, clearRegistrationData } from "./redux/actions";
 import generateID from "../../../utils/GenrateID";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
@@ -35,6 +35,10 @@ const PersonalInfo = ({
   const handleChange = (event) => {
     setIsAmrtia(event.target.value);
   };
+
+  useEffect(() => {
+    clearRegistrationData();
+  }, []);
 
   useEffect(() => {
     const genrate = async () => {
@@ -232,6 +236,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   addPersonalInfo: (personalInfo) => dispatch(addPersonalInfo(personalInfo)),
+  clearRegistrationData: () => dispatch(clearRegistrationData()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PersonalInfo);

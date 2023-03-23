@@ -7,6 +7,8 @@ import ParticleBackground from "./components/ParticleBackground";
 import { auth } from "./firebase";
 // import Home from "./components/Home";
 
+// require('dotenv').config();
+
 function detectMob() {
   const toMatch = [
     /Android/i,

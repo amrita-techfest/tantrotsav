@@ -1670,8 +1670,18 @@ const events = {
     mode_type : 'Offline',
     description: [
       {
-        point: "Basic introduction on the X Gen learning",
+        point: `It is a workshop on machine learning which teaches participants the concepts and practical skills needed to build and deploy machine learning models.`,
       },
+      {
+        point : `
+        It covers different types of machine learning algorithms, the steps involved in building a model, and popular machine learning frameworks and tools.`
+      },
+      {
+        point : `Participants will work with Python, TensorFlow, Keras, Scikit-Learn, and PyTorch to develop and deploy models, and learn best practices for training, evaluation, and ethical considerations.`
+      },
+      {
+        point : `By the end of the workshop, participants will have a solid understanding of the fundamentals of machine learning and be able to build their own models.`
+      }
     ],
     rules: [
       {
@@ -3821,7 +3831,7 @@ function run() {
   console.log(_.keys(c20Events).map((event) => c20Events[event].name));
 }
 
-run();
+// run();
 
 function cseEvents() {
   const db = firebase.default.firestore();
@@ -3881,7 +3891,7 @@ function eventMech() {
   console.log(_.keys(eventmech).map((event) => eventmech[event].name));
 }
 
-eventMech();
+// eventMech();
 
 function eventECE() {
   const db = firebase.default.firestore();
@@ -3910,4 +3920,4 @@ function eventECE() {
   console.log(_.keys(eceEvents).map((event) => eceEvents[event].name));
 }
 
-eventECE();
+// eventECE();
