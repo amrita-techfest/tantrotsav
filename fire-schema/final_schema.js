@@ -1082,6 +1082,18 @@ const events = {
       {
         point: `Machine learning hackathon event with diverse problem statements for teams to choose from, encouraging innovation and impact. Finalists will present their projects on the event day and be evaluated based on creativity, feasibility, and impact.`,
       },
+      {
+        point: `Participants are required to select one of the three domains and develop innovative ML solutions to address specific challenges in their chosen domain.` 
+      },
+      {
+        point: `For the Personalized Learning domain, participants will develop ML solutions that can analyze data from various sources to tailor learning content and teaching methods to individual students' needs, preferences, and abilities. Personalized learning can help students achieve better academic outcomes and engagement.`
+      },
+      {
+        point: `For the Smart City domain, participants will focus on using machine learning to optimize urban services and make cities more efficient, sustainable, and livable. This involves developing algorithms that can analyze data from various sources such as transportation, energy consumption, waste management, and public safety to improve these services.`
+      },
+      {
+        point: `In the Healthcare domain, participants will work on developing algorithms that can analyze medical data to improve diagnosis, prediction, treatment, and drug discovery. Machine learning can help healthcare providers personalize treatment plans and make more informed decisions, leading to better patient outcomes.`
+      },
     ],
     rules: [
       {
@@ -1099,6 +1111,9 @@ const events = {
       },
       {
         rule: ` Presentation and evaluation: On the day of the hackathon, teams will present their projects to judges and participants. Evaluation criteria include originality, creativity, feasibility, technical implementation, and impact. Judges will provide feedback and select winners based on scores.`,
+      },
+      {
+        rule: `For further queries, contact us: mlxlr8hackathon@gmail.com`,
       },
     ],
     time: "10.00 am to 4.00pm",
@@ -2339,7 +2354,7 @@ const c20Events = {
     name: "Smart Trivia",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     themes: [
       {
         theme: `Education and Digital Transformation`,
@@ -2442,7 +2457,7 @@ const c20Events = {
     name: "SelfieGram",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     themes: [
       {
         theme: "Gender Equality and Disability",
@@ -2522,7 +2537,7 @@ const c20Events = {
         contact: "9080906985",
       },
       {
-        Name: "Jayanthi Khanna",
+        Name: "Jeyanth Khanna",
         Dept: "CYS",
         Year: " 1st year",
         contact: "9384508330",
@@ -2549,7 +2564,7 @@ const c20Events = {
     name: "Reels",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -2606,7 +2621,7 @@ const c20Events = {
     ],
     time: "12.30 PM to 4.30 PM",
     date: "03/04/23",
-    venue: "AB1-334",
+    venue: "AB1-34",
     studentCoordinator: [
       {
         Name: "Mithun.R ",
@@ -2641,7 +2656,7 @@ const c20Events = {
     name: "Sail On the Idea",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria: `How impactful is the idea in solving the problem or an aspect of the problem 
@@ -2742,7 +2757,7 @@ const c20Events = {
     name: "SnapArt (Collage Making)",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -2823,7 +2838,7 @@ const c20Events = {
     name: "Face Painting",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     themes: [
       {
         theme:
@@ -2913,7 +2928,7 @@ const c20Events = {
   "c20-7": {
     name: "Essay Writing",
     mode_type: "Offline", 
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     event_type: "Competitions",
     judging : [
       {
@@ -3001,7 +3016,7 @@ const c20Events = {
     name: "Thought Talk (Poetry Competition)",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria: "The evaluation will be made on the basis of logical, coherent, and relevant content with a suitable format.",
@@ -3084,10 +3099,10 @@ const c20Events = {
     name: "NovelNolan (Short Film Making Competition)",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [ 
       {
-        criteria : 'The winner among the top 10 (1st, 2nd and 3rd place) will be selected based on the following metrics'
+        criteria : 'The winner among the top 10 (1st and 2nd) will be selected based on the following metrics'
       },
       {
         criteria  : '70℅ - Jury decision'
@@ -3187,7 +3202,7 @@ const c20Events = {
     name: "Rang De (Rangoli Competition)",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3281,7 +3296,7 @@ const c20Events = {
     name: "Shutter Showcase (Photography Competition)",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3408,7 +3423,7 @@ const c20Events = {
     name: "Gen-Z Hoffman (Poster Making)",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3498,7 +3513,7 @@ const c20Events = {
     name: "Sketch Art (Sketching)",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3546,7 +3561,7 @@ const c20Events = {
     ],
     time: "9:30 AM to 11:00 AM",
     date: "04/04/23",
-    venue: "AB1-335",
+    venue: "AB1-35",
     studentCoordinator: [
       {
         Name: "Jeshwanth",
@@ -3582,7 +3597,7 @@ const c20Events = {
     name: "Brushless Painting",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3674,7 +3689,7 @@ const c20Events = {
     name: "Cloth Painting",
     mode_type: "Offline",
     event_type: "Competitions",
-    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation. To know more about the C20, visit https://c20.amma.org/`,
+    content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     judging : [
       {
         criteria : 'Relevance to the theme of the competition.'
@@ -3794,7 +3809,7 @@ function run() {
   console.log(_.keys(c20Events).map((event) => c20Events[event].name));
 }
 
-run();
+// run();
 
 function cseEvents() {
   const db = firebase.default.firestore();
@@ -3824,7 +3839,7 @@ function cseEvents() {
   console.log(_.keys(events).map((event) => events[event].name));
 }
 
-// cseEvents();
+cseEvents();
 
 
 function eventMech() {
