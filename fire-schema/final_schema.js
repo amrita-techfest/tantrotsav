@@ -671,6 +671,21 @@ const events = {
       {
         point: "Team Size: 5 + 1 sub.",
       },
+      {
+        point: `Fill out the registration form with your  information`
+      },
+      {
+        point: `Submit the registration form and you will be redirected to a payment gateway to pay the registration fee.`
+      },
+      {
+        point: `Once the payment is confirmed, you will receive a confirmation email with a link to a form.`
+      },
+      {
+        point: `Fill out the form with your team member names, email addresses, and any other relevant information.`
+      },
+      {
+        point: `Submit the form and get ready for Battle of The Ice`
+      },
     ],
     rules: [
       {
@@ -680,11 +695,14 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: 3500",
+        prize: "1st prize: 4200",
       },
       {
-        prize: "2nd prize: 1500",
+        prize: "2nd prize: 2000",
       },
+      {
+        prize: "3rd prize: 800",
+      }
     ],
 
     time: "10.00 am to 4.00 pm",
@@ -1814,6 +1832,21 @@ const events = {
       {
         point: "Team Size: 5+1 sub",
       },
+      {
+        point: `Fill out the registration form with your  information`
+      },
+      {
+        point: `Submit the registration form and you will be redirected to a payment gateway to pay the registration fee.`
+      },
+      {
+        point: `Once the payment is confirmed, you will receive a confirmation email with a link to a form.`
+      },
+      {
+        point: `Fill out the form with your team member names, email addresses, and any other relevant information.`
+      },
+      {
+        point: `Submit the form and get ready for Battle of The Ice`
+      },
     ],
     rules: [
       {
@@ -1825,6 +1858,9 @@ const events = {
       {
         prize: "1st prize: 1000",
       },
+      {
+        prize: "2nd prize: 500",
+      }
     ],
 
     time: "4.00 pm to 6.00 pm",
@@ -1870,6 +1906,21 @@ const events = {
       {
         point: "Team Size: Solo (1) or Duo (2)",
       },
+      {
+        point: `Fill out the registration form with your  information`
+      },
+      {
+        point: `Submit the registration form and you will be redirected to a payment gateway to pay the registration fee.`
+      },
+      {
+        point: `Once the payment is confirmed, you will receive a confirmation email with a link to a form.`
+      },
+      {
+        point: `Fill out the form with your team member names, email addresses, and any other relevant information.`
+      },
+      {
+        point: `Submit the form and get ready for Battle of The Ice`
+      },
     ],
     rules: [
       {
@@ -1879,7 +1930,7 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: 2000",
+        prize: "1st prize: 2500",
       },
       {
         prize: "2nd prize: 1000",
@@ -1929,6 +1980,21 @@ const events = {
       {
         point: "Team Size: 5 + 1 sub.",
       },
+      {
+        point: `Fill out the registration form with your  information`
+      },
+      {
+        point: `Submit the registration form and you will be redirected to a payment gateway to pay the registration fee.`
+      },
+      {
+        point: `Once the payment is confirmed, you will receive a confirmation email with a link to a form.`
+      },
+      {
+        point: `Fill out the form with your team member names, email addresses, and any other relevant information.`
+      },
+      {
+        point: `Submit the form and get ready for Battle of The Ice`
+      },
     ],
     rules: [
       {
@@ -1938,13 +2004,13 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: 3500",
+        prize: "1st prize: 4500",
       },
       {
-        prize: "2nd prize: 2000",
+        prize: "2nd prize: 2500",
       },
       {
-        prize: "3rd prize: 500",
+        prize: "3rd prize: 1000",
       }
     ],
 

@@ -20,7 +20,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
     ["Events", "/events"],
     [
       "Master Schedule",
-      "https://res.cloudinary.com/dtv0aopo3/image/upload/v1679331148/Sheet_l2bthk.pdf",
+      "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/Master.pdf?alt=media&token=42f4f11a-92c1-48ba-aec2-a9165de70837",
     ],
     ["Contact", "/#contact"],
   ];
