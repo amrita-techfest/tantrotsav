@@ -932,7 +932,7 @@ const events = {
         rule: "Certificates will be provided.",
       },
     ],
-    time: "10:00 am to 12.30pm",
+    time: "9:00 am to 1.00pm",
     date: "03/04/23",
     venue: " ",
     studentCoordinator: [
