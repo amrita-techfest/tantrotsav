@@ -695,13 +695,13 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: 4200",
+        prize: "1st prize: Rs. 4200",
       },
       {
-        prize: "2nd prize: 2000",
+        prize: "2nd prize: Rs. 2000",
       },
       {
-        prize: "3rd prize: 800",
+        prize: "3rd prize: Rs. 800",
       }
     ],
 
@@ -1454,12 +1454,6 @@ const events = {
         contact: "9080942165",
       },
       {
-        Name: "Vignesh Kumar",
-        Dept: "CSE",
-        Year: "3rd-year",
-        contact: "9514521819",
-      },
-      {
         Name: "Mukesh K",
         Dept: "AI",
         Year: "3rd-year",
@@ -1856,10 +1850,10 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: 1000",
+        prize: "1st prize: Rs. 1000",
       },
       {
-        prize: "2nd prize: 500",
+        prize: "2nd prize: Rs. 500",
       }
     ],
 
@@ -1930,10 +1924,10 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: 2500",
+        prize: "1st prize: Rs. 2500",
       },
       {
-        prize: "2nd prize: 1000",
+        prize: "2nd prize: Rs. 1000",
       },
     ],
 
@@ -2004,13 +1998,13 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: 4500",
+        prize: "1st prize: Rs. 4500",
       },
       {
-        prize: "2nd prize: 2500",
+        prize: "2nd prize: Rs. 2500",
       },
       {
-        prize: "3rd prize: 1000",
+        prize: "3rd prize: Rs. 1000",
       }
     ],
 
