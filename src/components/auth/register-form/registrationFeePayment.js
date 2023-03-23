@@ -139,12 +139,12 @@ const base = new Airtable({ apiKey: apiKey }).base(baseId);
         </button>
 
         <div class="mt-5 mb-3">
-          <div className="con flex items-center gap-2">
+          {/* <div className="con flex items-center gap-2">
             <h1 className="text-black">Fill this form: </h1>
             <a href="https://forms.gle/KfsXMnoxw4b4koXF7" target="_blank">
               https://forms.gle/KfsXMnoxw4b4koXF7
             </a>
-          </div>
+          </div> */}
           <label
             for="transactionIdField"
             className="form-label text-center font-bold"
