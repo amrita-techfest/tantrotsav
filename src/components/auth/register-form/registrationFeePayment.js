@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { registerUserStart } from "./redux/actions";
+import { clearRegistrationData, registerUserStart } from "./redux/actions";
 import "./styles.css";
 import Checkbox from "@mui/material/Checkbox";
 import { auth } from "../../../firebase";
@@ -9,6 +9,7 @@ import shortid from "shortid";
 import CryptoJS from "crypto-js";
 import axios from "axios";
 import swal from "sweetalert";
+import Airtable from "airtable";
 
 const RegistrationFeePayment = ({
   authData,
@@ -16,11 +17,18 @@ const RegistrationFeePayment = ({
   individualEvents,
   teamEvents,
   personalInfo,
+  clearData,
 }) => {
   const [transactionID, setTransactionID] = useState("");
   const [termsChecked, setTermsChecked] = React.useState(false);
   const [policyChecked, setPolicyChecked] = React.useState(false);
-  // const [paymentProof, setPaymentProof] = useState(null);
+
+  const apiKey = process.env.REACT_APP_AIR_TABLE_API_KEY;
+  const baseId = process.env.REACT_APP_AIR_TABLE_BASE_ID;
+  const tableName = process.env.REACT_APP_AIR_TABLE_NAME;
+
+const base = new Airtable({ apiKey: apiKey }).base(baseId);
+  
   const navigate = useNavigate();
   const individualEventsTotalFees =
     individualEvents?.reduce(
@@ -57,41 +65,61 @@ const RegistrationFeePayment = ({
       "_blank"
     );
     // window.location.href = `https://payment.tantrotsav.co.in?orderID=${orderId}&amount=${paymentValue}`;
-    console.log(orderId, paymentValue);
+    // console.log(orderId, paymentValue);
   };
 
   const user = auth.currentUser;
 
-  useEffect(() => {
-    console.log(termsChecked, policyChecked);
-  }, [termsChecked, policyChecked]);
+  useEffect(() => { 
+  }, []);
 
   const handleRegistration = () => {
+
+    console.log("handleRegistration" , personalInfo.Id)
     const userData = {
+      id : personalInfo.Id,
       fullName: personalInfo.fullName,
-      email: user.email,
+      email: user.email === null ? 'dummy@tantrostav.com' : user.email,        
       whatsappNumber: personalInfo.userWhatsAppNumber,
       isAmrita: personalInfo.isAmrita,
       universityName: personalInfo.universityName,
       individualEvents,
       teamEvents,
       transactionID,
-    };
-
+    }; 
     if (user) {
       if (termsChecked && policyChecked) {
         registerUser(userData);
+
+        // TODO : ADD AIRTABLE DISPATCH EVENT
+        //  Create a new record in the table
+      base(tableName).create({
+        'id' : personalInfo.Id,
+        'fullName': personalInfo.fullName,
+        'email': user.email === null ? 'dummy@tantrostav.com' : user.email,
+        'whatsappNumber': personalInfo.userWhatsAppNumber,
+        'isAmrita': String(personalInfo.isAmrita),
+        'universityName': personalInfo.universityName,
+        'individualEvents':JSON.stringify(individualEvents),
+        'teamEvents': JSON.stringify(teamEvents),
+        'transactionID':JSON.stringify(transactionID),
+}, function(err, record) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('Created record:', record.getId());
+});
         swal({
           title: "Good job!",
           text: "Registration Successful! Find the receipt in your profile",
           icon: "success",
           button: "Aww yiss!",
         }).then(() => {
+          clearData();
           return navigate("/");
         });
-      } else {
-        alert("Please agree to the terms and conditions and privacy policy");
-      }
+      } 
     } else {
       alert("Please login with google to register");
     }
@@ -191,6 +219,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   registerUser: (registrationDetails) =>
     dispatch(registerUserStart(registrationDetails)),
+    clearData: () => dispatch(clearRegistrationData()),
 });
 
 export default connect(

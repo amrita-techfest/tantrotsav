@@ -76,6 +76,19 @@ const eventsListReducer = (state = INITIAL_STATE, action) => {
         registrationFailure: true,
         error: action.payload,
       };
+    case ActionTypes.CLEAR_REGISTRATION_DATA:
+      return {
+        ...state,
+        personalInfo: null,
+        individualEvents: null,
+        teamEvents: null,
+        authData: null,
+        paymentData: null,
+        registrationStart: false,
+        registrationSuccess: false,
+        registrationFailure: false,
+      };
+
 
     default:
       return state;
