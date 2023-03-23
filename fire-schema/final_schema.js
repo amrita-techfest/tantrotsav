@@ -674,33 +674,21 @@ const events = {
     ],
     rules: [
       {
-        rule: "Requirements:",
-      },
-      {
-        rule: "Latest version of Participating Game.",
-      },
-      {
-        rule: "Own Gaming PC.",
-      },
-      {
-        rule: "Good network connectivity.",
-      },
-      {
-        rule: "Necessary gadgets required.",
+        rule: "Standard game rules apply.",
       },
     ],
 
     prizeMoney: [
       {
-        prize: "1st prize: 3000",
+        prize: "1st prize: 3500",
       },
       {
-        prize: "2nd prize: 2000",
+        prize: "2nd prize: 1500",
       },
     ],
 
     time: "10.00 am to 4.00 pm",
-    date: "03/04/23",
+    date: "03/04/23 & 04/04/23",
     venue: "",
     studentCoordinator: [
       {
@@ -710,10 +698,10 @@ const events = {
         contact: "9488519924",
       },
       {
-        Name: "Harsha Vardhan",
-        Dept: "3rd year",
-        Year: "Cys",
-        contact: "8668169291",
+        Name: "Raaj Eshwar",
+        Dept: "Cse",
+        Year: "2nd year",
+        contact: "9952099734",
       },
       {
         Name: "Lokesh kumar",       
@@ -779,8 +767,8 @@ const events = {
         prize: "2nd prize: 3000",
       },
     ],
-    time: "10.00 am to 4.30pm",
-    date: "03/04/23 and 04/04/23",
+    time: "4:00pm to 11:30pm",
+    date: "03/04/23",
     venue: " ",
     studentCoordinator: [
       {
@@ -1678,8 +1666,8 @@ const events = {
         rule: "Participants Should bring their own laptop",
       },
     ],
-    time: "10.00 am to 4.00pm",
-    date: "04/04/23",
+    time: "9.00 am to 4.00pm",
+    date: "03/04/23",
     venue: "",
     studentCoordinator: [
       {
@@ -1829,33 +1817,18 @@ const events = {
     ],
     rules: [
       {
-        rule: "Requirements:",
-      },
-      {
-        rule: "Latest version of Participating Game.",
-      },
-      {
-        rule: "Own Gaming PC.",
-      },
-      {
-        rule: "Good network connectivity.",
-      },
-      {
-        rule: "Necessary gadgets required.",
+        rule: "Standard game rules apply.",
       },
     ],
 
     prizeMoney: [
       {
-        prize: "1st prize: 3000",
-      },
-      {
-        prize: "2nd prize: 2000",
+        prize: "1st prize: 1000",
       },
     ],
 
     time: "4.00 pm to 6.00 pm",
-    date: "03/04/23",
+    date: "03/04/23 & 04/04/23",
     venue: " ",
     studentCoordinator: [
       {
@@ -1900,33 +1873,21 @@ const events = {
     ],
     rules: [
       {
-        rule: "Requirements:",
-      },
-      {
-        rule: "Latest version of Participating Game.",
-      },
-      {
-        rule: "Own Gaming PC.",
-      },
-      {
-        rule: "Good network connectivity.",
-      },
-      {
-        rule: "Necessary gadgets required.",
+        rule: "Standard game rules apply.",
       },
     ],
 
     prizeMoney: [
       {
-        prize: "1st prize: 3000",
+        prize: "1st prize: 2000",
       },
       {
-        prize: "2nd prize: 2000",
+        prize: "2nd prize: 1000",
       },
     ],
 
     time: "6.30 pm to 10.00 pm",
-    date: "03/04/23",
+    date: "03/04/23 & 04/04/23",
     venue: "",
     studentCoordinator: [
       {
@@ -1971,29 +1932,20 @@ const events = {
     ],
     rules: [
       {
-        rule: "Requirements:",
-      },
-      {
-        rule: "Latest version of Participating Game.",
-      },
-      {
-        rule: "Own Gaming PC.",
-      },
-      {
-        rule: "Good network connectivity.",
-      },
-      {
-        rule: "Necessary gadgets required.",
+        rule: "Standard game rules apply.",
       },
     ],
 
     prizeMoney: [
       {
-        prize: "1st prize: 3000",
+        prize: "1st prize: 3500",
       },
       {
         prize: "2nd prize: 2000",
       },
+      {
+        prize: "3rd prize: 500",
+      }
     ],
 
     time: "10.00 am to 2.00 pm",
@@ -2007,10 +1959,10 @@ const events = {
         contact: "9488519924",
       },
       {
-        Name: "Harsha Vardhan",
-        Dept: "3rd year",
-        Year: "Cys",
-        contact: "8668169291",
+        Name: "Raaj Eshwar",
+        Dept: "Cse",
+        Year: "2nd year",
+        contact: "9952099734",
       },
       {
         Name: "Lokesh kumar",       
@@ -3809,7 +3761,7 @@ function run() {
   console.log(_.keys(c20Events).map((event) => c20Events[event].name));
 }
 
-// run();
+run();
 
 function cseEvents() {
   const db = firebase.default.firestore();
@@ -3841,7 +3793,6 @@ function cseEvents() {
 
 cseEvents();
 
-
 function eventMech() {
   const db = firebase.default.firestore();
   const docRef = db.collection("events_final"); // collection name
@@ -3870,7 +3821,7 @@ function eventMech() {
   console.log(_.keys(eventmech).map((event) => eventmech[event].name));
 }
 
-// eventMech();
+eventMech();
 
 function eventECE() {
   const db = firebase.default.firestore();
@@ -3899,4 +3850,4 @@ function eventECE() {
   console.log(_.keys(eceEvents).map((event) => eceEvents[event].name));
 }
 
-// eventECE();
+eventECE();
