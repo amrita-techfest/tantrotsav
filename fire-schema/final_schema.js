@@ -579,7 +579,7 @@ const events = {
       },
       {
         point:
-          "The event will be about creating a map for 3rd-first/third person game. ",
+          "The event will be about creating a map for 3D-first/third person game. ",
       },
       {
         point: "Assets will be given to the respected teams.",
@@ -695,14 +695,11 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: Rs. 4200",
+        prize: "1st prize: Rs. 3500",
       },
       {
         prize: "2nd prize: Rs. 2000",
       },
-      {
-        prize: "3rd prize: Rs. 800",
-      }
     ],
 
     time: "10.00 am to 4.00 pm",
@@ -1860,10 +1857,10 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: Rs. 1000",
+        prize: "1st prize: Rs. 2000",
       },
       {
-        prize: "2nd prize: Rs. 500",
+        prize: "2nd prize: Rs. 1000",
       }
     ],
 
@@ -1934,10 +1931,10 @@ const events = {
 
     prizeMoney: [
       {
-        prize: "1st prize: Rs. 2500",
+        prize: "1st prize: Rs. 3000",
       },
       {
-        prize: "2nd prize: Rs. 1000",
+        prize: "2nd prize: Rs. 1500",
       },
     ],
 
@@ -2013,9 +2010,6 @@ const events = {
       {
         prize: "2nd prize: Rs. 2500",
       },
-      {
-        prize: "3rd prize: Rs. 1000",
-      }
     ],
 
     time: "10.00 am to 2.00 pm",
