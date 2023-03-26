@@ -1472,15 +1472,82 @@ const events = {
     event_type: "Workshop",
     description: [
       {
-        point: `This workshop on UI designing and ReactJS will focus on helping participants understand the fundamentals of UI design, such as the principles of visual hierarchy, typography, color theory, and user experience.`,
+        point: `Content for AR & VR workshop:`
       },
       {
-        point: `On The other hand with combination of React.js, 
-        A framework widely used for building complex user interfaces, Participants will learn how to use ReactJS to create reusable UI components, manage state and props, and interact with APIs. `,
+        point: `Morning Session: Introduction to AR & VR, 	Different tools of 3D`
       },
       {
-        point: `Additionally, the workshop will cover best practices for integrating UI design principles with ReactJS development, 
-        enabling participants to create high-quality interfaces that are both visually appealing and functional.`,
+        point: `Afternoon session: Installation of Blender, Unity & Unity Interface, Different use cases of AR and VR`
+      },
+      {
+        point: ``
+      },
+      {
+        point: `Resource Person:`,
+      },
+      {
+        point: `Dr. Partheepan Rudrapati, CEO - Knowledge Xchange Community & Academic2IT, Entrepreneur & Industry Solutions Architect`,
+      },
+      {
+        point: ``
+      },
+      {
+        point: `Minimum System Requirements:`
+      },
+      {
+        point: `Mobile Device:`
+      },
+      {
+        point: `○ Android`
+      },
+      {
+        point: `Processor ARMv7 (Cortex family) or later`
+      },
+      {
+        point: `GPU: Must support OpenGL ES 2.0 or 3.x`
+      }, 
+      {
+        point: `OS: Android 6.0+ (API 23), 7.0+ (API 24) recommended`
+      },
+      {
+        point: `Rear-facing camera`
+      },
+      {
+        point:`○ IOS`
+      },
+      {
+        point: `OS: iOS 11+`
+      },
+      {
+        point: `XCode 9.4 or higher`
+      },
+      {
+        point: `Unity requires iOS 11 or higher, and doesn’t support earlier versions. Thismeans that you MUST use an iPhone 5s or better, as iOS 11 does notsupport any phone before that.`
+      },
+      {
+        point: ``
+      },
+      {
+        point: `Computer`
+      },
+      {
+        point: `OS:`
+      },
+      {
+        point: `Windows 7+ or Windows 10, 64-bit versions only.`
+      },
+      {
+        point: `Mac OS X Sierra 10.12.6+ or later`
+      },
+      {
+        point: `Experimental Ubuntu support is available, however, minimum Editorrequirements are not provided by Unity. Ubuntu 20.04, Ubuntu 18.04, orCentOS 7 is required to run Unity-built applications for Linux.`
+      },
+      {
+        point: `GPU: DX10, DX11, and DX12-capable GPUs.`
+      },
+      {
+        point: `(Optional) USB Webcam: Will allow you to debug Vuforia applications on yourcomputer using play mode in Unity`
       },
     ],
     prizeMoney: [],
