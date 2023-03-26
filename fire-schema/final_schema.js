@@ -738,7 +738,7 @@ const events = {
     name: "Z3r0-Capture the Flag",
     mode: "Capture the Flag",
     event_type: "Competition-Online ",
-    mode_type : 'Offline',
+    mode_type : 'Online',
     description: [
       {
         point:
