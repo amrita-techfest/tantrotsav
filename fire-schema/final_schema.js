@@ -1737,11 +1737,14 @@ const events = {
     ],
     rules: [
       {
-        rule: "Participants Should bring their own laptop",
+        rule: "Participants should bring their own laptop",
+      },
+      {
+        rule: "Participants should have a basic knowledge of Python",
       },
     ],
     time: "9.00 am to 4.00pm",
-    date: "03/04/23",
+    date: "04/04/23",
     venue: "",
     studentCoordinator: [
       {
@@ -1750,20 +1753,6 @@ const events = {
         Year: " 2nd year",
         contact: "9498370478",
       },
-      {
-        Name: "Archanaa N",
-        Dept: "AIE",
-        Year: " 2nd year",
-        contact: "",
-      },
-      { Name: "Sukesh", 
-        Dept: "AIE", 
-        Year: " 2nd year", 
-        contact: "" },
-      { Name: "Jaikanth Y", 
-        Dept: "AIE", 
-        Year: " 2nd year", 
-        contact: "" },
     ],
     facultyCoordinator: [
       {
