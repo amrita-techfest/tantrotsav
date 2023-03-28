@@ -33,11 +33,31 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <a href="tel:04435533222">
+          <a href="tel:9025313327">
             <i class="fa fa-phone"></i>
           </a>
           <p>
-            <a href="tel:9025313327">+91 9025313327</a>
+            <a href="tel:9025313327">+91 9025313327 (For technical Support)</a>
+          </p>
+        </div>
+        <div>
+          <a href="tel:04435533225">
+            <i class="fa fa-phone"></i>
+          </a>
+          <p>
+            <a href="tel:04435533225">
+              04435533225 (For Boy's hostel Registration)
+            </a>
+          </p>
+        </div>
+        <div>
+          <a href="tel:04435533226">
+            <i class="fa fa-phone"></i>
+          </a>
+          <p>
+            <a href="tel:04435533226">
+              04435533226 (For Girl's hostel Registration)
+            </a>
           </p>
         </div>
 
