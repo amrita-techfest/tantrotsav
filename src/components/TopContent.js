@@ -132,7 +132,9 @@ const TopContent = ({ isOpen }) => {
                 Register Now
               </button>
             </Link>
-
+            <p className="ml-4 mt-2">
+              Accommodations are provided (100 Rupees / day)
+            </p>
             <br />
             <br />
             <br />
