@@ -24,7 +24,7 @@ const RouteLinks = ({ isOpen, setUser, user }) => {
       <Route path="/ece" element={<EceIndex />} />
       <Route path="/mech" element={<MechIndex />} />
       <Route path="/c20" element={<C20Index />} />
-      {user ? (
+      {user && user != null ? (
         <Route path="/register/" element={<RegisterEvent />} />
       ) : (
         <Route
