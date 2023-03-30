@@ -2530,7 +2530,7 @@ const c20Events = {
 
   "c20-2": {
     name: "SelfieGram",
-    mode_type: "Offline",
+    mode_type: "online/Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     themes: [
@@ -3728,16 +3728,16 @@ const c20Events = {
     venue: "AB1-06",
     studentCoordinator: [
       {
-        Name: "Vijay Kumar",
+        Name: "Parasaran",
         Dept: "CYS",
         Year: "2nd year",
-        contact: "9629329074",
+        contact: "9952985166",
       },
       {
-        Name: "Vijay Varma",
+        Name: "Nikhil",
         Dept: "CYS",
         Year: "2nd year",
-        contact: "9778597445",
+        contact: "8489075070",
       },
     ],
     facultyCoordinator: [
