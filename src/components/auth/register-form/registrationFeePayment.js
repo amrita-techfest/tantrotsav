@@ -20,15 +20,15 @@ const RegistrationFeePayment = ({
   clearData,
 }) => {
   const [transactionID, setTransactionID] = useState("");
-  const [termsChecked, setTermsChecked] = React.useState(false);
-  const [policyChecked, setPolicyChecked] = React.useState(false);
+  const [termsChecked, setTermsChecked] = React.useState();
+  const [policyChecked, setPolicyChecked] = React.useState();
 
   const apiKey = process.env.REACT_APP_AIR_TABLE_API_KEY;
   const baseId = process.env.REACT_APP_AIR_TABLE_BASE_ID;
   const tableName = process.env.REACT_APP_AIR_TABLE_NAME;
 
-const base = new Airtable({ apiKey: apiKey }).base(baseId);
-  
+  const base = new Airtable({ apiKey: apiKey }).base(baseId);
+
   const navigate = useNavigate();
   const individualEventsTotalFees =
     individualEvents?.reduce(
@@ -70,58 +70,59 @@ const base = new Airtable({ apiKey: apiKey }).base(baseId);
 
   const user = auth.currentUser;
 
-  useEffect(() => { 
-  }, []);
-
   const handleRegistration = () => {
-
-    console.log("handleRegistration" , personalInfo.Id)
+    console.log("handleRegistration", personalInfo.Id);
     const userData = {
-      id : personalInfo.Id,
+      id: personalInfo.Id,
       fullName: personalInfo.fullName,
-      email: user.email === null ? 'dummy@tantrostav.com' : user.email,        
+      email: user.email === null ? "dummy@tantrostav.com" : user.email,
       whatsappNumber: personalInfo.userWhatsAppNumber,
       isAmrita: personalInfo.isAmrita,
       universityName: personalInfo.universityName,
       individualEvents,
       teamEvents,
       transactionID,
-    }; 
-    if (user) {
-      if (termsChecked && policyChecked) {
-        registerUser(userData);
-
-        // TODO : ADD AIRTABLE DISPATCH EVENT
-        //  Create a new record in the table
-      base(tableName).create({
-        'id' : personalInfo.Id,
-        'fullName': personalInfo.fullName,
-        'email': user.email === null ? 'dummy@tantrostav.com' : user.email,
-        'whatsappNumber': personalInfo.userWhatsAppNumber,
-        'isAmrita': String(personalInfo.isAmrita),
-        'universityName': personalInfo.universityName,
-        'individualEvents':JSON.stringify(individualEvents),
-        'teamEvents': JSON.stringify(teamEvents),
-        'transactionID':JSON.stringify(transactionID),
-}, function(err, record) {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log('Created record:', record.getId());
-});
-        swal({
-          title: "Good job!",
-          text: "Registration Successful! Find the receipt in your profile",
-          icon: "success",
-          button: "Aww yiss!",
-        }).then(() => {
-          clearData();
-          return navigate("/");
-        });
-      } 
+    };
+    if (termsChecked) {
+      registerUser(userData);
+      // TODO : ADD AIRTABLE DISPATCH EVENT
+      //  Create a new record in the table
+      base(tableName).create(
+        {
+          "id": personalInfo.Id,
+          "fullName": personalInfo.fullName,
+          "email": user.email === null ? "dummy@tantrostav.com" : user.email,
+          "whatsappNumber": personalInfo.userWhatsAppNumber,
+          "isAmrita": String(personalInfo.isAmrita),
+          "universityName": personalInfo.universityName,
+          "individualEvents": JSON.stringify(individualEvents),
+          "teamEvents": JSON.stringify(teamEvents),
+          "transactionID": JSON.stringify(transactionID),
+        },
+        function (err, record) {
+          if (err) {
+            console.error(err);
+            return;
+          }
+          console.log("Created record:", record.getId());
+        }
+      );
+      swal({
+        title: "Good job!",
+        text: "Registration Successful!",
+        icon: "success",
+        button: "Aww yiss!",
+      }).then(() => {
+        clearData();
+        return navigate("/");
+      });
     } else {
-      alert("Please login with google to register");
+      swal({
+        title: "Oops!",
+        text: "Please agree to the terms and conditions",
+        icon: "error",
+        button: "Okay",
+      });
     }
   };
 
@@ -219,7 +220,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   registerUser: (registrationDetails) =>
     dispatch(registerUserStart(registrationDetails)),
-    clearData: () => dispatch(clearRegistrationData()),
+  clearData: () => dispatch(clearRegistrationData()),
 });
 
 export default connect(
