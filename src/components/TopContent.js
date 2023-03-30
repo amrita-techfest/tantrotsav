@@ -8,16 +8,17 @@ import { SocialIcon } from "react-social-icons";
 import space from "../../src/components/assets/space-bg.png";
 import moment from "moment";
 import swal from "sweetalert";
+import { registerWithGoogle } from "../services/registerWithGoogle";
 
-const TopContent = ({ isOpen }) => {
+const TopContent = ({ isOpen, setUser, user }) => {
   const handleSwal = () => {
-    swal({
-      title: "Caution",
-      text: "Please make sure you have logged in with your google account before proceeding!",
-      icon: "warning",
-      buttons: true,
-      dangerMode: true,
-    });
+    // swal({
+    //   title: "Caution",
+    //   text: "Please make sure you have logged in with your google account before proceeding!",
+    //   icon: "warning",
+    //   buttons: true,
+    //   dangerMode: true,
+    // });
   };
 
   useEffect(() => {
@@ -127,11 +128,22 @@ const TopContent = ({ isOpen }) => {
               </Link>
             )} */}
 
-            <Link to="/register">
-              <button className="reg ml-4" onClick={handleSwal}>
-                Register Now
+            {user ? (
+              <Link to="/register">
+                <button className="reg ml-4" onClick={handleSwal}>
+                  Register Now
+                </button>
+              </Link>
+            ) : (
+              <button
+                className="reg ml-4"
+                onClick={() => {
+                  registerWithGoogle((setUser = { setUser }));
+                }}
+              >
+                Login to Register
               </button>
-            </Link>
+            )}
             <p className="ml-4 mt-2">
               Accommodations are provided (100 Rupees / day)
             </p>

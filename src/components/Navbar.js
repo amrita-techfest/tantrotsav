@@ -26,7 +26,7 @@ function Navbar({ isOpen, setOpen, user, setUser }) {
   ];
 
   const handleLogin = () => {
-    registerWithGoogle({ setUser });
+    registerWithGoogle((setUser = { setUser }));
   };
 
   const [openDropDown, setOpenDropDown] = React.useState(false);

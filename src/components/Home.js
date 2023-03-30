@@ -8,10 +8,10 @@ import Faq from "../Faq";
 import Timeline from "./timeline";
 import Sponsors from "./sponsors";
 
-function Home({ isOpen }) {
+function Home({ isOpen, setUser, user }) {
   return (
-    <div className='home h-auto sm:h-screen'>
-      <TopContent isOpen={isOpen} />
+    <div className="home h-auto sm:h-screen">
+      <TopContent isOpen={isOpen} setUser={setUser} user={user} />
       {/* <EventsSilder /> */}
       {/* <About /> */}
       {/* <Sponsors /> */}

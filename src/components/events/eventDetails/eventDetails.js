@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "./eventDetails.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 // import getEventDetails from "../../../services/getEventDetails";
 import { clearEventDetails, getEventDetailsStart } from "./actions";
 import { HashLink } from "react-router-hash-link";
 import moment from "moment";
 import swal from "sweetalert";
+import { registerWithGoogle } from "../../../services/registerWithGoogle";
 
 function EventDetails({
   getEventDetailsStart,
   eventDetails,
   loading,
   clearEventDetails,
+  user,
+  setUser,
   // eventId,
 }) {
   const location = useLocation();
@@ -33,13 +36,13 @@ function EventDetails({
   console.log("eventDetails", eventDetails);
   console.log("eventId", eventId);
   const handleSwal = () => {
-    swal({
-      title: "Caution",
-      text: "Please make sure you have logged in with your google account before proceeding!",
-      icon: "warning",
-      buttons: true,
-      dangerMode: true,
-    });
+    // swal({
+    //   title: "Caution",
+    //   text: "Please make sure you have logged in with your google account before proceeding!",
+    //   icon: "warning",
+    //   buttons: true,
+    //   dangerMode: true,
+    // });
   };
   // console.log(data.team_size);
 
@@ -110,11 +113,22 @@ function EventDetails({
             </>
           ) : (
             <>
-              <HashLink to="/register">
-                <button className="reg" onClick={handleSwal}>
-                  Register Now
+              {user ? (
+                <Link to="/register">
+                  <button className="reg ml-4" onClick={handleSwal}>
+                    Register Now
+                  </button>
+                </Link>
+              ) : (
+                <button
+                  className="reg ml-4"
+                  onClick={() => {
+                    registerWithGoogle((setUser = { setUser }));
+                  }}
+                >
+                  Login to Register
                 </button>
-              </HashLink>
+              )}
               {eventDetails?.prizeMoney?.length > 0 ? (
                 <div className="">
                   <div>

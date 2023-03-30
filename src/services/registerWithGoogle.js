@@ -1,16 +1,17 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { gProvider, auth } from "../firebase";
 
-export const registerWithGoogle = () => {
+export const registerWithGoogle = ({ setUser }) => {
   return signInWithPopup(auth, gProvider)
-    .then(result => {
+    .then((result) => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
       const user = result.user;
+      setUser(user);
       // console.log(user);
       return user;
     })
-    .catch(error => {
+    .catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
       const errorMessage = error.message;
