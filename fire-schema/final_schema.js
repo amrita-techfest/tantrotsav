@@ -596,11 +596,11 @@ const events = {
       },
       {
         point:
-          "This event will be about creating a 2D character on the platform called blender.",
+          "This event will be about creating a 2D character on the platform called godot.",
       },
       {
         point:
-          "Blender is a beginner tool for creations of characters, game assets, etc..",
+          "Godot is a beginner tool for creations of characters, game assets, etc..",
       },
     ],
     rules: [
@@ -1075,12 +1075,50 @@ const events = {
     mode: "Hackathon",
     event_type: "Competition ",
     mode_type: "Offline",
+    event_type: "Competition",
+    mode_type: "hybrid",
     description: [
       {
         point: `Machine learning hackathon event with diverse problem statements for teams to choose from, encouraging innovation and impact. Finalists will present their projects on the event day and be evaluated based on creativity, feasibility, and impact.`,
       },
       {
         point: `Participants are required to select one of the three domains and develop innovative ML solutions to address specific challenges in their chosen domain.`,
+      },
+      {
+        point: ``,
+      },
+      {
+        point: "The three domains are:",
+      },
+      {
+        point: `Personalized Learning`,
+      },
+      {
+        point: `Smart City`,
+      },
+      {
+        point: `Healthcare`,
+      },
+      {
+        point: ``,
+      },
+      {
+        point: ``,
+      },
+      {
+        point: "The three domains are:",
+      },
+      {
+        point: `Personalized Learning`,
+      },
+      {
+        point: `Smart City`,
+      },
+      {
+        point: `Healthcare`,
+      },
+      {
+        point: ``,
       },
       {
         point: `For the Personalized Learning domain, participants will develop ML solutions that can analyze data from various sources to tailor learning content and teaching methods to individual students' needs, preferences, and abilities. Personalized learning can help students achieve better academic outcomes and engagement.`,
@@ -1097,14 +1135,11 @@ const events = {
         rule: "Team Size : 4 members",
       },
       {
-        rule: " Proposal submission deadline: One week before the event (28/03/2023)",
+        rule: " Proposal submission deadline: 03/04/2023",
       },
 
       {
         rule: `Proposal evaluation criteria: Creativity, feasibility, relevance to the problem statement`,
-      },
-      {
-        rule: `Team notification: Three days prior to the event day (01/04/2023)`,
       },
       {
         rule: ` Presentation and evaluation: On the day of the hackathon, teams will present their projects to judges and participants. Evaluation criteria include originality, creativity, feasibility, technical implementation, and impact. Judges will provide feedback and select winners based on scores.`,
@@ -1684,7 +1719,7 @@ const events = {
         rule: "Bring your own laptop, chargers and required gadgets for the session.",
       },
     ],
-    time: "1.00 am to 4.00pm",
+    time: "9.00 am to 4.00pm",
     date: "04/04/23",
     venue: " ",
     studentCoordinator: [
@@ -1808,7 +1843,7 @@ const events = {
       },
     ],
     prizeMoney: [],
-    registrationFees: 300,
+    registrationFees: 100,
     img: "https://firebasestorage.googleapis.com/v0/b/techfest-90fcb.appspot.com/o/ETH%20logo.png?alt=media&token=654f01d2-1eb0-4aac-8f61-a9f5e7907029",
   },
   event18: {
@@ -1948,7 +1983,7 @@ const events = {
         point: `This event is a classic gaming tournament where teams will be competing against each other to win the game.`,
       },
       {
-        point: "Team Size: Solo (1) or Duo (2)",
+        point: "Team Size: 5",
       },
       {
         point: `Fill out the registration form with your  information`,
@@ -2513,7 +2548,7 @@ const c20Events = {
 
   "c20-2": {
     name: "SelfieGram",
-    mode_type: "Offline",
+    mode_type: "online/Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     themes: [
@@ -3731,16 +3766,16 @@ const c20Events = {
     venue: "AB1-06",
     studentCoordinator: [
       {
-        Name: "Vijay Kumar",
+        Name: "Parasaran",
         Dept: "CYS",
         Year: "2nd year",
-        contact: "9629329074",
+        contact: "9952985166",
       },
       {
-        Name: "Vijay Varma",
+        Name: "Nikhil",
         Dept: "CYS",
         Year: "2nd year",
-        contact: "9778597445",
+        contact: "8489075070",
       },
     ],
     facultyCoordinator: [
