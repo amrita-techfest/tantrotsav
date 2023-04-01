@@ -1674,7 +1674,7 @@ const events = {
     ],
     prizeMoney: [],
     time: "10.00 am to 3.30pm",
-    date: "03/04/23",
+    date: "04/04/23",
     venue: "Class Room",
     studentCoordinator: [
       {
@@ -2548,7 +2548,7 @@ const c20Events = {
 
   "c20-2": {
     name: "SelfieGram",
-    mode_type: "online/Offline",
+    mode_type: "Online/Offline",
     event_type: "Competitions",
     content: `The Civil Twenty (C20) is a forum of civil society organizations from G20 countries that engage with G20 leaders on issues of global importance, such as sustainable development, human rights, and international cooperation.`,
     themes: [
