@@ -24,7 +24,7 @@ const RouteLinks = ({ isOpen, setUser, user }) => {
       <Route path="/ece" element={<EceIndex />} />
       <Route path="/mech" element={<MechIndex />} />
       <Route path="/c20" element={<C20Index />} />
-      {user && user != null ? (
+      {/* {user && user != null ? (
         <Route path="/register/" element={<RegisterEvent />} />
       ) : (
         <Route
@@ -35,7 +35,15 @@ const RouteLinks = ({ isOpen, setUser, user }) => {
             </h1>
           }
         />
-      )}
+      )} */}
+      <Route
+        path="/register/"
+        element={
+          <h1 className=" text-center mt-12 font-bold text-[40px]">
+            The Online Registrations Are Closed!
+          </h1>
+        }
+      />
       <Route
         path="/events/:details"
         element={<EventDetails setUser={setUser} user={user} />}
