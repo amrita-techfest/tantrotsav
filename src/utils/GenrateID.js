@@ -2,7 +2,7 @@ import { db } from "../firebase.js";
 import { doc, getDoc } from "firebase/firestore";
 
 async function getUser(id) {
-  const docRef = doc(db, "registrations", id);
+  const docRef = doc(db, "event_registractions", id);
   const docSnap = await getDoc(docRef);
   if (docSnap.exists()) {
     return true;

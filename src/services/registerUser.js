@@ -9,7 +9,7 @@ import {
 
 export default async function registerUser(registrationDetails) {
   console.log(registrationDetails);
-  const docRef = doc(db, "registrations", registrationDetails.email);
+  const docRef = doc(db, "event_registractions", registrationDetails.email);
   const res = await setDoc(
     docRef,
     {
@@ -28,7 +28,7 @@ export default async function registerUser(registrationDetails) {
 }
 
 export async function getUserDetails(email) {
-  const docRef = doc(db, "registrations", email);
+  const docRef = doc(db, "event_registractions", email);
   const docSnap = await getDoc(docRef);
   if (docSnap.exists()) {
     return docSnap.data();
